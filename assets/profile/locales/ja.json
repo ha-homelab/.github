@@ -1,0 +1,57 @@
+{
+  "months": [
+    "1月",
+    "2月",
+    "3月",
+    "4月",
+    "5月",
+    "6月",
+    "7月",
+    "8月",
+    "9月",
+    "10月",
+    "11月",
+    "12月"
+  ],
+  "date_format": "{year}年{month}{day}日",
+  "labels": {
+    "map": "理解できる部品でつくる家",
+    "sub": "HA Homelab の各プロジェクトの役割",
+    "groups": [
+      "音声とメディア",
+      "機器とブリッジ",
+      "設定と復旧",
+      "空間・観測・アクセス",
+      "テストと契約仕様"
+    ],
+    "details": [
+      [
+        "EchoLocal · EchoMuse · Android",
+        "Echo Dot / Show · LG キャプチャー"
+      ],
+      [
+        "DESLOC · RF · Zigbee · Z-Wave",
+        "ESPHome 変換 · SLZB 復旧"
+      ],
+      [
+        "Home Assistant 設定",
+        "k3s の導入と復旧"
+      ],
+      [
+        "Home Studio · RuView · ONVIF",
+        "観測の証拠 · Access セッション"
+      ],
+      [
+        "役割 · 計測の出所",
+        "自動化シナリオ · 音声の証拠"
+      ]
+    ],
+    "mapnote": "線は関連する作業をまとめたものです。自動導入や必須のデータ経路ではありません。",
+    "chart": "公開{count}プロジェクト、五つの分野",
+    "chartsub": "日付付きの一覧。品質や性能の順位ではありません。",
+    "axis": "公開プロジェクト数",
+    "yaxis": "プロジェクト分野",
+    "source": "出典：GitHub 公開リポジトリ API · {date} (America/Los_Angeles)",
+    "note": "各プロジェクトは一分類のみ。プロフィール用 .github を除外（公開リポジトリ総数 {total}）。"
+  }
+}

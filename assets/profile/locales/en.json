@@ -1,0 +1,56 @@
+{
+  "months": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "labels": {
+    "map": "A home, built from understandable parts",
+    "sub": "Project roles across the HA Homelab ecosystem",
+    "groups": [
+      "Voice & media",
+      "Devices & bridges",
+      "Configuration & recovery",
+      "Space, sensing & access",
+      "Tests & contracts"
+    ],
+    "details": [
+      [
+        "EchoLocal · EchoMuse · Android",
+        "Echo Dot / Show · LG capture"
+      ],
+      [
+        "DESLOC · RF · Zigbee · Z-Wave",
+        "ESPHome conversions · SLZB recovery"
+      ],
+      [
+        "Home Assistant configuration",
+        "k3s deployment & recovery"
+      ],
+      [
+        "Home Studio · RuView · ONVIF",
+        "Sensing evidence · Access sessions"
+      ],
+      [
+        "Entity roles · Meter provenance",
+        "Automation scenarios · Voice evidence"
+      ]
+    ],
+    "mapnote": "Lines group related work; they are not an automatic deployment or a mandatory data path.",
+    "chart": "{count} public projects, five areas",
+    "chartsub": "A dated directory snapshot, not a quality or performance ranking",
+    "axis": "Public projects (count)",
+    "yaxis": "Project area",
+    "source": "Source: GitHub public repository API · {date} (America/Los_Angeles)",
+    "note": "One category per project. The .github profile repository is excluded ({total} public repositories total)."
+  }
+}

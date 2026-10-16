@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="660" viewBox="0 0 1120 660" role="img" aria-labelledby="title desc" lang="th">
+<title id="title">บ้านที่ประกอบจากส่วนที่เข้าใจได้</title><desc id="desc">เส้นจัดกลุ่มงานที่เกี่ยวข้อง ไม่ใช่การติดตั้งอัตโนมัติหรือเส้นทางข้อมูลที่บังคับ</desc>
+<rect width="1120" height="660" rx="20" fill="#102634"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="40" y="58" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start">บ้านที่ประกอบจากส่วนที่เข้าใจได้</text>
+<text x="40" y="91" font-size="18" fill="#c1d1dd" font-weight="400" text-anchor="start">บทบาทโครงการในระบบนิเวศ HA Homelab</text>
+<path d="M 340 226 H 385 V 333 H 415 M 340 459 H 385 V 333 M 705 333 H 735 V 226 H 780 M 735 333 V 459 H 780" fill="none" stroke="#4a7184" stroke-width="3"/>
+<rect x="40" y="377" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="58" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">04</text>
+<text x="58" y="444" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">เสียงและสื่อ</text>
+<text x="58" y="478" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">EchoLocal · EchoMuse · Android</text>
+<text x="58" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Echo Dot / Show · จับภาพ LG</text>
+<rect x="40" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="58" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">07</text>
+<text x="58" y="211" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">อุปกรณ์และบริดจ์</text>
+<text x="58" y="245" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">DESLOC · RF · Zigbee · Z-Wave</text>
+<text x="58" y="270" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">แปลง ESPHome · กู้คืน SLZB</text>
+<rect x="415" y="245" width="290" height="176" rx="14" fill="#173f4e" stroke="#3b6474"/>
+<text x="433" y="275" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">02</text>
+<text x="433" y="312" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">การตั้งค่าและกู้คืน</text>
+<text x="433" y="346" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">การตั้งค่า Home Assistant</text>
+<text x="433" y="371" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">ติดตั้งและกู้คืน k3s</text>
+<rect x="780" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="798" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">05</text>
+<text x="798" y="211" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">ผัง การตรวจวัด การเข้าถึง</text>
+<text x="798" y="245" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Home Studio · RuView · ONVIF</text>
+<text x="798" y="270" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">หลักฐานตรวจวัด · เซสชัน Access</text>
+<rect x="780" y="377" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="798" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">04</text>
+<text x="798" y="444" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">ทดสอบและข้อกำหนด</text>
+<text x="798" y="478" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">บทบาทเอนทิตี · ที่มาของค่า</text>
+<text x="798" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">สถานการณ์อัตโนมัติ · หลักฐานเสียง</text>
+<text x="40" y="600" font-size="15" fill="#c1d1dd" font-weight="400" text-anchor="start">เส้นจัดกลุ่มงานที่เกี่ยวข้อง ไม่ใช่การติดตั้งอัตโนมัติหรือเส้นทางข้อมูลที่บังคับ</text>
+<text x="40" y="628" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">ที่มา: GitHub API ที่เก็บสาธารณะ · 16 ตุลาคม 2026 (America/Los_Angeles)</text>
+</g></svg>

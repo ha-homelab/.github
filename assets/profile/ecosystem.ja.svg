@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="660" viewBox="0 0 1120 660" role="img" aria-labelledby="title desc" lang="ja">
+<title id="title">理解できる部品でつくる家</title><desc id="desc">線は関連する作業をまとめたものです。自動導入や必須のデータ経路ではありません。</desc>
+<rect width="1120" height="660" rx="20" fill="#102634"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="40" y="58" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start">理解できる部品でつくる家</text>
+<text x="40" y="91" font-size="18" fill="#c1d1dd" font-weight="400" text-anchor="start">HA Homelab の各プロジェクトの役割</text>
+<path d="M 340 226 H 385 V 333 H 415 M 340 459 H 385 V 333 M 705 333 H 735 V 226 H 780 M 735 333 V 459 H 780" fill="none" stroke="#4a7184" stroke-width="3"/>
+<rect x="40" y="377" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="58" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">04</text>
+<text x="58" y="444" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">音声とメディア</text>
+<text x="58" y="478" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">EchoLocal · EchoMuse · Android</text>
+<text x="58" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Echo Dot / Show · LG キャプチャー</text>
+<rect x="40" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="58" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">07</text>
+<text x="58" y="211" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">機器とブリッジ</text>
+<text x="58" y="245" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">DESLOC · RF · Zigbee · Z-Wave</text>
+<text x="58" y="270" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">ESPHome 変換 · SLZB 復旧</text>
+<rect x="415" y="245" width="290" height="176" rx="14" fill="#173f4e" stroke="#3b6474"/>
+<text x="433" y="275" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">02</text>
+<text x="433" y="312" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">設定と復旧</text>
+<text x="433" y="346" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Home Assistant 設定</text>
+<text x="433" y="371" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">k3s の導入と復旧</text>
+<rect x="780" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="798" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">05</text>
+<text x="798" y="211" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">空間・観測・アクセス</text>
+<text x="798" y="245" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Home Studio · RuView · ONVIF</text>
+<text x="798" y="270" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">観測の証拠 · Access セッション</text>
+<rect x="780" y="377" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="798" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">04</text>
+<text x="798" y="444" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">テストと契約仕様</text>
+<text x="798" y="478" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">役割 · 計測の出所</text>
+<text x="798" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">自動化シナリオ · 音声の証拠</text>
+<text x="40" y="600" font-size="15" fill="#c1d1dd" font-weight="400" text-anchor="start">線は関連する作業をまとめたものです。自動導入や必須のデータ経路ではありません。</text>
+<text x="40" y="628" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">出典：GitHub 公開リポジトリ API · 2026年10月16日 (America/Los_Angeles)</text>
+</g></svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="660" viewBox="0 0 1120 660" role="img" aria-labelledby="title desc" lang="pt">
+<title id="title">Uma casa de componentes compreensíveis</title><desc id="desc">As linhas agrupam trabalhos relacionados, não implantação automática ou caminhos de dados obrigatórios.</desc>
+<rect width="1120" height="660" rx="20" fill="#102634"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="40" y="58" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start">Uma casa de componentes compreensíveis</text>
+<text x="40" y="91" font-size="18" fill="#c1d1dd" font-weight="400" text-anchor="start">Papéis dos projetos no ecossistema HA Homelab</text>
+<path d="M 340 226 H 385 V 333 H 415 M 340 459 H 385 V 333 M 705 333 H 735 V 226 H 780 M 735 333 V 459 H 780" fill="none" stroke="#4a7184" stroke-width="3"/>
+<rect x="40" y="377" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="58" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">04</text>
+<text x="58" y="444" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">Voz e mídia</text>
+<text x="58" y="478" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">EchoLocal · EchoMuse · Android</text>
+<text x="58" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Echo Dot / Show · captura LG</text>
+<rect x="40" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="58" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">07</text>
+<text x="58" y="211" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">Dispositivos e pontes</text>
+<text x="58" y="245" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">DESLOC · RF · Zigbee · Z-Wave</text>
+<text x="58" y="270" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Conversões ESPHome · recuperação SLZB</text>
+<rect x="415" y="245" width="290" height="176" rx="14" fill="#173f4e" stroke="#3b6474"/>
+<text x="433" y="275" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">02</text>
+<text x="433" y="312" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">Configuração e recuperação</text>
+<text x="433" y="346" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Configuração Home Assistant</text>
+<text x="433" y="371" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Implantação e recuperação k3s</text>
+<rect x="780" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="798" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">05</text>
+<text x="798" y="211" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">Espaços, sensores e acesso</text>
+<text x="798" y="245" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Home Studio · RuView · ONVIF</text>
+<text x="798" y="270" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Evidências de sensores · sessões Access</text>
+<rect x="780" y="377" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="798" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">04</text>
+<text x="798" y="444" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">Testes e contratos</text>
+<text x="798" y="478" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Funções de entidades · fontes de medidas</text>
+<text x="798" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Cenários de automação · evidências de voz</text>
+<text x="40" y="600" font-size="15" fill="#c1d1dd" font-weight="400" text-anchor="start">As linhas agrupam trabalhos relacionados, não implantação automática ou caminhos de dados obrigatórios.</text>
+<text x="40" y="628" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">Fonte: API GitHub de repositórios públicos · 16 de outubro de 2026 (America/Los_Angeles)</text>
+</g></svg>

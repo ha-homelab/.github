@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="625" viewBox="0 0 1120 625" role="img" aria-labelledby="title desc" lang="es">
+<title id="title">22 proyectos públicos, cinco áreas</title><desc id="desc">Una categoría por proyecto. Se excluye el perfil .github (23 repositorios públicos en total).</desc>
+<rect width="1120" height="625" rx="20" fill="#102634"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="40" y="58" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start">22 proyectos públicos, cinco áreas</text>
+<text x="40" y="91" font-size="18" fill="#c1d1dd" font-weight="400" text-anchor="start">Una instantánea del catálogo; no clasifica calidad ni rendimiento</text>
+<text x="40" y="139" font-size="14" fill="#94aebb" font-weight="400" text-anchor="start">Área del proyecto</text>
+<line x1="420" y1="160" x2="420" y2="477" stroke="#294653"/>
+<text x="420" y="501" font-size="16" fill="#c1d1dd" font-weight="400" text-anchor="middle">0</text>
+<line x1="500" y1="160" x2="500" y2="477" stroke="#294653"/>
+<text x="500" y="501" font-size="16" fill="#c1d1dd" font-weight="400" text-anchor="middle">1</text>
+<line x1="580" y1="160" x2="580" y2="477" stroke="#294653"/>
+<text x="580" y="501" font-size="16" fill="#c1d1dd" font-weight="400" text-anchor="middle">2</text>
+<line x1="660" y1="160" x2="660" y2="477" stroke="#294653"/>
+<text x="660" y="501" font-size="16" fill="#c1d1dd" font-weight="400" text-anchor="middle">3</text>
+<line x1="740" y1="160" x2="740" y2="477" stroke="#294653"/>
+<text x="740" y="501" font-size="16" fill="#c1d1dd" font-weight="400" text-anchor="middle">4</text>
+<line x1="820" y1="160" x2="820" y2="477" stroke="#294653"/>
+<text x="820" y="501" font-size="16" fill="#c1d1dd" font-weight="400" text-anchor="middle">5</text>
+<line x1="900" y1="160" x2="900" y2="477" stroke="#294653"/>
+<text x="900" y="501" font-size="16" fill="#c1d1dd" font-weight="400" text-anchor="middle">6</text>
+<line x1="980" y1="160" x2="980" y2="477" stroke="#294653"/>
+<text x="980" y="501" font-size="16" fill="#c1d1dd" font-weight="400" text-anchor="middle">7</text>
+<line x1="1060" y1="160" x2="1060" y2="477" stroke="#294653"/>
+<text x="1060" y="501" font-size="16" fill="#c1d1dd" font-weight="400" text-anchor="middle">8</text>
+<text x="40" y="201" font-size="17" fill="#edf5f8" font-weight="400" text-anchor="start">Dispositivos y puentes</text>
+<rect x="420" y="177" width="560" height="36" rx="5" fill="#38d5cc"/>
+<text x="994" y="202" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">7</text>
+<text x="40" y="263" font-size="17" fill="#edf5f8" font-weight="400" text-anchor="start">Espacio, observación y acceso</text>
+<rect x="420" y="239" width="400" height="36" rx="5" fill="#38d5cc"/>
+<text x="834" y="264" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">5</text>
+<text x="40" y="325" font-size="17" fill="#edf5f8" font-weight="400" text-anchor="start">Voz y multimedia</text>
+<rect x="420" y="301" width="320" height="36" rx="5" fill="#38d5cc"/>
+<text x="754" y="326" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">4</text>
+<text x="40" y="387" font-size="17" fill="#edf5f8" font-weight="400" text-anchor="start">Pruebas y contratos</text>
+<rect x="420" y="363" width="320" height="36" rx="5" fill="#38d5cc"/>
+<text x="754" y="388" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">4</text>
+<text x="40" y="449" font-size="17" fill="#edf5f8" font-weight="400" text-anchor="start">Configuración y recuperación</text>
+<rect x="420" y="425" width="160" height="36" rx="5" fill="#38d5cc"/>
+<text x="594" y="450" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">2</text>
+<text x="740" y="537" font-size="17" fill="#c1d1dd" font-weight="400" text-anchor="middle">Proyectos públicos (recuento)</text>
+<text x="40" y="577" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">Fuente: API pública de repositorios de GitHub · 16 de octubre de 2026 (America/Los_Angeles)</text>
+<text x="40" y="602" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">Una categoría por proyecto. Se excluye el perfil .github (23 repositorios públicos en total).</text>
+</g></svg>

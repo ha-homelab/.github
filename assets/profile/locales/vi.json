@@ -1,0 +1,57 @@
+{
+  "months": [
+    "tháng 1",
+    "tháng 2",
+    "tháng 3",
+    "tháng 4",
+    "tháng 5",
+    "tháng 6",
+    "tháng 7",
+    "tháng 8",
+    "tháng 9",
+    "tháng 10",
+    "tháng 11",
+    "tháng 12"
+  ],
+  "date_format": "{day} {month} năm {year}",
+  "labels": {
+    "map": "Ngôi nhà từ các thành phần dễ hiểu",
+    "sub": "Vai trò dự án trong hệ sinh thái HA Homelab",
+    "groups": [
+      "Giọng nói & đa phương tiện",
+      "Thiết bị & cầu nối",
+      "Cấu hình & khôi phục",
+      "Không gian, quan sát, truy cập",
+      "Kiểm thử & hợp đồng"
+    ],
+    "details": [
+      [
+        "EchoLocal · EchoMuse · Android",
+        "Echo Dot / Show · chụp LG"
+      ],
+      [
+        "DESLOC · RF · Zigbee · Z-Wave",
+        "Chuyển ESPHome · khôi phục SLZB"
+      ],
+      [
+        "Cấu hình Home Assistant",
+        "Triển khai & khôi phục k3s"
+      ],
+      [
+        "Home Studio · RuView · ONVIF",
+        "Bằng chứng quan sát · phiên Access"
+      ],
+      [
+        "Vai trò thực thể · nguồn phép đo",
+        "Kịch bản tự động · bằng chứng giọng nói"
+      ]
+    ],
+    "mapnote": "Đường nối nhóm công việc liên quan, không phải triển khai tự động hay luồng dữ liệu bắt buộc.",
+    "chart": "{count} dự án công khai, năm nhóm",
+    "chartsub": "Danh mục có ngày, không phải hạng chất lượng hay hiệu năng",
+    "axis": "Số dự án công khai",
+    "yaxis": "Nhóm dự án",
+    "source": "Nguồn: API kho công khai GitHub · {date} (America/Los_Angeles)",
+    "note": "Mỗi dự án một nhóm. Không tính hồ sơ .github (tổng {total} kho công khai)."
+  }
+}

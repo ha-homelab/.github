@@ -5,6 +5,7 @@ Uses only the Python standard library; no network requests or live-household dat
 """
 
 import json
+import unicodedata
 from collections import Counter
 from datetime import date
 from html import escape
@@ -13,39 +14,23 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 DATA = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
 SNAPSHOT_DATE = date.fromisoformat(DATA["snapshot_date_los_angeles"])
-MONTHS = {
-    "en": [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December",
-    ],
-    "ru": [
-        "января",
-        "февраля",
-        "марта",
-        "апреля",
-        "мая",
-        "июня",
-        "июля",
-        "августа",
-        "сентября",
-        "октября",
-        "ноября",
-        "декабря",
-    ],
+LANGUAGES = tuple(
+    entry["code"]
+    for entry in json.loads(
+        (ROOT.parents[1] / "languages.json").read_text(encoding="utf-8")
+    )
+)
+LOCALES = {
+    lang: json.loads((ROOT / "locales" / f"{lang}.json").read_text(encoding="utf-8"))
+    for lang in LANGUAGES
 }
 SOURCE_DATES = {
-    lang: f"{SNAPSHOT_DATE.day} {months[SNAPSHOT_DATE.month - 1]} {SNAPSHOT_DATE.year}"
-    for lang, months in MONTHS.items()
+    lang: locale.get("date_format", "{day} {month} {year}").format(
+        day=SNAPSHOT_DATE.day,
+        month=locale["months"][SNAPSHOT_DATE.month - 1],
+        year=SNAPSHOT_DATE.year,
+    )
+    for lang, locale in LOCALES.items()
 }
 CATEGORIES = [
     "Voice and media",
@@ -58,70 +43,24 @@ COUNTS = Counter(project["category"] for project in DATA["projects"])
 assert dict(COUNTS) == DATA["category_counts"]
 assert sum(COUNTS.values()) == DATA["public_project_count"]
 
-LABELS = {
-    "en": {
-        "map": "A home, built from understandable parts",
-        "sub": "Project roles across the HA Homelab ecosystem",
-        "groups": [
-            "Voice & media",
-            "Devices & bridges",
-            "Configuration & recovery",
-            "Space, sensing & access",
-            "Tests & contracts",
-        ],
-        "details": [
-            ["EchoLocal · EchoMuse · Android", "Echo Dot / Show · LG capture"],
-            ["DESLOC · RF · Zigbee · Z-Wave", "ESPHome conversions · SLZB recovery"],
-            ["Home Assistant configuration", "k3s deployment & recovery"],
-            ["Home Studio · RuView · ONVIF", "Sensing evidence · Access sessions"],
-            [
-                "Entity roles · Meter provenance",
-                "Automation scenarios · Voice evidence",
-            ],
-        ],
-        "mapnote": "Lines group related work; they are not an automatic deployment or a mandatory data path.",
-        "chart": f"{DATA['public_project_count']} public projects, five areas",
-        "chartsub": "A dated directory snapshot, not a quality or performance ranking",
-        "axis": "Public projects (count)",
-        "yaxis": "Project area",
-        "source": f"Source: GitHub public repository API · {SOURCE_DATES['en']} (America/Los_Angeles)",
-        "note": f"One category per project. The .github profile repository is excluded ({DATA['public_repository_count']} public repositories total).",
-    },
-    "ru": {
-        "map": "Понятные части умного дома",
-        "sub": "Роли проектов в экосистеме HA Homelab",
-        "groups": [
-            "Голос и медиа",
-            "Устройства и мосты",
-            "Конфигурация и восстановление",
-            "Пространство, датчики, доступ",
-            "Тесты и контракты",
-        ],
-        "details": [
-            ["EchoLocal · EchoMuse · Android", "Echo Dot / Show · захват LG"],
-            ["DESLOC · RF · Zigbee · Z-Wave", "Прошивка ESPHome · восстановление SLZB"],
-            ["Конфигурация Home Assistant", "Развёртывание и восстановление k3s"],
-            ["Home Studio · RuView · ONVIF", "Наблюдения · сессии Access"],
-            [
-                "Роли сущностей · источники показаний",
-                "Сценарии автоматики · проверка голоса",
-            ],
-        ],
-        "mapnote": "Линии связывают темы: это не автоматическое развёртывание и не обязательный путь данных.",
-        "chart": f"Публичные проекты: {DATA['public_project_count']}. Направления: 5",
-        "chartsub": "Срез каталога, а не рейтинг качества или производительности",
-        "axis": "Количество публичных проектов",
-        "yaxis": "Направление проектов",
-        "source": f"Источник: GitHub API публичных репозиториев · {SOURCE_DATES['ru']} (America/Los_Angeles)",
-        "note": f"Каждый проект учтён один раз. Без профиля .github (всего {DATA['public_repository_count']} публичных репозитория).",
-    },
-}
+LABELS = {lang: dict(locale["labels"]) for lang, locale in LOCALES.items()}
+for lang, labels in LABELS.items():
+    for key in ("chart", "source", "note"):
+        labels[key] = labels[key].format(
+            count=DATA["public_project_count"],
+            total=DATA["public_repository_count"],
+            date=SOURCE_DATES[lang],
+        )
 
 
 def text(x, y, value, size=18, fill="#c1d1dd", weight=400, anchor="start"):
+    rtl = any(unicodedata.bidirectional(c) in {"R", "AL"} for c in str(value))
+    direction = ' direction="rtl" unicode-bidi="plaintext"' if rtl else ""
+    if rtl:
+        anchor = {"start": "end", "end": "start", "middle": "middle"}[anchor]
     return (
         f'<text x="{x}" y="{y}" font-size="{size}" fill="{fill}" '
-        f'font-weight="{weight}" text-anchor="{anchor}">{escape(str(value))}</text>'
+        f'font-weight="{weight}" text-anchor="{anchor}"{direction}>{escape(str(value))}</text>'
     )
 
 
@@ -168,14 +107,14 @@ def ecosystem(lang):
                 x + 18,
                 y + 67,
                 labels["groups"][index],
-                15 if lang == "ru" else 18,
+                18 if lang == "en" else 15,
                 "#ffffff",
                 700,
             )
         )
         for line, value in enumerate(labels["details"][index]):
             svg.append(
-                text(x + 18, y + 101 + line * 25, value, 12 if lang == "ru" else 14)
+                text(x + 18, y + 101 + line * 25, value, 14 if lang == "en" else 12)
             )
     svg.extend(
         [
@@ -226,7 +165,7 @@ def portfolio(lang):
 
 if __name__ == "__main__":
     for language in LABELS:
-        suffix = ".ru" if language == "ru" else ""
+        suffix = "" if language == "en" else f".{language}"
         for name, builder in (("ecosystem", ecosystem), ("portfolio", portfolio)):
             (ROOT / f"{name}{suffix}.svg").write_text(
                 builder(language), encoding="utf-8"

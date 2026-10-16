@@ -1,0 +1,57 @@
+{
+  "months": [
+    "1 月",
+    "2 月",
+    "3 月",
+    "4 月",
+    "5 月",
+    "6 月",
+    "7 月",
+    "8 月",
+    "9 月",
+    "10 月",
+    "11 月",
+    "12 月"
+  ],
+  "date_format": "{year} 年 {month} {day} 日",
+  "labels": {
+    "map": "用清晰易懂的组件构建家",
+    "sub": "HA Homelab 生态中的项目分工",
+    "groups": [
+      "语音与媒体",
+      "设备与桥接",
+      "配置与恢复",
+      "空间、感知与访问",
+      "测试与契约"
+    ],
+    "details": [
+      [
+        "EchoLocal · EchoMuse · Android",
+        "Echo Dot / Show · LG 屏幕捕获"
+      ],
+      [
+        "DESLOC · RF · Zigbee · Z-Wave",
+        "ESPHome 改装 · SLZB 恢复"
+      ],
+      [
+        "Home Assistant 配置",
+        "k3s 部署与恢复"
+      ],
+      [
+        "Home Studio · RuView · ONVIF",
+        "感知证据 · 访问会话"
+      ],
+      [
+        "实体角色 · 计量来源",
+        "自动化场景 · 语音证据"
+      ]
+    ],
+    "mapnote": "连线表示相关工作，不代表自动部署或必需的数据路径。",
+    "chart": "{count} 个公开项目，五个领域",
+    "chartsub": "带日期的目录快照，不是质量或性能排名",
+    "axis": "公开项目数",
+    "yaxis": "项目领域",
+    "source": "来源：GitHub 公开仓库 API · {date}（America/Los_Angeles）",
+    "note": "每个项目只计入一类。不计入 .github 简介仓库（共 {total} 个公开仓库）。"
+  }
+}

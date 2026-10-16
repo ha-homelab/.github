@@ -1,0 +1,57 @@
+{
+  "months": [
+    "1 月",
+    "2 月",
+    "3 月",
+    "4 月",
+    "5 月",
+    "6 月",
+    "7 月",
+    "8 月",
+    "9 月",
+    "10 月",
+    "11 月",
+    "12 月"
+  ],
+  "date_format": "{year} 年 {month} {day} 日",
+  "labels": {
+    "map": "用清晰易懂的組件建置家",
+    "sub": "HA Homelab 生態中的專案分工",
+    "groups": [
+      "語音與媒體",
+      "設備與橋接",
+      "設定與復原",
+      "空間、感知與存取",
+      "測試與契約"
+    ],
+    "details": [
+      [
+        "EchoLocal · EchoMuse · Android",
+        "Echo Dot / Show · LG 螢幕捕獲"
+      ],
+      [
+        "DESLOC · RF · Zigbee · Z-Wave",
+        "ESPHome 改裝 · SLZB 復原"
+      ],
+      [
+        "Home Assistant 設定",
+        "k3s 部署與復原"
+      ],
+      [
+        "Home Studio · RuView · ONVIF",
+        "感知證據 · 存取會話"
+      ],
+      [
+        "實體角色 · 計量來源",
+        "自動化場景 · 語音證據"
+      ]
+    ],
+    "mapnote": "連線表示相關工作，不代表自動部署或必需的資料路徑。",
+    "chart": "{count} 個公開專案，五個領域",
+    "chartsub": "帶日期的目錄快照，不是品質或性能排名",
+    "axis": "公開專案數",
+    "yaxis": "專案領域",
+    "source": "來源：GitHub 公開儲存庫 API · {date}（America/Los_Angeles）",
+    "note": "每個專案只計入一類。不計入 .github 簡介儲存庫（共 {total} 個公開儲存庫）。"
+  }
+}

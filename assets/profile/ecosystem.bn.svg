@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="660" viewBox="0 0 1120 660" role="img" aria-labelledby="title desc" lang="bn">
+<title id="title">বোধগম্য অংশে গড়া বাড়ি</title><desc id="desc">রেখা সম্পর্কিত কাজ বোঝায়; স্বয়ংক্রিয় স্থাপন বা বাধ্যতামূলক তথ্যপথ নয়।</desc>
+<rect width="1120" height="660" rx="20" fill="#102634"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="40" y="58" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start">বোধগম্য অংশে গড়া বাড়ি</text>
+<text x="40" y="91" font-size="18" fill="#c1d1dd" font-weight="400" text-anchor="start">HA Homelab-এ প্রকল্পগুলোর ভূমিকা</text>
+<path d="M 340 226 H 385 V 333 H 415 M 340 459 H 385 V 333 M 705 333 H 735 V 226 H 780 M 735 333 V 459 H 780" fill="none" stroke="#4a7184" stroke-width="3"/>
+<rect x="40" y="377" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="58" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">04</text>
+<text x="58" y="444" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">ভয়েস ও মিডিয়া</text>
+<text x="58" y="478" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">EchoLocal · EchoMuse · Android</text>
+<text x="58" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Echo Dot / Show · LG স্ক্রিন ধারণ</text>
+<rect x="40" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="58" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">07</text>
+<text x="58" y="211" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">ডিভাইস ও ব্রিজ</text>
+<text x="58" y="245" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">DESLOC · RF · Zigbee · Z-Wave</text>
+<text x="58" y="270" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">ESPHome রূপান্তর · SLZB পুনরুদ্ধার</text>
+<rect x="415" y="245" width="290" height="176" rx="14" fill="#173f4e" stroke="#3b6474"/>
+<text x="433" y="275" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">02</text>
+<text x="433" y="312" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">কনফিগারেশন ও পুনরুদ্ধার</text>
+<text x="433" y="346" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Home Assistant কনফিগারেশন</text>
+<text x="433" y="371" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">k3s স্থাপন ও পুনরুদ্ধার</text>
+<rect x="780" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="798" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">05</text>
+<text x="798" y="211" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">স্থান, পর্যবেক্ষণ, প্রবেশাধিকার</text>
+<text x="798" y="245" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Home Studio · RuView · ONVIF</text>
+<text x="798" y="270" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">পর্যবেক্ষণের প্রমাণ · Access সেশন</text>
+<rect x="780" y="377" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="798" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">04</text>
+<text x="798" y="444" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">পরীক্ষা ও চুক্তি</text>
+<text x="798" y="478" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">এনটিটির ভূমিকা · মাপের উৎস</text>
+<text x="798" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">অটোমেশন দৃশ্যপট · ভয়েস প্রমাণ</text>
+<text x="40" y="600" font-size="15" fill="#c1d1dd" font-weight="400" text-anchor="start">রেখা সম্পর্কিত কাজ বোঝায়; স্বয়ংক্রিয় স্থাপন বা বাধ্যতামূলক তথ্যপথ নয়।</text>
+<text x="40" y="628" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">উৎস: GitHub প্রকাশ্য রিপোজিটরি API · 16 অক্টোবর 2026 (America/Los_Angeles)</text>
+</g></svg>
