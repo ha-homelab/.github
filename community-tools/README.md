@@ -15,6 +15,19 @@ Four small tools help a Home Assistant community project answer four different q
 
 The projects have their own installation guides, English/Russian documentation and English/Russian/German/Spanish CLI messages. Follow their versioned contracts rather than assuming all exit codes have the same meaning. The diagram arrows are **review handoffs**, not implemented automatic integrations. There is no central daemon or universal deploy command.
 
+Hosted wikis: [Entity Migrations](https://github.com/ha-homelab/ha-entity-migrations/wiki) · [Meter Contracts](https://github.com/ha-homelab/ha-meter-contracts/wiki) · [Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests/wiki) · [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab/wiki) · [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32/wiki)
+
+## Validation evidence — 2026-10-16 UTC
+
+These are version-specific software checks using synthetic data, not hardware certification or a household benchmark.
+
+- **Entity Migrations:** 37 tests plus 9 subtests passed locally, including the source-alias regressions. The [Linux run on main](https://github.com/ha-homelab/ha-entity-migrations/actions/runs/38843701264) passed 36 tests and skipped the case-insensitive-filesystem case, which was exercised locally.
+- **Meter Contracts:** [75 tests passed in Linux CI](https://github.com/ha-homelab/ha-meter-contracts/actions/runs/38843671896), including provenance conflicts, source-file admission and measurement semantics.
+- **Assist Scenario Lab:** [24 tests passed in Linux CI](https://github.com/ha-homelab/assist-scenario-lab/actions/runs/38843304306). These validate supplied evidence and synthetic examples; no physical voice comparison is claimed.
+- **Scenario Tests:** [54 tests passed with no skips in Linux CI](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/38843681199) on CPython 3.14.8 with actual Home Assistant 2026.10.0, including seven runtime cases, one of which tests the role-transfer companion. The full suite completed in 21.42 seconds.
+
+Linux is the tested runner environment. The [documented native macOS teardown failure](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) remains a limitation; an expected JSON result before a process crash is still a failed run. No Docker execution or physical device acceptance is claimed.
+
 ## A concrete migration-to-test workflow
 
 1. In `ha-entity-migrations`, run the bundled domain-change example after installing that repository:
@@ -32,7 +45,7 @@ The projects have their own installation guides, English/Russian documentation a
    ha-scenario run role-transfer.scenario.json
    ```
 
-   Companion validation status: its input schema passed. An initial macOS run emitted the expected worker report, then crashed during process shutdown; the CLI correctly returned a runtime failure. That run is **not** counted as a successful test. Complete execution must pass on the supported runtime before this example is accepted.
+   This companion is byte-identical to the [role-transfer fixture](https://github.com/ha-homelab/ha-scenario-tests/blob/0ea7e5a5d24dc89ebe896b1a2387396b3fce18f4/tests/fixtures/role_transfer.json) tested in the [successful Linux run](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/38843681199). Its SHA-256 is `bb8544517eeb4895b80b049cf9e242d04635e7785bd198c1d57a7cf3f5fc8ab4`. The earlier macOS teardown failure remains documented and is not counted as a passing run.
 
    The scenario uses the actual HA engine with in-memory actuator callbacks. A passing result proves that supplied synthetic sequence's engine behavior, not radio delivery, contact closure or power at an appliance. Its one event does not cover an entire household configuration.
 

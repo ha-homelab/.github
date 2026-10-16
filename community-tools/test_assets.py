@@ -1,16 +1,26 @@
 """Regression checks for original public documentation and synthetic assets."""
 
+import hashlib
 import importlib.util
 import json
-from pathlib import Path
 import re
 import unittest
+from pathlib import Path
 from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parent
 
 
 class PublicAssetsTests(unittest.TestCase):
+    def test_companion_matches_the_published_linux_evidence(self):
+        expected = "bb8544517eeb4895b80b049cf9e242d04635e7785bd198c1d57a7cf3f5fc8ab4"
+        actual = hashlib.sha256(
+            (ROOT / "role-transfer.scenario.json").read_bytes()
+        ).hexdigest()
+        self.assertEqual(actual, expected)
+        for language in ("README.md", "README.ru.md"):
+            self.assertIn(expected, (ROOT / language).read_text())
+
     def test_svg_is_reproducible_and_passive(self):
         spec = importlib.util.spec_from_file_location(
             "render_architecture", ROOT / "render_architecture.py"
