@@ -26,7 +26,7 @@
 
 - **Планировка дома в браузере.** [Home Studio](https://github.com/ha-homelab/home-studio)
   объединяет редактор 2D/3D, 195 дизайнов предметов, 24 языка интерфейса и локальный
-  компилятор для установки плана в Home Assistant.
+  компилятор, создающий пакет с просмотрщиком для установки в Home Assistant.
   [Режим Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md)
   позволяет изучать установленный план, блокируя команды устройствам.
 - **Повторное использование оборудования.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse)
@@ -94,7 +94,7 @@ EchoLocal и EchoMuse — разные пути переделки. Перед �
 ### Пространство, наблюдения и доступ
 
 - **[home-studio](https://github.com/ha-homelab/home-studio)** — рисование комнат,
-  расстановка мебели, просмотр 3D, экспорт проекта и локальная сборка плана для Home Assistant.
+  расстановка мебели, просмотр 3D, экспорт проекта и локальная сборка просмотрщика для Home Assistant.
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — запись,
   разметка и сравнение наблюдений с проверкой свежести данных и часов.
 - **[ruview-home-assistant](https://github.com/ha-homelab/ruview-home-assistant)** — наблюдения

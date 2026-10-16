@@ -6,11 +6,47 @@ Uses only the Python standard library; no network requests or live-household dat
 
 import json
 from collections import Counter
+from datetime import date
 from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-DATA = json.loads((ROOT / "catalog.json").read_text())
+DATA = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
+SNAPSHOT_DATE = date.fromisoformat(DATA["snapshot_date_los_angeles"])
+MONTHS = {
+    "en": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ],
+    "ru": [
+        "января",
+        "февраля",
+        "марта",
+        "апреля",
+        "мая",
+        "июня",
+        "июля",
+        "августа",
+        "сентября",
+        "октября",
+        "ноября",
+        "декабря",
+    ],
+}
+SOURCE_DATES = {
+    lang: f"{SNAPSHOT_DATE.day} {months[SNAPSHOT_DATE.month - 1]} {SNAPSHOT_DATE.year}"
+    for lang, months in MONTHS.items()
+}
 CATEGORIES = [
     "Voice and media",
     "Device integrations, bridges and recovery",
@@ -48,7 +84,7 @@ LABELS = {
         "chartsub": "A dated directory snapshot, not a quality or performance ranking",
         "axis": "Public projects (count)",
         "yaxis": "Project area",
-        "source": "Source: GitHub public repository API · 16 October 2026 (America/Los_Angeles)",
+        "source": f"Source: GitHub public repository API · {SOURCE_DATES['en']} (America/Los_Angeles)",
         "note": f"One category per project. The .github profile repository is excluded ({DATA['public_repository_count']} public repositories total).",
     },
     "ru": {
@@ -76,7 +112,7 @@ LABELS = {
         "chartsub": "Срез каталога, а не рейтинг качества или производительности",
         "axis": "Количество публичных проектов",
         "yaxis": "Направление проектов",
-        "source": "Источник: GitHub API публичных репозиториев · 16 октября 2026 (America/Los_Angeles)",
+        "source": f"Источник: GitHub API публичных репозиториев · {SOURCE_DATES['ru']} (America/Los_Angeles)",
         "note": f"Каждый проект учтён один раз. Без профиля .github (всего {DATA['public_repository_count']} публичных репозитория).",
     },
 }
@@ -192,4 +228,6 @@ if __name__ == "__main__":
     for language in LABELS:
         suffix = ".ru" if language == "ru" else ""
         for name, builder in (("ecosystem", ecosystem), ("portfolio", portfolio)):
-            (ROOT / f"{name}{suffix}.svg").write_text(builder(language))
+            (ROOT / f"{name}{suffix}.svg").write_text(
+                builder(language), encoding="utf-8"
+            )
