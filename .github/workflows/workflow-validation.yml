@@ -28,3 +28,5 @@ jobs:
         printf '%s\n' "$RUNNER_TEMP" >> "$GITHUB_PATH"
     - name: Validate workflow syntax and shell commands
       run: actionlint
+    - name: Validate reproducible community documentation
+      run: python3 -m unittest discover -s community-tools -p "test_*.py"

@@ -33,6 +33,17 @@ These repositories publish reusable source and instructions. They do not include
 household configuration, credentials, device backups or training recordings.
 Tests and case studies are scoped evidence, not certification of every device variant.
 
+## Community tools
+
+[Illustrated guide and roadmap](https://github.com/ha-homelab/.github/blob/main/community-tools/README.md) · [Русский](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ru.md)
+
+- [HA Entity Migrations](https://github.com/ha-homelab/ha-entity-migrations): semantic role and hardware migration plans.
+- [HA Meter Contracts](https://github.com/ha-homelab/ha-meter-contracts): measurement scope, provenance and calibration evidence.
+- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests): bounded scenarios in an isolated real Home Assistant engine.
+- [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab): protocol, action and audible-response evidence.
+
+Each project includes English, Russian, German and Spanish entry points. Bundled examples are synthetic; physical commissioning remains a separate step.
+
 ## Related public projects
 
 Energy reports for an unmodified Echo or Google/Nest device are separate adapters:
