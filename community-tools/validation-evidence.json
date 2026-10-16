@@ -1,0 +1,26 @@
+{
+  "snapshot_date_utc": "2026-10-16",
+  "metric": "passed_test_cases",
+  "unit": "count",
+  "scope": "Recorded Linux CI suites; not device performance or a quality ranking",
+  "projects": [
+    {
+      "label": "Entity Migrations", "passed": 36, "skipped": 1,
+      "source": "https://github.com/ha-homelab/ha-entity-migrations/actions/runs/38843701264",
+      "note": "Case-insensitive filesystem test skipped on Linux and exercised on macOS; local suite passed 37 tests and 9 subtests."
+    },
+    {
+      "label": "Meter Contracts", "passed": 75, "skipped": 0,
+      "source": "https://github.com/ha-homelab/ha-meter-contracts/actions/runs/38843671896"
+    },
+    {
+      "label": "Scenario Tests", "passed": 54, "skipped": 0, "runtime_cases": 7,
+      "source": "https://github.com/ha-homelab/ha-scenario-tests/actions/runs/38843681199",
+      "note": "CPython 3.14.8; Home Assistant 2026.10.0; native macOS teardown limitation remains documented."
+    },
+    {
+      "label": "Assist Scenario Lab", "passed": 24, "skipped": 0,
+      "source": "https://github.com/ha-homelab/assist-scenario-lab/actions/runs/38843304306"
+    }
+  ]
+}
