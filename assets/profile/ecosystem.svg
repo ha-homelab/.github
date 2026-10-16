@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="660" viewBox="0 0 1120 660" role="img" aria-labelledby="title desc" lang="en">
+<title id="title">A home, built from understandable parts</title><desc id="desc">Lines group related work; they are not an automatic deployment or a mandatory data path.</desc>
+<rect width="1120" height="660" rx="20" fill="#102634"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="40" y="58" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start">A home, built from understandable parts</text>
+<text x="40" y="91" font-size="18" fill="#c1d1dd" font-weight="400" text-anchor="start">Project roles across the HA Homelab ecosystem</text>
+<path d="M 340 226 H 385 V 333 H 415 M 340 459 H 385 V 333 M 705 333 H 735 V 226 H 780 M 735 333 V 459 H 780" fill="none" stroke="#4a7184" stroke-width="3"/>
+<rect x="40" y="377" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="58" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">04</text>
+<text x="58" y="444" font-size="18" fill="#ffffff" font-weight="700" text-anchor="start">Voice &amp; media</text>
+<text x="58" y="478" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">EchoLocal · EchoMuse · Android</text>
+<text x="58" y="503" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">Echo Dot / Show · LG capture</text>
+<rect x="40" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="58" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">07</text>
+<text x="58" y="211" font-size="18" fill="#ffffff" font-weight="700" text-anchor="start">Devices &amp; bridges</text>
+<text x="58" y="245" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">DESLOC · RF · Zigbee · Z-Wave</text>
+<text x="58" y="270" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">ESPHome conversions · SLZB recovery</text>
+<rect x="415" y="245" width="290" height="176" rx="14" fill="#173f4e" stroke="#3b6474"/>
+<text x="433" y="275" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">02</text>
+<text x="433" y="312" font-size="18" fill="#ffffff" font-weight="700" text-anchor="start">Configuration &amp; recovery</text>
+<text x="433" y="346" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">Home Assistant configuration</text>
+<text x="433" y="371" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">k3s deployment &amp; recovery</text>
+<rect x="780" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="798" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">05</text>
+<text x="798" y="211" font-size="18" fill="#ffffff" font-weight="700" text-anchor="start">Space, sensing &amp; access</text>
+<text x="798" y="245" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">Home Studio · RuView · ONVIF</text>
+<text x="798" y="270" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">Sensing evidence · Access sessions</text>
+<rect x="780" y="377" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="798" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">04</text>
+<text x="798" y="444" font-size="18" fill="#ffffff" font-weight="700" text-anchor="start">Tests &amp; contracts</text>
+<text x="798" y="478" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">Entity roles · Meter provenance</text>
+<text x="798" y="503" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">Automation scenarios · Voice evidence</text>
+<text x="40" y="600" font-size="15" fill="#c1d1dd" font-weight="400" text-anchor="start">Lines group related work; they are not an automatic deployment or a mandatory data path.</text>
+<text x="40" y="628" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">Source: GitHub public repository API · 16 October 2026 (America/Los_Angeles)</text>
+</g></svg>
