@@ -33,7 +33,8 @@ titles/descriptions and fixed background colors for GitHub light and dark themes
 When updating the snapshot, retrieve **all pages** of public GitHub repository
 metadata, verify visibility, review current default-branch READMEs, assign one
 category per project, and update the JSON and both profiles together. Update the
-snapshot date in the chart labels, regenerate, check the count, preview both
+snapshot date in the catalog (chart labels are derived from it), regenerate,
+check the count, preview both
 languages, and verify links. Repository creation dates are not publication dates;
 the profile deliberately does not chart publication growth from `created_at`.
 
