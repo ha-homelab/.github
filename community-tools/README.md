@@ -6,6 +6,8 @@ Four small tools help a Home Assistant community project answer four different q
 
 ![Four review stages and the separate physical acceptance boundary](architecture.svg)
 
+[Visual walkthrough: process, outputs and results](process-and-results.md) · [State-change diagram](role-transfer.svg) · [Test evidence chart](validation.svg)
+
 ## The four projects
 
 - [HA Entity Migrations](https://github.com/ha-homelab/ha-entity-migrations) produces an offline migration plan. Explicit role/hardware policies, capabilities and file fingerprints prevent a routine rename from silently assigning a lighting automation to a repurposed power outlet. A ready plan applies only to the supplied, supported configuration scope.
@@ -21,12 +23,22 @@ Hosted wikis: [Entity Migrations](https://github.com/ha-homelab/ha-entity-migrat
 
 These are version-specific software checks using synthetic data, not hardware certification or a household benchmark.
 
+![Recorded Linux test counts, with scope and skip notes](validation.svg)
+
+The bars show counts, not coverage or a quality ranking. The dated source records are in [validation-evidence.json](validation-evidence.json).
+
 - **Entity Migrations:** 37 tests plus 9 subtests passed locally, including the source-alias regressions. The [Linux run on main](https://github.com/ha-homelab/ha-entity-migrations/actions/runs/38843701264) passed 36 tests and skipped the case-insensitive-filesystem case, which was exercised locally.
 - **Meter Contracts:** [75 tests passed in Linux CI](https://github.com/ha-homelab/ha-meter-contracts/actions/runs/38843671896), including provenance conflicts, source-file admission and measurement semantics.
 - **Assist Scenario Lab:** [24 tests passed in Linux CI](https://github.com/ha-homelab/assist-scenario-lab/actions/runs/38843304306). These validate supplied evidence and synthetic examples; no physical voice comparison is claimed.
 - **Scenario Tests:** [54 tests passed with no skips in Linux CI](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/38843681199) on CPython 3.14.8 with actual Home Assistant 2026.10.0, including seven runtime cases, one of which tests the role-transfer companion. The full suite completed in 21.42 seconds.
 
 Linux is the tested runner environment. The [documented native macOS teardown failure](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) remains a limitation; an expected JSON result before a process crash is still a failed run. No Docker execution or physical device acceptance is claimed.
+
+## Process and illustrated results
+
+![Inputs, checks and results of the four tools](results.svg)
+
+Follow the [visual walkthrough](process-and-results.md) to interpret each output, trace the replacement and retired device states, and distinguish software evidence from physical acceptance. The illustrated outcomes summarize bundled synthetic examples; they are not raw report screenshots.
 
 ## A concrete migration-to-test workflow
 
@@ -99,4 +111,4 @@ The first four code deliverables below are available as initial offline tooling.
 
 ## Contributing and reproducing this guide
 
-This overview, the synthetic scenario and diagram are original MIT-licensed material; see [LICENSE](LICENSE). Recreate the SVG with `python3 render_architecture.py`. It contains no external images, scripts, household identifiers or measured household data. Keep public fixtures synthetic and private exports outside Git. Use each repository's security and contribution guidance for changes.
+This overview, the synthetic scenario and diagram are original MIT-licensed material; see [LICENSE](LICENSE). Recreate all eight English/Russian SVGs with `python3 render_architecture.py`. They contain no external images, scripts, household identifiers or measured household data. The [visual walkthrough](process-and-results.md#reproduce-or-translate-the-illustrations) explains the source records and regeneration checks. Keep public fixtures synthetic and private exports outside Git. Use each repository's security and contribution guidance for changes.
