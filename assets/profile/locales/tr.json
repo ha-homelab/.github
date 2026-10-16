@@ -1,0 +1,57 @@
+{
+  "months": [
+    "Ocak",
+    "Şubat",
+    "Mart",
+    "Nisan",
+    "Mayıs",
+    "Haziran",
+    "Temmuz",
+    "Ağustos",
+    "Eylül",
+    "Ekim",
+    "Kasım",
+    "Aralık"
+  ],
+  "date_format": "{day} {month} {year}",
+  "labels": {
+    "map": "Anlaşılır parçalardan oluşan bir ev",
+    "sub": "HA Homelab ekosisteminde proje rolleri",
+    "groups": [
+      "Ses ve medya",
+      "Cihazlar ve köprüler",
+      "Yapılandırma ve kurtarma",
+      "Mekân, algılama, erişim",
+      "Testler ve sözleşmeler"
+    ],
+    "details": [
+      [
+        "EchoLocal · EchoMuse · Android",
+        "Echo Dot / Show · LG yakalama"
+      ],
+      [
+        "DESLOC · RF · Zigbee · Z-Wave",
+        "ESPHome dönüşümü · SLZB kurtarma"
+      ],
+      [
+        "Home Assistant yapılandırması",
+        "k3s dağıtımı ve kurtarma"
+      ],
+      [
+        "Home Studio · RuView · ONVIF",
+        "Sensör kanıtı · Access oturumları"
+      ],
+      [
+        "Varlık rolleri · ölçüm kökeni",
+        "Otomasyon senaryoları · ses kanıtı"
+      ]
+    ],
+    "mapnote": "Çizgiler ilgili işleri gruplar; otomatik dağıtım veya zorunlu veri yolu değildir.",
+    "chart": "{count} açık proje, beş alan",
+    "chartsub": "Tarihli bir dizin görüntüsü; kalite veya performans sıralaması değil",
+    "axis": "Açık projeler (sayı)",
+    "yaxis": "Proje alanı",
+    "source": "Kaynak: GitHub açık depo API’si · {date} (America/Los_Angeles)",
+    "note": "Her proje bir kategoride. .github profil deposu hariç (toplam {total} açık depo)."
+  }
+}

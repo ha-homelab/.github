@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="660" viewBox="0 0 1120 660" role="img" aria-labelledby="title desc" lang="id">
+<title id="title">Rumah dari bagian yang dapat dipahami</title><desc id="desc">Garis mengelompokkan pekerjaan terkait, bukan penerapan otomatis atau jalur data wajib.</desc>
+<rect width="1120" height="660" rx="20" fill="#102634"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="40" y="58" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start">Rumah dari bagian yang dapat dipahami</text>
+<text x="40" y="91" font-size="18" fill="#c1d1dd" font-weight="400" text-anchor="start">Peran proyek dalam ekosistem HA Homelab</text>
+<path d="M 340 226 H 385 V 333 H 415 M 340 459 H 385 V 333 M 705 333 H 735 V 226 H 780 M 735 333 V 459 H 780" fill="none" stroke="#4a7184" stroke-width="3"/>
+<rect x="40" y="377" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="58" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">04</text>
+<text x="58" y="444" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">Suara &amp; media</text>
+<text x="58" y="478" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">EchoLocal · EchoMuse · Android</text>
+<text x="58" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Echo Dot / Show · tangkapan LG</text>
+<rect x="40" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="58" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">07</text>
+<text x="58" y="211" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">Perangkat &amp; jembatan</text>
+<text x="58" y="245" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">DESLOC · RF · Zigbee · Z-Wave</text>
+<text x="58" y="270" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Konversi ESPHome · pemulihan SLZB</text>
+<rect x="415" y="245" width="290" height="176" rx="14" fill="#173f4e" stroke="#3b6474"/>
+<text x="433" y="275" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">02</text>
+<text x="433" y="312" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">Konfigurasi &amp; pemulihan</text>
+<text x="433" y="346" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Konfigurasi Home Assistant</text>
+<text x="433" y="371" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Penerapan &amp; pemulihan k3s</text>
+<rect x="780" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="798" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">05</text>
+<text x="798" y="211" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">Ruang, pengamatan, akses</text>
+<text x="798" y="245" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Home Studio · RuView · ONVIF</text>
+<text x="798" y="270" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Bukti pengamatan · sesi Access</text>
+<rect x="780" y="377" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
+<text x="798" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">04</text>
+<text x="798" y="444" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">Tes &amp; kontrak</text>
+<text x="798" y="478" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Peran entitas · asal pengukuran</text>
+<text x="798" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Skenario otomasi · bukti suara</text>
+<text x="40" y="600" font-size="15" fill="#c1d1dd" font-weight="400" text-anchor="start">Garis mengelompokkan pekerjaan terkait, bukan penerapan otomatis atau jalur data wajib.</text>
+<text x="40" y="628" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">Sumber: API repositori publik GitHub · 16 Oktober 2026 (America/Los_Angeles)</text>
+</g></svg>

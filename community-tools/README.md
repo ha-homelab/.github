@@ -1,6 +1,14 @@
 # Evidence before automation
 
-[Русский](README.ru.md)
+<!-- language-navigation:start -->
+<p dir="ltr">
+<a href="README.md" lang="en" dir="ltr">English</a> · <a href="README.ar.md" lang="ar" dir="rtl">العربية</a> · <a href="README.bn.md" lang="bn" dir="ltr">বাংলা</a> · <a href="README.cs.md" lang="cs" dir="ltr">Čeština</a> · <a href="README.de.md" lang="de" dir="ltr">Deutsch</a> · <a href="README.es.md" lang="es" dir="ltr">Español</a> · <a href="README.fa.md" lang="fa" dir="rtl">فارسی</a> · <a href="README.fr.md" lang="fr" dir="ltr">Français</a><br>
+<a href="README.he.md" lang="he" dir="rtl">עברית</a> · <a href="README.hi.md" lang="hi" dir="ltr">हिन्दी</a> · <a href="README.id.md" lang="id" dir="ltr">Bahasa Indonesia</a> · <a href="README.it.md" lang="it" dir="ltr">Italiano</a> · <a href="README.ja.md" lang="ja" dir="ltr">日本語</a> · <a href="README.ko.md" lang="ko" dir="ltr">한국어</a> · <a href="README.nl.md" lang="nl" dir="ltr">Nederlands</a> · <a href="README.pl.md" lang="pl" dir="ltr">Polski</a><br>
+<a href="README.pt.md" lang="pt" dir="ltr">Português</a> · <a href="README.ru.md" lang="ru" dir="ltr">Русский</a> · <a href="README.th.md" lang="th" dir="ltr">ไทย</a> · <a href="README.tr.md" lang="tr" dir="ltr">Türkçe</a> · <a href="README.uk.md" lang="uk" dir="ltr">Українська</a> · <a href="README.vi.md" lang="vi" dir="ltr">Tiếng Việt</a> · <a href="README.zh-Hans.md" lang="zh-Hans" dir="ltr">简体中文</a> · <a href="README.zh-Hant.md" lang="zh-Hant" dir="ltr">繁體中文</a>
+</p>
+<!-- language-navigation:end -->
+
+These documentation translations do not expand CLI or speech-language support; check each project’s supported languages.
 
 Four small tools help a Home Assistant community project answer four different questions: **what should a device role become, what does a measurement cover, what does the automation engine actually do, and what evidence supports a voice outcome?** Their first releases work with local files and synthetic fixtures. They do not deploy household configuration or certify physical devices.
 
@@ -15,7 +23,7 @@ Four small tools help a Home Assistant community project answer four different q
 - [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) executes a restricted synthetic scenario in the real Home Assistant automation/script engine. It checks ordered calls, forbidden calls and final synthetic states. Its first runtime is pinned to HA 2026.10.0 and Python 3.14.2–3.14.x; use a separate environment from the other tools.
 - [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab) evaluates local voice evidence. It separates command correctness, API completion and audible output. All included timings are synthetic, and supplied observations are not independently verified.
 
-The projects have their own installation guides, English/Russian documentation and English/Russian/German/Spanish CLI messages. Follow their versioned contracts rather than assuming all exit codes have the same meaning. The diagram arrows are **review handoffs**, not implemented automatic integrations. There is no central daemon or universal deploy command.
+The projects have their own installation guides and English/Russian/German/Spanish CLI messages. Follow their versioned contracts rather than assuming all exit codes have the same meaning. The diagram arrows are **review handoffs**, not implemented automatic integrations. There is no central daemon or universal deploy command.
 
 Hosted wikis: [Entity Migrations](https://github.com/ha-homelab/ha-entity-migrations/wiki) · [Meter Contracts](https://github.com/ha-homelab/ha-meter-contracts/wiki) · [Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests/wiki) · [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab/wiki) · [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32/wiki)
 
@@ -111,4 +119,4 @@ The first four code deliverables below are available as initial offline tooling.
 
 ## Contributing and reproducing this guide
 
-This overview, the synthetic scenario and diagram are original MIT-licensed material; see [LICENSE](LICENSE). Recreate all eight English/Russian SVGs with `python3 render_architecture.py`. They contain no external images, scripts, household identifiers or measured household data. The [visual walkthrough](process-and-results.md#reproduce-or-translate-the-illustrations) explains the source records and regeneration checks. Keep public fixtures synthetic and private exports outside Git. Use each repository's security and contribution guidance for changes.
+This overview, the synthetic scenario and diagram are original MIT-licensed material; see [LICENSE](LICENSE). Recreate all localized SVGs with `python3 render_architecture.py`. They contain no external images, scripts, household identifiers or measured household data. The [visual walkthrough](process-and-results.md#reproduce-or-translate-the-illustrations) explains the source records and regeneration checks. Keep public fixtures synthetic and private exports outside Git. Use each repository's security and contribution guidance for changes.

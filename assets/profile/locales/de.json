@@ -1,0 +1,57 @@
+{
+  "months": [
+    "Januar",
+    "Februar",
+    "März",
+    "April",
+    "Mai",
+    "Juni",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "Dezember"
+  ],
+  "labels": {
+    "map": "Ein Zuhause aus verständlichen Bausteinen",
+    "sub": "Die Projektrollen im HA-Homelab-Ökosystem",
+    "groups": [
+      "Sprache & Medien",
+      "Geräte & Bridges",
+      "Konfiguration & Recovery",
+      "Raum, Sensorik & Zugriff",
+      "Tests & Verträge"
+    ],
+    "details": [
+      [
+        "EchoLocal · EchoMuse · Android",
+        "Echo Dot / Show · LG-Bildaufnahme"
+      ],
+      [
+        "DESLOC · RF · Zigbee · Z-Wave",
+        "ESPHome-Umbau · SLZB-Recovery"
+      ],
+      [
+        "Home-Assistant-Konfiguration",
+        "k3s-Betrieb & Wiederherstellung"
+      ],
+      [
+        "Home Studio · RuView · ONVIF",
+        "Sensornachweise · Access-Sitzungen"
+      ],
+      [
+        "Geräterollen · Messwertherkunft",
+        "Automationsszenarien · Sprachnachweise"
+      ]
+    ],
+    "mapnote": "Linien verbinden Themen. Sie stehen nicht für automatische Bereitstellung oder feste Datenwege.",
+    "chart": "{count} öffentliche Projekte, fünf Bereiche",
+    "chartsub": "Datierter Katalogstand, keine Qualitäts- oder Leistungsrangliste",
+    "axis": "Öffentliche Projekte (Anzahl)",
+    "yaxis": "Projektbereich",
+    "source": "Quelle: GitHub-API öffentlicher Repositories · {date} (America/Los_Angeles)",
+    "note": "Jedes Projekt zählt einmal. Ohne das Profil-Repository .github (insgesamt {total} öffentliche Repositories)."
+  },
+  "date_format": "{day}. {month} {year}"
+}

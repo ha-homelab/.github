@@ -1,6 +1,14 @@
 # Process and results: a visual walkthrough
 
-[Русский](process-and-results.ru.md) · [Project overview](README.md)
+<!-- language-navigation:start -->
+<p dir="ltr">
+<a href="process-and-results.md" lang="en" dir="ltr">English</a> · <a href="process-and-results.ar.md" lang="ar" dir="rtl">العربية</a> · <a href="process-and-results.bn.md" lang="bn" dir="ltr">বাংলা</a> · <a href="process-and-results.cs.md" lang="cs" dir="ltr">Čeština</a> · <a href="process-and-results.de.md" lang="de" dir="ltr">Deutsch</a> · <a href="process-and-results.es.md" lang="es" dir="ltr">Español</a> · <a href="process-and-results.fa.md" lang="fa" dir="rtl">فارسی</a> · <a href="process-and-results.fr.md" lang="fr" dir="ltr">Français</a><br>
+<a href="process-and-results.he.md" lang="he" dir="rtl">עברית</a> · <a href="process-and-results.hi.md" lang="hi" dir="ltr">हिन्दी</a> · <a href="process-and-results.id.md" lang="id" dir="ltr">Bahasa Indonesia</a> · <a href="process-and-results.it.md" lang="it" dir="ltr">Italiano</a> · <a href="process-and-results.ja.md" lang="ja" dir="ltr">日本語</a> · <a href="process-and-results.ko.md" lang="ko" dir="ltr">한국어</a> · <a href="process-and-results.nl.md" lang="nl" dir="ltr">Nederlands</a> · <a href="process-and-results.pl.md" lang="pl" dir="ltr">Polski</a><br>
+<a href="process-and-results.pt.md" lang="pt" dir="ltr">Português</a> · <a href="process-and-results.ru.md" lang="ru" dir="ltr">Русский</a> · <a href="process-and-results.th.md" lang="th" dir="ltr">ไทย</a> · <a href="process-and-results.tr.md" lang="tr" dir="ltr">Türkçe</a> · <a href="process-and-results.uk.md" lang="uk" dir="ltr">Українська</a> · <a href="process-and-results.vi.md" lang="vi" dir="ltr">Tiếng Việt</a> · <a href="process-and-results.zh-Hans.md" lang="zh-Hans" dir="ltr">简体中文</a> · <a href="process-and-results.zh-Hant.md" lang="zh-Hant" dir="ltr">繁體中文</a>
+</p>
+<!-- language-navigation:end -->
+
+[Project overview](README.md)
 
 A useful result answers a specific question and preserves the evidence behind the answer. The four tools work independently: a reviewer chooses the relevant checks and carries their results into a change. The arrows below describe that review process, not an implemented automatic pipeline.
 
@@ -56,4 +64,4 @@ python3 render_architecture.py
 python3 -m unittest discover -s . -p 'test_*.py'
 ```
 
-The generator produces four SVGs in English and four in Russian. It needs only Python's standard library, embeds no remote assets and includes an accessible title and description in every image. The same color identifies a tool across illustrations; labels also identify every series. For a new evidence snapshot, update the source records and accompanying explanations together, retaining links to the recorded runs. All illustrations are original and covered by [MIT](LICENSE).
+The generator produces four SVGs per language listed in the shared [language registry](../languages.json). It needs only Python's standard library, embeds no remote assets and includes an accessible title and description in every image. The same color identifies a tool across illustrations; labels also identify every series. For a new evidence snapshot, update the source records and accompanying explanations together, retaining links to the recorded runs. All illustrations are original and covered by [MIT](LICENSE).

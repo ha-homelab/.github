@@ -1,0 +1,57 @@
+{
+  "months": [
+    "enero",
+    "febrero",
+    "marzo",
+    "abril",
+    "mayo",
+    "junio",
+    "julio",
+    "agosto",
+    "septiembre",
+    "octubre",
+    "noviembre",
+    "diciembre"
+  ],
+  "date_format": "{day} de {month} de {year}",
+  "labels": {
+    "map": "Un hogar con partes comprensibles",
+    "sub": "Funciones de los proyectos de HA Homelab",
+    "groups": [
+      "Voz y multimedia",
+      "Dispositivos y puentes",
+      "Configuración y recuperación",
+      "Espacio, observación y acceso",
+      "Pruebas y contratos"
+    ],
+    "details": [
+      [
+        "EchoLocal · EchoMuse · Android",
+        "Echo Dot / Show · Captura LG"
+      ],
+      [
+        "DESLOC · RF · Zigbee · Z-Wave",
+        "Conversión ESPHome · Recuperar SLZB"
+      ],
+      [
+        "Configuración de Home Assistant",
+        "Despliegue y recuperación de k3s"
+      ],
+      [
+        "Home Studio · RuView · ONVIF",
+        "Observaciones · Sesiones Access"
+      ],
+      [
+        "Roles · Origen de mediciones",
+        "Automatización · Evidencias de voz"
+      ]
+    ],
+    "mapnote": "Las líneas agrupan proyectos; no indican un despliegue automático ni una ruta de datos obligatoria.",
+    "chart": "{count} proyectos públicos, cinco áreas",
+    "chartsub": "Una instantánea del catálogo; no clasifica calidad ni rendimiento",
+    "axis": "Proyectos públicos (recuento)",
+    "yaxis": "Área del proyecto",
+    "source": "Fuente: API pública de repositorios de GitHub · {date} (America/Los_Angeles)",
+    "note": "Una categoría por proyecto. Se excluye el perfil .github ({total} repositorios públicos en total)."
+  }
+}

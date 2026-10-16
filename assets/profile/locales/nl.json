@@ -1,0 +1,57 @@
+{
+  "months": [
+    "januari",
+    "februari",
+    "maart",
+    "april",
+    "mei",
+    "juni",
+    "juli",
+    "augustus",
+    "september",
+    "oktober",
+    "november",
+    "december"
+  ],
+  "date_format": "{day} {month} {year}",
+  "labels": {
+    "map": "Een huis uit begrijpelijke onderdelen",
+    "sub": "Projectrollen binnen het HA Homelab-ecosysteem",
+    "groups": [
+      "Spraak en media",
+      "Apparaten en bridges",
+      "Configuratie en herstel",
+      "Ruimte, sensoren en toegang",
+      "Tests en contracten"
+    ],
+    "details": [
+      [
+        "EchoLocal · EchoMuse · Android",
+        "Echo Dot / Show · LG-opname"
+      ],
+      [
+        "DESLOC · RF · Zigbee · Z-Wave",
+        "ESPHome-ombouw · SLZB-herstel"
+      ],
+      [
+        "Home Assistant-configuratie",
+        "k3s-implementatie en herstel"
+      ],
+      [
+        "Home Studio · RuView · ONVIF",
+        "Sensorbewijs · Access-sessies"
+      ],
+      [
+        "Entiteitsrollen · meetherkomst",
+        "Automatiseringsscenario’s · spraakbewijs"
+      ]
+    ],
+    "mapnote": "Lijnen groeperen verwant werk; geen automatische implementatie of verplichte gegevensroute.",
+    "chart": "{count} openbare projecten, vijf gebieden",
+    "chartsub": "Een gedateerd overzicht, geen kwaliteits- of prestatieranglijst",
+    "axis": "Openbare projecten (aantal)",
+    "yaxis": "Projectgebied",
+    "source": "Bron: GitHub-API voor openbare repositories · {date} (America/Los_Angeles)",
+    "note": "Eén categorie per project. Zonder de profielrepository .github ({total} openbare repositories in totaal)."
+  }
+}

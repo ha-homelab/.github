@@ -1,6 +1,14 @@
 # Сначала подтверждение, затем автоматизация
 
-[English](README.md)
+<!-- language-navigation:start -->
+<p dir="ltr">
+<a href="README.md" lang="en" dir="ltr">English</a> · <a href="README.ar.md" lang="ar" dir="rtl">العربية</a> · <a href="README.bn.md" lang="bn" dir="ltr">বাংলা</a> · <a href="README.cs.md" lang="cs" dir="ltr">Čeština</a> · <a href="README.de.md" lang="de" dir="ltr">Deutsch</a> · <a href="README.es.md" lang="es" dir="ltr">Español</a> · <a href="README.fa.md" lang="fa" dir="rtl">فارسی</a> · <a href="README.fr.md" lang="fr" dir="ltr">Français</a><br>
+<a href="README.he.md" lang="he" dir="rtl">עברית</a> · <a href="README.hi.md" lang="hi" dir="ltr">हिन्दी</a> · <a href="README.id.md" lang="id" dir="ltr">Bahasa Indonesia</a> · <a href="README.it.md" lang="it" dir="ltr">Italiano</a> · <a href="README.ja.md" lang="ja" dir="ltr">日本語</a> · <a href="README.ko.md" lang="ko" dir="ltr">한국어</a> · <a href="README.nl.md" lang="nl" dir="ltr">Nederlands</a> · <a href="README.pl.md" lang="pl" dir="ltr">Polski</a><br>
+<a href="README.pt.md" lang="pt" dir="ltr">Português</a> · <a href="README.ru.md" lang="ru" dir="ltr">Русский</a> · <a href="README.th.md" lang="th" dir="ltr">ไทย</a> · <a href="README.tr.md" lang="tr" dir="ltr">Türkçe</a> · <a href="README.uk.md" lang="uk" dir="ltr">Українська</a> · <a href="README.vi.md" lang="vi" dir="ltr">Tiếng Việt</a> · <a href="README.zh-Hans.md" lang="zh-Hans" dir="ltr">简体中文</a> · <a href="README.zh-Hant.md" lang="zh-Hant" dir="ltr">繁體中文</a>
+</p>
+<!-- language-navigation:end -->
+
+Перевод документации не расширяет набор языков CLI или голосовых функций: проверяйте поддерживаемые языки каждого проекта.
 
 Четыре небольших инструмента отвечают на разные вопросы проекта Home Assistant: **куда переносится роль устройства, что охватывает измерение, что действительно делает движок автоматизаций и чем подтверждён результат голосовой команды?** Первые версии работают с локальными файлами и синтетическими примерами. Они не разворачивают домашние конфигурации и не подтверждают исправность физических устройств.
 
@@ -15,7 +23,7 @@
 - [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) выполняет ограниченные синтетические сценарии в настоящем движке автоматизаций и скриптов Home Assistant. Проверяет порядок вызовов, запрещённые вызовы и итоговые синтетические состояния. Первая версия использует HA 2026.10.0 и Python 3.14.2–3.14.x; ей нужно отдельное окружение.
 - [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab) анализирует локальные свидетельства выполнения голосовой команды. Правильное действие, завершение API и слышимый ответ проверяются отдельно. Все комплектные задержки синтетические; переданные наблюдения не считаются независимо подтверждёнными.
 
-У проектов есть собственные инструкции установки, документация EN/RU и сообщения CLI на EN/RU/DE/ES. Коды завершения различаются: используйте контракт конкретной версии. Стрелки на схеме обозначают **передачу результатов на проверку**, а не готовую автоматическую интеграцию. Общего демона или команды автоматического внедрения нет.
+У проектов есть собственные инструкции установки и сообщения CLI на EN/RU/DE/ES. Коды завершения различаются: используйте контракт конкретной версии. Стрелки на схеме обозначают **передачу результатов на проверку**, а не готовую автоматическую интеграцию. Общего демона или команды автоматического внедрения нет.
 
 Опубликованные wiki: [Entity Migrations](https://github.com/ha-homelab/ha-entity-migrations/wiki) · [Meter Contracts](https://github.com/ha-homelab/ha-meter-contracts/wiki) · [Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests/wiki) · [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab/wiki) · [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32/wiki)
 
@@ -111,4 +119,4 @@
 
 ## Участие и воспроизводимость
 
-Текст, синтетический сценарий и схема — оригинальные материалы под MIT, см. [LICENSE](LICENSE). Все восемь SVG на английском и русском воспроизводятся командой `python3 render_architecture.py`. В них нет внешних изображений, скриптов, домашних идентификаторов или измерений. [Визуальное руководство](process-and-results.ru.md#воспроизвести-или-перевести-иллюстрации) описывает исходные данные и проверки генератора. Публичные примеры должны оставаться синтетическими; приватные экспорты храните вне Git. Для изменений используйте правила безопасности и участия соответствующего проекта.
+Текст, синтетический сценарий и схема — оригинальные материалы под MIT, см. [LICENSE](LICENSE). Все локализованные SVG воспроизводятся командой `python3 render_architecture.py`. В них нет внешних изображений, скриптов, домашних идентификаторов или измерений. [Визуальное руководство](process-and-results.ru.md#воспроизвести-или-перевести-иллюстрации) описывает исходные данные и проверки генератора. Публичные примеры должны оставаться синтетическими; приватные экспорты храните вне Git. Для изменений используйте правила безопасности и участия соответствующего проекта.

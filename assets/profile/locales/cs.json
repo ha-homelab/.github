@@ -1,0 +1,57 @@
+{
+  "months": [
+    "ledna",
+    "února",
+    "března",
+    "dubna",
+    "května",
+    "června",
+    "července",
+    "srpna",
+    "září",
+    "října",
+    "listopadu",
+    "prosince"
+  ],
+  "date_format": "{day}. {month} {year}",
+  "labels": {
+    "map": "Domov ze srozumitelných částí",
+    "sub": "Role projektů v ekosystému HA Homelab",
+    "groups": [
+      "Hlas a média",
+      "Zařízení a mosty",
+      "Konfigurace a obnova",
+      "Prostor, senzory a přístup",
+      "Testy a kontrakty"
+    ],
+    "details": [
+      [
+        "EchoLocal · EchoMuse · Android",
+        "Echo Dot / Show · snímání LG"
+      ],
+      [
+        "DESLOC · RF · Zigbee · Z-Wave",
+        "Přestavby ESPHome · obnova SLZB"
+      ],
+      [
+        "Konfigurace Home Assistant",
+        "Nasazení a obnova k3s"
+      ],
+      [
+        "Home Studio · RuView · ONVIF",
+        "Důkazy senzorů · relace Access"
+      ],
+      [
+        "Role entit · původ měření",
+        "Scénáře automatizace · hlasové důkazy"
+      ]
+    ],
+    "mapnote": "Čáry seskupují související práci; nejde o automatické nasazení ani povinný tok dat.",
+    "chart": "Veřejné projekty: {count}, pět oblastí",
+    "chartsub": "Datovaný přehled, nikoli žebříček kvality nebo výkonu",
+    "axis": "Veřejné projekty (počet)",
+    "yaxis": "Oblast projektu",
+    "source": "Zdroj: GitHub API veřejných repozitářů · {date} (America/Los_Angeles)",
+    "note": "Jedna kategorie na projekt. Bez profilového repozitáře .github (celkem {total} veřejných repozitářů)."
+  }
+}
