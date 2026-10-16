@@ -1,1 +1,5 @@
 .DS_Store
+
+# Python documentation generators and tests
+__pycache__/
+*.py[cod]

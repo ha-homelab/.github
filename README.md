@@ -15,6 +15,10 @@ Repository settings are managed by
 [`4alvit/terraform-github-ha-homelab`](https://github.com/4alvit/terraform-github-ha-homelab).
 Changes go through pull requests; preview the image and rendered Markdown before merging.
 
+## Community tools
+
+[Illustrated integration guide and roadmap](community-tools/README.md) · [Русский](community-tools/README.ru.md). Four independently useful tools connect role migration, metering contracts, synthetic automation tests and voice evidence through explicit review steps.
+
 ## License
 
 [MIT](LICENSE). The logo is an original independent identity, not the official
