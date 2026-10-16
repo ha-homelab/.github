@@ -1,0 +1,194 @@
+{
+  "snapshot_date_los_angeles": "2026-10-16",
+  "retrieved_at_utc": "2026-10-16T23:30:52.050556+00:00",
+  "source_api": "https://api.github.com/orgs/ha-homelab/repos?type=public&per_page=100",
+  "public_repository_count": 23,
+  "public_project_count": 22,
+  "profile_repo_excluded_from_project_chart": ".github",
+  "category_counts": {
+    "Voice and media": 4,
+    "Device integrations, bridges and recovery": 7,
+    "Configuration and reliability": 2,
+    "Spatial tools, sensing and access": 5,
+    "Testing and contracts": 4
+  },
+  "methodology": "Public repository snapshot; one editorial category per project. Excludes the .github profile repository from the chart. Counts are not downloads, maturity, test coverage or hardware acceptance.",
+  "projects": [
+    {
+      "name": "ha-desloc",
+      "html_url": "https://github.com/ha-homelab/ha-desloc",
+      "category": "Device integrations, bridges and recovery",
+      "default_branch_commit": "d4077204c267ce4ab6853230a7e52e0d9d3eb86a",
+      "readme_source": "https://github.com/ha-homelab/ha-desloc/blob/d4077204c267ce4ab6853230a7e52e0d9d3eb86a/README.md",
+      "scope_note": "Unofficial cloud integration; C100 Plus maintainer-tested; model features vary."
+    },
+    {
+      "name": "ha-desloc-card",
+      "html_url": "https://github.com/ha-homelab/ha-desloc-card",
+      "category": "Device integrations, bridges and recovery",
+      "default_branch_commit": "4dada3fc1ff35a8dfd02657a4cfe101eeb9ae4bf",
+      "readme_source": "https://github.com/ha-homelab/ha-desloc-card/blob/4dada3fc1ff35a8dfd02657a4cfe101eeb9ae4bf/README.md",
+      "scope_note": "One adaptive action button and explicit unlock confirmation; historical overview GIF still depicts older two-button UI."
+    },
+    {
+      "name": "ha-echo-dot",
+      "html_url": "https://github.com/ha-homelab/ha-echo-dot",
+      "category": "Voice and media",
+      "default_branch_commit": "f9579ee112dd7c0fb03515ef1b6622e1f33fd800",
+      "readme_source": "https://github.com/ha-homelab/ha-echo-dot/blob/f9579ee112dd7c0fb03515ef1b6622e1f33fd800/README.md",
+      "scope_note": "Echo Dot 2 / EchoLocal; wake-word training and exact-runtime evaluation; hardware-specific conversion."
+    },
+    {
+      "name": "ha-echo-show-5",
+      "html_url": "https://github.com/ha-homelab/ha-echo-show-5",
+      "category": "Voice and media",
+      "default_branch_commit": "7a35c4b4245cbca0eeb7bf3258bdf545e9e54079",
+      "readme_source": "https://github.com/ha-homelab/ha-echo-show-5/blob/7a35c4b4245cbca0eeb7bf3258bdf545e9e54079/README.md",
+      "scope_note": "Echo Show 5 Gen2; conversion depends on exact hardware and verified recovery backups."
+    },
+    {
+      "name": "slzb-06-recovery",
+      "html_url": "https://github.com/ha-homelab/slzb-06-recovery",
+      "category": "Device integrations, bridges and recovery",
+      "default_branch_commit": "b8636d922bfa98e65ab681670a36ab424c408752",
+      "readme_source": "https://github.com/ha-homelab/slzb-06-recovery/blob/b8636d922bfa98e65ab681670a36ab424c408752/README.md",
+      "scope_note": "Original SLZB-06 legacy Ethernet recovery; core and Zigbee-radio firmware are separate."
+    },
+    {
+      "name": "rf-airbridge",
+      "html_url": "https://github.com/ha-homelab/rf-airbridge",
+      "category": "Device integrations, bridges and recovery",
+      "default_branch_commit": "c96777d0df65a7420e4883d79187f31eb1b98c9b",
+      "readme_source": "https://github.com/ha-homelab/rf-airbridge/blob/c96777d0df65a7420e4883d79187f31eb1b98c9b/README.md",
+      "scope_note": "ESP8266 + CC1101, ESPHome 2026.8.2, 433.92 MHz ASK/OOK; not arbitrary RF or rolling-code support."
+    },
+    {
+      "name": "zigbee-direct-button",
+      "html_url": "https://github.com/ha-homelab/zigbee-direct-button",
+      "category": "Device integrations, bridges and recovery",
+      "default_branch_commit": "fe79c1af50cb6f779613d708db302cb525bdc79c",
+      "readme_source": "https://github.com/ha-homelab/zigbee-direct-button/blob/fe79c1af50cb6f779613d708db302cb525bdc79c/README.md",
+      "scope_note": "Hardware-specific direct group firmware; see model qualification and OTA wake requirements."
+    },
+    {
+      "name": "ha-tuya-esphome",
+      "html_url": "https://github.com/ha-homelab/ha-tuya-esphome",
+      "category": "Device integrations, bridges and recovery",
+      "default_branch_commit": "30139ef4f872e9f61b795f904aab6d95fd902d09",
+      "readme_source": "https://github.com/ha-homelab/ha-tuya-esphome/blob/30139ef4f872e9f61b795f904aab6d95fd902d09/README.md",
+      "scope_note": "Legacy ESP8266 plug variants; GPIO and conversion results vary by unit; encrypted USB profile now recommended."
+    },
+    {
+      "name": "home-studio",
+      "html_url": "https://github.com/ha-homelab/home-studio",
+      "category": "Spatial tools, sensing and access",
+      "default_branch_commit": "1da65687bb5471628799873b32789813457c7085",
+      "readme_source": "https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/README.md",
+      "scope_note": "Browser editor with local draft/JSON exports, compiler and HA viewer; hosted editor itself does not connect to HA."
+    },
+    {
+      "name": "home-assistant",
+      "html_url": "https://github.com/ha-homelab/home-assistant",
+      "category": "Configuration and reliability",
+      "default_branch_commit": "103bac492fd309709a53635150d346cad2b6211c",
+      "readme_source": "https://github.com/ha-homelab/home-assistant/blob/103bac492fd309709a53635150d346cad2b6211c/README.md",
+      "scope_note": "Public configuration plus bundled automation/script libraries; installation-specific values are private inputs."
+    },
+    {
+      "name": "k3s-self-healing",
+      "html_url": "https://github.com/ha-homelab/k3s-self-healing",
+      "category": "Configuration and reliability",
+      "default_branch_commit": "97de71c35144b20b0cc5a5d1c5b06d444471bbe7",
+      "readme_source": "https://github.com/ha-homelab/k3s-self-healing/blob/97de71c35144b20b0cc5a5d1c5b06d444471bbe7/README.md",
+      "scope_note": "Approval-gated updates, backups and recovery; single-replica local storage is not automatic node/storage failover."
+    },
+    {
+      "name": "ha-lg-tv-capture",
+      "html_url": "https://github.com/ha-homelab/ha-lg-tv-capture",
+      "category": "Voice and media",
+      "default_branch_commit": "bbb7953071a8daf8dfe1227de4110f0adab11060",
+      "readme_source": "https://github.com/ha-homelab/ha-lg-tv-capture/blob/bbb7953071a8daf8dfe1227de4110f0adab11060/README.md",
+      "scope_note": "On-demand snapshot camera; depends on undocumented webOS interfaces and firmware/app support; protected content can be black."
+    },
+    {
+      "name": "ha-echomuse",
+      "html_url": "https://github.com/ha-homelab/ha-echomuse",
+      "category": "Voice and media",
+      "default_branch_commit": "fa6be5c3537e04269f2eee747f1f359d1ceb6ede",
+      "readme_source": "https://github.com/ha-homelab/ha-echomuse/blob/fa6be5c3537e04269f2eee747f1f359d1ceb6ede/README.md",
+      "scope_note": "Echo Dot 2 / RS03QR; current recorded speech pipeline uses cloud STT and is not fully offline."
+    },
+    {
+      "name": "zac93-esp32",
+      "html_url": "https://github.com/ha-homelab/zac93-esp32",
+      "category": "Device integrations, bridges and recovery",
+      "default_branch_commit": "8bbd7a7d17397a921cb9612c97bc34206091b1c5",
+      "readme_source": "https://github.com/ha-homelab/zac93-esp32/blob/8bbd7a7d17397a921cb9612c97bc34206091b1c5/README.md",
+      "scope_note": "Hardware ordered; physical commissioning pending. Supplied diagrams/configuration checks are not radio acceptance."
+    },
+    {
+      "name": "sensing-evidence-kit",
+      "html_url": "https://github.com/ha-homelab/sensing-evidence-kit",
+      "category": "Spatial tools, sensing and access",
+      "default_branch_commit": "3e1272eb0559ef5d02634d97e9bb764de2f2f0e5",
+      "readme_source": "https://github.com/ha-homelab/sensing-evidence-kit/blob/3e1272eb0559ef5d02634d97e9bb764de2f2f0e5/README.md",
+      "scope_note": "Characterizes disagreements/unknown time; validation_decision remains not_evaluated."
+    },
+    {
+      "name": "ruview-home-assistant",
+      "html_url": "https://github.com/ha-homelab/ruview-home-assistant",
+      "category": "Spatial tools, sensing and access",
+      "default_branch_commit": "aef48f563b4658b5b0c6b8e9091d5ea69d1bb44c",
+      "readme_source": "https://github.com/ha-homelab/ruview-home-assistant/blob/aef48f563b4658b5b0c6b8e9091d5ea69d1bb44c/README.md",
+      "scope_note": "Experimental collector observations with freshness/placement gates; not validated occupancy detection."
+    },
+    {
+      "name": "ha-access-session",
+      "html_url": "https://github.com/ha-homelab/ha-access-session",
+      "category": "Spatial tools, sensing and access",
+      "default_branch_commit": "907e528966f9e37b3e0d3e12ea95de650d4176cc",
+      "readme_source": "https://github.com/ha-homelab/ha-access-session/blob/907e528966f9e37b3e0d3e12ea95de650d4176cc/README.md",
+      "scope_note": "One explicitly mapped HA administrator with full privileges; not multi-user or entity-scoped authorization."
+    },
+    {
+      "name": "ha-onvif-room-direction",
+      "html_url": "https://github.com/ha-homelab/ha-onvif-room-direction",
+      "category": "Spatial tools, sensing and access",
+      "default_branch_commit": "be624fa5db1fe1f745da483b9a39c5fc94ac0927",
+      "readme_source": "https://github.com/ha-homelab/ha-onvif-room-direction/blob/be624fa5db1fe1f745da483b9a39c5fc94ac0927/README.md",
+      "scope_note": "Read-only camera direction estimate; no person identification or occupancy claim; calibration required."
+    },
+    {
+      "name": "assist-scenario-lab",
+      "html_url": "https://github.com/ha-homelab/assist-scenario-lab",
+      "category": "Testing and contracts",
+      "default_branch_commit": "77abe96c1754fa8fda401688ac03396de31076af",
+      "readme_source": "https://github.com/ha-homelab/assist-scenario-lab/blob/77abe96c1754fa8fda401688ac03396de31076af/README.md",
+      "scope_note": "Offline protocol/action/audible-response evidence; examples synthetic and hardware acceptance separate."
+    },
+    {
+      "name": "ha-entity-migrations",
+      "html_url": "https://github.com/ha-homelab/ha-entity-migrations",
+      "category": "Testing and contracts",
+      "default_branch_commit": "3003c0e220da2ecfb8d053eaebdf825ec76c7ccc",
+      "readme_source": "https://github.com/ha-homelab/ha-entity-migrations/blob/3003c0e220da2ecfb8d053eaebdf825ec76c7ccc/README.md",
+      "scope_note": "Offline semantic migration plans with role and hardware ownership; does not apply changes."
+    },
+    {
+      "name": "ha-meter-contracts",
+      "html_url": "https://github.com/ha-homelab/ha-meter-contracts",
+      "category": "Testing and contracts",
+      "default_branch_commit": "764aa27d68e7fa294b7678b5f5d3a4675ac1e127",
+      "readme_source": "https://github.com/ha-homelab/ha-meter-contracts/blob/764aa27d68e7fa294b7678b5f5d3a4675ac1e127/README.md",
+      "scope_note": "Offline meter topology/provenance/calibration-evidence validation; not physical calibration."
+    },
+    {
+      "name": "ha-scenario-tests",
+      "html_url": "https://github.com/ha-homelab/ha-scenario-tests",
+      "category": "Testing and contracts",
+      "default_branch_commit": "49b1fa7bad586c584a4aba05ceb66f3616c3bf2c",
+      "readme_source": "https://github.com/ha-homelab/ha-scenario-tests/blob/49b1fa7bad586c584a4aba05ceb66f3616c3bf2c/README.md",
+      "scope_note": "Bounded synthetic scenarios in a real isolated HA engine; not live hardware commissioning."
+    }
+  ]
+}

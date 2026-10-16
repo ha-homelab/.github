@@ -1,0 +1,114 @@
+{
+  "checked_date": "2026-10-16",
+  "scope": "Related public projects outside ha-homelab; no ownership transfer or mandatory deployment relationship implied.",
+  "projects": [
+    {
+      "repository": "victron-venus/inverter-climate",
+      "url": "https://github.com/victron-venus/inverter-climate",
+      "public": true,
+      "group": "Energy and Home Assistant",
+      "proposed_description": "Native Venus OS climate coordination through Home Assistant; observes by default, with separately enabled controls.",
+      "source_url": "https://github.com/victron-venus/inverter-climate/blob/main/README.md",
+      "source_blob_sha": "105f17554d941a57722ab7df5654d1c7c4354fcc"
+    },
+    {
+      "repository": "victron-venus/dbus-emporia-vue",
+      "url": "https://github.com/victron-venus/dbus-emporia-vue",
+      "public": true,
+      "group": "Energy and Home Assistant",
+      "proposed_description": "Emporia circuit readings from Home Assistant or Emporia Cloud become native GX AC loads; optional direct readings back into HA via GX MQTT.",
+      "source_url": "https://github.com/victron-venus/dbus-emporia-vue/blob/main/README.md",
+      "source_blob_sha": "4c1de1fc477e1e4edcef2f3b2096312719b054a1"
+    },
+    {
+      "repository": "victron-venus/dbus-pump",
+      "url": "https://github.com/victron-venus/dbus-pump",
+      "public": true,
+      "group": "Energy and Home Assistant",
+      "proposed_description": "Home Assistant tank, pump and valve entities bridged to native Venus OS services.",
+      "source_url": "https://github.com/victron-venus/dbus-pump/blob/main/README.md",
+      "source_blob_sha": "ea982e469675ecfb1915ee9c1c3bdf21b582e6e9"
+    },
+    {
+      "repository": "victron-venus/inverter-dashboard-go",
+      "url": "https://github.com/victron-venus/inverter-dashboard-go",
+      "public": true,
+      "group": "Energy and Home Assistant",
+      "proposed_description": "A Go server with shared Vue UI, Victron telemetry and optional Home Assistant devices and controls.",
+      "source_url": "https://github.com/victron-venus/inverter-dashboard-go/blob/main/README.md",
+      "source_blob_sha": "9f265fdefda1e05d3306a286e9e7a9181a1ac190"
+    },
+    {
+      "repository": "4alvit/amazon-echo-home-voice",
+      "url": "https://github.com/4alvit/amazon-echo-home-voice",
+      "public": true,
+      "group": "Voice and media",
+      "proposed_description": "A read-only Alexa custom skill for centrally formatted Inverter Gateway energy reports; Home Assistant is optional.",
+      "source_url": "https://github.com/4alvit/amazon-echo-home-voice/blob/main/README.md",
+      "source_blob_sha": "9a61b1d2f661035a78703c1434ae63fd332b2b56"
+    },
+    {
+      "repository": "4alvit/google-home-voice-stats",
+      "url": "https://github.com/4alvit/google-home-voice-stats",
+      "public": true,
+      "group": "Voice and media",
+      "proposed_description": "Standalone Google Cast energy report videos with offline English speech; optional HA voice triggers or original HA TTS mode.",
+      "source_url": "https://github.com/4alvit/google-home-voice-stats/blob/main/README.md",
+      "source_blob_sha": "c181f6c4b0a4ed138b9dad35ed04c157964a628f"
+    },
+    {
+      "repository": "4alvit/epg-voice-gateway",
+      "url": "https://github.com/4alvit/epg-voice-gateway",
+      "public": true,
+      "group": "Voice and media",
+      "proposed_description": "Search XMLTV programmes and play through an existing HLS proxy on compatible Alexa screens or Google Cast devices.",
+      "source_url": "https://github.com/4alvit/epg-voice-gateway/blob/main/README.md",
+      "source_blob_sha": "a8b97cdf15a868345a07ca499a0d30898f4a14ac"
+    },
+    {
+      "repository": "open-ott-play/ottplay-control-server",
+      "url": "https://github.com/open-ott-play/ottplay-control-server",
+      "public": true,
+      "group": "Voice and media",
+      "proposed_description": "Self-hosted remote command delivery and terminal control for OTT-play players, with portable packages and k3s deployment.",
+      "source_url": "https://github.com/open-ott-play/ottplay-control-server/blob/main/README.md",
+      "source_blob_sha": "c730f7d4ccf97eaffab8d4e400a94ee32ebd53a2"
+    },
+    {
+      "repository": "4alvit/esphome-ble-sensor-patterns",
+      "url": "https://github.com/4alvit/esphome-ble-sensor-patterns",
+      "public": true,
+      "group": "Reusable building blocks",
+      "proposed_description": "Reference ESP32 BLE configurations for battery monitors, temperature and plant sensors, with explicit hardware validation scope.",
+      "source_url": "https://github.com/4alvit/esphome-ble-sensor-patterns/blob/main/README.md",
+      "source_blob_sha": "b47f67a0a77e1f6c4e9306218f355f2ac378f49c"
+    },
+    {
+      "repository": "4alvit/fastapi-mqtt-gateway",
+      "url": "https://github.com/4alvit/fastapi-mqtt-gateway",
+      "public": true,
+      "group": "Reusable building blocks",
+      "proposed_description": "Authenticated REST/WebSocket access to MQTT with topic controls, rate limits and streaming.",
+      "source_url": "https://github.com/4alvit/fastapi-mqtt-gateway/blob/main/README.md",
+      "source_blob_sha": "53265f7290efdcd70a7eeaeb810b239825b1bea9"
+    },
+    {
+      "repository": "4alvit/mqtt-observability-opentelemetry",
+      "url": "https://github.com/4alvit/mqtt-observability-opentelemetry",
+      "public": true,
+      "group": "Reusable building blocks",
+      "proposed_description": "Subscriber-based MQTT traces and Mosquitto metrics with OpenTelemetry, Prometheus and Grafana examples.",
+      "source_url": "https://github.com/4alvit/mqtt-observability-opentelemetry/blob/main/README.md",
+      "source_blob_sha": "2ded6701289f5a6d97ac9794c70f918dbc836ffb"
+    },
+    {
+      "repository": "4alvit/terraform-github-ha-homelab",
+      "url": "https://github.com/4alvit/terraform-github-ha-homelab",
+      "public": true,
+      "group": "Project infrastructure",
+      "proposed_description": "Public Terraform source managing HA Homelab organization settings and repositories.",
+      "source_url": "https://github.com/4alvit/terraform-github-ha-homelab/blob/main/README.md",
+      "source_blob_sha": "8fdbdd30a8fc5bc651888f9b810b40f0d38126a9"
+    }
+  ]
+}

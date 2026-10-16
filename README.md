@@ -4,8 +4,13 @@ This repository publishes the [HA Homelab GitHub profile](https://github.com/ha-
 and its original visual identity.
 
 - `profile/README.md` is the public organization profile.
+- `profile/README.ru.md` is its Russian edition.
 - `assets/ha-homelab-logo.png` is the full-resolution square logo.
 - `assets/README.md` records the design intent and generation prompts.
+- `assets/profile/` contains the public-project snapshot, reproducible ecosystem
+  diagrams and project-count charts, plus screenshot attribution and source notes.
+- `community-tools/` explains the four offline community tools with diagrams,
+  synthetic examples and dated software-test evidence.
 
 Keep this repository limited to public branding and documentation. Household
 configuration, infrastructure addresses, credentials, and operational exports
