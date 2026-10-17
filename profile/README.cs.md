@@ -35,6 +35,7 @@ společně nebo že se automaticky navzájem integrují.
   plánovač 2D/3D, 195 návrhů předmětů, 24 jazyků editoru a místní kompilátor pro
   instalovatelný prohlížeč plánu v Home Assistant. Jeho
   [režim Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) umožňuje procházet nainstalovaný plán a přitom blokuje příkazy zařízením.
+  [Průvodce první relací](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) vysvětluje začátek s příklady, obnovu rozpracovaných návrhů a zachování práce, když 3D není dostupné.
 - **Další způsoby využití stávajícího hardwaru.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) přidává
   zdokumentovanou cestu pro hlas, hudbu a BLE na Echo Dot 2;
   [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) popisuje most Z-Wave. Níže uvedené projekty RF, Zigbee a Tuya
@@ -78,6 +79,7 @@ požadavky vybraného projektu na model a obnovu.
 
 ### Integrace zařízení, mosty a obnova
 
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — modulární prototyp s PoE pro Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz a snímání; obsahuje CAD, firmware a nástroje pro nasazení; fyzické ověření zatím nebylo provedeno.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — neoficiální cloudová integrace DESLOC pro stav zámku,
   ovládání, baterii a Wi-Fi; [kompatibilita se liší podle modelu](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — samostatná karta ovládacího panelu s vizuálním editorem,
@@ -157,9 +159,9 @@ Další ukázky nabízí [architektura hlasu, hudby a BLE v EchoMuse](https://gi
 
 ## Přehled veřejných projektů
 
-![Pruhový graf: zařízení a mosty 7; prostor, senzory a přístup 5; hlas a média 4; testy a kontrakty 4; konfigurace a spolehlivost 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.cs.svg)
+![Pruhový graf: zařízení a mosty 8; prostor, senzory a přístup 5; hlas a média 4; testy a kontrakty 4; konfigurace a spolehlivost 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.cs.svg)
 
-**22 projektů + tento profilový repozitář = 23 veřejných repozitářů**, ověřeno dne 16. října 2026. Každý projekt patří do jedné redakční kategorie; počty neměří
+**23 projektů + tento profilový repozitář = 24 veřejných repozitářů**, ověřeno dne 16. října 2026. Každý projekt patří do jedné redakční kategorie; počty neměří
 vyspělost, využití ani výkon. [Reprodukovatelná zdrojová data](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).
 Skutečné výsledky softwarových kontrol najdete v samostatném
 [datovaném grafu komunitních testů a odkazovaných bězích CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.cs.md#validation-evidence--2026-10-16-utc).

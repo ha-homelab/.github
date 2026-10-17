@@ -35,6 +35,7 @@ birbirleriyle otomatik olarak entegre olduğu anlamına gelmez.
   195 eşya tasarımını, 24 düzenleyici dilini ve Home Assistant'a kurulabilir
   bir görüntüleyici için yerel derleyiciyi bir araya getirir.
   [Dry run modu](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md), cihaz komutlarını engellerken kurulu planı keşfetmenizi sağlar.
+  [İlk oturum kılavuzu](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md), örneklerle başlamayı, taslakları kurtarmayı ve 3D kullanılamadığında çalışmayı korumayı açıklar.
 - **Mevcut donanımı yeniden kullanmanın başka yolları.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse), Echo Dot 2
   için belgelenmiş bir ses, müzik ve BLE yolu ekler;
   [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) bir Z-Wave köprüsünü belgeler. Aşağıdaki RF, Zigbee ve Tuya
@@ -78,6 +79,7 @@ projenin model ve kurtarma gereksinimlerini okuyun.
 
 ### Cihaz entegrasyonları, köprüler ve kurtarma
 
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz ve algılama için modüler PoE prototipi; CAD, aygıt yazılımı ve dağıtım araçlarını içerir; fiziksel doğrulama henüz yapılmadı.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — kilit durumu, kontroller, pil ve Wi-Fi için resmî olmayan
   DESLOC bulut entegrasyonu; [model uyumluluğu değişir](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — görsel düzenleyici, uyarlanabilir eylem ve onaylı
@@ -157,9 +159,9 @@ Diğer proje görünümleri için [EchoMuse ses/müzik/BLE mimarisini](https://g
 
 ## Herkese açık proje özeti
 
-![Çubuk grafik: cihazlar ve köprüler 7; mekân, algılama ve erişim 5; ses ve medya 4; testler ve sözleşmeler 4; yapılandırma ve güvenilirlik 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.tr.svg)
+![Çubuk grafik: cihazlar ve köprüler 8; mekân, algılama ve erişim 5; ses ve medya 4; testler ve sözleşmeler 4; yapılandırma ve güvenilirlik 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.tr.svg)
 
-**22 proje + bu profil deposu = 23 herkese açık depo**, 16 Ekim 2026 tarihinde
+**23 proje + bu profil deposu = 24 herkese açık depo**, 16 Ekim 2026 tarihinde
 kontrol edilmiştir. Her projenin bir editoryal kategorisi vardır; sayılar olgunluğu,
 kullanımı veya performansı ölçmez. [Yeniden üretilebilir kaynak verileri](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).
 Gerçek yazılım denetimi sonuçları için ayrı

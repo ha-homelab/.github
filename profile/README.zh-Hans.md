@@ -27,6 +27,7 @@
 ## 最新进展 — 2026 年 10 月
 
 - **在浏览器中绘制和探索房屋。** [Home Studio](https://github.com/ha-homelab/home-studio) 结合了 2D/3D 规划器、195 种物品设计、24 种编辑器语言，以及用于生成可安装的 Home Assistant 查看器的本地编译器。[Dry run 模式](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) 可以在阻止设备命令的同时探索已安装的平面图。
+  [首次使用指南](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md)介绍如何从示例开始、恢复草稿，以及在 3D 不可用时保存工作。
 - **以更多方式复用现有硬件。** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) 提供有文档说明的 Echo Dot 2 语音、音乐和 BLE 方案；[ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) 介绍 Z-Wave 桥接；下方的 RF、Zigbee 和 Tuya 项目覆盖其他设备系列。硬件就绪程度因项目而异：ZAC93 的实物调试仍未完成。
 - **公开配置与恢复流程。** [Home Assistant](https://github.com/ha-homelab/home-assistant) 现在包含可复用的自动化与脚本库，以及集成契约；[k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) 提供部署、备份和恢复工具。使用本地存储的单实例并不具备自动故障转移能力。
 - **先有证据，再做自动化。** 新增的感知、房间方向和访问项目，与用于实体迁移、计量来源、自动化场景和语音结果的四个[社区工具](https://github.com/ha-homelab/.github/blob/main/community-tools/README.zh-Hans.md) 相互补充。[DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) 现采用单个自适应操作按钮，并保留明确的解锁确认。
@@ -51,6 +52,7 @@ EchoLocal 和 EchoMuse 是不同的改装路线。改动设备前，请阅读所
 
 ### 设备集成、桥接与恢复
 
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — 模块化 PoE 原型，面向 Zigbee、Thread、Bluetooth、Z-Wave、433 MHz 射频和传感，提供 CAD 设计、固件和部署工具；实物验证尚待完成。
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — 非官方 DESLOC 云集成，提供锁状态、控制、电池和 Wi-Fi 信息；[兼容性因型号而异](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md)。
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — 独立的仪表盘卡片，带有可视化编辑器、自适应操作和解锁确认。
 - **[rf-airbridge](https://github.com/ha-homelab/rf-airbridge)** — ESPHome CC1101 网关，支持 MQTT RF 观测、原生 ESPHome 发送和 Home Assistant 自动化。
@@ -104,9 +106,9 @@ EchoLocal 和 EchoMuse 是不同的改装路线。改动设备前，请阅读所
 
 ## 公开项目快照
 
-![水平条形图：设备与桥接 7；空间、感知与访问 5；语音与媒体 4；测试与契约 4；配置与可靠性 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.zh-Hans.svg)
+![水平条形图：设备与桥接 8；空间、感知与访问 5；语音与媒体 4；测试与契约 4；配置与可靠性 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.zh-Hans.svg)
 
-**22 个项目 + 本简介仓库 = 23 个公开仓库**，核查于 2026 年 10 月 16 日。每个项目只归入一个编辑分类；计数不衡量成熟度、使用量或性能。[可复现的源数据](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json)。实际软件检查结果见独立的[社区工具测试计数快照及 CI 运行链接](https://github.com/ha-homelab/.github/blob/main/community-tools/README.zh-Hans.md#validation-evidence--2026-10-16-utc)。
+**23 个项目 + 本简介仓库 = 24 个公开仓库**，核查于 2026 年 10 月 16 日。每个项目只归入一个编辑分类；计数不衡量成熟度、使用量或性能。[可复现的源数据](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json)。实际软件检查结果见独立的[社区工具测试计数快照及 CI 运行链接](https://github.com/ha-homelab/.github/blob/main/community-tools/README.zh-Hans.md#validation-evidence--2026-10-16-utc)。
 
 ## 本组织之外的相关公开项目
 

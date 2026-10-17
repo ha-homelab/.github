@@ -35,6 +35,7 @@ installati insieme o si integrino automaticamente tra loro.
   2D/3D, 195 modelli di oggetti, 24 lingue dell'editor e un compilatore locale per
   un visualizzatore installabile in Home Assistant. La
   [modalità Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) permette di esplorare la planimetria installata bloccando i comandi ai dispositivi.
+  La [guida alla prima sessione](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) spiega come partire dagli esempi, recuperare le bozze e conservare il lavoro quando il 3D non è disponibile.
 - **Altri modi per riutilizzare l'hardware esistente.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) aggiunge un
   percorso documentato per voce, musica e BLE su Echo Dot 2;
   [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) documenta un bridge Z-Wave. I progetti RF, Zigbee e Tuya elencati
@@ -78,6 +79,7 @@ un dispositivo, leggi i requisiti di modello e ripristino del progetto scelto.
 
 ### Integrazioni, bridge e ripristino dei dispositivi
 
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — prototipo PoE modulare per Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz e rilevamento; include CAD, firmware e strumenti di distribuzione; la validazione fisica è ancora da eseguire.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — integrazione cloud DESLOC non ufficiale per stato della
   serratura, comandi, batteria e Wi-Fi; [la compatibilità varia per modello](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — scheda dashboard separata con editor visuale, azione
@@ -158,9 +160,9 @@ gli [schemi di cablaggio ZAC93](https://github.com/ha-homelab/zac93-esp32) e la 
 
 ## Istantanea dei progetti pubblici
 
-![Grafico a barre: dispositivi e bridge 7; spazi, sensori e accesso 5; voce e media 4; test e contratti 4; configurazione e affidabilità 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.it.svg)
+![Grafico a barre: dispositivi e bridge 8; spazi, sensori e accesso 5; voce e media 4; test e contratti 4; configurazione e affidabilità 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.it.svg)
 
-**22 progetti + questo repository del profilo = 23 repository pubblici**, verificati
+**23 progetti + questo repository del profilo = 24 repository pubblici**, verificati
 il 16 ottobre 2026. Ogni progetto ha una sola categoria editoriale; i conteggi non
 misurano maturità, utilizzo o prestazioni. [Dati sorgente riproducibili](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).
 Per risultati effettivi delle verifiche software, consulta il

@@ -35,6 +35,7 @@ gemeinsam installiert werden oder sich automatisch miteinander integrieren.
   Compiler für einen installierbaren Home-Assistant-Viewer. Der
   [Dry-run-Modus](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md)
   lässt dich den installierten Plan erkunden und blockiert dabei Gerätebefehle.
+  Die [Anleitung für den Einstieg](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) erklärt den Start mit Beispielen, die Wiederherstellung von Entwürfen und das Sichern der Arbeit, wenn 3D nicht verfügbar ist.
 - **Weitere Möglichkeiten, vorhandene Hardware weiterzuverwenden.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse)
   ergänzt einen dokumentierten Weg für Sprache, Musik und BLE auf dem Echo Dot 2;
   [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) beschreibt eine Z-Wave-Bridge.
@@ -81,6 +82,7 @@ in das Gerät die Modell- und Wiederherstellungsanforderungen des ausgewählten 
 
 ### Geräteintegrationen, Bridges und Wiederherstellung
 
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — modularer PoE-Prototyp für Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz und Sensorik; enthält CAD, Firmware und Bereitstellungswerkzeuge; die physische Validierung steht noch aus.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — inoffizielle DESLOC-Cloudintegration
   für Schlosszustand, Steuerung, Batterie und WLAN; die [Kompatibilität hängt vom Modell ab](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — separate Dashboard-Karte
@@ -165,9 +167,9 @@ und die [synthetische RuView-Wiedergabedemo](https://github.com/ha-homelab/ruvie
 
 ## Stand der öffentlichen Projekte
 
-![Balkendiagramm: Geräte und Bridges 7; Raumplanung, Sensorik und Zugriff 5; Sprache und Medien 4; Tests und Verträge 4; Konfiguration und Zuverlässigkeit 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.de.svg)
+![Balkendiagramm: Geräte und Bridges 8; Raumplanung, Sensorik und Zugriff 5; Sprache und Medien 4; Tests und Verträge 4; Konfiguration und Zuverlässigkeit 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.de.svg)
 
-**22 Projekte + dieses Profil-Repository = 23 öffentliche Repositories**, geprüft
+**23 Projekte + dieses Profil-Repository = 24 öffentliche Repositories**, geprüft
 am 16. Oktober 2026. Jedes Projekt gehört zu genau einer redaktionellen Kategorie;
 die Anzahlen messen weder Reifegrad noch Nutzung oder Leistung.
 [Reproduzierbare Quelldaten](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).

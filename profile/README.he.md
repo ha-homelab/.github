@@ -28,7 +28,7 @@
 
 ## מה חדש — אוקטובר 2026
 
-- **שרטטו בית וסיירו בו בדפדפן.** [Home Studio](https://github.com/ha-homelab/home-studio) משלב מתכנן 2D/3D, עיצובים של 195 פריטים, 24 שפות לעורך וכלי בנייה מקומי למציג שניתן להתקין ב-Home Assistant. [מצב Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) מאפשר לסייר בתוכנית המותקנת תוך חסימת פקודות להתקנים.
+- **שרטטו בית וסיירו בו בדפדפן.** [Home Studio](https://github.com/ha-homelab/home-studio) משלב מתכנן 2D/3D, עיצובים של 195 פריטים, 24 שפות לעורך וכלי בנייה מקומי למציג שניתן להתקין ב-Home Assistant. [מצב Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) מאפשר לסייר בתוכנית המותקנת תוך חסימת פקודות להתקנים. [המדריך למפגש הראשון](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) מסביר איך להתחיל מדוגמאות, לשחזר טיוטות ולשמור על העבודה כאשר תצוגת 3D אינה זמינה.
 - **דרכים נוספות להשתמש בחומרה קיימת.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) מוסיף מסלול מתועד לקול, מוזיקה ו-BLE ב-Echo Dot 2; [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) מתעד גשר Z-Wave. פרויקטי RF, Zigbee ו-Tuya שבהמשך מכסים משפחות התקנים נוספות. מוכנות החומרה תלויה בפרויקט: ההקמה והאימות הפיזיים של ZAC93 עדיין ממתינים לביצוע.
 - **תצורה ציבורית ושחזור.** [Home Assistant](https://github.com/ha-homelab/home-assistant) כולל כעת ספריות אוטומציות וסקריפטים לשימוש חוזר וחוזי אינטגרציה; [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) מפרסם כלי פריסה, גיבוי ושחזור. מופע יחיד עם אחסון מקומי אינו מספק מעבר אוטומטי למופע חלופי בעת תקלה.
 - **ראיות לפני אוטומציה.** פרויקטים חדשים לחישה, לכיוון מצלמה לפי חדר ולגישה מלווים ארבעה [כלים לקהילה](https://github.com/ha-homelab/.github/blob/main/community-tools/README.he.md), העוסקים בהסבת ישויות, במקור נתוני מדידה, בתרחישי אוטומציה ובתוצאות קוליות. [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) משתמש כעת בכפתור פעולה מסתגל יחיד, תוך שמירה על אישור מפורש לפתיחת הנעילה.
@@ -53,6 +53,7 @@ EchoLocal ו-EchoMuse הם מסלולי הסבה נפרדים. לפני שינו
 
 ### אינטגרציות להתקנים, גשרים ושחזור
 
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — אבטיפוס מודולרי עם הזנת PoE עבור Zigbee, ‏Thread, ‏Bluetooth, ‏Z-Wave, ‏433 MHz וחישה; כולל קובצי CAD, קושחה וכלי פריסה. האימות הפיזי עדיין ממתין לביצוע.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — אינטגרציית ענן לא רשמית ל-DESLOC: מצב מנעול, בקרות, סוללה ו-Wi-Fi; [התאימות משתנה לפי הדגם](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — כרטיס נפרד ללוח הבקרה, עם עורך חזותי, פעולה מסתגלת ופתיחת נעילה המחייבת אישור.
 - **[rf-airbridge](https://github.com/ha-homelab/rf-airbridge)** — שער ESPHome CC1101 לתצפיות RF דרך MQTT, שידור מובנה של ESPHome ואוטומציה ב-Home Assistant.
@@ -106,9 +107,9 @@ EchoLocal ו-EchoMuse הם מסלולי הסבה נפרדים. לפני שינו
 
 ## תמונת מצב של הפרויקטים הציבוריים
 
-![תרשים עמודות אופקי: התקנים וגשרים 7; כלים מרחביים, חישה וגישה 5; קול ומדיה 4; בדיקות וחוזים 4; תצורה ואמינות 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.he.svg)
+![תרשים עמודות אופקי: התקנים וגשרים 8; כלים מרחביים, חישה וגישה 5; קול ומדיה 4; בדיקות וחוזים 4; תצורה ואמינות 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.he.svg)
 
-**22 פרויקטים + מאגר הפרופיל הזה = 23 מאגרים ציבוריים**, נבדקו ב-16 באוקטובר 2026. לכל פרויקט קטגוריה עריכתית אחת; המספרים אינם מודדים בשלות, שימוש או ביצועים. [נתוני מקור ניתנים לשחזור](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). לתוצאות בדיקות תוכנה בפועל, ראו בנפרד את [תרשים הבדיקות המתוארך והקישורים להרצות CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.he.md#validation-evidence--2026-10-16-utc).
+**23 פרויקטים + מאגר הפרופיל הזה = 24 מאגרים ציבוריים**, נבדקו ב-16 באוקטובר 2026. לכל פרויקט קטגוריה עריכתית אחת; המספרים אינם מודדים בשלות, שימוש או ביצועים. [נתוני מקור ניתנים לשחזור](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). לתוצאות בדיקות תוכנה בפועל, ראו בנפרד את [תרשים הבדיקות המתוארך והקישורים להרצות CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.he.md#validation-evidence--2026-10-16-utc).
 
 ## פרויקטים ציבוריים קשורים מחוץ לארגון
 

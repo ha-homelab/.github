@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1120" height="625" viewBox="0 0 1120 625" role="img" aria-labelledby="title desc" lang="ko">
-<title id="title">공개 프로젝트 22개, 다섯 분야</title><desc id="desc">프로젝트당 한 분류. 프로필 저장소 .github 제외(전체 공개 저장소 23개).</desc>
+<title id="title">공개 프로젝트 23개, 다섯 분야</title><desc id="desc">프로젝트당 한 분류. 프로필 저장소 .github 제외(전체 공개 저장소 24개).</desc>
 <rect width="1120" height="625" rx="20" fill="#102634"/>
 <g font-family="Arial, Helvetica, sans-serif">
-<text x="40" y="58" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start">공개 프로젝트 22개, 다섯 분야</text>
+<text x="40" y="58" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start">공개 프로젝트 23개, 다섯 분야</text>
 <text x="40" y="91" font-size="18" fill="#c1d1dd" font-weight="400" text-anchor="start">날짜가 있는 목록이며 품질이나 성능 순위가 아닙니다.</text>
 <text x="40" y="139" font-size="14" fill="#94aebb" font-weight="400" text-anchor="start">프로젝트 분야</text>
 <line x1="420" y1="160" x2="420" y2="477" stroke="#294653"/>
@@ -24,8 +24,8 @@
 <line x1="1060" y1="160" x2="1060" y2="477" stroke="#294653"/>
 <text x="1060" y="501" font-size="16" fill="#c1d1dd" font-weight="400" text-anchor="middle">8</text>
 <text x="40" y="201" font-size="17" fill="#edf5f8" font-weight="400" text-anchor="start">기기와 브리지</text>
-<rect x="420" y="177" width="560" height="36" rx="5" fill="#38d5cc"/>
-<text x="994" y="202" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">7</text>
+<rect x="420" y="177" width="640" height="36" rx="5" fill="#38d5cc"/>
+<text x="1074" y="202" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">8</text>
 <text x="40" y="263" font-size="17" fill="#edf5f8" font-weight="400" text-anchor="start">공간·관측·접근</text>
 <rect x="420" y="239" width="400" height="36" rx="5" fill="#38d5cc"/>
 <text x="834" y="264" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">5</text>
@@ -40,5 +40,5 @@
 <text x="594" y="450" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">2</text>
 <text x="740" y="537" font-size="17" fill="#c1d1dd" font-weight="400" text-anchor="middle">공개 프로젝트 수</text>
 <text x="40" y="577" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">출처: GitHub 공개 저장소 API · 2026년 10월 16일 (America/Los_Angeles)</text>
-<text x="40" y="602" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">프로젝트당 한 분류. 프로필 저장소 .github 제외(전체 공개 저장소 23개).</text>
+<text x="40" y="602" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">프로젝트당 한 분류. 프로필 저장소 .github 제외(전체 공개 저장소 24개).</text>
 </g></svg>

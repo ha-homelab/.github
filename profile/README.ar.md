@@ -28,7 +28,7 @@
 
 ## ما هو الجديد — أكتوبر 2026
 
-- **ارسم واستكشف منزلًا في المتصفح.** يجمع [Home Studio](https://github.com/ha-homelab/home-studio) بين مخطط 2D/3D و195 تصميما للعناصر و24 لغة للمحرر، مع أداة بناء محلية لعارض قابل للتثبيت في Home Assistant. يتيح لك [وضع التجربة دون تنفيذ](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) استكشاف المخطط المثبت أثناء حظر أوامر الجهاز.
+- **ارسم واستكشف منزلًا في المتصفح.** يجمع [Home Studio](https://github.com/ha-homelab/home-studio) بين مخطط 2D/3D و195 تصميما للعناصر و24 لغة للمحرر، مع أداة بناء محلية لعارض قابل للتثبيت في Home Assistant. يتيح لك [وضع التجربة دون تنفيذ](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) استكشاف المخطط المثبت أثناء حظر أوامر الجهاز. يشرح [دليل الجلسة الأولى](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) كيفية البدء بالأمثلة، واستعادة المسودات، والحفاظ على العمل عندما لا يتوفر العرض بصيغة 3D.
 
 - **المزيد من الطرق لإعادة استخدام الأجهزة الموجودة.** يضيف [EchoMuse](https://github.com/ha-homelab/ha-echomuse) مسار Echo Dot 2 الصوتي والموسيقى ومسار BLE الموثق؛ [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) يوثق جسر Z-Wave؛ تغطي مشاريع RF وZigbee وTuya عائلات الأجهزة الأخرى أدناه. إن جاهزية الأجهزة خاصة بالمشروع: لا تزال عملية الإعداد والتحقق الميداني لـ ZAC93 معلقة.
 
@@ -59,6 +59,8 @@
 EchoLocal وEchoMuse هما مساران تحويل متميزان. اقرأ متطلبات الطراز والاسترداد للمشروع الذي اخترته قبل تعديل الجهاز.
 
 ### تكامل الأجهزة والجسور والاسترداد
+
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — نموذج أولي معياري بتغذية PoE مخصص لـ Zigbee وThread وBluetooth وZ-Wave و433 MHz والاستشعار؛ يشمل ملفات CAD والبرامج الثابتة وأدوات النشر. لا يزال التحقق الميداني معلقا.
 
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — التكامل السحابي غير الرسمي لـ DESLOC لحالة القفل وعناصر التحكم والبطارية وWi-Fi؛ [يختلف التوافق حسب الطراز](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 
@@ -120,9 +122,9 @@ EchoLocal وEchoMuse هما مساران تحويل متميزان. اقرأ م�
 
 ## لقطة للمشاريع العامة
 
-![مخطط شريطي أفقي: الأجهزة والجسور 7؛ أدوات التخطيط المكاني والاستشعار والوصول 5؛ الصوت والوسائط 4؛ الاختبارات والعقود 4؛ التكوين والموثوقية 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.ar.svg)
+![مخطط شريطي أفقي: الأجهزة والجسور 8؛ أدوات التخطيط المكاني والاستشعار والوصول 5؛ الصوت والوسائط 4؛ الاختبارات والعقود 4؛ التكوين والموثوقية 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.ar.svg)
 
-**22 مشروعا + مستودع هذا الملف التعريفي = 23 مستودعا عاما**، تم التحقق منها في 16 أكتوبر 2026. يحتوي كل مشروع على فئة تحريرية واحدة؛ لا تقيس الأعداد النضج أو الاستخدام أو الأداء. [بيانات المصدر القابلة للتكرار](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). للحصول على نتائج فحص البرامج الفعلية، راجع ملف [مخطط اختبار أداة المجتمع المؤرخ وعمليات تشغيل CI المرتبطة](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ar.md#validation-evidence--2026-10-16-utc) المنفصل.
+**23 مشروعا + مستودع هذا الملف التعريفي = 24 مستودعا عاما**، تم التحقق منها في 16 أكتوبر 2026. يحتوي كل مشروع على فئة تحريرية واحدة؛ لا تقيس الأعداد النضج أو الاستخدام أو الأداء. [بيانات المصدر القابلة للتكرار](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). للحصول على نتائج فحص البرامج الفعلية، راجع ملف [مخطط اختبار أداة المجتمع المؤرخ وعمليات تشغيل CI المرتبطة](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ar.md#validation-evidence--2026-10-16-utc) المنفصل.
 
 ## المشاريع العامة ذات الصلة خارج هذه المنظمة
 

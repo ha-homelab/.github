@@ -35,6 +35,7 @@ instalados juntos ou se integrem automaticamente uns aos outros.
   2D/3D, 195 modelos de objetos, 24 idiomas do editor e um compilador local para
   um visualizador instalável no Home Assistant. Seu
   [modo Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) permite explorar a planta instalada bloqueando comandos para dispositivos.
+  O [guia da primeira sessão](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) explica como começar com exemplos, recuperar rascunhos e preservar o trabalho quando o 3D não está disponível.
 - **Mais formas de reutilizar o hardware existente.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) acrescenta um
   caminho documentado para voz, música e BLE no Echo Dot 2;
   [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) documenta uma ponte Z-Wave. Os projetos RF, Zigbee e Tuya abaixo
@@ -78,6 +79,7 @@ modelo e recuperação do projeto escolhido antes de modificar um dispositivo.
 
 ### Integrações, pontes e recuperação de dispositivos
 
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — protótipo PoE modular para Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz e sensoriamento; inclui CAD, firmware e ferramentas de implantação; a validação física está pendente.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — integração não oficial com a nuvem DESLOC para estado da
   fechadura, controles, bateria e Wi-Fi; [a compatibilidade varia conforme o modelo](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — cartão de painel separado com editor visual, ação
@@ -158,9 +160,9 @@ os [diagramas de ligação do ZAC93](https://github.com/ha-homelab/zac93-esp32) 
 
 ## Retrato dos projetos públicos
 
-![Gráfico de barras: dispositivos e pontes 7; espaços, sensores e acesso 5; voz e mídia 4; testes e contratos 4; configuração e confiabilidade 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.pt.svg)
+![Gráfico de barras: dispositivos e pontes 8; espaços, sensores e acesso 5; voz e mídia 4; testes e contratos 4; configuração e confiabilidade 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.pt.svg)
 
-**22 projetos + este repositório de perfil = 23 repositórios públicos**, verificados
+**23 projetos + este repositório de perfil = 24 repositórios públicos**, verificados
 em 16 de outubro de 2026. Cada projeto tem uma categoria editorial; as contagens
 não medem maturidade, uso ou desempenho. [Dados de origem reproduzíveis](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).
 Para resultados reais das verificações de software, veja o

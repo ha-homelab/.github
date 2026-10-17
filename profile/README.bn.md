@@ -20,7 +20,7 @@
 
 ## নতুন সংযোজন — অক্টোবর 2026
 
-- **ব্রাউজারে বাড়ি আঁকুন ও ঘুরে দেখুন।** [Home Studio](https://github.com/ha-homelab/home-studio)-তে রয়েছে 2D/3D পরিকল্পক, 195 ধরনের বস্তুর নকশা, সম্পাদকের 24টি ভাষা এবং Home Assistant-এ স্থাপনযোগ্য ভিউয়ার তৈরির স্থানীয় কম্পাইলার। [Dry run মোড](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) ডিভাইসের নির্দেশ আটকে রেখে স্থাপিত পরিকল্পনা ঘুরে দেখতে দেয়।
+- **ব্রাউজারে বাড়ি আঁকুন ও ঘুরে দেখুন।** [Home Studio](https://github.com/ha-homelab/home-studio)-তে রয়েছে 2D/3D পরিকল্পক, 195 ধরনের বস্তুর নকশা, সম্পাদকের 24টি ভাষা এবং Home Assistant-এ স্থাপনযোগ্য ভিউয়ার তৈরির স্থানীয় কম্পাইলার। [Dry run মোড](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) ডিভাইসের নির্দেশ আটকে রেখে স্থাপিত পরিকল্পনা ঘুরে দেখতে দেয়। [প্রথম ব্যবহারের নির্দেশিকা](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) উদাহরণ দিয়ে শুরু করা, খসড়া পুনরুদ্ধার এবং 3D অনুপলব্ধ থাকলে কাজ সংরক্ষণের পদ্ধতি ব্যাখ্যা করে।
 - **বিদ্যমান হার্ডওয়্যার পুনর্ব্যবহারের আরও পথ।** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) Echo Dot 2-এর ভয়েস, সংগীত ও BLE ব্যবহারের নথিভুক্ত পথ দেয়; [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) Z-Wave ব্রিজের নির্দেশিকা দেয়। নিচের RF, Zigbee ও Tuya প্রকল্পগুলো অন্য ধরনের ডিভাইস নিয়ে কাজ করে। হার্ডওয়্যারের প্রস্তুতি প্রকল্পভেদে আলাদা; ZAC93-এর বাস্তব হার্ডওয়্যার চালু করে যাচাই এখনো বাকি।
 - **প্রকাশ্য কনফিগারেশন ও পুনরুদ্ধার।** [Home Assistant](https://github.com/ha-homelab/home-assistant)-এ এখন পুনর্ব্যবহারযোগ্য অটোমেশন/স্ক্রিপ্ট লাইব্রেরি এবং ইন্টিগ্রেশনের চুক্তিভিত্তিক নিয়ম আছে; [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) স্থাপন, ব্যাকআপ ও পুনরুদ্ধারের সরঞ্জাম প্রকাশ করে। স্থানীয় স্টোরেজসহ একটি ইনস্ট্যান্স স্বয়ংক্রিয় বিকল্পে স্থানান্তরের ব্যবস্থা নয়।
 - **স্বয়ংক্রিয়তার আগে প্রমাণ।** পর্যবেক্ষণ, ক্যামেরার দিক ও প্রবেশাধিকারের নতুন প্রকল্পের পাশাপাশি রয়েছে চারটি [কমিউনিটি সরঞ্জাম](https://github.com/ha-homelab/.github/blob/main/community-tools/README.bn.md), যা এনটিটি স্থানান্তর, পরিমাপের উৎস, অটোমেশন দৃশ্যপট ও ভয়েস ফলাফল নিয়ে কাজ করে। [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) এখন অবস্থাভিত্তিক একটি অ্যাকশন বোতাম ব্যবহার করে, তবে তালা খোলার স্পষ্ট অনুমোদন এখনো বাধ্যতামূলক।
@@ -48,6 +48,8 @@
 EchoLocal ও EchoMuse আলাদা রূপান্তরপথ। ডিভাইস পরিবর্তনের আগে নির্বাচিত প্রকল্পের মডেল ও পুনরুদ্ধারের শর্ত পড়ুন।
 
 ### ডিভাইস ইন্টিগ্রেশন, ব্রিজ ও পুনরুদ্ধার
+
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz ও পর্যবেক্ষণের জন্য মডুলার PoE প্রোটোটাইপ; CAD, ফার্মওয়্যার ও স্থাপনের সরঞ্জাম অন্তর্ভুক্ত; বাস্তব হার্ডওয়্যারে যাচাই এখনো বাকি।
 
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — তালার অবস্থা, নিয়ন্ত্রণ, ব্যাটারি ও Wi-Fi-এর জন্য অনানুষ্ঠানিক DESLOC ক্লাউড ইন্টিগ্রেশন; [মডেলভেদে সামঞ্জস্য আলাদা](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md)।
 
@@ -111,9 +113,9 @@ EchoLocal ও EchoMuse আলাদা রূপান্তরপথ। ডি�
 
 ## প্রকাশ্য প্রকল্পের চিত্র
 
-![অনুভূমিক বারচিত্র: ডিভাইস ও ব্রিজ 7; স্থান, পর্যবেক্ষণ ও প্রবেশাধিকার 5; ভয়েস ও মিডিয়া 4; পরীক্ষা ও নিয়ম 4; কনফিগারেশন ও নির্ভরযোগ্যতা 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.bn.svg)
+![অনুভূমিক বারচিত্র: ডিভাইস ও ব্রিজ 8; স্থান, পর্যবেক্ষণ ও প্রবেশাধিকার 5; ভয়েস ও মিডিয়া 4; পরীক্ষা ও নিয়ম 4; কনফিগারেশন ও নির্ভরযোগ্যতা 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.bn.svg)
 
-**22 প্রকল্প + এই প্রোফাইল রিপোজিটরি = 23 প্রকাশ্য রিপোজিটরি**, 16 অক্টোবর 2026-এ যাচাই করা। প্রতিটি প্রকল্প একটি সম্পাদকীয় শ্রেণিতে আছে; সংখ্যা পরিপক্বতা, ব্যবহার বা কার্যক্ষমতা মাপে না। [পুনরুৎপাদনযোগ্য উৎস তথ্য](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json)। প্রকৃত সফ্টওয়্যার পরীক্ষার ফলের জন্য পৃথক [তারিখসহ কমিউনিটি পরীক্ষার চিত্র ও CI চালনার লিংক](https://github.com/ha-homelab/.github/blob/main/community-tools/README.bn.md#validation-evidence--2026-10-16-utc) দেখুন।
+**23 প্রকল্প + এই প্রোফাইল রিপোজিটরি = 24 প্রকাশ্য রিপোজিটরি**, 16 অক্টোবর 2026-এ যাচাই করা। প্রতিটি প্রকল্প একটি সম্পাদকীয় শ্রেণিতে আছে; সংখ্যা পরিপক্বতা, ব্যবহার বা কার্যক্ষমতা মাপে না। [পুনরুৎপাদনযোগ্য উৎস তথ্য](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json)। প্রকৃত সফ্টওয়্যার পরীক্ষার ফলের জন্য পৃথক [তারিখসহ কমিউনিটি পরীক্ষার চিত্র ও CI চালনার লিংক](https://github.com/ha-homelab/.github/blob/main/community-tools/README.bn.md#validation-evidence--2026-10-16-utc) দেখুন।
 
 ## এই সংস্থার বাইরের সম্পর্কিত প্রকাশ্য প্রকল্প
 
