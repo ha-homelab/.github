@@ -20,7 +20,7 @@ Bản đồ nhóm các công việc liên quan. Nó không hàm ý rằng tất 
 
 ## Điểm mới — tháng 10 năm 2026
 
-- **Vẽ và khám phá ngôi nhà trong trình duyệt.** [Home Studio](https://github.com/ha-homelab/home-studio) kết hợp công cụ thiết kế 2D/3D, 195 mẫu đồ vật, 24 ngôn ngữ trình chỉnh sửa và trình biên dịch cục bộ để tạo trình xem có thể cài vào Home Assistant. [Chế độ Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) cho phép khám phá mặt bằng đã cài trong khi chặn lệnh gửi tới thiết bị.
+- **Vẽ và khám phá ngôi nhà trong trình duyệt.** [Home Studio](https://github.com/ha-homelab/home-studio) kết hợp công cụ thiết kế 2D/3D, 195 mẫu đồ vật, 24 ngôn ngữ trình chỉnh sửa và trình biên dịch cục bộ để tạo trình xem có thể cài vào Home Assistant. [Chế độ Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) cho phép khám phá mặt bằng đã cài trong khi chặn lệnh gửi tới thiết bị. [Hướng dẫn sử dụng lần đầu](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) giải thích cách bắt đầu từ ví dụ, khôi phục bản nháp và lưu giữ nội dung đã làm khi 3D không khả dụng.
 - **Thêm cách tái sử dụng phần cứng hiện có.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) có tài liệu cho giọng nói, nhạc và BLE trên Echo Dot 2; [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) mô tả cầu nối Z-Wave. Các dự án RF, Zigbee và Tuya bên dưới bao quát những nhóm thiết bị khác. Mức độ sẵn sàng tùy dự án: việc nghiệm thu vận hành phần cứng ZAC93 vẫn chưa hoàn tất.
 - **Cấu hình công khai và khôi phục.** [Home Assistant](https://github.com/ha-homelab/home-assistant) hiện gồm thư viện tự động hóa/kịch bản tái sử dụng và hợp đồng tích hợp; [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) công khai công cụ triển khai, sao lưu và khôi phục. Một phiên bản chạy với lưu trữ cục bộ không tạo ra chuyển đổi dự phòng tự động.
 - **Bằng chứng trước tự động hóa.** Các dự án mới về quan sát, hướng camera và truy cập bổ sung cho bốn [công cụ cộng đồng](https://github.com/ha-homelab/.github/blob/main/community-tools/README.vi.md) về di chuyển thực thể, nguồn gốc đo lường, kịch bản tự động hóa và kết quả giọng nói. [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) hiện dùng một nút hành động thích ứng nhưng vẫn yêu cầu xác nhận mở khóa rõ ràng.
@@ -48,6 +48,8 @@ Bản đồ nhóm các công việc liên quan. Nó không hàm ý rằng tất 
 EchoLocal và EchoMuse là hai quy trình chuyển đổi khác nhau. Đọc yêu cầu về mẫu thiết bị và khôi phục của dự án đã chọn trước khi sửa thiết bị.
 
 ### Tích hợp thiết bị, cầu nối và khôi phục
+
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — nguyên mẫu PoE dạng mô-đun cho Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz và cảm biến; kèm CAD, firmware và công cụ triển khai; chưa hoàn tất xác minh trên phần cứng thực.
 
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — tích hợp đám mây DESLOC không chính thức cho trạng thái khóa, điều khiển, pin và Wi-Fi; [khả năng tương thích khác nhau theo mẫu](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 
@@ -111,9 +113,9 @@ Với dự án khác, xem [kiến trúc giọng nói/nhạc/BLE EchoMuse](https:
 
 ## Ảnh chụp danh mục công khai
 
-![Biểu đồ thanh ngang: thiết bị và cầu nối 7; không gian, quan sát, truy cập 5; giọng nói và đa phương tiện 4; kiểm thử và hợp đồng 4; cấu hình và độ tin cậy 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.vi.svg)
+![Biểu đồ thanh ngang: thiết bị và cầu nối 8; không gian, quan sát, truy cập 5; giọng nói và đa phương tiện 4; kiểm thử và hợp đồng 4; cấu hình và độ tin cậy 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.vi.svg)
 
-**22 dự án + kho hồ sơ này = 23 kho công khai**, kiểm tra ngày 16 tháng 10 năm 2026. Mỗi dự án thuộc một nhóm biên tập; số lượng không đo mức trưởng thành, mức sử dụng hay hiệu năng. [Dữ liệu nguồn có thể tái lập](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). Kết quả kiểm tra phần mềm thật nằm riêng ở [biểu đồ kiểm thử công cụ cộng đồng có ngày và liên kết lượt CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.vi.md#validation-evidence--2026-10-16-utc).
+**23 dự án + kho hồ sơ này = 24 kho công khai**, kiểm tra ngày 16 tháng 10 năm 2026. Mỗi dự án thuộc một nhóm biên tập; số lượng không đo mức trưởng thành, mức sử dụng hay hiệu năng. [Dữ liệu nguồn có thể tái lập](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). Kết quả kiểm tra phần mềm thật nằm riêng ở [biểu đồ kiểm thử công cụ cộng đồng có ngày và liên kết lượt CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.vi.md#validation-evidence--2026-10-16-utc).
 
 ## Dự án công khai liên quan ngoài tổ chức
 

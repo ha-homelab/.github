@@ -35,6 +35,7 @@
   195 वस्तु डिज़ाइन, संपादक की 24 भाषाएँ और Home Assistant में स्थापित किए जा
   सकने वाले व्यूअर का स्थानीय कंपाइलर शामिल है। इसका
   [Dry run मोड](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) डिवाइस कमांड रोककर स्थापित योजना को देखने देता है।
+  [पहले सत्र की गाइड](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) बताती है कि उदाहरणों से कैसे शुरू करें, ड्राफ़्ट कैसे वापस पाएँ और 3D उपलब्ध न होने पर काम कैसे सुरक्षित रखें।
 - **मौजूदा हार्डवेयर को फिर इस्तेमाल करने के और तरीके।** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) Echo Dot 2
   के लिए आवाज़, संगीत और BLE का दस्तावेज़ित रास्ता जोड़ता है;
   [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) एक Z-Wave ब्रिज समझाता है। नीचे दिए RF, Zigbee और Tuya
@@ -78,6 +79,7 @@ EchoLocal और EchoMuse अलग रूपांतरण रास्ते 
 
 ### डिवाइस एकीकरण, ब्रिज और पुनर्प्राप्ति
 
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz और सेंसर अवलोकन के लिए मॉड्यूलर PoE प्रोटोटाइप; CAD, फ़र्मवेयर और परिनियोजन उपकरण शामिल हैं; भौतिक सत्यापन अभी बाकी है।
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — लॉक स्थिति, नियंत्रण, बैटरी और Wi-Fi के लिए अनौपचारिक
   DESLOC क्लाउड एकीकरण; [मॉडल के अनुसार संगतता बदलती है](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md)।
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — दृश्य संपादक, अनुकूलित क्रिया और पुष्टि के साथ
@@ -156,9 +158,9 @@ EchoLocal और EchoMuse अलग रूपांतरण रास्ते 
 
 ## सार्वजनिक परियोजनाओं की स्थिति
 
-![बार चार्ट: डिवाइस और ब्रिज 7; स्थान, सेंसर और पहुँच 5; आवाज़ और मीडिया 4; परीक्षण और अनुबंध 4; कॉन्फ़िगरेशन और विश्वसनीयता 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.hi.svg)
+![बार चार्ट: डिवाइस और ब्रिज 8; स्थान, सेंसर और पहुँच 5; आवाज़ और मीडिया 4; परीक्षण और अनुबंध 4; कॉन्फ़िगरेशन और विश्वसनीयता 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.hi.svg)
 
-**22 परियोजनाएँ + इस प्रोफ़ाइल की रिपॉज़िटरी = 23 सार्वजनिक रिपॉज़िटरी**,
+**23 परियोजनाएँ + इस प्रोफ़ाइल की रिपॉज़िटरी = 24 सार्वजनिक रिपॉज़िटरी**,
 16 अक्टूबर 2026 को जाँची गईं। हर परियोजना एक संपादकीय श्रेणी में है; संख्याएँ
 परिपक्वता, उपयोग या प्रदर्शन नहीं मापतीं। [पुनरुत्पादनीय स्रोत डेटा](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json)।
 वास्तविक सॉफ़्टवेयर जाँच परिणामों के लिए अलग

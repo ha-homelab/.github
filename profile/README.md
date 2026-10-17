@@ -35,6 +35,8 @@ together or automatically integrates with every other project.
   compiler for an installable Home Assistant viewer. Its
   [Dry run mode](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md)
   lets you explore the installed plan while blocking device commands.
+  The [first-session guide](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md)
+  explains starting from examples, recovering drafts and preserving work when 3D is unavailable.
 - **More ways to reuse existing hardware.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse)
   adds a documented Echo Dot 2 voice, music and BLE path;
   [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) documents a Z-Wave bridge;
@@ -79,6 +81,9 @@ model and recovery requirements before modifying a device.
 
 ### Device integrations, bridges and recovery
 
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — modular PoE prototype for
+  Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz RF and sensing, with CAD, firmware
+  and deployment tooling. Physical validation is pending.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — unofficial DESLOC cloud integration
   for lock state, controls, battery and Wi-Fi; [model compatibility varies](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — a separate dashboard
@@ -160,9 +165,9 @@ and [RuView's synthetic replay demonstration](https://github.com/ha-homelab/ruvi
 
 ## Public project snapshot
 
-![Horizontal bar chart: devices and bridges 7; spatial tools, sensing and access 5; voice and media 4; tests and contracts 4; configuration and reliability 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.svg)
+![Horizontal bar chart: devices and bridges 8; spatial tools, sensing and access 5; voice and media 4; tests and contracts 4; configuration and reliability 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.svg)
 
-**22 projects + this profile repository = 23 public repositories**, checked on
+**23 projects + this profile repository = 24 public repositories**, checked on
 16 October 2026. Each project has one editorial category; counts do not measure
 maturity, usage or performance. [Reproducible source data](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).
 For actual software-check results, see the separate

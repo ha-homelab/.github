@@ -35,6 +35,7 @@ worden geïnstalleerd of automatisch met elkaar integreren.
   2D/3D-planner, 195 objectontwerpen, 24 editortalen en een lokale compiler voor
   een installeerbare Home Assistant-viewer. Met de
   [Dry run-modus](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) kun je de geïnstalleerde plattegrond verkennen terwijl apparaatcommando's worden geblokkeerd.
+  De [gids voor de eerste sessie](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) legt uit hoe je met voorbeelden begint, concepten herstelt en je werk behoudt wanneer 3D niet beschikbaar is.
 - **Meer manieren om bestaande hardware te hergebruiken.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) voegt een
   gedocumenteerde route toe voor spraak, muziek en BLE op de Echo Dot 2;
   [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) beschrijft een Z-Wave-bridge. De onderstaande RF-, Zigbee- en
@@ -78,6 +79,7 @@ hersteleisen van het gekozen project voordat je een apparaat aanpast.
 
 ### Apparaatintegraties, bridges en herstel
 
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — modulair PoE-prototype voor Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz en sensormetingen; bevat CAD, firmware en implementatietools; fysieke validatie moet nog plaatsvinden.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — onofficiële DESLOC-cloudintegratie voor slotstatus, bediening,
   batterij en wifi; [de compatibiliteit verschilt per model](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — afzonderlijke dashboardkaart met visuele editor,
@@ -157,9 +159,9 @@ Bekijk voor andere projectbeelden de [EchoMuse-architectuur voor spraak, muziek 
 
 ## Momentopname van openbare projecten
 
-![Staafdiagram: apparaten en bridges 7; ruimte, sensoren en toegang 5; spraak en media 4; tests en contracten 4; configuratie en betrouwbaarheid 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.nl.svg)
+![Staafdiagram: apparaten en bridges 8; ruimte, sensoren en toegang 5; spraak en media 4; tests en contracten 4; configuratie en betrouwbaarheid 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.nl.svg)
 
-**22 projecten + deze profielrepository = 23 openbare repositories**, gecontroleerd
+**23 projecten + deze profielrepository = 24 openbare repositories**, gecontroleerd
 op 16 oktober 2026. Elk project heeft één redactionele categorie; aantallen meten
 geen volwassenheid, gebruik of prestaties. [Reproduceerbare brongegevens](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).
 Bekijk voor daadwerkelijke softwarecontroleresultaten het afzonderlijke

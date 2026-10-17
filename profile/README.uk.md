@@ -35,6 +35,7 @@
   2D/3D, 195 моделей предметів, 24 мови редактора та локальний компілятор для
   переглядача, який можна встановити в Home Assistant.
   [Режим Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) дає змогу досліджувати встановлений план, блокуючи команди пристроям.
+  [Посібник для першого сеансу](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) пояснює, як почати з прикладів, відновити чернетки та зберегти роботу, коли 3D недоступне.
 - **Більше способів повторно використати обладнання.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) додає
   документований шлях для голосу, музики та BLE на Echo Dot 2;
   [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) описує міст Z-Wave. Наведені нижче проєкти RF, Zigbee і Tuya
@@ -78,6 +79,7 @@ EchoLocal і EchoMuse — різні шляхи перетворення. Пер
 
 ### Інтеграції, мости й відновлення пристроїв
 
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — модульний прототип PoE для Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz і сенсорних спостережень; містить CAD, прошивки та засоби розгортання; фізичну перевірку ще не виконано.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — неофіційна інтеграція хмари DESLOC для стану замка,
   керування, батареї та Wi-Fi; [сумісність залежить від моделі](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — окрема картка панелі з візуальним редактором,
@@ -157,9 +159,9 @@ EchoLocal і EchoMuse — різні шляхи перетворення. Пер
 
 ## Зріз публічних проєктів
 
-![Смугова діаграма: пристрої й мости 7; простір, датчики та доступ 5; голос і медіа 4; тести й контракти 4; конфігурація та надійність 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.uk.svg)
+![Смугова діаграма: пристрої й мости 8; простір, датчики та доступ 5; голос і медіа 4; тести й контракти 4; конфігурація та надійність 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.uk.svg)
 
-**22 проєкти + репозиторій цього профілю = 23 публічні репозиторії**, перевірено
+**23 проєкти + репозиторій цього профілю = 24 публічні репозиторії**, перевірено
 16 жовтня 2026 року. Кожен проєкт має одну редакційну категорію; кількості не
 вимірюють зрілість, використання чи продуктивність. [Відтворювані вихідні дані](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).
 Фактичні результати програмних перевірок наведені в окремій

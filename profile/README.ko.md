@@ -20,7 +20,7 @@
 
 ## 새로운 소식 — 2026년 10월
 
-- **브라우저에서 집을 그리고 살펴보세요.** [Home Studio](https://github.com/ha-homelab/home-studio)는 2D/3D 설계 도구, 195종의 물품 디자인, 편집기 24개 언어와 Home Assistant에 설치할 뷰어를 만드는 로컬 컴파일러를 제공합니다. [Dry run 모드](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md)에서는 기기 명령을 차단한 채 설치된 평면도를 살펴볼 수 있습니다.
+- **브라우저에서 집을 그리고 살펴보세요.** [Home Studio](https://github.com/ha-homelab/home-studio)는 2D/3D 설계 도구, 195종의 물품 디자인, 편집기 24개 언어와 Home Assistant에 설치할 뷰어를 만드는 로컬 컴파일러를 제공합니다. [Dry run 모드](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md)에서는 기기 명령을 차단한 채 설치된 평면도를 살펴볼 수 있습니다. [첫 사용 가이드](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md)는 예제로 시작하는 방법, 초안 복구, 3D를 사용할 수 없을 때 작업을 보존하는 방법을 설명합니다.
 - **기존 하드웨어를 재사용하는 더 많은 방법.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse)는 Echo Dot 2의 음성, 음악, BLE 경로를 문서화하고, [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32)는 Z-Wave 브리지를 설명합니다. 아래의 RF, Zigbee, Tuya 프로젝트는 다른 기기군을 다룹니다. 하드웨어 준비 상태는 프로젝트별로 다르며 ZAC93 실물 시운전은 아직 남아 있습니다.
 - **공개 설정과 복구.** [Home Assistant](https://github.com/ha-homelab/home-assistant)는 재사용 가능한 자동화·스크립트 라이브러리와 통합 계약 명세를 포함합니다. [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing)은 배포, 백업, 복구 도구를 공개합니다. 로컬 저장소를 사용하는 단일 인스턴스만으로는 자동 장애 조치가 이루어지지 않습니다.
 - **자동화에 앞서 근거를 확인합니다.** 새 감지, 카메라 방향, 접근 프로젝트와 함께 엔터티 마이그레이션, 계측 출처, 자동화 시나리오, 음성 결과를 다루는 네 가지 [커뮤니티 도구](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ko.md)가 있습니다. [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card)는 명시적인 잠금 해제 확인을 유지하면서 상태에 맞게 바뀌는 하나의 동작 버튼을 사용합니다.
@@ -48,6 +48,8 @@
 EchoLocal과 EchoMuse는 서로 다른 변환 경로입니다. 기기를 수정하기 전에 선택한 프로젝트의 모델 및 복구 요구 사항을 읽으세요.
 
 ### 기기 통합, 브리지, 복구
+
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz, 센싱을 위한 모듈식 PoE 프로토타입. CAD, 펌웨어, 배포 도구를 포함하며 실물 하드웨어 검증은 아직 남아 있습니다.
 
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — 잠금 상태, 제어, 배터리, Wi-Fi를 위한 비공식 DESLOC 클라우드 통합. [모델별 호환성은 다릅니다](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 
@@ -111,9 +113,9 @@ EchoLocal과 EchoMuse는 서로 다른 변환 경로입니다. 기기를 수정�
 
 ## 공개 프로젝트 스냅샷
 
-![가로 막대그래프: 기기와 브리지 7, 공간·감지·접근 5, 음성과 미디어 4, 테스트와 계약 4, 설정과 신뢰성 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.ko.svg)
+![가로 막대그래프: 기기와 브리지 8, 공간·감지·접근 5, 음성과 미디어 4, 테스트와 계약 4, 설정과 신뢰성 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.ko.svg)
 
-**22개 프로젝트 + 이 프로필 저장소 = 공개 저장소 23개**이며, 2026년 10월 16일 확인했습니다. 각 프로젝트를 하나의 편집 분류에만 배정합니다. 수치는 성숙도, 사용량, 성능을 측정하지 않습니다. [재현 가능한 원본 데이터](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). 실제 소프트웨어 검사 결과는 별도의 [날짜가 명시된 커뮤니티 도구 테스트 그래프와 CI 실행 링크](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ko.md#validation-evidence--2026-10-16-utc)를 보세요.
+**23개 프로젝트 + 이 프로필 저장소 = 공개 저장소 24개**이며, 2026년 10월 16일 확인했습니다. 각 프로젝트를 하나의 편집 분류에만 배정합니다. 수치는 성숙도, 사용량, 성능을 측정하지 않습니다. [재현 가능한 원본 데이터](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). 실제 소프트웨어 검사 결과는 별도의 [날짜가 명시된 커뮤니티 도구 테스트 그래프와 CI 실행 링크](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ko.md#validation-evidence--2026-10-16-utc)를 보세요.
 
 ## 이 조직 밖의 관련 공개 프로젝트
 

@@ -36,6 +36,8 @@
   компилятор, создающий пакет с просмотрщиком для установки в Home Assistant.
   [Режим Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md)
   позволяет изучать установленный план, блокируя команды устройствам.
+  [Руководство по первому запуску](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md)
+  объясняет, как начать с примера, восстановить черновик и сохранить работу, если 3D недоступно.
 - **Повторное использование оборудования.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse)
   добавляет путь для голоса, музыки и BLE на Echo Dot 2;
   [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) описывает мост Z-Wave;
@@ -81,6 +83,9 @@ EchoLocal и EchoMuse — разные пути переделки. Перед �
 
 ### Интеграции устройств, мосты и восстановление
 
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — модульный прототип с питанием PoE
+  для Zigbee, Thread, Bluetooth, Z-Wave, радиосвязи 433 МГц и датчиков. Опубликованы CAD-модели,
+  прошивки и инструменты развёртывания; физические испытания ещё не завершены.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — неофициальная облачная интеграция
   DESLOC: состояние, управление, батарея и Wi-Fi; [возможности зависят от модели](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — отдельная карточка
@@ -163,9 +168,9 @@ EchoLocal и EchoMuse — разные пути переделки. Перед �
 
 ## Срез публичного каталога
 
-![График: устройства и мосты — 7; пространство, наблюдения и доступ — 5; голос и медиа — 4; тесты и контракты — 4; конфигурация — 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.ru.svg)
+![График: устройства и мосты — 8; пространство, наблюдения и доступ — 5; голос и медиа — 4; тесты и контракты — 4; конфигурация — 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.ru.svg)
 
-**22 проекта + репозиторий профиля = 23 публичных репозитория**, проверено
+**23 проекта + репозиторий профиля = 24 публичных репозитория**, проверено
 16 октября 2026 года. Каждый проект отнесён к одному направлению;
 числа не измеряют зрелость, популярность или производительность.
 [Исходные данные](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).

@@ -35,6 +35,7 @@ razem lub automatycznie integrują się ze sobą.
   195 projektów przedmiotów, 24 języki edytora i lokalny kompilator tworzący
   przeglądarkę planu do instalacji w Home Assistant.
   [Tryb Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) pozwala poznawać zainstalowany plan, blokując polecenia do urządzeń.
+  [Przewodnik po pierwszej sesji](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) wyjaśnia, jak zacząć od przykładów, odzyskiwać wersje robocze i zachować pracę, gdy widok 3D jest niedostępny.
 - **Więcej sposobów na ponowne użycie sprzętu.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) dodaje
   udokumentowaną ścieżkę głosu, muzyki i BLE dla Echo Dot 2;
   [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) opisuje mostek Z-Wave. Wymienione niżej projekty RF, Zigbee
@@ -78,6 +79,7 @@ przeczytaj wymagania wybranego projektu dotyczące modelu i odzyskiwania.
 
 ### Integracje, mostki i odzyskiwanie urządzeń
 
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — modułowy prototyp PoE dla Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz oraz pomiarów z czujników; zawiera CAD, firmware i narzędzia wdrożeniowe; weryfikacja fizycznego sprzętu pozostaje do wykonania.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — nieoficjalna integracja chmury DESLOC dla stanu zamka,
   sterowania, baterii i Wi-Fi; [zgodność zależy od modelu](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — osobna karta panelu z edytorem wizualnym, adaptacyjną
@@ -157,9 +159,9 @@ Inne widoki projektów to [architektura głosu, muzyki i BLE w EchoMuse](https:/
 
 ## Stan projektów publicznych
 
-![Wykres słupkowy: urządzenia i mostki 7; przestrzeń, czujniki i dostęp 5; głos i multimedia 4; testy i kontrakty 4; konfiguracja i niezawodność 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.pl.svg)
+![Wykres słupkowy: urządzenia i mostki 8; przestrzeń, czujniki i dostęp 5; głos i multimedia 4; testy i kontrakty 4; konfiguracja i niezawodność 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.pl.svg)
 
-**22 projekty + repozytorium tego profilu = 23 publiczne repozytoria**, sprawdzone
+**23 projekty + repozytorium tego profilu = 24 publiczne repozytoria**, sprawdzone
 16 października 2026. Każdy projekt ma jedną kategorię redakcyjną; liczby nie mierzą
 dojrzałości, użycia ani wydajności. [Odtwarzalne dane źródłowe](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).
 Rzeczywiste wyniki kontroli oprogramowania znajdziesz na osobnym

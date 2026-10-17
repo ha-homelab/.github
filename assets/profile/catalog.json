@@ -1,15 +1,15 @@
 {
   "snapshot_date_los_angeles": "2026-10-16",
-  "retrieved_at_utc": "2026-10-16T23:30:52.050556+00:00",
+  "retrieved_at_utc": "2026-10-17T03:30:31.822734+00:00",
   "source_api": "https://api.github.com/orgs/ha-homelab/repos?type=public&per_page=100",
-  "public_repository_count": 23,
-  "public_project_count": 22,
+  "public_repository_count": 24,
+  "public_project_count": 23,
   "profile_repo_excluded_from_project_chart": ".github",
   "category_counts": {
+    "Device integrations, bridges and recovery": 8,
     "Voice and media": 4,
-    "Device integrations, bridges and recovery": 7,
-    "Configuration and reliability": 2,
     "Spatial tools, sensing and access": 5,
+    "Configuration and reliability": 2,
     "Testing and contracts": 4
   },
   "methodology": "Public repository snapshot; one editorial category per project. Excludes the .github profile repository from the chart. Counts are not downloads, maturity, test coverage or hardware acceptance.",
@@ -18,8 +18,8 @@
       "name": "ha-desloc",
       "html_url": "https://github.com/ha-homelab/ha-desloc",
       "category": "Device integrations, bridges and recovery",
-      "default_branch_commit": "d4077204c267ce4ab6853230a7e52e0d9d3eb86a",
-      "readme_source": "https://github.com/ha-homelab/ha-desloc/blob/d4077204c267ce4ab6853230a7e52e0d9d3eb86a/README.md",
+      "default_branch_commit": "4a3067e5a2d404d5c440573cf2583588188bc1b0",
+      "readme_source": "https://github.com/ha-homelab/ha-desloc/blob/4a3067e5a2d404d5c440573cf2583588188bc1b0/README.md",
       "scope_note": "Unofficial cloud integration; C100 Plus maintainer-tested; model features vary."
     },
     {
@@ -50,8 +50,8 @@
       "name": "slzb-06-recovery",
       "html_url": "https://github.com/ha-homelab/slzb-06-recovery",
       "category": "Device integrations, bridges and recovery",
-      "default_branch_commit": "b8636d922bfa98e65ab681670a36ab424c408752",
-      "readme_source": "https://github.com/ha-homelab/slzb-06-recovery/blob/b8636d922bfa98e65ab681670a36ab424c408752/README.md",
+      "default_branch_commit": "ed7d1423776ea680b902cf1b9afa7c9585376882",
+      "readme_source": "https://github.com/ha-homelab/slzb-06-recovery/blob/ed7d1423776ea680b902cf1b9afa7c9585376882/README.md",
       "scope_note": "Original SLZB-06 legacy Ethernet recovery; core and Zigbee-radio firmware are separate."
     },
     {
@@ -66,8 +66,8 @@
       "name": "zigbee-direct-button",
       "html_url": "https://github.com/ha-homelab/zigbee-direct-button",
       "category": "Device integrations, bridges and recovery",
-      "default_branch_commit": "fe79c1af50cb6f779613d708db302cb525bdc79c",
-      "readme_source": "https://github.com/ha-homelab/zigbee-direct-button/blob/fe79c1af50cb6f779613d708db302cb525bdc79c/README.md",
+      "default_branch_commit": "4638855a0935fd67b538c2ad49e5b3d2db6d4793",
+      "readme_source": "https://github.com/ha-homelab/zigbee-direct-button/blob/4638855a0935fd67b538c2ad49e5b3d2db6d4793/README.md",
       "scope_note": "Hardware-specific direct group firmware; see model qualification and OTA wake requirements."
     },
     {
@@ -82,16 +82,16 @@
       "name": "home-studio",
       "html_url": "https://github.com/ha-homelab/home-studio",
       "category": "Spatial tools, sensing and access",
-      "default_branch_commit": "1da65687bb5471628799873b32789813457c7085",
-      "readme_source": "https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/README.md",
-      "scope_note": "Browser editor with local draft/JSON exports, compiler and HA viewer; hosted editor itself does not connect to HA."
+      "default_branch_commit": "3be9b603a4e2663a81019e1cf2cc7040ca8677ea",
+      "readme_source": "https://github.com/ha-homelab/home-studio/blob/3be9b603a4e2663a81019e1cf2cc7040ca8677ea/README.md",
+      "scope_note": "Browser editor with local draft/JSON exports, compiler and HA viewer; hosted editor itself does not connect to HA. First-session guidance covers examples, draft recovery and preserving work when 3D is unavailable."
     },
     {
       "name": "home-assistant",
       "html_url": "https://github.com/ha-homelab/home-assistant",
       "category": "Configuration and reliability",
-      "default_branch_commit": "103bac492fd309709a53635150d346cad2b6211c",
-      "readme_source": "https://github.com/ha-homelab/home-assistant/blob/103bac492fd309709a53635150d346cad2b6211c/README.md",
+      "default_branch_commit": "df3f8e163146c64f85f959c514a59a7c55fe9b0a",
+      "readme_source": "https://github.com/ha-homelab/home-assistant/blob/df3f8e163146c64f85f959c514a59a7c55fe9b0a/README.md",
       "scope_note": "Public configuration plus bundled automation/script libraries; installation-specific values are private inputs."
     },
     {
@@ -189,6 +189,14 @@
       "default_branch_commit": "49b1fa7bad586c584a4aba05ceb66f3616c3bf2c",
       "readme_source": "https://github.com/ha-homelab/ha-scenario-tests/blob/49b1fa7bad586c584a4aba05ceb66f3616c3bf2c/README.md",
       "scope_note": "Bounded synthetic scenarios in a real isolated HA engine; not live hardware commissioning."
+    },
+    {
+      "name": "ha-radio-hub",
+      "html_url": "https://github.com/ha-homelab/ha-radio-hub",
+      "category": "Device integrations, bridges and recovery",
+      "default_branch_commit": "6012036fbe4b67b1065272a6592570f9c19b13fe",
+      "readme_source": "https://github.com/ha-homelab/ha-radio-hub/blob/6012036fbe4b67b1065272a6592570f9c19b13fe/README.md",
+      "scope_note": "Modular PoE engineering prototype for Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz RF and sensing; CAD, firmware and deployment tooling provided. Physical RF, power, thermal, sensing and mechanical validation remains pending."
     }
   ]
 }

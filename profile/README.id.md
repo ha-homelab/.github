@@ -20,7 +20,7 @@ Peta ini mengelompokkan pekerjaan yang berkaitan. Ini tidak berarti semua proyek
 
 ## Yang baru — Oktober 2026
 
-- **Gambar dan jelajahi rumah di peramban.** [Home Studio](https://github.com/ha-homelab/home-studio) menggabungkan perencana 2D/3D, 195 desain objek, 24 bahasa editor, dan kompiler lokal untuk penampil yang dapat dipasang di Home Assistant. [Mode Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) memungkinkan Anda menjelajahi denah terpasang sambil memblokir perintah ke perangkat.
+- **Gambar dan jelajahi rumah di peramban.** [Home Studio](https://github.com/ha-homelab/home-studio) menggabungkan perencana 2D/3D, 195 desain objek, 24 bahasa editor, dan kompiler lokal untuk penampil yang dapat dipasang di Home Assistant. [Mode Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) memungkinkan Anda menjelajahi denah terpasang sambil memblokir perintah ke perangkat. [Panduan penggunaan pertama](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) menjelaskan cara memulai dari contoh, memulihkan draf, dan mempertahankan hasil kerja saat 3D tidak tersedia.
 - **Lebih banyak cara memakai kembali perangkat.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) mendokumentasikan jalur suara, musik, dan BLE untuk Echo Dot 2; [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) mendokumentasikan jembatan Z-Wave. Proyek RF, Zigbee, dan Tuya di bawah mencakup keluarga perangkat lain. Kesiapan perangkat keras berbeda antarproyek: uji pengoperasian fisik ZAC93 masih menunggu.
 - **Konfigurasi publik dan pemulihan.** [Home Assistant](https://github.com/ha-homelab/home-assistant) kini menyertakan pustaka otomasi/skrip yang dapat digunakan kembali serta kontrak integrasi; [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) menerbitkan alat penerapan, pencadangan, dan pemulihan. Satu instans dengan penyimpanan lokal tidak memberikan failover otomatis.
 - **Bukti sebelum otomasi.** Proyek baru untuk pengamatan, arah kamera, dan akses melengkapi empat [alat komunitas](https://github.com/ha-homelab/.github/blob/main/community-tools/README.id.md) untuk migrasi entitas, asal-usul pengukuran, skenario otomasi, dan hasil suara. [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) kini memakai satu tombol tindakan adaptif sambil tetap mewajibkan konfirmasi pembukaan kunci.
@@ -48,6 +48,8 @@ Ini adalah potret editorial per **16 Oktober 2026**. Lihat README dan rilis masi
 EchoLocal dan EchoMuse adalah jalur konversi berbeda. Baca persyaratan model dan pemulihan proyek pilihan sebelum memodifikasi perangkat.
 
 ### Integrasi perangkat, jembatan, dan pemulihan
+
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — prototipe PoE modular untuk Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz, dan pengindraan; mencakup CAD, firmware, dan alat penerapan; validasi perangkat keras fisik masih tertunda.
 
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — integrasi cloud DESLOC tidak resmi untuk status kunci, kontrol, baterai, dan Wi-Fi; [kompatibilitas berbeda menurut model](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 
@@ -111,9 +113,9 @@ Untuk tampilan proyek lain, jelajahi [arsitektur suara/musik/BLE EchoMuse](https
 
 ## Potret proyek publik
 
-![Grafik batang horizontal: perangkat dan jembatan 7; ruang, pengamatan, dan akses 5; suara dan media 4; tes dan kontrak 4; konfigurasi dan keandalan 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.id.svg)
+![Grafik batang horizontal: perangkat dan jembatan 8; ruang, pengamatan, dan akses 5; suara dan media 4; tes dan kontrak 4; konfigurasi dan keandalan 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.id.svg)
 
-**22 proyek + repositori profil ini = 23 repositori publik**, diperiksa pada 16 Oktober 2026. Setiap proyek masuk satu kategori editorial; jumlah tidak mengukur kematangan, pemakaian, atau kinerja. [Data sumber yang dapat direproduksi](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). Untuk hasil pemeriksaan perangkat lunak sebenarnya, lihat [grafik tes alat komunitas bertanggal dan tautan eksekusi CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.id.md#validation-evidence--2026-10-16-utc) yang terpisah.
+**23 proyek + repositori profil ini = 24 repositori publik**, diperiksa pada 16 Oktober 2026. Setiap proyek masuk satu kategori editorial; jumlah tidak mengukur kematangan, pemakaian, atau kinerja. [Data sumber yang dapat direproduksi](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). Untuk hasil pemeriksaan perangkat lunak sebenarnya, lihat [grafik tes alat komunitas bertanggal dan tautan eksekusi CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.id.md#validation-evidence--2026-10-16-utc) yang terpisah.
 
 ## Proyek publik terkait di luar organisasi ini
 

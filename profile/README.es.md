@@ -35,6 +35,9 @@ instalen juntos ni que se integren automáticamente entre sí.
   compilador local para un visor instalable en Home Assistant. Su
   [modo Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md)
   permite explorar el plano instalado mientras bloquea los comandos a dispositivos.
+  La [guía de la primera sesión](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md)
+  explica cómo empezar con ejemplos, recuperar borradores y conservar el trabajo
+  cuando la vista 3D no está disponible.
 - **Más formas de reutilizar el hardware existente.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse)
   añade una opción documentada de voz, música y BLE para Echo Dot 2;
   [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) documenta un puente Z-Wave;
@@ -87,6 +90,9 @@ dispositivo, lee los requisitos de modelo y recuperación del proyecto elegido.
 
 ### Integraciones de dispositivos, puentes y recuperación
 
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — prototipo modular
+  con PoE para Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz y sensores; incluye CAD,
+  firmware y herramientas de despliegue. La validación física sigue pendiente.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — integración no oficial con
   la nube de DESLOC para estado de cerraduras, controles, batería y Wi-Fi;
   [la compatibilidad varía según el modelo](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
@@ -181,9 +187,9 @@ y la [demostración de reproducción sintética de RuView](https://github.com/ha
 
 ## Instantánea de los proyectos públicos
 
-![Gráfico de barras horizontales: dispositivos y puentes 7; herramientas espaciales, observación y acceso 5; voz y multimedia 4; pruebas y contratos 4; configuración y fiabilidad 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.es.svg)
+![Gráfico de barras horizontales: dispositivos y puentes 8; herramientas espaciales, observación y acceso 5; voz y multimedia 4; pruebas y contratos 4; configuración y fiabilidad 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.es.svg)
 
-**22 proyectos + este repositorio de perfil = 23 repositorios públicos**, comprobados
+**23 proyectos + este repositorio de perfil = 24 repositorios públicos**, comprobados
 el 16 de octubre de 2026. Cada proyecto tiene una categoría editorial; los recuentos
 no miden madurez, uso ni rendimiento.
 [Datos de origen reproducibles](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).

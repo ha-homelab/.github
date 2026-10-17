@@ -28,7 +28,7 @@
 
 ## تازه‌ها - اکتبر 2026
 
-- **یک خانه را در مرورگر ترسیم و کاوش کنید.** [Home Studio](https://github.com/ha-homelab/home-studio) یک طراح 2D/3D، تعداد 195 طرح اشیا، 24 زبان برای ویرایشگر و یک ابزار ساخت محلی برای نمایشگر قابل نصب در Home Assistant را ترکیب می کند. [حالت آزمایشی بدون اجرای فرمان](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) آن به شما امکان می دهد نقشه نصب‌شده را در حین مسدود کردن دستورات دستگاه بررسی کنید.
+- **یک خانه را در مرورگر ترسیم و کاوش کنید.** [Home Studio](https://github.com/ha-homelab/home-studio) یک طراح 2D/3D، تعداد 195 طرح اشیا، 24 زبان برای ویرایشگر و یک ابزار ساخت محلی برای نمایشگر قابل نصب در Home Assistant را ترکیب می کند. [حالت آزمایشی بدون اجرای فرمان](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) آن به شما امکان می دهد نقشه نصب‌شده را در حین مسدود کردن دستورات دستگاه بررسی کنید. [راهنمای جلسه اول](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) شروع با نمونه‌ها، بازیابی پیش‌نویس‌ها و حفظ کار هنگام در دسترس نبودن نمای 3D را توضیح می‌دهد.
 
 - **راههای بیشتر برای استفاده مجدد از سخت افزار موجود.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) یک مسیر مستند برای صدا، موسیقی و BLE در Echo Dot 2 را اضافه می کند. [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) یک پل Z-Wave را مستند می کند. پروژه‌های RF، Zigbee و Tuya سایر خانواده‌های دستگاه را در زیر پوشش می‌دهند. آمادگی سخت‌افزار مختص پروژه است: راه‌اندازی فیزیکی ZAC93 هنوز در انتظار است.
 
@@ -59,6 +59,8 @@
 EchoLocal و EchoMuse مسیرهای تبدیل متمایز هستند. قبل از تغییر دستگاه، الزامات مدل دستگاه و بازیابی در پروژه انتخابی را بخوانید.
 
 ### ادغام دستگاه، پل و بازیابی
+
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — نمونه اولیه ماژولار با تغذیه PoE برای Zigbee، Thread، Bluetooth، Z-Wave، ‏433 MHz و حسگری؛ شامل فایل‌های CAD، میان‌افزار و ابزارهای استقرار است. اعتبارسنجی فیزیکی هنوز انجام نشده است.
 
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — یکپارچه سازی ابری غیر رسمی DESLOC برای حالت قفل، کنترل ها، باتری و Wi-Fi؛ [سازگاری مدل متفاوت است](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 
@@ -120,9 +122,9 @@ EchoLocal و EchoMuse مسیرهای تبدیل متمایز هستند. قبل 
 
 ## تصویر وضعیت پروژه‌های عمومی
 
-![نمودار میله ای افقی: دستگاه ها و پل ها 7. ابزارهای طراحی فضا، سنجش و دسترسی به 5؛ صدا و رسانه 4; تست و قرارداد 4؛ پیکربندی و قابلیت اطمینان 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.fa.svg)
+![نمودار میله ای افقی: دستگاه ها و پل ها 8. ابزارهای طراحی فضا، سنجش و دسترسی به 5؛ صدا و رسانه 4; تست و قرارداد 4؛ پیکربندی و قابلیت اطمینان 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.fa.svg)
 
-**22 پروژه + مخزن این نمایه = 23 مخزن عمومی**، در 16 اکتبر 2026 بررسی شد. هر پروژه دارای یک دسته ویرایشی است. این تعداد، بلوغ، میزان استفاده یا کارایی را اندازه‌گیری نمی‌کند. [داده های منبع قابل تکرار](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). برای نتایج واقعی بررسی نرم افزار، [نمودار تست ابزار جامعه و اجراهای مرتبط CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.fa.md#validation-evidence--2026-10-16-utc) جداگانه را ببینید.
+**23 پروژه + مخزن این نمایه = 24 مخزن عمومی**، در 16 اکتبر 2026 بررسی شد. هر پروژه دارای یک دسته ویرایشی است. این تعداد، بلوغ، میزان استفاده یا کارایی را اندازه‌گیری نمی‌کند. [داده های منبع قابل تکرار](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). برای نتایج واقعی بررسی نرم افزار، [نمودار تست ابزار جامعه و اجراهای مرتبط CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.fa.md#validation-evidence--2026-10-16-utc) جداگانه را ببینید.
 
 ## پروژه های عمومی مرتبط فراتر از این سازمان
 

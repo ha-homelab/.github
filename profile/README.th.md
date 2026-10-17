@@ -20,7 +20,7 @@
 
 ## มีอะไรใหม่ — ตุลาคม 2026
 
-- **วาดและสำรวจบ้านในเบราว์เซอร์** [Home Studio](https://github.com/ha-homelab/home-studio) รวมเครื่องมือวางผัง 2D/3D แบบสิ่งของ 195 แบบ ภาษาของตัวแก้ไข 24 ภาษา และคอมไพเลอร์ภายในเครื่องสำหรับสร้างตัวแสดงผลที่ติดตั้งใน Home Assistant ได้ [โหมด Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) ให้สำรวจผังที่ติดตั้งแล้วโดยบล็อกคำสั่งไปยังอุปกรณ์
+- **วาดและสำรวจบ้านในเบราว์เซอร์** [Home Studio](https://github.com/ha-homelab/home-studio) รวมเครื่องมือวางผัง 2D/3D แบบสิ่งของ 195 แบบ ภาษาของตัวแก้ไข 24 ภาษา และคอมไพเลอร์ภายในเครื่องสำหรับสร้างตัวแสดงผลที่ติดตั้งใน Home Assistant ได้ [โหมด Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) ให้สำรวจผังที่ติดตั้งแล้วโดยบล็อกคำสั่งไปยังอุปกรณ์ [คู่มือเริ่มใช้งาน](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) อธิบายการเริ่มจากตัวอย่าง การกู้คืนฉบับร่าง และการเก็บรักษางานเมื่อใช้งาน 3D ไม่ได้
 - **ทางเลือกเพิ่มขึ้นในการใช้อุปกรณ์เดิมต่อ** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) มีเอกสารเส้นทางเสียง เพลง และ BLE บน Echo Dot 2 ส่วน [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) อธิบายบริดจ์ Z-Wave โครงการ RF, Zigbee และ Tuya ด้านล่างครอบคลุมอุปกรณ์กลุ่มอื่น ความพร้อมของฮาร์ดแวร์ขึ้นกับแต่ละโครงการ โดย ZAC93 ยังรอการตรวจรับการทำงานกับอุปกรณ์จริง
 - **การตั้งค่าสาธารณะและการกู้คืน** [Home Assistant](https://github.com/ha-homelab/home-assistant) มีไลบรารีระบบอัตโนมัติและสคริปต์ที่ใช้ซ้ำได้ รวมถึงข้อกำหนดการเชื่อมต่อ ส่วน [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) เผยแพร่เครื่องมือติดตั้ง สำรองข้อมูล และกู้คืน อินสแตนซ์เดียวที่ใช้พื้นที่เก็บข้อมูลภายในเครื่องไม่ได้ให้การสลับระบบเมื่อขัดข้องโดยอัตโนมัติ
 - **ตรวจหลักฐานก่อนทำงานอัตโนมัติ** โครงการใหม่ด้านการตรวจวัด ทิศทางกล้อง และการเข้าถึง เสริมกับ[เครื่องมือชุมชน](https://github.com/ha-homelab/.github/blob/main/community-tools/README.th.md)สี่ตัวสำหรับย้ายเอนทิตี ตรวจที่มาของค่ามิเตอร์ ทดสอบสถานการณ์อัตโนมัติ และประเมินผลเสียง [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) ใช้ปุ่มการทำงานเดียวที่เปลี่ยนตามสถานะ โดยยังต้องยืนยันการปลดล็อกอย่างชัดเจน
@@ -48,6 +48,8 @@
 EchoLocal และ EchoMuse เป็นคนละเส้นทางการแปลง อ่านข้อกำหนดรุ่นอุปกรณ์และการกู้คืนของโครงการที่เลือกก่อนแก้ไขอุปกรณ์
 
 ### การเชื่อมต่ออุปกรณ์ บริดจ์ และการกู้คืน
+
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — ต้นแบบ PoE แบบโมดูลสำหรับ Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz และการตรวจวัด มี CAD เฟิร์มแวร์ และเครื่องมือปรับใช้ โดยยังรอการตรวจสอบฮาร์ดแวร์จริง
 
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — ส่วนเชื่อมต่อคลาวด์ DESLOC ที่ไม่เป็นทางการสำหรับสถานะล็อก การควบคุม แบตเตอรี่ และ Wi-Fi โดย[ความเข้ากันได้ต่างกันตามรุ่น](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md)
 
@@ -111,9 +113,9 @@ EchoLocal และ EchoMuse เป็นคนละเส้นทางกา
 
 ## ภาพรวมโครงการสาธารณะ
 
-![กราฟแท่งแนวนอน: อุปกรณ์และบริดจ์ 7; ผัง การตรวจวัด และการเข้าถึง 5; เสียงและสื่อ 4; ทดสอบและสัญญา 4; การตั้งค่าและความเชื่อถือได้ 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.th.svg)
+![กราฟแท่งแนวนอน: อุปกรณ์และบริดจ์ 8; ผัง การตรวจวัด และการเข้าถึง 5; เสียงและสื่อ 4; ทดสอบและสัญญา 4; การตั้งค่าและความเชื่อถือได้ 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.th.svg)
 
-**22 โครงการ + ที่เก็บโปรไฟล์นี้ = 23 ที่เก็บสาธารณะ** ตรวจเมื่อ 16 ตุลาคม 2026 แต่ละโครงการอยู่ในหมวดบรรณาธิการเดียว จำนวนไม่ได้วัดความสมบูรณ์ การใช้งาน หรือประสิทธิภาพ [ข้อมูลต้นทางที่ทำซ้ำได้](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json) ผลตรวจซอฟต์แวร์จริงอยู่ใน[กราฟทดสอบเครื่องมือชุมชนพร้อมวันที่และลิงก์ CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.th.md#validation-evidence--2026-10-16-utc)ที่แยกไว้
+**23 โครงการ + ที่เก็บโปรไฟล์นี้ = 24 ที่เก็บสาธารณะ** ตรวจเมื่อ 16 ตุลาคม 2026 แต่ละโครงการอยู่ในหมวดบรรณาธิการเดียว จำนวนไม่ได้วัดความสมบูรณ์ การใช้งาน หรือประสิทธิภาพ [ข้อมูลต้นทางที่ทำซ้ำได้](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json) ผลตรวจซอฟต์แวร์จริงอยู่ใน[กราฟทดสอบเครื่องมือชุมชนพร้อมวันที่และลิงก์ CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.th.md#validation-evidence--2026-10-16-utc)ที่แยกไว้
 
 ## โครงการสาธารณะที่เกี่ยวข้องนอกองค์กรนี้
 

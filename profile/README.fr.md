@@ -35,6 +35,7 @@ projets s'installent ensemble ou s'intègrent automatiquement les uns aux autres
   compilateur local produisant une visionneuse installable dans Home Assistant.
   Son [mode Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md)
   permet d'explorer le plan installé tout en bloquant les commandes aux appareils.
+  Le [guide de première utilisation](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) explique comment partir des exemples, récupérer un brouillon et préserver son travail lorsque la 3D n'est pas disponible.
 - **D'autres façons de réutiliser le matériel existant.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse)
   documente la voix, la musique et le BLE sur Echo Dot 2 ;
   [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) décrit une passerelle Z-Wave.
@@ -82,6 +83,8 @@ EchoLocal et EchoMuse sont deux voies de conversion distinctes. Avant de modifie
 un appareil, lisez les exigences du projet choisi concernant le modèle et la restauration.
 
 ### Intégrations d'appareils, passerelles et restauration
+
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — prototype PoE modulaire pour Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz et la détection ; comprend les fichiers de CAO, le firmware et les outils de déploiement ; validation physique en attente.
 
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — intégration cloud DESLOC non officielle
   pour l'état des serrures, les commandes, la batterie et le Wi-Fi ;
@@ -171,9 +174,9 @@ et la [démonstration de rejeu synthétique RuView](https://github.com/ha-homela
 
 ## Aperçu du catalogue public
 
-![Diagramme en barres : appareils et passerelles 7 ; outils spatiaux, observations et accès 5 ; voix et médias 4 ; tests et contrats 4 ; configuration et fiabilité 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.fr.svg)
+![Diagramme en barres : appareils et passerelles 8 ; outils spatiaux, observations et accès 5 ; voix et médias 4 ; tests et contrats 4 ; configuration et fiabilité 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.fr.svg)
 
-**22 projets + ce dépôt de profil = 23 dépôts publics**, vérifiés le 16 octobre 2026.
+**23 projets + ce dépôt de profil = 24 dépôts publics**, vérifiés le 16 octobre 2026.
 Chaque projet appartient à une seule catégorie éditoriale ; les nombres ne mesurent
 ni la maturité, ni l'utilisation, ni les performances.
 [Données sources reproductibles](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).
