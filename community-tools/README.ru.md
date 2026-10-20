@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 Перевод документации не расширяет набор языков CLI или голосовых функций: проверяйте поддерживаемые языки каждого проекта.
 
 Четыре небольших инструмента отвечают на разные вопросы проекта Home Assistant: **куда переносится роль устройства, что охватывает измерение, что действительно делает движок автоматизаций и чем подтверждён результат голосовой команды?** Первые версии работают с локальными файлами и синтетическими примерами. Они не разворачивают домашние конфигурации и не подтверждают исправность физических устройств.

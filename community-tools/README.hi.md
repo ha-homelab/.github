@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 इन दस्तावेज़ अनुवादों से CLI या वॉइस सुविधाओं का भाषा समर्थन नहीं बढ़ता; प्रत्येक परियोजना की समर्थित भाषाएँ जाँचें।
 
 चार छोटे उपकरण Home Assistant समुदाय की परियोजना को चार अलग सवालों के जवाब देने में मदद करते हैं: **डिवाइस की भूमिका क्या बननी चाहिए, मापन क्या शामिल करता है, स्वचालन इंजन वास्तव में क्या करता है और वॉइस परिणाम का समर्थन कौन-सा प्रमाण करता है?** शुरुआती रिलीज़ स्थानीय फ़ाइलों और कृत्रिम परीक्षण डेटा पर काम करते हैं। वे घरेलू कॉन्फ़िगरेशन परिनियोजित नहीं करते और भौतिक डिवाइस प्रमाणित नहीं करते।

@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 การแปลเอกสารนี้ไม่ได้เพิ่มภาษาที่ CLI หรือระบบเสียงรองรับ โปรดตรวจภาษาที่แต่ละโครงการรองรับ
 
 เครื่องมือขนาดเล็กสี่ตัวช่วยโครงการชุมชน Home Assistant ตอบคำถามต่างกันสี่ข้อ: **บทบาทอุปกรณ์ควรเปลี่ยนไปอย่างไร การวัดครอบคลุมอะไร เอนจินอัตโนมัติทำอะไรจริง และหลักฐานใดสนับสนุนผลลัพธ์เสียง?** รุ่นแรกทำงานกับไฟล์ภายในเครื่องและข้อมูลทดสอบสังเคราะห์ ไม่ได้ติดตั้งการตั้งค่าบ้านหรือรับรองอุปกรณ์จริง

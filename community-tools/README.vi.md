@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 Bản dịch tài liệu này không mở rộng ngôn ngữ CLI hay giọng nói được hỗ trợ; hãy kiểm tra ngôn ngữ của từng dự án.
 
 Bốn công cụ nhỏ giúp dự án cộng đồng Home Assistant trả lời bốn câu hỏi khác nhau: **vai trò thiết bị nên chuyển thành gì, phép đo bao quát gì, bộ máy tự động hóa thực sự làm gì và bằng chứng nào hỗ trợ kết quả giọng nói?** Các bản đầu tiên dùng tệp cục bộ và dữ liệu kiểm thử tổng hợp. Chúng không triển khai cấu hình gia đình hay chứng nhận thiết bị thật.

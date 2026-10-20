@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 這些文件翻譯不會擴展 CLI 或語音所支援的語言；請查看各專案的語言支援說明。
 
 四個小工具幫助 Home Assistant 社區專案回答四類問題：**設備角色應如何遷移、測量覆蓋什麼範圍、自動化引擎實際做了什麼、語音結果有哪些證據佐證？** 初版使用本地檔案和合成測試資料。它們不會部署家庭設定，也不認證實物設備。

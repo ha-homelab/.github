@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 এই নথির অনুবাদ CLI বা কথনের সমর্থিত ভাষা বাড়ায় না; প্রতিটি প্রকল্প কোন ভাষা সমর্থন করে তা দেখুন।
 
 চারটি ছোট সরঞ্জাম Home Assistant কমিউনিটি প্রকল্পকে চারটি আলাদা প্রশ্নের উত্তর দিতে সাহায্য করে: **ডিভাইসের ভূমিকা কী হবে, পরিমাপ কী অন্তর্ভুক্ত করে, অটোমেশন ইঞ্জিন আসলে কী করে এবং কোন প্রমাণ ভয়েসের ফল সমর্থন করে?** প্রাথমিক সংস্করণগুলো স্থানীয় ফাইল ও কৃত্রিম পরীক্ষার তথ্য নিয়ে কাজ করে। এগুলো বাড়ির কনফিগারেশন স্থাপন বা বাস্তব ডিভাইস প্রত্যয়িত করে না।

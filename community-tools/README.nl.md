@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 Deze documentatievertalingen breiden de taalondersteuning van de CLI of spraakfuncties niet uit; controleer de ondersteunde talen van elk project.
 
 Vier kleine tools helpen een Home Assistant-communityproject vier verschillende vragen te beantwoorden: **wat moet een apparaatrol worden, wat omvat een meting, wat doet de automatiseringsengine werkelijk en welk bewijs ondersteunt een spraakresultaat?** De eerste releases werken met lokale bestanden en synthetische testgegevens. Ze implementeren geen huishoudelijke configuratie en certificeren geen fysieke apparaten.

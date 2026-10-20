@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 Cuatro pequeñas herramientas ayudan a un proyecto comunitario de Home Assistant a responder cuatro preguntas distintas: **¿en qué debe convertirse el rol de un dispositivo, qué abarca una medición, qué hace realmente el motor de automatización y qué evidencias respaldan un resultado de voz?** Sus primeras versiones trabajan con archivos locales y datos de prueba sintéticos. No despliegan configuraciones del hogar ni certifican dispositivos físicos.
 
 ![Cuatro etapas de revisión y el límite separado de aceptación física](architecture.es.svg)

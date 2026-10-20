@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 Tyto překlady dokumentace nerozšiřují jazykovou podporu CLI ani hlasových funkcí; ověřte podporované jazyky jednotlivých projektů.
 
 Čtyři malé nástroje pomáhají komunitnímu projektu Home Assistant odpovědět na čtyři různé otázky: **jaká má být role zařízení, co zahrnuje měření, co automatizační engine skutečně provede a jaké důkazy podporují hlasový výsledek?** První vydání pracují s místními soubory a syntetickými testovacími daty. Nenasazují konfiguraci domácnosti a necertifikují fyzická zařízení.

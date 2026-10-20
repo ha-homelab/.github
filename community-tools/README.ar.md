@@ -10,6 +10,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 ترجمة هذه الوثائق لا تضيف دعما للغات جديدة إلى CLI أو إلى التعرف على الكلام وتوليده؛ راجع اللغات التي يدعمها كل مشروع.
 
 تساعد أربع أدوات صغيرة مشروع مجتمع Home Assistant في الإجابة على أربعة أسئلة مختلفة: **ما الذي يجب أن يصبح عليه دور الجهاز، وما الذي يغطيه القياس، وما الذي يفعله محرك التشغيل الآلي فعليًا، وما هو الدليل الذي يدعم النتيجة الصوتية؟** تعمل إصداراتهم الأولى مع الملفات المحلية وبيانات الاختبار الاصطناعية. إنهم لا ينشرون التكوين المنزلي أو يصادقون على الأجهزة المادية.
