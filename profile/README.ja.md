@@ -2,7 +2,7 @@
 
 <h1 align="center">HA Homelab</h1>
 <p align="center"><strong>よく考えられた家。理解できる自動化。</strong></p>
-<p align="center"><a href="https://ha-homelab.github.io/home-studio/planner/">Home Studio を試す</a> · <a href="https://github.com/ha-homelab/home-assistant">設定を見る</a> · <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.ja.md">コミュニティツール</a></p>
+<p align="center"><a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">Home Assistant 内に Home Studio をインストール</a> · <a href="https://github.com/ha-homelab/home-assistant">設定を見る</a> · <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.ja.md">コミュニティツール</a></p>
 
 <!-- language-navigation:start -->
 <p dir="ltr" align="center">
@@ -20,12 +20,25 @@
 
 ## 新着情報 — 2026年10月
 
-- **ブラウザーで家を描き、探索する。** [Home Studio](https://github.com/ha-homelab/home-studio) は、2D/3D プランナー、家具・庭用の206種類のデザイン、エディターの24言語に対応しています。`home_floorplan.zip` を含むリリースでは、描画、HA エリアとの関連付け、下書きの保存、3D ビューの公開ができる [Home Assistant 内のエディター](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) も利用できます。独立したブラウザーエディターとポータブルなコンパイラー／インストーラーも引き続き利用できます。[Dry run モード](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) では、機器へのコマンドを遮断しながら導入済みの間取りを探索できます。 [初回利用ガイド](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) では、サンプルから始める方法、下書きの復元、3D を使えない場合に作業内容を保持する方法を説明しています。
+- **Home Assistant 内で直接、家を描いて公開できます。** [Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio) は 2D/3D エディター、206 種類の家具・庭のデザイン、24 言語の編集画面を HA 内で提供します。部屋を描き、HA のエリアやデバイスと関連付け、**Save draft**、**Publish family view** の順に選ぶと **3D Home** を更新できます。
+  [Dry run モード](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) では、機器へのコマンドを遮断しながら導入済みの間取りを探索できます。 [初回利用ガイド](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) では、サンプルから始める方法、下書きの復元、3D を使えない場合に作業内容を保持する方法を説明しています。
 - **既存機器を再利用する選択肢。** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) は Echo Dot 2 の音声、音楽、BLE の構成を文書化し、[ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) は Z-Wave ブリッジを解説しています。下記の RF、Zigbee、Tuya プロジェクトは他の機器群を扱います。機器の準備状況はプロジェクトごとに異なり、ZAC93 の実機での稼働確認は未実施です。
 - **公開設定と復旧。** [Home Assistant](https://github.com/ha-homelab/home-assistant) に再利用可能な自動化・スクリプトライブラリーと統合の契約仕様が加わりました。[k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) は導入、バックアップ、復旧ツールを公開しています。ローカルストレージを使う単一インスタンスでは、自動フェイルオーバーは実現しません。
 - **自動化の前に根拠を。** 新しいセンシング、カメラ方向、アクセス用のプロジェクトに加え、エンティティ移行、計測値の出所、自動化シナリオ、音声結果を扱う四つの[コミュニティツール](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ja.md)があります。[DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) は、明示的な解錠確認を維持しつつ、状態に応じて変化する一つの操作ボタンを使うようになりました。
 
 これは **2026年10月19日** 時点の編集スナップショットです。最新の互換性と状態は、各プロジェクトの README とリリースを参照してください。
+
+## Home Assistant 内に Home Studio をインストール
+
+**Home Assistant 2026.10 以降**と管理者アカウントを使用してください。
+まず HA をバックアップしてください。生成済みまたはカスタマイズ済みの **home_floorplan** がインストールされている場合は、置き換える前に[移行ガイド](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md#existing-generated-homes)を確認してください。
+
+1. HACS で [`ha-homelab/home-studio`](https://github.com/ha-homelab/home-studio) を **Integration** カテゴリーのカスタムリポジトリとして追加します。**`home_floorplan.zip`** を含む最新の安定版をインストールしてください。
+2. Home Assistant を再起動し、**Settings → Devices & services → Add integration** を開いて **Home Studio** を選びます。
+3. サイドバーから **Home Studio** を開きます。部屋を描いて家具を配置し、HA のエリアとデバイスを関連付けて **Save draft** を選びます。
+4. **Publish family view** を選び、**3D Home** を開きます。デバイス操作を有効にする前に **Dry run** で配置と関連付けを確認してください。
+
+新規のネイティブインストールには Python コマンド、YAML 設定、API トークンは不要です。[ネイティブインストールガイド](https://ha-homelab.github.io/home-studio/install.html#native-studio) で全手順、ZIP の手動インストール、既存環境への対応を確認できます。
 
 ## プロジェクトを探す
 
@@ -69,7 +82,7 @@ EchoLocal と EchoMuse は異なる変換方式です。機器を変更する前
 
 ### 空間ツール、センシング、アクセス
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — 独立したブラウザーエディターまたは Home Assistant 内で部屋を描いて家具を配置し、JSON をエクスポートしたり HA ビューを公開したりできます。
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — Home Assistant 内で直接部屋を描いて家具を配置し、編集可能な下書きを保存して 3D Home を公開します。
 - **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — 実験的な CSI 収集、受信機ファームウェア、活動の仮説、推論根拠のツールを提供します。ruview-home-assistant を通じて配信しますが、実環境での検出精度を実証するものではありません。
 
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — データの鮮度と時計を明示的に確認しながら、観測を記録、ラベル付け、比較。
@@ -107,10 +120,16 @@ EchoLocal と EchoMuse は異なる変換方式です。機器を変更する前
 
 ## 使用画面を見る
 
-<a href="https://ha-homelab.github.io/home-studio/planner/"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="架空のガレージ、創作スタジオ、中庭を3D表示する Home Studio ブラウザーエディター" width="440" /></a>
-<a href="https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="家具、カラーパレット、表面模様を配置した架空の部屋を表示する Home Studio エディター" width="440" /></a>
+<a href="https://ha-homelab.github.io/home-studio/install.html#native-studio"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="架空のガレージ、創作スタジオ、中庭を3D表示する Home Studio ブラウザーエディター" width="440" /></a>
+<a href="https://ha-homelab.github.io/home-studio/planner/guide.html"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="家具、カラーパレット、表面模様を配置した架空の部屋を表示する Home Studio エディター" width="440" /></a>
 
-**Home Studio：** 架空のプランを使った実際のエディター画面です。ガレージとスタジオ、および模様付き家具のある部屋を示します。[プランナーを開く](https://ha-homelab.github.io/home-studio/planner/)か、[図解描画ガイド](https://ha-homelab.github.io/home-studio/planner/guide.html)を参照してください。画像：Home Studio contributors、MIT。[画像の出典と由来](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md)。
+**Home Studio:** 既存の独立エディターのスクリーンショットです。架空のガレージ兼スタジオと、模様のある家具を配置した部屋を示しています。同じ描画ツールを HA 内でも使用できます。
+[Home Assistant 内に Home Studio をインストール](https://ha-homelab.github.io/home-studio/install.html#native-studio) · [図解描画ガイド](https://ha-homelab.github.io/home-studio/planner/guide.html).
+Home Studio contributors · MIT · [画像の出典と由来](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+
+### 任意：Home Assistant の外で描く
+
+[ホスト版プランナー](https://ha-homelab.github.io/home-studio/planner/) は HA のセットアップ中やトラブル対応中にも役立ちます。オフラインで描く場合は、[独立エディターのガイド](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) に従ってダウンロードしたローカルコピーを使用してください。独立エディターは HA に接続せず、ブラウザーに独自の下書きを保存します。**Export JSON** の後、HA 内の Home Studio で **Open JSON** を選んで手動で図面を移し、準備ができたら **Save draft** と **Publish family view** を選んでください。
 
 その他の例として、[EchoMuse の音声・音楽・BLE 構成](https://github.com/ha-homelab/ha-echomuse/blob/main/docs/architecture.md)、[ZAC93 の配線図](https://github.com/ha-homelab/zac93-esp32)、[RuView の合成リプレイデモ](https://github.com/ha-homelab/ruview-home-assistant#try-it-without-hardware)もご覧ください。
 

@@ -7,7 +7,7 @@
 <h1 align="center">HA Homelab</h1>
 <p align="center"><strong>خانه‌ای سنجیده. خودکارسازی قابل‌فهم.</strong></p>
 <p align="center">
-  <a href="https://ha-homelab.github.io/home-studio/planner/">Home Studio را امتحان کنید</a> ·
+  <a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">نصب Home Studio در Home Assistant</a> ·
   <a href="https://github.com/ha-homelab/home-assistant">پیکربندی را ببینید</a> ·
   <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.fa.md">ابزارهای جامعه</a>
 </p>
@@ -28,7 +28,8 @@
 
 ## تازه‌ها - اکتبر 2026
 
-- **یک خانه را در مرورگر ترسیم و کاوش کنید.** [Home Studio](https://github.com/ha-homelab/home-studio) یک طراح 2D/3D، تعداد 206 طرح مبلمان و باغ و 24 زبان برای ویرایشگر را ترکیب می‌کند. نسخه‌هایی که `home_floorplan.zip` را دارند، [ویرایشگر داخل Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) را نیز برای ترسیم، پیوند دادن ناحیه‌های HA، ذخیره پیش‌نویس‌ها و انتشار نمای سه‌بعدی ارائه می‌کنند. ویرایشگر مستقل مرورگر و ابزارهای قابل‌حمل ساخت و نصب همچنان در دسترس‌اند. [حالت آزمایشی بدون اجرای فرمان](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) آن به شما امکان می دهد نقشه نصب‌شده را در حین مسدود کردن دستورات دستگاه بررسی کنید. [راهنمای جلسه اول](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) شروع با نمونه‌ها، بازیابی پیش‌نویس‌ها و حفظ کار هنگام در دسترس نبودن نمای 3D را توضیح می‌دهد.
+- **خانه را مستقیماً در Home Assistant ترسیم و منتشر کنید.** [Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio) ویرایشگر 2D/3D، تعداد 206 طرح مبلمان و باغ و 24 زبان ویرایشگر را به HA می‌آورد. اتاق‌ها را بکشید، ناحیه‌ها و دستگاه‌های HA را پیوند دهید و **Save draft** و سپس **Publish family view** را انتخاب کنید تا **3D Home** به‌روز شود.
+  [حالت آزمایشی بدون اجرای فرمان](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) آن به شما امکان می دهد نقشه نصب‌شده را در حین مسدود کردن دستورات دستگاه بررسی کنید. [راهنمای جلسه اول](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) شروع با نمونه‌ها، بازیابی پیش‌نویس‌ها و حفظ کار هنگام در دسترس نبودن نمای 3D را توضیح می‌دهد.
 
 - **راههای بیشتر برای استفاده مجدد از سخت افزار موجود.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) یک مسیر مستند برای صدا، موسیقی و BLE در Echo Dot 2 را اضافه می کند. [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) یک پل Z-Wave را مستند می کند. پروژه‌های RF، Zigbee و Tuya سایر خانواده‌های دستگاه را در زیر پوشش می‌دهند. آمادگی سخت‌افزار مختص پروژه است: راه‌اندازی فیزیکی ZAC93 هنوز در انتظار است.
 
@@ -37,6 +38,18 @@
 - **شواهد قبل از اتوماسیون.** پروژه‌های سنجش، جهت دوربین نسبت به اتاق و دسترسی جدید، چهار [ابزار جامعه](https://github.com/ha-homelab/.github/blob/main/community-tools/README.fa.md) را برای مهاجرت موجودیت‌ها، منشأ داده‌های اندازه‌گیری، سناریوهای اتوماسیون و نتایج صوتی همراهی می‌کنند. [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) اکنون از یک دکمه عمل تطبیقی ​​استفاده می کند و در عین حال تأیید صریح باز کردن قفل را حفظ می کند.
 
 این تصویری تحریریه‌ای از وضعیت در تاریخ **19 اکتبر 2026** است. برای سازگاری و وضعیت فعلی، README و نسخه های هر پروژه را ببینید.
+
+## نصب Home Studio در Home Assistant
+
+از **Home Assistant 2026.10 یا جدیدتر** و حساب مدیر استفاده کنید.
+ابتدا از HA پشتیبان بگیرید. اگر **home_floorplan** تولیدشده یا سفارشی از قبل نصب است، پیش از جایگزینی آن [راهنمای مهاجرت](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md#existing-generated-homes) را بخوانید.
+
+1. در HACS، مخزن [`ha-homelab/home-studio`](https://github.com/ha-homelab/home-studio) را به‌عنوان مخزن سفارشی با دستهٔ **Integration** اضافه کنید. آخرین نسخهٔ پایدار دارای **`home_floorplan.zip`** را نصب کنید.
+2. Home Assistant را راه‌اندازی مجدد کنید، سپس **Settings → Devices & services → Add integration** را باز کرده و **Home Studio** را انتخاب کنید.
+3. **Home Studio** را در نوار کناری باز کنید. اتاقی را ترسیم و مبله کنید، ناحیه و دستگاه‌های HA آن را پیوند دهید و **Save draft** را انتخاب کنید.
+4. **Publish family view** را انتخاب کرده و **3D Home** را باز کنید. پیش از فعال‌کردن کنترل دستگاه‌ها، نقشه و پیوندها را با **Dry run** بررسی کنید.
+
+نصب بومی جدید به فرمان Python، ورودی YAML یا توکن API نیاز ندارد. [راهنمای نصب بومی](https://ha-homelab.github.io/home-studio/install.html#native-studio) تنظیم کامل، نصب دستی ZIP و کار با نصب‌های موجود را توضیح می‌دهد.
 
 ## پروژه ها را بررسی کنید
 
@@ -80,7 +93,7 @@ EchoLocal و EchoMuse مسیرهای تبدیل متمایز هستند. قبل 
 
 ### ابزارهای طراحی فضا، سنجش و دسترسی
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — اتاق‌ها را در ویرایشگر مستقل مرورگر یا داخل Home Assistant ترسیم و مبله کنید؛ JSON را صادر کنید یا نمای HA را منتشر کنید.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — اتاق‌ها را مستقیماً در Home Assistant ترسیم و مبله کنید، پیش‌نویس قابل‌ویرایش ذخیره کنید و نمای 3D Home را منتشر کنید.
 - **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — گردآوری آزمایشی CSI، میان‌افزار گیرنده، فرضیه‌های فعالیت و ابزارهای شواهد استنتاج؛ از طریق ruview-home-assistant منتشر می‌کند و دقت تشخیص در دنیای واقعی را اثبات نمی‌کند.
 
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** - مشاهدات را با بررسی صریح تازگی داده‌ها و ساعت ثبت، برچسب گذاری و مقایسه کنید.
@@ -117,9 +130,15 @@ EchoLocal و EchoMuse مسیرهای تبدیل متمایز هستند. قبل 
 
 ## آن را در حال استفاده ببینید
 
-<a href="https://ha-homelab.github.io/home-studio/planner/"> <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="ویرایشگر مرورگری Home Studio با نمای 3D یک گاراژ، استودیوی خلاقیت و حیاط فرضی" width="440" /> </a> <a href="https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html"> <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="ویرایشگر Home Studio با اتاقی فرضی، مبلمان، پالت رنگ و الگوهای سطوح" width="440" /> </a>
+<a href="https://ha-homelab.github.io/home-studio/install.html#native-studio"> <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="ویرایشگر مرورگری Home Studio با نمای 3D یک گاراژ، استودیوی خلاقیت و حیاط فرضی" width="440" /> </a> <a href="https://ha-homelab.github.io/home-studio/planner/guide.html"> <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="ویرایشگر Home Studio با اتاقی فرضی، مبلمان، پالت رنگ و الگوهای سطوح" width="440" /> </a>
 
-**Home Studio:** اسکرین شات های ویرایشگر واقعی با استفاده از نقشه های تخیلی - یک گاراژ/استودیو و یک اتاق مبله با الگوها. [برنامه ریز را باز کنید](https://ha-homelab.github.io/home-studio/planner/) یا [راهنمای نقاشی مصور](https://ha-homelab.github.io/home-studio/planner/guide.html) را دنبال کنید. تصاویر: مشارکت کنندگان Home Studio، MIT. [منابع و منشأ تصویر](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+**Home Studio:** این تصاویر موجود از ویرایشگر جداگانه، نقشه‌های خیالی یک گاراژ با استودیو و اتاقی مبله با الگوها را نشان می‌دهند. همان ابزارهای ترسیم در HA نیز در دسترس‌اند.
+[نصب Home Studio در Home Assistant](https://ha-homelab.github.io/home-studio/install.html#native-studio) · [راهنمای مصور ترسیم](https://ha-homelab.github.io/home-studio/planner/guide.html).
+Home Studio contributors · MIT · [منابع و منشأ تصاویر](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+
+### اختیاری: ترسیم بیرون از Home Assistant
+
+[برنامه‌ریز میزبانی‌شده](https://ha-homelab.github.io/home-studio/planner/) هنگام راه‌اندازی یا عیب‌یابی HA همچنان مفید است. برای ترسیم آفلاین، طبق [راهنمای ویرایشگر جداگانه](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) از نسخهٔ محلی دانلودشده استفاده کنید. ویرایشگر جداگانه به HA وصل نمی‌شود و پیش‌نویس مستقل خود را در مرورگر نگه می‌دارد. نقشه را دستی با **Export JSON** و سپس **Open JSON** در Home Studio داخل HA منتقل کنید؛ وقتی آماده شد، **Save draft** و **Publish family view** را انتخاب کنید.
 
 برای سایر نماهای پروژه، [معماری صدا، موسیقی و BLE در EchoMuse](https://github.com/ha-homelab/ha-echomuse/blob/main/docs/architecture.md)، [نمودارهای سیم کشی ZAC93](https://github.com/ha-homelab/zac93-esp32)، و [نمایش بازپخش مصنوعی RuView](https://github.com/ha-homelab/ruview-home-assistant#try-it-without-hardware) را کاوش کنید.
 

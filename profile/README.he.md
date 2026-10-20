@@ -7,7 +7,7 @@
 <h1 align="center">HA Homelab</h1>
 <p align="center"><strong>בית מתוכנן היטב. אוטומציה מובנת.</strong></p>
 <p align="center">
-  <a href="https://ha-homelab.github.io/home-studio/planner/">נסו את Home Studio</a> ·
+  <a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">התקנת Home Studio בתוך Home Assistant</a> ·
   <a href="https://github.com/ha-homelab/home-assistant">עיינו בתצורה</a> ·
   <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.he.md">כלים לקהילה</a>
 </p>
@@ -28,12 +28,25 @@
 
 ## מה חדש — אוקטובר 2026
 
-- **שרטטו בית וסיירו בו בדפדפן.** [Home Studio](https://github.com/ha-homelab/home-studio) משלב מתכנן 2D/3D, ‏206 עיצובים לריהוט ולגינה ו-24 שפות לעורך. גרסאות הכוללות את `home_floorplan.zip` מספקות גם [עורך בתוך Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) לשרטוט, לקישור אזורי HA, לשמירת טיוטות ולפרסום תצוגת 3D. העורך הנפרד בדפדפן וכלי הבנייה וההתקנה הניידים נשארים זמינים. [מצב Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) מאפשר לסייר בתוכנית המותקנת תוך חסימת פקודות להתקנים. [המדריך למפגש הראשון](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) מסביר איך להתחיל מדוגמאות, לשחזר טיוטות ולשמור על העבודה כאשר תצוגת 3D אינה זמינה.
+- **שרטטו ופרסמו את הבית ישירות בתוך Home Assistant.** ‏[Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio) מביא ל-HA עורך 2D/3D, ‏206 דגמי ריהוט וגן ו-24 שפות עורך. שרטטו חדרים, קשרו אזורים ומכשירים של HA ובחרו **Save draft** ואז **Publish family view** כדי לעדכן את **3D Home**.
+  [מצב Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) מאפשר לסייר בתוכנית המותקנת תוך חסימת פקודות להתקנים. [המדריך למפגש הראשון](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) מסביר איך להתחיל מדוגמאות, לשחזר טיוטות ולשמור על העבודה כאשר תצוגת 3D אינה זמינה.
 - **דרכים נוספות להשתמש בחומרה קיימת.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) מוסיף מסלול מתועד לקול, מוזיקה ו-BLE ב-Echo Dot 2; [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) מתעד גשר Z-Wave. פרויקטי RF, Zigbee ו-Tuya שבהמשך מכסים משפחות התקנים נוספות. מוכנות החומרה תלויה בפרויקט: ההקמה והאימות הפיזיים של ZAC93 עדיין ממתינים לביצוע.
 - **תצורה ציבורית ושחזור.** [Home Assistant](https://github.com/ha-homelab/home-assistant) כולל כעת ספריות אוטומציות וסקריפטים לשימוש חוזר וחוזי אינטגרציה; [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) מפרסם כלי פריסה, גיבוי ושחזור. מופע יחיד עם אחסון מקומי אינו מספק מעבר אוטומטי למופע חלופי בעת תקלה.
 - **ראיות לפני אוטומציה.** פרויקטים חדשים לחישה, לכיוון מצלמה לפי חדר ולגישה מלווים ארבעה [כלים לקהילה](https://github.com/ha-homelab/.github/blob/main/community-tools/README.he.md), העוסקים בהסבת ישויות, במקור נתוני מדידה, בתרחישי אוטומציה ובתוצאות קוליות. [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) משתמש כעת בכפתור פעולה מסתגל יחיד, תוך שמירה על אישור מפורש לפתיחת הנעילה.
 
 זוהי תמונת מצב ערוכה ל-**19 באוקטובר 2026**. לתאימות ולמצב העדכניים, עיינו ב-README ובגרסאות של כל פרויקט.
+
+## התקנת Home Studio בתוך Home Assistant
+
+השתמשו ב-**Home Assistant 2026.10 או חדש יותר** ובחשבון מנהל.
+גבו תחילה את HA. אם כבר מותקן **home_floorplan** שנוצר או הותאם אישית, קראו את [הנחיות המעבר](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md#existing-generated-homes) לפני החלפתו.
+
+1. ב-HACS הוסיפו את [`ha-homelab/home-studio`](https://github.com/ha-homelab/home-studio) כמאגר מותאם אישית בקטגוריית **Integration**. התקינו את הגרסה היציבה האחרונה הכוללת **`home_floorplan.zip`**.
+2. הפעילו מחדש את Home Assistant, פתחו **Settings → Devices & services → Add integration** ובחרו **Home Studio**.
+3. פתחו **Home Studio** בסרגל הצד. שרטטו ורהטו חדר, קשרו את האזור והמכשירים שלו ב-HA ובחרו **Save draft**.
+4. בחרו **Publish family view** ואז פתחו **3D Home**. בדקו את התוכנית והקישורים באמצעות **Dry run** לפני הפעלת השליטה במכשירים.
+
+התקנה מובנית חדשה אינה דורשת פקודות Python, רשומת YAML או אסימון API. ‏[מדריך ההתקנה המובנית](https://ha-homelab.github.io/home-studio/install.html#native-studio) מסביר את ההגדרה המלאה, התקנת ZIP ידנית וטיפול בהתקנות קיימות.
 
 ## הכירו את הפרויקטים
 
@@ -66,7 +79,7 @@ EchoLocal ו-EchoMuse הם מסלולי הסבה נפרדים. לפני שינו
 
 ### כלים מרחביים, חישה וגישה
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — שרטטו ורהטו חדרים בעורך הנפרד בדפדפן או בתוך Home Assistant; ייצאו JSON או פרסמו את תצוגת HA.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — שרטטו ורהטו חדרים ישירות בתוך Home Assistant, שמרו טיוטות ניתנות לעריכה ופרסמו את תצוגת 3D Home.
 - **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — איסוף ניסיוני של CSI, קושחת מקלט, השערות על פעילות וכלים לראיות הסקה; הפרסום מתבצע דרך ruview-home-assistant ואינו מוכיח דיוק זיהוי בעולם האמיתי.
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — רישום, תיוג והשוואת תצפיות עם בדיקות מפורשות לעדכניות ולשעון.
 - **[ruview-home-assistant](https://github.com/ha-homelab/ruview-home-assistant)** — תצפיות RuView דרך גילוי MQTT, בדיקת עדכניות לכל צומת ודוגמאות לשחזור תצפיות סינתטיות.
@@ -97,14 +110,20 @@ EchoLocal ו-EchoMuse הם מסלולי הסבה נפרדים. לפני שינו
 
 ## ראו את הכלים בשימוש
 
-<a href="https://ha-homelab.github.io/home-studio/planner/">
+<a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">
   <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="עורך Home Studio בדפדפן מציג מוסך, סטודיו יצירתי וחצר דמיוניים ב-3D" width="440" />
 </a>
-<a href="https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html">
+<a href="https://ha-homelab.github.io/home-studio/planner/guide.html">
   <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="עורך Home Studio מציג חדר דמיוני עם רהיטים, לוחות צבעים ודוגמאות משטח" width="440" />
 </a>
 
-**Home Studio:** צילומי מסך אמיתיים של העורך עם תוכניות דמיוניות — מוסך/סטודיו וחדר מרוהט עם דוגמאות. [פתחו את המתכנן](https://ha-homelab.github.io/home-studio/planner/) או עקבו אחר [מדריך השרטוט המאויר](https://ha-homelab.github.io/home-studio/planner/guide.html). תמונות: תורמי Home Studio, ברישיון MIT. [מקורות התמונות ותיעוד המקור](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+**Home Studio:** צילומי המסך הקיימים של העורך הנפרד מציגים תוכניות דמיוניות: מוסך עם סטודיו וחדר מרוהט עם דוגמאות. אותם כלי שרטוט זמינים בתוך HA.
+[התקנת Home Studio בתוך Home Assistant](https://ha-homelab.github.io/home-studio/install.html#native-studio) · [מדריך שרטוט מאויר](https://ha-homelab.github.io/home-studio/planner/guide.html).
+Home Studio contributors · MIT · [מקורות התמונות ותיעוד המקור](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+
+### אפשרות נוספת: שרטוט מחוץ ל-Home Assistant
+
+‏[המתכנן המתארח](https://ha-homelab.github.io/home-studio/planner/) שימושי בזמן הגדרת HA או פתרון תקלות בו. לשרטוט לא מקוון השתמשו בעותק מקומי שהורד, לפי [מדריך העורך הנפרד](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md). העורך הנפרד אינו מתחבר ל-HA ושומר טיוטה משלו בדפדפן. העבירו תוכנית ידנית באמצעות **Export JSON** ואז **Open JSON** ב-Home Studio בתוך HA; כשהיא מוכנה, בחרו **Save draft** ו-**Publish family view**.
 
 לתצוגות נוספות, עיינו ב[ארכיטקטורת הקול, המוזיקה וה-BLE של EchoMuse](https://github.com/ha-homelab/ha-echomuse/blob/main/docs/architecture.md), ב[תרשימי החיווט של ZAC93](https://github.com/ha-homelab/zac93-esp32) וב[הדגמת שחזור התצפיות הסינתטיות של RuView](https://github.com/ha-homelab/ruview-home-assistant#try-it-without-hardware).
 

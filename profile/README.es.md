@@ -5,7 +5,7 @@
 <h1 align="center">HA Homelab</h1>
 <p align="center"><strong>Un hogar bien pensado. Una automatización comprensible.</strong></p>
 <p align="center">
-  <a href="https://ha-homelab.github.io/home-studio/planner/">Probar Home Studio</a> ·
+  <a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">Instalar Home Studio en Home Assistant</a> ·
   <a href="https://github.com/ha-homelab/home-assistant">Explorar la configuración</a> ·
   <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.es.md">Herramientas de la comunidad</a>
 </p>
@@ -30,7 +30,7 @@ instalen juntos ni que se integren automáticamente entre sí.
 
 ## Novedades — octubre de 2026
 
-- **Dibuja y explora un hogar en el navegador.** [Home Studio](https://github.com/ha-homelab/home-studio) combina un planificador 2D/3D, 206 diseños de muebles y jardín y 24 idiomas del editor. Las versiones que contienen `home_floorplan.zip` también ofrecen un [editor dentro de Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) para dibujar, vincular áreas de HA, guardar borradores y publicar la vista 3D. El editor independiente del navegador y el compilador e instalador portátiles siguen disponibles. Su
+- **Dibuja y publica tu casa directamente en Home Assistant.** [Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio) incorpora el editor 2D/3D, 206 diseños de muebles y jardín y 24 idiomas dentro de HA. Dibuja habitaciones, vincula áreas y dispositivos HA y elige **Save draft**, luego **Publish family view**, para actualizar **3D Home**.
   [modo Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md)
   permite explorar el plano instalado mientras bloquea los comandos a dispositivos.
   La [guía de la primera sesión](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md)
@@ -57,6 +57,18 @@ instalen juntos ni que se integren automáticamente entre sí.
 
 Esta es una instantánea editorial del **19 de octubre de 2026**. Consulta el README
 y las versiones de cada proyecto para conocer su compatibilidad y estado actuales.
+
+## Instalar Home Studio en Home Assistant
+
+Necesitas **Home Assistant 2026.10 o posterior** y una cuenta de administrador.
+Haz primero una copia de seguridad de HA. Si ya tienes instalado un **home_floorplan** generado o personalizado, lee la [guía de migración](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md#existing-generated-homes) antes de sustituirlo.
+
+1. En HACS, añade [`ha-homelab/home-studio`](https://github.com/ha-homelab/home-studio) como repositorio personalizado de categoría **Integration**. Instala la última versión estable que incluya **`home_floorplan.zip`**.
+2. Reinicia Home Assistant, abre **Settings → Devices & services → Add integration** y selecciona **Home Studio**.
+3. Abre **Home Studio** en la barra lateral. Dibuja y amuebla una habitación, vincula su área y dispositivos HA y elige **Save draft**.
+4. Elige **Publish family view** y abre **3D Home**. Comprueba el plano y las vinculaciones con **Dry run** antes de activar los controles de dispositivos.
+
+Una instalación nativa nueva no necesita comandos Python, una entrada YAML ni un token API. La [guía de instalación nativa](https://ha-homelab.github.io/home-studio/install.html#native-studio) explica la configuración completa, la instalación manual del ZIP y las instalaciones existentes.
 
 ## Explora los proyectos
 
@@ -113,7 +125,7 @@ dispositivo, lee los requisitos de modelo y recuperación del proyecto elegido.
 
 ### Herramientas espaciales, observación y acceso
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — dibuja y amuebla estancias en el editor independiente del navegador o dentro de Home Assistant; exporta JSON o publica la vista de HA.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — dibujar y amueblar habitaciones directamente en Home Assistant, guardar borradores editables y publicar la vista 3D Home.
 - **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — recopilación experimental de CSI, firmware del receptor, hipótesis de actividad y herramientas de evidencia de inferencia; publica mediante ruview-home-assistant y no demuestra precisión de detección en el mundo real.
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — registra,
   etiqueta y compara observaciones con comprobaciones explícitas de vigencia y reloj.
@@ -164,18 +176,20 @@ ni una comparativa de dispositivos físicos.
 
 ## Mira cómo se utiliza
 
-<a href="https://ha-homelab.github.io/home-studio/planner/">
+<a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">
   <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="Editor de Home Studio en el navegador con un garaje, un estudio creativo y un patio ficticios en 3D" width="440" />
 </a>
-<a href="https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html">
+<a href="https://ha-homelab.github.io/home-studio/planner/guide.html">
   <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="Editor de Home Studio con una estancia ficticia, muebles, paletas de colores y patrones de superficies" width="440" />
 </a>
 
-**Home Studio:** capturas reales del editor con planos ficticios: un garaje/estudio
-y una estancia amueblada con patrones. [Abre el planificador](https://ha-homelab.github.io/home-studio/planner/)
-o sigue la [guía ilustrada de dibujo](https://ha-homelab.github.io/home-studio/planner/guide.html).
-Imágenes: colaboradores de Home Studio, MIT.
-[Fuentes y procedencia de las imágenes](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+**Home Studio:** Estas capturas existentes del editor independiente muestran planos ficticios: un garaje/estudio y una habitación amueblada con patrones. Las mismas herramientas de dibujo están disponibles dentro de HA.
+[Instalar Home Studio en Home Assistant](https://ha-homelab.github.io/home-studio/install.html#native-studio) · [Guía ilustrada de dibujo](https://ha-homelab.github.io/home-studio/planner/guide.html).
+Home Studio contributors · MIT · [Fuentes y procedencia de las imágenes](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+
+### Opcional: dibujar fuera de Home Assistant
+
+El [planificador alojado](https://ha-homelab.github.io/home-studio/planner/) sigue siendo útil mientras configuras o solucionas problemas de HA. Para dibujar sin conexión, usa una copia local descargada según la [guía del editor independiente](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md). Este editor no se conecta a HA y guarda su propio borrador en el navegador. Transfiere el plano manualmente con **Export JSON** y luego **Open JSON** en Home Studio dentro de HA; elige **Save draft** y **Publish family view** cuando esté listo.
 
 Para ver otros proyectos, explora la [arquitectura de voz/música/BLE de EchoMuse](https://github.com/ha-homelab/ha-echomuse/blob/main/docs/architecture.md),
 los [diagramas de cableado del ZAC93](https://github.com/ha-homelab/zac93-esp32)

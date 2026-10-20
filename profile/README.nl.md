@@ -5,7 +5,7 @@
 <h1 align="center">HA Homelab</h1>
 <p align="center"><strong>Een doordacht huis. Begrijpelijke automatisering.</strong></p>
 <p align="center">
-  <a href="https://ha-homelab.github.io/home-studio/planner/">Probeer Home Studio</a> ·
+  <a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">Home Studio in Home Assistant installeren</a> ·
   <a href="https://github.com/ha-homelab/home-assistant">Verken de configuratie</a> ·
   <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.nl.md">Communitytools</a>
 </p>
@@ -31,10 +31,7 @@ worden geïnstalleerd of automatisch met elkaar integreren.
 
 ## Nieuw — oktober 2026
 
-- **Teken en verken een huis in de browser.** [Home Studio](https://github.com/ha-homelab/home-studio) combineert een 2D/3D-planner, 206 meubel- en tuinontwerpen en 24 editortalen.
-  Releases met `home_floorplan.zip` bieden ook een [editor binnen Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md)
-  om te tekenen, HA-gebieden te koppelen, concepten op te slaan en de 3D-weergave te publiceren.
-  De aparte browsereditor en de draagbare compiler en installer blijven beschikbaar. Met de
+- **Teken en publiceer je huis rechtstreeks in Home Assistant.** [Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio) brengt de 2D/3D-editor, 206 meubel- en tuinontwerpen en 24 editortalen naar HA. Teken kamers, koppel HA-gebieden en apparaten en kies **Save draft**, gevolgd door **Publish family view**, om **3D Home** bij te werken.
   [Dry run-modus](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) kun je de geïnstalleerde plattegrond verkennen terwijl apparaatcommando's worden geblokkeerd.
   De [gids voor de eerste sessie](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) legt uit hoe je met voorbeelden begint, concepten herstelt en je werk behoudt wanneer 3D niet beschikbaar is.
 - **Meer manieren om bestaande hardware te hergebruiken.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) voegt een
@@ -53,6 +50,18 @@ worden geïnstalleerd of automatisch met elkaar integreren.
 
 Dit is een redactionele momentopname van **19 oktober 2026**. Raadpleeg de README
 en releases van elk project voor actuele compatibiliteit en status.
+
+## Home Studio in Home Assistant installeren
+
+Gebruik **Home Assistant 2026.10 of nieuwer** en een beheerdersaccount.
+Maak eerst een back-up van HA. Als er al een gegenereerde of aangepaste **home_floorplan** is geïnstalleerd, lees dan de [migratiehandleiding](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md#existing-generated-homes) voordat je deze vervangt.
+
+1. Voeg in HACS [`ha-homelab/home-studio`](https://github.com/ha-homelab/home-studio) toe als aangepaste repository in de categorie **Integration**. Installeer de nieuwste stabiele versie met **`home_floorplan.zip`**.
+2. Herstart Home Assistant, open **Settings → Devices & services → Add integration** en selecteer **Home Studio**.
+3. Open **Home Studio** in de zijbalk. Teken en richt een kamer in, koppel het HA-gebied en de apparaten en kies **Save draft**.
+4. Kies **Publish family view** en open **3D Home**. Controleer de plattegrond en koppelingen met **Dry run** voordat je apparaatbediening inschakelt.
+
+Een nieuwe native installatie vereist geen Python-opdrachten, YAML-invoer of API-token. De [native installatiehandleiding](https://ha-homelab.github.io/home-studio/install.html#native-studio) beschrijft de volledige installatie, handmatige ZIP-installatie en bestaande installaties.
 
 ## Verken de projecten
 
@@ -103,7 +112,7 @@ hersteleisen van het gekozen project voordat je een apparaat aanpast.
 
 ### Ruimte, sensorwaarnemingen en toegang
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — teken en richt kamers in met de aparte browsereditor of binnen Home Assistant; exporteer JSON of publiceer de HA-weergave.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — kamers rechtstreeks in Home Assistant tekenen en inrichten, bewerkbare concepten opslaan en de weergave 3D Home publiceren.
 - **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — experimentele CSI-verzameling, ontvangerfirmware, activiteitshypothesen en hulpmiddelen voor inferentiebewijs; publiceert via ruview-home-assistant en bewijst geen detectienauwkeurigheid in de praktijk.
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — registreer, label en vergelijk waarnemingen met
   expliciete actualiteits- en klokcontroles.
@@ -148,17 +157,20 @@ binnen een afgebakend bereik, geen kwaliteitsranglijst, dekkingspercentage of be
 
 ## Bekijk het gebruik
 
-<a href="https://ha-homelab.github.io/home-studio/planner/">
+<a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">
   <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="Home Studio-browsereditor met een fictieve garage, creatieve studio en patio in 3D" width="440" />
 </a>
-<a href="https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html">
+<a href="https://ha-homelab.github.io/home-studio/planner/guide.html">
   <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="Home Studio-editor met een fictieve ingerichte kamer, kleurenpaletten en oppervlaktepatronen" width="440" />
 </a>
 
-**Home Studio:** echte editorscreenshots met fictieve plattegronden — een garage
-met studio en een ingerichte kamer met patronen. [Open de planner](https://ha-homelab.github.io/home-studio/planner/) of volg de
-[geïllustreerde tekenhandleiding](https://ha-homelab.github.io/home-studio/planner/guide.html). Afbeeldingen: Home Studio-bijdragers, MIT.
-[Afbeeldingsbronnen en herkomst](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+**Home Studio:** Deze bestaande schermafbeeldingen van de afzonderlijke editor tonen fictieve plannen: een garage met studio en een ingerichte kamer met patronen. Dezelfde tekengereedschappen zijn beschikbaar binnen HA.
+[Home Studio in Home Assistant installeren](https://ha-homelab.github.io/home-studio/install.html#native-studio) · [Geïllustreerde tekenhandleiding](https://ha-homelab.github.io/home-studio/planner/guide.html).
+Home Studio contributors · MIT · [Afbeeldingsbronnen en herkomst](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+
+### Optioneel: buiten Home Assistant tekenen
+
+De [gehoste planner](https://ha-homelab.github.io/home-studio/planner/) blijft handig tijdens het instellen of oplossen van problemen met HA. Gebruik voor offline tekenen een gedownloade lokale kopie volgens de [handleiding van de afzonderlijke editor](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md). Deze editor maakt geen verbinding met HA en bewaart een eigen concept in de browser. Zet een plan handmatig over met **Export JSON** en daarna **Open JSON** in Home Studio binnen HA; kies **Save draft** en **Publish family view** wanneer het klaar is.
 
 Bekijk voor andere projectbeelden de [EchoMuse-architectuur voor spraak, muziek en BLE](https://github.com/ha-homelab/ha-echomuse/blob/main/docs/architecture.md),
 [ZAC93-bedradingsdiagrammen](https://github.com/ha-homelab/zac93-esp32) en [RuView-demonstratie met synthetische replay](https://github.com/ha-homelab/ruview-home-assistant#try-it-without-hardware).
