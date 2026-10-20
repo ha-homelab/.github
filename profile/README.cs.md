@@ -5,7 +5,7 @@
 <h1 align="center">HA Homelab</h1>
 <p align="center"><strong>Promyšlená domácnost. Srozumitelná automatizace.</strong></p>
 <p align="center">
-  <a href="https://ha-homelab.github.io/home-studio/planner/">Vyzkoušejte Home Studio</a> ·
+  <a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">Nainstalovat Home Studio do Home Assistant</a> ·
   <a href="https://github.com/ha-homelab/home-assistant">Prozkoumejte konfiguraci</a> ·
   <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.cs.md">Komunitní nástroje</a>
 </p>
@@ -31,10 +31,7 @@ společně nebo že se automaticky navzájem integrují.
 
 ## Novinky — říjen 2026
 
-- **Nakreslete a prozkoumejte domácnost v prohlížeči.** [Home Studio](https://github.com/ha-homelab/home-studio) spojuje plánovač 2D/3D, 206 návrhů nábytku a zahradních prvků a 24 jazyků editoru.
-  Vydání obsahující `home_floorplan.zip` nabízejí také [editor uvnitř Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md)
-  pro kreslení, propojení oblastí HA, ukládání konceptů a publikování 3D pohledu.
-  Samostatný editor v prohlížeči i přenositelný kompilátor a instalátor zůstávají dostupné. Jeho
+- **Kreslete a publikujte svůj domov přímo v Home Assistant.** [Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio) přináší editor 2D/3D, 206 návrhů nábytku a zahradních objektů a 24 jazyků editoru do HA. Nakreslete místnosti, propojte oblasti a zařízení HA a zvolte **Save draft**, potom **Publish family view**, aby se aktualizovalo **3D Home**.
   [režim Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) umožňuje procházet nainstalovaný plán a přitom blokuje příkazy zařízením.
   [Průvodce první relací](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) vysvětluje začátek s příklady, obnovu rozpracovaných návrhů a zachování práce, když 3D není dostupné.
 - **Další způsoby využití stávajícího hardwaru.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) přidává
@@ -53,6 +50,18 @@ společně nebo že se automaticky navzájem integrují.
 
 Jde o redakční snímek k **19. říjnu 2026**. Aktuální kompatibilitu a stav najdete
 v README a vydáních jednotlivých projektů.
+
+## Nainstalovat Home Studio do Home Assistant
+
+Použijte **Home Assistant 2026.10 nebo novější** a účet správce.
+Nejprve zálohujte HA. Pokud už máte vygenerovanou nebo upravenou komponentu **home_floorplan**, před jejím nahrazením si přečtěte [pokyny k migraci](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md#existing-generated-homes).
+
+1. V HACS přidejte [`ha-homelab/home-studio`](https://github.com/ha-homelab/home-studio) jako vlastní repozitář kategorie **Integration**. Nainstalujte nejnovější stabilní vydání obsahující **`home_floorplan.zip`**.
+2. Restartujte Home Assistant, otevřete **Settings → Devices & services → Add integration** a vyberte **Home Studio**.
+3. Otevřete **Home Studio** v postranním panelu. Nakreslete a zařiďte místnost, propojte její oblast a zařízení HA a zvolte **Save draft**.
+4. Zvolte **Publish family view** a otevřete **3D Home**. Před zapnutím ovládání zařízení ověřte půdorys a vazby pomocí **Dry run**.
+
+Nová nativní instalace nepotřebuje příkazy Pythonu, položku YAML ani API token. [Návod k nativní instalaci](https://ha-homelab.github.io/home-studio/install.html#native-studio) popisuje úplné nastavení, ruční instalaci ZIP a práci se stávajícími instalacemi.
 
 ## Prozkoumejte projekty
 
@@ -103,7 +112,7 @@ požadavky vybraného projektu na model a obnovu.
 
 ### Prostor, pozorování senzorů a přístup
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — kreslete a zařizujte místnosti v samostatném editoru v prohlížeči nebo uvnitř Home Assistant; exportujte JSON nebo publikujte pohled HA.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — kreslete a zařizujte místnosti přímo v Home Assistant, ukládejte upravitelné koncepty a publikujte zobrazení 3D Home.
 - **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — experimentální sběr CSI, firmware přijímačů, hypotézy o aktivitě a nástroje pro důkazy o inferenci; publikuje přes ruview-home-assistant a neprokazuje přesnost detekce v reálném prostředí.
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — záznam, označování a porovnávání pozorování
   s výslovnou kontrolou aktuálnosti a času.
@@ -148,17 +157,20 @@ rozsahem, nikoli žebříček kvality, procento pokrytí ani benchmark fyzickýc
 
 ## Ukázky použití
 
-<a href="https://ha-homelab.github.io/home-studio/planner/">
+<a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">
   <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="Editor Home Studio v prohlížeči s fiktivní garáží, tvůrčím studiem a terasou ve 3D" width="440" />
 </a>
-<a href="https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html">
+<a href="https://ha-homelab.github.io/home-studio/planner/guide.html">
   <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="Editor Home Studio s fiktivní místností, nábytkem, barevnými paletami a vzory povrchů" width="440" />
 </a>
 
-**Home Studio:** skutečné snímky editoru s fiktivními plány — garáží se studiem
- a vybavenou místností se vzory. [Otevřete plánovač](https://ha-homelab.github.io/home-studio/planner/) nebo postupujte podle
-[ilustrovaného návodu ke kreslení](https://ha-homelab.github.io/home-studio/planner/guide.html). Obrázky: přispěvatelé Home Studio, MIT.
-[Zdroje a původ obrázků](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+**Home Studio:** Tyto stávající snímky samostatného editoru ukazují fiktivní plány: garáž se studiem a zařízenou místnost se vzory. Stejné kreslicí nástroje jsou dostupné uvnitř HA.
+[Nainstalovat Home Studio do Home Assistant](https://ha-homelab.github.io/home-studio/install.html#native-studio) · [Ilustrovaný návod ke kreslení](https://ha-homelab.github.io/home-studio/planner/guide.html).
+Home Studio contributors · MIT · [Zdroje a původ obrázků](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+
+### Volitelně: kreslení mimo Home Assistant
+
+[Hostovaný plánovač](https://ha-homelab.github.io/home-studio/planner/) se hodí při nastavování nebo řešení problémů s HA. Pro kreslení offline použijte staženou místní kopii podle [návodu k samostatnému editoru](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md). Samostatný editor se nepřipojuje k HA a uchovává vlastní koncept v prohlížeči. Plán přeneste ručně pomocí **Export JSON** a poté **Open JSON** v Home Studio uvnitř HA; až bude připravený, zvolte **Save draft** a **Publish family view**.
 
 Další ukázky nabízí [architektura hlasu, hudby a BLE v EchoMuse](https://github.com/ha-homelab/ha-echomuse/blob/main/docs/architecture.md),
 [schémata zapojení ZAC93](https://github.com/ha-homelab/zac93-esp32) a [ukázka syntetického přehrávání RuView](https://github.com/ha-homelab/ruview-home-assistant#try-it-without-hardware).

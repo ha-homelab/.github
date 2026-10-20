@@ -2,7 +2,7 @@
 
 <h1 align="center">HA Homelab</h1>
 <p align="center"><strong>บ้านที่คิดมาอย่างรอบคอบ ระบบอัตโนมัติที่เข้าใจได้</strong></p>
-<p align="center"><a href="https://ha-homelab.github.io/home-studio/planner/">ลอง Home Studio</a> · <a href="https://github.com/ha-homelab/home-assistant">สำรวจการตั้งค่า</a> · <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.th.md">เครื่องมือชุมชน</a></p>
+<p align="center"><a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">ติดตั้ง Home Studio ภายใน Home Assistant</a> · <a href="https://github.com/ha-homelab/home-assistant">สำรวจการตั้งค่า</a> · <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.th.md">เครื่องมือชุมชน</a></p>
 
 <!-- language-navigation:start -->
 <p dir="ltr" align="center">
@@ -20,12 +20,25 @@
 
 ## มีอะไรใหม่ — ตุลาคม 2026
 
-- **วาดและสำรวจบ้านในเบราว์เซอร์** [Home Studio](https://github.com/ha-homelab/home-studio) รวมเครื่องมือวางผัง 2D/3D แบบเฟอร์นิเจอร์และสวน 206 แบบ และภาษาของตัวแก้ไข 24 ภาษา รุ่นที่มี `home_floorplan.zip` ยังมี [ตัวแก้ไขภายใน Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) สำหรับวาดผัง เชื่อมโยงพื้นที่ HA บันทึกฉบับร่าง และเผยแพร่มุมมอง 3D ตัวแก้ไขแยกในเบราว์เซอร์และคอมไพเลอร์/ตัวติดตั้งแบบพกพายังคงใช้งานได้ [โหมด Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) ให้สำรวจผังที่ติดตั้งแล้วโดยบล็อกคำสั่งไปยังอุปกรณ์ [คู่มือเริ่มใช้งาน](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) อธิบายการเริ่มจากตัวอย่าง การกู้คืนฉบับร่าง และการเก็บรักษางานเมื่อใช้งาน 3D ไม่ได้
+- **วาดและเผยแพร่บ้านของคุณภายใน Home Assistant โดยตรง** [Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio) นำตัวแก้ไข 2D/3D แบบเฟอร์นิเจอร์และสวน 206 แบบ และภาษาตัวแก้ไข 24 ภาษามาไว้ใน HA วาดห้อง เชื่อมโยงพื้นที่และอุปกรณ์ HA แล้วเลือก **Save draft** จากนั้น **Publish family view** เพื่ออัปเดต **3D Home**
+  [โหมด Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) ให้สำรวจผังที่ติดตั้งแล้วโดยบล็อกคำสั่งไปยังอุปกรณ์ [คู่มือเริ่มใช้งาน](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) อธิบายการเริ่มจากตัวอย่าง การกู้คืนฉบับร่าง และการเก็บรักษางานเมื่อใช้งาน 3D ไม่ได้
 - **ทางเลือกเพิ่มขึ้นในการใช้อุปกรณ์เดิมต่อ** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) มีเอกสารเส้นทางเสียง เพลง และ BLE บน Echo Dot 2 ส่วน [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) อธิบายบริดจ์ Z-Wave โครงการ RF, Zigbee และ Tuya ด้านล่างครอบคลุมอุปกรณ์กลุ่มอื่น ความพร้อมของฮาร์ดแวร์ขึ้นกับแต่ละโครงการ โดย ZAC93 ยังรอการตรวจรับการทำงานกับอุปกรณ์จริง
 - **การตั้งค่าสาธารณะและการกู้คืน** [Home Assistant](https://github.com/ha-homelab/home-assistant) มีไลบรารีระบบอัตโนมัติและสคริปต์ที่ใช้ซ้ำได้ รวมถึงข้อกำหนดการเชื่อมต่อ ส่วน [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) เผยแพร่เครื่องมือติดตั้ง สำรองข้อมูล และกู้คืน อินสแตนซ์เดียวที่ใช้พื้นที่เก็บข้อมูลภายในเครื่องไม่ได้ให้การสลับระบบเมื่อขัดข้องโดยอัตโนมัติ
 - **ตรวจหลักฐานก่อนทำงานอัตโนมัติ** โครงการใหม่ด้านการตรวจวัด ทิศทางกล้อง และการเข้าถึง เสริมกับ[เครื่องมือชุมชน](https://github.com/ha-homelab/.github/blob/main/community-tools/README.th.md)สี่ตัวสำหรับย้ายเอนทิตี ตรวจที่มาของค่ามิเตอร์ ทดสอบสถานการณ์อัตโนมัติ และประเมินผลเสียง [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) ใช้ปุ่มการทำงานเดียวที่เปลี่ยนตามสถานะ โดยยังต้องยืนยันการปลดล็อกอย่างชัดเจน
 
 นี่คือภาพรวมที่เรียบเรียง ณ **19 ตุลาคม 2026** ดู README และรุ่นเผยแพร่ของแต่ละโครงการสำหรับสถานะและความเข้ากันได้ล่าสุด
+
+## ติดตั้ง Home Studio ภายใน Home Assistant
+
+ใช้ **Home Assistant 2026.10 หรือใหม่กว่า** และบัญชีผู้ดูแลระบบ
+สำรองข้อมูล HA ก่อน หากติดตั้ง **home_floorplan** ที่สร้างขึ้นหรือปรับแต่งไว้แล้ว ให้อ่าน[แนวทางการย้ายระบบ](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md#existing-generated-homes)ก่อนแทนที่
+
+1. ใน HACS เพิ่ม [`ha-homelab/home-studio`](https://github.com/ha-homelab/home-studio) เป็นที่เก็บแบบกำหนดเองในหมวด **Integration** ติดตั้งรุ่นเสถียรล่าสุดที่มี **`home_floorplan.zip`**
+2. เริ่ม Home Assistant ใหม่ เปิด **Settings → Devices & services → Add integration** แล้วเลือก **Home Studio**
+3. เปิด **Home Studio** จากแถบด้านข้าง วาดและจัดเฟอร์นิเจอร์ในห้อง เชื่อมโยงพื้นที่และอุปกรณ์ HA แล้วเลือก **Save draft**
+4. เลือก **Publish family view** แล้วเปิด **3D Home** ตรวจสอบผังและการเชื่อมโยงด้วย **Dry run** ก่อนเปิดใช้การควบคุมอุปกรณ์จริง
+
+การติดตั้งแบบเนทีฟใหม่ไม่ต้องใช้คำสั่ง Python รายการ YAML หรือโทเค็น API ดูขั้นตอนทั้งหมด การติดตั้ง ZIP ด้วยตนเอง และแนวทางสำหรับระบบที่ติดตั้งอยู่แล้วใน[คู่มือติดตั้งแบบเนทีฟ](https://ha-homelab.github.io/home-studio/install.html#native-studio)
 
 ## สำรวจโครงการ
 
@@ -69,7 +82,7 @@ EchoLocal และ EchoMuse เป็นคนละเส้นทางกา
 
 ### เครื่องมือวางผัง การตรวจวัด และการเข้าถึง
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — วาดห้องและจัดเฟอร์นิเจอร์ด้วยตัวแก้ไขแยกในเบราว์เซอร์หรือภายใน Home Assistant แล้วส่งออก JSON หรือเผยแพร่มุมมอง HA
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — วาดและจัดเฟอร์นิเจอร์ในห้องภายใน Home Assistant โดยตรง บันทึกแบบร่างที่แก้ไขได้ และเผยแพร่มุมมอง 3D Home
 - **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — การเก็บ CSI แบบทดลอง เฟิร์มแวร์ตัวรับ สมมติฐานเกี่ยวกับกิจกรรม และเครื่องมือตรวจสอบหลักฐานการอนุมาน เผยแพร่ผ่าน ruview-home-assistant และไม่ได้ยืนยันความแม่นยำในการตรวจจับในสภาพจริง
 
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — บันทึก ติดป้าย และเปรียบเทียบข้อมูลสังเกต โดยตรวจความสดของข้อมูลและนาฬิกาอย่างชัดเจน
@@ -107,10 +120,16 @@ EchoLocal และ EchoMuse เป็นคนละเส้นทางกา
 
 ## ดูหน้าจอใช้งาน
 
-<a href="https://ha-homelab.github.io/home-studio/planner/"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="ตัวแก้ไข Home Studio ในเบราว์เซอร์แสดงโรงรถ สตูดิโอสร้างสรรค์ และลานสมมติในแบบ 3D" width="440" /></a>
-<a href="https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="ตัวแก้ไข Home Studio แสดงห้องสมมติพร้อมเฟอร์นิเจอร์ ชุดสี และลวดลายพื้นผิว" width="440" /></a>
+<a href="https://ha-homelab.github.io/home-studio/install.html#native-studio"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="ตัวแก้ไข Home Studio ในเบราว์เซอร์แสดงโรงรถ สตูดิโอสร้างสรรค์ และลานสมมติในแบบ 3D" width="440" /></a>
+<a href="https://ha-homelab.github.io/home-studio/planner/guide.html"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="ตัวแก้ไข Home Studio แสดงห้องสมมติพร้อมเฟอร์นิเจอร์ ชุดสี และลวดลายพื้นผิว" width="440" /></a>
 
-**Home Studio:** ภาพหน้าจอจริงของตัวแก้ไขที่ใช้ผังสมมติ คือโรงรถ/สตูดิโอและห้องตกแต่งพร้อมลวดลาย [เปิดเครื่องมือวางผัง](https://ha-homelab.github.io/home-studio/planner/) หรืออ่าน[คู่มือวาดพร้อมภาพ](https://ha-homelab.github.io/home-studio/planner/guide.html) ภาพ: Home Studio contributors, MIT [แหล่งภาพและที่มา](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md)
+**Home Studio:** ภาพหน้าจอเดิมของตัวแก้ไขแยกแสดงผังสมมติ ได้แก่ โรงรถพร้อมสตูดิโอและห้องที่ตกแต่งด้วยเฟอร์นิเจอร์มีลวดลาย เครื่องมือวาดเดียวกันนี้มีให้ใช้ภายใน HA
+[ติดตั้ง Home Studio ภายใน Home Assistant](https://ha-homelab.github.io/home-studio/install.html#native-studio) · [คู่มือวาดพร้อมภาพ](https://ha-homelab.github.io/home-studio/planner/guide.html).
+Home Studio contributors · MIT · [แหล่งภาพและที่มา](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+
+### ตัวเลือกเสริม: วาดนอก Home Assistant
+
+[เครื่องมือวางผังบนเว็บ](https://ha-homelab.github.io/home-studio/planner/) ยังมีประโยชน์ระหว่างตั้งค่าหรือแก้ปัญหา HA หากต้องการวาดแบบออฟไลน์ ให้ใช้สำเนาที่ดาวน์โหลดมาไว้ในเครื่องตาม[คู่มือตัวแก้ไขแยก](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) ตัวแก้ไขแยกไม่เชื่อมต่อกับ HA และเก็บแบบร่างของตัวเองในเบราว์เซอร์ ย้ายผังด้วยตนเองโดยใช้ **Export JSON** แล้ว **Open JSON** ใน Home Studio ภายใน HA เมื่อพร้อม ให้เลือก **Save draft** และ **Publish family view**
 
 สำหรับโครงการอื่น ดู[สถาปัตยกรรมเสียง/เพลง/BLE ของ EchoMuse](https://github.com/ha-homelab/ha-echomuse/blob/main/docs/architecture.md), [แผนผังสาย ZAC93](https://github.com/ha-homelab/zac93-esp32) และ[เดโมเล่นซ้ำข้อมูลสังเคราะห์ของ RuView](https://github.com/ha-homelab/ruview-home-assistant#try-it-without-hardware)
 

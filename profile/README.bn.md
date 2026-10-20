@@ -2,7 +2,7 @@
 
 <h1 align="center">HA Homelab</h1>
 <p align="center"><strong>সুচিন্তিত বাড়ি। বোধগম্য স্বয়ংক্রিয় ব্যবস্থা।</strong></p>
-<p align="center"><a href="https://ha-homelab.github.io/home-studio/planner/">Home Studio ব্যবহার করুন</a> · <a href="https://github.com/ha-homelab/home-assistant">কনফিগারেশন দেখুন</a> · <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.bn.md">কমিউনিটির সরঞ্জাম</a></p>
+<p align="center"><a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">Home Assistant-এর মধ্যে Home Studio ইনস্টল করুন</a> · <a href="https://github.com/ha-homelab/home-assistant">কনফিগারেশন দেখুন</a> · <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.bn.md">কমিউনিটির সরঞ্জাম</a></p>
 
 <!-- language-navigation:start -->
 <p dir="ltr" align="center">
@@ -20,12 +20,25 @@
 
 ## নতুন সংযোজন — অক্টোবর 2026
 
-- **ব্রাউজারে বাড়ি আঁকুন ও ঘুরে দেখুন।** [Home Studio](https://github.com/ha-homelab/home-studio)-তে রয়েছে 2D/3D পরিকল্পক, আসবাব ও বাগানের 206টি নকশা এবং সম্পাদকের 24টি ভাষা। `home_floorplan.zip`-সহ প্রকাশিত সংস্করণে আঁকা, HA এলাকা যুক্ত করা, খসড়া সংরক্ষণ ও 3D ভিউ প্রকাশের জন্য [Home Assistant-এর ভেতরে সম্পাদক](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md)ও রয়েছে। আলাদা ব্রাউজার সম্পাদক এবং বহনযোগ্য কম্পাইলার/ইনস্টলারও ব্যবহার করা যায়। [Dry run মোড](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) ডিভাইসের নির্দেশ আটকে রেখে স্থাপিত পরিকল্পনা ঘুরে দেখতে দেয়। [প্রথম ব্যবহারের নির্দেশিকা](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) উদাহরণ দিয়ে শুরু করা, খসড়া পুনরুদ্ধার এবং 3D অনুপলব্ধ থাকলে কাজ সংরক্ষণের পদ্ধতি ব্যাখ্যা করে।
+- **সরাসরি Home Assistant-এ আপনার বাড়ি আঁকুন ও প্রকাশ করুন।** [Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio) তার 2D/3D সম্পাদক, 206টি আসবাব ও বাগানের ডিজাইন এবং সম্পাদকের 24টি ভাষা HA-তে নিয়ে আসে। ঘর আঁকুন, HA এলাকা ও ডিভাইস যুক্ত করুন, তারপর **3D Home** আপডেট করতে **Save draft** ও **Publish family view** বেছে নিন।
+  [Dry run মোড](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) ডিভাইসের নির্দেশ আটকে রেখে স্থাপিত পরিকল্পনা ঘুরে দেখতে দেয়। [প্রথম ব্যবহারের নির্দেশিকা](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) উদাহরণ দিয়ে শুরু করা, খসড়া পুনরুদ্ধার এবং 3D অনুপলব্ধ থাকলে কাজ সংরক্ষণের পদ্ধতি ব্যাখ্যা করে।
 - **বিদ্যমান হার্ডওয়্যার পুনর্ব্যবহারের আরও পথ।** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) Echo Dot 2-এর ভয়েস, সংগীত ও BLE ব্যবহারের নথিভুক্ত পথ দেয়; [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) Z-Wave ব্রিজের নির্দেশিকা দেয়। নিচের RF, Zigbee ও Tuya প্রকল্পগুলো অন্য ধরনের ডিভাইস নিয়ে কাজ করে। হার্ডওয়্যারের প্রস্তুতি প্রকল্পভেদে আলাদা; ZAC93-এর বাস্তব হার্ডওয়্যার চালু করে যাচাই এখনো বাকি।
 - **প্রকাশ্য কনফিগারেশন ও পুনরুদ্ধার।** [Home Assistant](https://github.com/ha-homelab/home-assistant)-এ এখন পুনর্ব্যবহারযোগ্য অটোমেশন/স্ক্রিপ্ট লাইব্রেরি এবং ইন্টিগ্রেশনের চুক্তিভিত্তিক নিয়ম আছে; [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) স্থাপন, ব্যাকআপ ও পুনরুদ্ধারের সরঞ্জাম প্রকাশ করে। স্থানীয় স্টোরেজসহ একটি ইনস্ট্যান্স স্বয়ংক্রিয় বিকল্পে স্থানান্তরের ব্যবস্থা নয়।
 - **স্বয়ংক্রিয়তার আগে প্রমাণ।** পর্যবেক্ষণ, ক্যামেরার দিক ও প্রবেশাধিকারের নতুন প্রকল্পের পাশাপাশি রয়েছে চারটি [কমিউনিটি সরঞ্জাম](https://github.com/ha-homelab/.github/blob/main/community-tools/README.bn.md), যা এনটিটি স্থানান্তর, পরিমাপের উৎস, অটোমেশন দৃশ্যপট ও ভয়েস ফলাফল নিয়ে কাজ করে। [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) এখন অবস্থাভিত্তিক একটি অ্যাকশন বোতাম ব্যবহার করে, তবে তালা খোলার স্পষ্ট অনুমোদন এখনো বাধ্যতামূলক।
 
 এটি **19 অক্টোবর 2026**-এর সম্পাদকীয় চিত্র। বর্তমান সামঞ্জস্য ও অবস্থা জানতে প্রতিটি প্রকল্পের README ও প্রকাশিত সংস্করণ দেখুন।
+
+## Home Assistant-এর মধ্যে Home Studio ইনস্টল করুন
+
+**Home Assistant 2026.10 বা নতুন সংস্করণ** এবং প্রশাসক অ্যাকাউন্ট ব্যবহার করুন।
+প্রথমে HA-এর ব্যাকআপ নিন। তৈরি করা বা কাস্টমাইজ করা **home_floorplan** আগে থেকেই ইনস্টল থাকলে, সেটি বদলানোর আগে [মাইগ্রেশন নির্দেশিকা](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md#existing-generated-homes) পড়ুন।
+
+1. HACS-এ [`ha-homelab/home-studio`](https://github.com/ha-homelab/home-studio)-কে **Integration** বিভাগের কাস্টম রিপোজিটরি হিসেবে যোগ করুন। **`home_floorplan.zip`**-সহ সর্বশেষ স্থিতিশীল সংস্করণ ইনস্টল করুন।
+2. Home Assistant পুনরায় চালু করুন, **Settings → Devices & services → Add integration** খুলুন এবং **Home Studio** বেছে নিন।
+3. সাইডবারে **Home Studio** খুলুন। একটি ঘর আঁকুন ও সাজান, তার HA এলাকা ও ডিভাইস যুক্ত করুন এবং **Save draft** বেছে নিন।
+4. **Publish family view** বেছে নিয়ে **3D Home** খুলুন। ডিভাইস নিয়ন্ত্রণ চালু করার আগে **Dry run** দিয়ে নকশা ও সংযোগ পরীক্ষা করুন।
+
+নতুন নেটিভ ইনস্টলে Python কমান্ড, YAML এন্ট্রি বা API টোকেন লাগে না। [নেটিভ ইনস্টল নির্দেশিকা](https://ha-homelab.github.io/home-studio/install.html#native-studio)-তে সম্পূর্ণ সেটআপ, হাতে ZIP ইনস্টল এবং বিদ্যমান ইনস্টলের নির্দেশ আছে।
 
 ## প্রকল্পগুলো দেখুন
 
@@ -69,7 +82,7 @@ EchoLocal ও EchoMuse আলাদা রূপান্তরপথ। ডি�
 
 ### স্থান পরিকল্পনা, পর্যবেক্ষণ ও প্রবেশাধিকার
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — আলাদা ব্রাউজার সম্পাদক বা Home Assistant-এর ভেতরে ঘর আঁকা ও আসবাব সাজানো; JSON রপ্তানি বা HA ভিউ প্রকাশ করা।
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — সরাসরি Home Assistant-এ ঘর আঁকুন ও সাজান, সম্পাদনাযোগ্য খসড়া সংরক্ষণ করুন এবং 3D Home দৃশ্য প্রকাশ করুন।
 - **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — পরীক্ষামূলক CSI সংগ্রহ, রিসিভার ফার্মওয়্যার, কার্যকলাপের অনুমান ও ইনফারেন্সের প্রমাণ যাচাইয়ের সরঞ্জাম; ruview-home-assistant-এর মাধ্যমে প্রকাশ করে, কিন্তু বাস্তবে শনাক্তকরণের নির্ভুলতা প্রমাণ করে না।
 
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — তথ্যের সতেজতা ও ঘড়ি স্পষ্টভাবে পরীক্ষা করে পর্যবেক্ষণ নথিভুক্ত, চিহ্নিত ও তুলনা করা।
@@ -107,10 +120,16 @@ EchoLocal ও EchoMuse আলাদা রূপান্তরপথ। ডি�
 
 ## ব্যবহার দেখতে কেমন
 
-<a href="https://ha-homelab.github.io/home-studio/planner/"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="Home Studio ব্রাউজার সম্পাদকে কাল্পনিক গ্যারাজ, সৃজনশীল স্টুডিও ও উঠানের 3D দৃশ্য" width="440" /></a>
-<a href="https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="Home Studio সম্পাদকে আসবাব, রঙের প্যালেট ও পৃষ্ঠের নকশাসহ কাল্পনিক ঘর" width="440" /></a>
+<a href="https://ha-homelab.github.io/home-studio/install.html#native-studio"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="Home Studio ব্রাউজার সম্পাদকে কাল্পনিক গ্যারাজ, সৃজনশীল স্টুডিও ও উঠানের 3D দৃশ্য" width="440" /></a>
+<a href="https://ha-homelab.github.io/home-studio/planner/guide.html"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="Home Studio সম্পাদকে আসবাব, রঙের প্যালেট ও পৃষ্ঠের নকশাসহ কাল্পনিক ঘর" width="440" /></a>
 
-**Home Studio:** কাল্পনিক পরিকল্পনা ব্যবহার করে প্রকৃত সম্পাদকের স্ক্রিনশট—গ্যারাজ/স্টুডিও ও নকশাদার আসবাবসহ ঘর। [পরিকল্পক খুলুন](https://ha-homelab.github.io/home-studio/planner/) অথবা [সচিত্র আঁকার নির্দেশিকা](https://ha-homelab.github.io/home-studio/planner/guide.html) দেখুন। ছবি: Home Studio contributors, MIT। [ছবির উৎস ও উৎপত্তি](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md)।
+**Home Studio:** আলাদা সম্পাদকের এই বিদ্যমান স্ক্রিনশটগুলো কাল্পনিক নকশা দেখায়: গ্যারাজ/স্টুডিও এবং নকশাদার আসবাবের ঘর। একই আঁকার সরঞ্জাম HA-এর ভেতরেও পাওয়া যায়।
+[Home Assistant-এর মধ্যে Home Studio ইনস্টল করুন](https://ha-homelab.github.io/home-studio/install.html#native-studio) · [সচিত্র আঁকার নির্দেশিকা](https://ha-homelab.github.io/home-studio/planner/guide.html).
+Home Studio contributors · MIT · [ছবির উৎস ও উৎপত্তি](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+
+### ঐচ্ছিক: Home Assistant-এর বাইরে আঁকুন
+
+[হোস্ট করা পরিকল্পক](https://ha-homelab.github.io/home-studio/planner/) HA সেটআপ বা সমস্যা সমাধানের সময় কাজে আসে। অফলাইনে আঁকার জন্য [আলাদা সম্পাদকের নির্দেশিকা](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) অনুযায়ী ডাউনলোড করা স্থানীয় কপি ব্যবহার করুন। আলাদা সম্পাদক HA-তে যুক্ত হয় না এবং ব্রাউজারে নিজস্ব খসড়া রাখে। **Export JSON**, তারপর HA-এর ভেতরে Home Studio-তে **Open JSON** দিয়ে হাতে নকশা স্থানান্তর করুন; প্রস্তুত হলে **Save draft** ও **Publish family view** বেছে নিন।
 
 অন্য প্রকল্পের জন্য দেখুন [EchoMuse-এর ভয়েস/সংগীত/BLE স্থাপত্য](https://github.com/ha-homelab/ha-echomuse/blob/main/docs/architecture.md), [ZAC93-এর তার সংযোগচিত্র](https://github.com/ha-homelab/zac93-esp32), এবং [RuView-এর কৃত্রিম পুনরায় চালানোর প্রদর্শন](https://github.com/ha-homelab/ruview-home-assistant#try-it-without-hardware)।
 

@@ -2,7 +2,7 @@
 
 <h1 align="center">HA Homelab</h1>
 <p align="center"><strong>Rumah yang dirancang matang. Otomasi yang dapat dipahami.</strong></p>
-<p align="center"><a href="https://ha-homelab.github.io/home-studio/planner/">Coba Home Studio</a> · <a href="https://github.com/ha-homelab/home-assistant">Jelajahi konfigurasi</a> · <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.id.md">Alat komunitas</a></p>
+<p align="center"><a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">Pasang Home Studio di dalam Home Assistant</a> · <a href="https://github.com/ha-homelab/home-assistant">Jelajahi konfigurasi</a> · <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.id.md">Alat komunitas</a></p>
 
 <!-- language-navigation:start -->
 <p dir="ltr" align="center">
@@ -20,12 +20,25 @@ Peta ini mengelompokkan pekerjaan yang berkaitan. Ini tidak berarti semua proyek
 
 ## Yang baru — Oktober 2026
 
-- **Gambar dan jelajahi rumah di peramban.** [Home Studio](https://github.com/ha-homelab/home-studio) menggabungkan perencana 2D/3D, 206 desain furnitur dan taman, serta 24 bahasa editor. Rilis yang menyertakan `home_floorplan.zip` juga menyediakan [editor di dalam Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) untuk menggambar, menghubungkan area HA, menyimpan draf, dan menerbitkan tampilan 3D. Editor peramban terpisah dan kompiler/pemasang portabel tetap tersedia. [Mode Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) memungkinkan Anda menjelajahi denah terpasang sambil memblokir perintah ke perangkat. [Panduan penggunaan pertama](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) menjelaskan cara memulai dari contoh, memulihkan draf, dan mempertahankan hasil kerja saat 3D tidak tersedia.
+- **Gambar dan publikasikan rumah Anda langsung di Home Assistant.** [Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio) menghadirkan editor 2D/3D, 206 desain furnitur dan taman, serta 24 bahasa editor di HA. Gambar ruangan, hubungkan area dan perangkat HA, lalu pilih **Save draft** dan **Publish family view** untuk memperbarui **3D Home**.
+  [Mode Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) memungkinkan Anda menjelajahi denah terpasang sambil memblokir perintah ke perangkat. [Panduan penggunaan pertama](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) menjelaskan cara memulai dari contoh, memulihkan draf, dan mempertahankan hasil kerja saat 3D tidak tersedia.
 - **Lebih banyak cara memakai kembali perangkat.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) mendokumentasikan jalur suara, musik, dan BLE untuk Echo Dot 2; [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) mendokumentasikan jembatan Z-Wave. Proyek RF, Zigbee, dan Tuya di bawah mencakup keluarga perangkat lain. Kesiapan perangkat keras berbeda antarproyek: uji pengoperasian fisik ZAC93 masih menunggu.
 - **Konfigurasi publik dan pemulihan.** [Home Assistant](https://github.com/ha-homelab/home-assistant) kini menyertakan pustaka otomasi/skrip yang dapat digunakan kembali serta kontrak integrasi; [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) menerbitkan alat penerapan, pencadangan, dan pemulihan. Satu instans dengan penyimpanan lokal tidak memberikan failover otomatis.
 - **Bukti sebelum otomasi.** Proyek baru untuk pengamatan, arah kamera, dan akses melengkapi empat [alat komunitas](https://github.com/ha-homelab/.github/blob/main/community-tools/README.id.md) untuk migrasi entitas, asal-usul pengukuran, skenario otomasi, dan hasil suara. [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) kini memakai satu tombol tindakan adaptif sambil tetap mewajibkan konfirmasi pembukaan kunci.
 
 Ini adalah potret editorial per **19 Oktober 2026**. Lihat README dan rilis masing-masing proyek untuk kompatibilitas dan status terkini.
+
+## Pasang Home Studio di dalam Home Assistant
+
+Gunakan **Home Assistant 2026.10 atau lebih baru** dan akun administrator.
+Cadangkan HA terlebih dahulu. Jika **home_floorplan** hasil pembuatan atau penyesuaian sudah terpasang, baca [panduan migrasi](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md#existing-generated-homes) sebelum menggantinya.
+
+1. Di HACS, tambahkan [`ha-homelab/home-studio`](https://github.com/ha-homelab/home-studio) sebagai repositori khusus dengan kategori **Integration**. Pasang rilis stabil terbaru yang menyertakan **`home_floorplan.zip`**.
+2. Mulai ulang Home Assistant, buka **Settings → Devices & services → Add integration**, lalu pilih **Home Studio**.
+3. Buka **Home Studio** di bilah samping. Gambar dan lengkapi ruangan dengan furnitur, hubungkan area dan perangkat HA-nya, lalu pilih **Save draft**.
+4. Pilih **Publish family view**, lalu buka **3D Home**. Periksa denah dan pengaitan dengan **Dry run** sebelum mengaktifkan kontrol perangkat.
+
+Pemasangan native baru tidak memerlukan perintah Python, entri YAML, atau token API. [Panduan pemasangan native](https://ha-homelab.github.io/home-studio/install.html#native-studio) menjelaskan penyiapan lengkap, pemasangan ZIP manual, dan penanganan instalasi yang sudah ada.
 
 ## Jelajahi proyek
 
@@ -69,7 +82,7 @@ EchoLocal dan EchoMuse adalah jalur konversi berbeda. Baca persyaratan model dan
 
 ### Alat ruang, pengamatan, dan akses
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — menggambar dan menata furnitur ruangan melalui editor peramban terpisah atau di dalam Home Assistant; mengekspor JSON atau menerbitkan tampilan HA.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — gambar dan lengkapi ruangan langsung di Home Assistant, simpan draf yang dapat diedit, lalu publikasikan tampilan 3D Home.
 - **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — pengumpulan CSI eksperimental, firmware penerima, hipotesis aktivitas, dan alat bukti inferensi; menerbitkan melalui ruview-home-assistant dan tidak membuktikan akurasi deteksi di dunia nyata.
 
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — merekam, melabeli, dan membandingkan pengamatan dengan pemeriksaan kebaruan data dan jam yang eksplisit.
@@ -107,10 +120,16 @@ Diagram mempertahankan [bukti panduan komunitas per 16 Oktober 2026 dan tautan e
 
 ## Lihat penggunaannya
 
-<a href="https://ha-homelab.github.io/home-studio/planner/"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="Editor peramban Home Studio menampilkan garasi, studio kreatif, dan teras fiktif dalam 3D" width="440" /></a>
-<a href="https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="Editor Home Studio menampilkan ruangan fiktif dengan furnitur, palet warna, dan pola permukaan" width="440" /></a>
+<a href="https://ha-homelab.github.io/home-studio/install.html#native-studio"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="Editor peramban Home Studio menampilkan garasi, studio kreatif, dan teras fiktif dalam 3D" width="440" /></a>
+<a href="https://ha-homelab.github.io/home-studio/planner/guide.html"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="Editor Home Studio menampilkan ruangan fiktif dengan furnitur, palet warna, dan pola permukaan" width="440" /></a>
 
-**Home Studio:** tangkapan editor asli memakai denah fiktif — garasi/studio dan ruangan berperabot dengan pola. [Buka perencana](https://ha-homelab.github.io/home-studio/planner/) atau ikuti [panduan menggambar berilustrasi](https://ha-homelab.github.io/home-studio/planner/guide.html). Gambar: Home Studio contributors, MIT. [Sumber dan asal gambar](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+**Home Studio:** Tangkapan layar editor terpisah yang sudah ada ini menampilkan denah fiktif: garasi/studio dan ruangan berfurnitur dengan pola. Alat menggambar yang sama tersedia di dalam HA.
+[Pasang Home Studio di dalam Home Assistant](https://ha-homelab.github.io/home-studio/install.html#native-studio) · [Panduan menggambar berilustrasi](https://ha-homelab.github.io/home-studio/planner/guide.html).
+Home Studio contributors · MIT · [Sumber dan asal gambar](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+
+### Opsional: menggambar di luar Home Assistant
+
+[Perencana yang dihosting](https://ha-homelab.github.io/home-studio/planner/) tetap berguna saat menyiapkan atau memperbaiki masalah HA. Untuk menggambar secara offline, gunakan salinan lokal yang diunduh sesuai [panduan editor terpisah](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md). Editor terpisah tidak terhubung ke HA dan menyimpan drafnya sendiri di browser. Pindahkan denah secara manual dengan **Export JSON**, lalu **Open JSON** di Home Studio dalam HA; pilih **Save draft** dan **Publish family view** setelah siap.
 
 Untuk tampilan proyek lain, jelajahi [arsitektur suara/musik/BLE EchoMuse](https://github.com/ha-homelab/ha-echomuse/blob/main/docs/architecture.md), [diagram pengawatan ZAC93](https://github.com/ha-homelab/zac93-esp32), dan [demonstrasi pemutaran ulang sintetis RuView](https://github.com/ha-homelab/ruview-home-assistant#try-it-without-hardware).
 

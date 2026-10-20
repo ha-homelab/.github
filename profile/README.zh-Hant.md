@@ -5,7 +5,7 @@
 <h1 align="center">HA Homelab</h1>
 <p align="center"><strong>用心建置家，讓自動化清晰易懂。</strong></p>
 <p align="center">
-  <a href="https://ha-homelab.github.io/home-studio/planner/">體驗 Home Studio</a> ·
+  <a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">在 Home Assistant 內安裝 Home Studio</a> ·
   <a href="https://github.com/ha-homelab/home-assistant">探索設定</a> ·
   <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.zh-Hant.md">社區工具</a>
 </p>
@@ -26,13 +26,26 @@
 
 ## 最新進展 — 2026 年 10 月
 
-- **在瀏覽器中繪製和探索房屋。** [Home Studio](https://github.com/ha-homelab/home-studio) 結合了 2D/3D 規劃器、206 種傢俱與園藝物品設計，以及 24 種編輯器語言。包含 `home_floorplan.zip` 的版本還提供 [Home Assistant 內建編輯器](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md)，可繪圖、連結 HA 區域、儲存草稿與發佈 3D 檢視。獨立瀏覽器編輯器及可攜式編譯器與安裝工具仍然可用。[Dry run 模式](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) 可以在阻止設備命令的同時探索已安裝的平面圖。
+- **直接在 Home Assistant 內繪製並發布你的家。** [Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio) 將 2D/3D 編輯器、206 種傢俱和園藝設計，以及 24 種編輯器語言帶入 HA。繪製房間，關聯 HA 區域和裝置，選擇 **Save draft**，再選擇 **Publish family view**，即可更新 **3D Home**。
+  [Dry run 模式](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) 可以在阻止設備命令的同時探索已安裝的平面圖。
   [首次使用指南](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md)介紹如何從範例開始、復原草稿，以及在 3D 無法使用時儲存工作。
 - **以更多方式複用現有硬體。** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) 提供有文件說明的 Echo Dot 2 語音、音樂和 BLE 方案；[ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) 介紹 Z-Wave 橋接；下方的 RF、Zigbee 和 Tuya 專案覆蓋其他設備系列。硬體就緒程度因專案而異：ZAC93 的實機建置與驗證仍未完成。
 - **公開設定與復原流程。** [Home Assistant](https://github.com/ha-homelab/home-assistant) 現在包含可重複使用的自動化與指令碼庫，以及整合契約；[k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) 提供部署、備份和復原工具。使用本地儲存的單實例並不具備自動故障轉移能力。
 - **先有證據，再做自動化。** 新增的感知、房間方向和存取專案，與用於實體遷移、計量來源、自動化場景和語音結果的四個[社區工具](https://github.com/ha-homelab/.github/blob/main/community-tools/README.zh-Hant.md) 相互補充。[DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) 現採用單個自適應操作按鈕，並保留明確的解鎖確認。
 
 這是截至 **2026 年 10 月 19 日**的編輯快照。最新兼容性與狀態請參閱各專案的 README 和發佈記錄。
+
+## 在 Home Assistant 內安裝 Home Studio
+
+請使用 **Home Assistant 2026.10 或更新版本**以及管理員帳戶。
+請先備份 HA。如果已安裝產生的或自訂的 **home_floorplan**，請在取代前閱讀[移轉指南](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md#existing-generated-homes)。
+
+1. 在 HACS 中將 [`ha-homelab/home-studio`](https://github.com/ha-homelab/home-studio) 新增為 **Integration** 類別的自訂儲存庫。安裝包含 **`home_floorplan.zip`** 的最新穩定版。
+2. 重新啟動 Home Assistant，開啟 **Settings → Devices & services → Add integration**，然後選擇 **Home Studio**。
+3. 從側邊欄開啟 **Home Studio**。繪製房間並擺放傢俱，關聯其 HA 區域和裝置，然後選擇 **Save draft**。
+4. 選擇 **Publish family view**，然後開啟 **3D Home**。啟用實際裝置控制前，使用 **Dry run** 檢查配置和繫結。
+
+全新原生安裝無需 Python 指令、YAML 項目或 API 權杖。[原生安裝指南](https://ha-homelab.github.io/home-studio/install.html#native-studio) 介紹完整設定、手動安裝 ZIP，以及現有安裝的處理方式。
 
 ## 探索專案
 
@@ -67,7 +80,7 @@ EchoLocal 和 EchoMuse 是不同的改裝路線。改動設備前，請閱讀所
 
 ### 空間工具、感知與存取
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — 在獨立瀏覽器編輯器或 Home Assistant 內繪製房間與擺放傢俱；匯出 JSON 或發佈 HA 檢視。
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — 直接在 Home Assistant 內繪製房間和擺放傢俱，儲存可編輯草稿，並發布 3D Home 檢視。
 - **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — 實驗性 CSI 擷取、接收器韌體、活動假設及推論證據工具；透過 ruview-home-assistant 發佈資料，尚不能證明實際環境中的偵測準確率。
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — 記錄、標註和比較觀測，並明確檢查資料時效與時鐘。
 - **[ruview-home-assistant](https://github.com/ha-homelab/ruview-home-assistant)** — 通過 MQTT discovery 提供 RuView 觀測、逐節點時效檢查和合成回放示例。
@@ -99,14 +112,20 @@ EchoLocal 和 EchoMuse 是不同的改裝路線。改動設備前，請閱讀所
 
 ## 使用效果
 
-<a href="https://ha-homelab.github.io/home-studio/planner/">
+<a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">
   <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="Home Studio 瀏覽器編輯器，以 3D 展示虛構的車庫、創作工作室和露臺" width="440" />
 </a>
-<a href="https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html">
+<a href="https://ha-homelab.github.io/home-studio/planner/guide.html">
   <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="Home Studio 編輯器，展示帶有傢俱、配色和表面紋理的虛構房間" width="440" />
 </a>
 
-**Home Studio：** 使用虛構平面圖拍攝的真實編輯器截圖，展示車庫/工作室和帶紋理的傢俱房間。[打開規劃器](https://ha-homelab.github.io/home-studio/planner/)，或參閱[繪圖圖解指南](https://ha-homelab.github.io/home-studio/planner/guide.html)。圖片：Home Studio 貢獻者，MIT 許可。[圖片來源與溯源](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md)。
+**Home Studio:** 這些現有的獨立編輯器截圖使用虛構平面圖，展示車庫兼工作室和帶有紋理傢俱的房間。HA 內也提供相同的繪圖工具。
+[在 Home Assistant 內安裝 Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio) · [圖解繪圖指南](https://ha-homelab.github.io/home-studio/planner/guide.html).
+Home Studio contributors · MIT · [圖片來源與溯源](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+
+### 選用：在 Home Assistant 外繪圖
+
+[託管規劃器](https://ha-homelab.github.io/home-studio/planner/) 可在設定 HA 或排除故障時使用。如需離線繪圖，請依照[獨立編輯器指南](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) 使用下載至本機的副本。獨立編輯器不連接 HA，並在瀏覽器中儲存自己的草稿。先使用 **Export JSON**，再在 HA 內的 Home Studio 中使用 **Open JSON** 手動轉移圖面；準備就緒後選擇 **Save draft** 和 **Publish family view**。
 
 其他專案視圖請參閱 [EchoMuse 語音/音樂/BLE 架構](https://github.com/ha-homelab/ha-echomuse/blob/main/docs/architecture.md)、[ZAC93 接線圖](https://github.com/ha-homelab/zac93-esp32)和 [RuView 合成回放演示](https://github.com/ha-homelab/ruview-home-assistant#try-it-without-hardware)。
 

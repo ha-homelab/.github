@@ -2,7 +2,7 @@
 
 <h1 align="center">HA Homelab</h1>
 <p align="center"><strong>Ngôi nhà được suy tính kỹ. Tự động hóa dễ hiểu.</strong></p>
-<p align="center"><a href="https://ha-homelab.github.io/home-studio/planner/">Thử Home Studio</a> · <a href="https://github.com/ha-homelab/home-assistant">Khám phá cấu hình</a> · <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.vi.md">Công cụ cộng đồng</a></p>
+<p align="center"><a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">Cài Home Studio trong Home Assistant</a> · <a href="https://github.com/ha-homelab/home-assistant">Khám phá cấu hình</a> · <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.vi.md">Công cụ cộng đồng</a></p>
 
 <!-- language-navigation:start -->
 <p dir="ltr" align="center">
@@ -20,12 +20,25 @@ Bản đồ nhóm các công việc liên quan. Nó không hàm ý rằng tất 
 
 ## Điểm mới — tháng 10 năm 2026
 
-- **Vẽ và khám phá ngôi nhà trong trình duyệt.** [Home Studio](https://github.com/ha-homelab/home-studio) kết hợp công cụ thiết kế 2D/3D, 206 mẫu nội thất và sân vườn, cùng 24 ngôn ngữ trình chỉnh sửa. Các bản phát hành chứa `home_floorplan.zip` còn có [trình chỉnh sửa trong Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) để vẽ, liên kết khu vực HA, lưu bản nháp và xuất bản chế độ xem 3D. Trình chỉnh sửa riêng trong trình duyệt và bộ biên dịch/trình cài đặt độc lập vẫn được cung cấp. [Chế độ Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) cho phép khám phá mặt bằng đã cài trong khi chặn lệnh gửi tới thiết bị. [Hướng dẫn sử dụng lần đầu](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) giải thích cách bắt đầu từ ví dụ, khôi phục bản nháp và lưu giữ nội dung đã làm khi 3D không khả dụng.
+- **Vẽ và xuất bản ngôi nhà trực tiếp trong Home Assistant.** [Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio) đưa trình chỉnh sửa 2D/3D, 206 mẫu nội thất và sân vườn cùng 24 ngôn ngữ giao diện vào HA. Vẽ các phòng, liên kết khu vực và thiết bị HA, rồi chọn **Save draft** và **Publish family view** để cập nhật **3D Home**.
+  [Chế độ Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) cho phép khám phá mặt bằng đã cài trong khi chặn lệnh gửi tới thiết bị. [Hướng dẫn sử dụng lần đầu](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) giải thích cách bắt đầu từ ví dụ, khôi phục bản nháp và lưu giữ nội dung đã làm khi 3D không khả dụng.
 - **Thêm cách tái sử dụng phần cứng hiện có.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) có tài liệu cho giọng nói, nhạc và BLE trên Echo Dot 2; [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) mô tả cầu nối Z-Wave. Các dự án RF, Zigbee và Tuya bên dưới bao quát những nhóm thiết bị khác. Mức độ sẵn sàng tùy dự án: việc nghiệm thu vận hành phần cứng ZAC93 vẫn chưa hoàn tất.
 - **Cấu hình công khai và khôi phục.** [Home Assistant](https://github.com/ha-homelab/home-assistant) hiện gồm thư viện tự động hóa/kịch bản tái sử dụng và hợp đồng tích hợp; [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) công khai công cụ triển khai, sao lưu và khôi phục. Một phiên bản chạy với lưu trữ cục bộ không tạo ra chuyển đổi dự phòng tự động.
 - **Bằng chứng trước tự động hóa.** Các dự án mới về quan sát, hướng camera và truy cập bổ sung cho bốn [công cụ cộng đồng](https://github.com/ha-homelab/.github/blob/main/community-tools/README.vi.md) về di chuyển thực thể, nguồn gốc đo lường, kịch bản tự động hóa và kết quả giọng nói. [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) hiện dùng một nút hành động thích ứng nhưng vẫn yêu cầu xác nhận mở khóa rõ ràng.
 
 Đây là bản tổng hợp biên tập tại thời điểm **19 tháng 10 năm 2026**. Xem README và bản phát hành của từng dự án để biết trạng thái và khả năng tương thích hiện tại.
+
+## Cài Home Studio trong Home Assistant
+
+Dùng **Home Assistant 2026.10 trở lên** và tài khoản quản trị viên.
+Sao lưu HA trước. Nếu đã cài **home_floorplan** được tạo hoặc tùy chỉnh, hãy đọc [hướng dẫn chuyển đổi](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md#existing-generated-homes) trước khi thay thế.
+
+1. Trong HACS, thêm [`ha-homelab/home-studio`](https://github.com/ha-homelab/home-studio) làm kho tùy chỉnh thuộc danh mục **Integration**. Cài bản ổn định mới nhất có **`home_floorplan.zip`**.
+2. Khởi động lại Home Assistant, mở **Settings → Devices & services → Add integration** và chọn **Home Studio**.
+3. Mở **Home Studio** ở thanh bên. Vẽ và bố trí nội thất cho một phòng, liên kết khu vực và thiết bị HA rồi chọn **Save draft**.
+4. Chọn **Publish family view**, rồi mở **3D Home**. Kiểm tra bố cục và liên kết bằng **Dry run** trước khi bật điều khiển thiết bị thật.
+
+Cài đặt native mới không cần lệnh Python, mục YAML hay mã thông báo API. [Hướng dẫn cài đặt native](https://ha-homelab.github.io/home-studio/install.html#native-studio) trình bày toàn bộ thiết lập, cài ZIP thủ công và cách xử lý bản cài hiện có.
 
 ## Khám phá các dự án
 
@@ -69,7 +82,7 @@ EchoLocal và EchoMuse là hai quy trình chuyển đổi khác nhau. Đọc yê
 
 ### Không gian, quan sát và truy cập
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — vẽ phòng và bố trí nội thất trong trình chỉnh sửa riêng trên trình duyệt hoặc trong Home Assistant; xuất JSON hoặc xuất bản chế độ xem HA.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — vẽ và bố trí nội thất trực tiếp trong Home Assistant, lưu bản nháp có thể chỉnh sửa và xuất bản chế độ xem 3D Home.
 - **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — thu thập CSI thử nghiệm, firmware bộ thu, giả thuyết hoạt động và công cụ ghi nhận bằng chứng suy luận; công bố qua ruview-home-assistant và không chứng minh độ chính xác phát hiện trong thực tế.
 
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — ghi, gắn nhãn và so sánh quan sát với kiểm tra độ mới dữ liệu và đồng hồ rõ ràng.
@@ -107,10 +120,16 @@ Các sơ đồ giữ nguyên [bằng chứng ngày 16 tháng 10 năm 2026 và li
 
 ## Xem cách sử dụng
 
-<a href="https://ha-homelab.github.io/home-studio/planner/"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="Trình chỉnh sửa Home Studio trong trình duyệt hiển thị gara, xưởng sáng tạo và sân hiên giả định ở dạng 3D" width="440" /></a>
-<a href="https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="Trình chỉnh sửa Home Studio hiển thị phòng giả định với nội thất, bảng màu và họa tiết bề mặt" width="440" /></a>
+<a href="https://ha-homelab.github.io/home-studio/install.html#native-studio"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="Trình chỉnh sửa Home Studio trong trình duyệt hiển thị gara, xưởng sáng tạo và sân hiên giả định ở dạng 3D" width="440" /></a>
+<a href="https://ha-homelab.github.io/home-studio/planner/guide.html"><img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="Trình chỉnh sửa Home Studio hiển thị phòng giả định với nội thất, bảng màu và họa tiết bề mặt" width="440" /></a>
 
-**Home Studio:** ảnh chụp trình chỉnh sửa thật dùng mặt bằng giả định — gara/xưởng và phòng có nội thất, họa tiết. [Mở công cụ thiết kế](https://ha-homelab.github.io/home-studio/planner/) hoặc làm theo [hướng dẫn vẽ có minh họa](https://ha-homelab.github.io/home-studio/planner/guide.html). Ảnh: Home Studio contributors, MIT. [Nguồn và xuất xứ ảnh](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+**Home Studio:** Các ảnh chụp hiện có của trình chỉnh sửa riêng cho thấy mặt bằng giả định: gara kết hợp xưởng và phòng có nội thất, họa tiết. Những công cụ vẽ tương tự cũng có trong HA.
+[Cài Home Studio trong Home Assistant](https://ha-homelab.github.io/home-studio/install.html#native-studio) · [Hướng dẫn vẽ có minh họa](https://ha-homelab.github.io/home-studio/planner/guide.html).
+Home Studio contributors · MIT · [Nguồn và xuất xứ ảnh](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+
+### Tùy chọn: vẽ ngoài Home Assistant
+
+[Công cụ thiết kế được lưu trữ trên web](https://ha-homelab.github.io/home-studio/planner/) vẫn hữu ích khi thiết lập hoặc khắc phục sự cố HA. Để vẽ ngoại tuyến, hãy dùng bản sao tải về máy theo [hướng dẫn trình chỉnh sửa riêng](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md). Trình chỉnh sửa riêng không kết nối với HA và lưu bản nháp riêng trong trình duyệt. Chuyển bản vẽ thủ công bằng **Export JSON**, rồi **Open JSON** trong Home Studio bên trong HA; chọn **Save draft** và **Publish family view** khi sẵn sàng.
 
 Với dự án khác, xem [kiến trúc giọng nói/nhạc/BLE EchoMuse](https://github.com/ha-homelab/ha-echomuse/blob/main/docs/architecture.md), [sơ đồ đấu dây ZAC93](https://github.com/ha-homelab/zac93-esp32) và [minh họa phát lại tổng hợp RuView](https://github.com/ha-homelab/ruview-home-assistant#try-it-without-hardware).
 

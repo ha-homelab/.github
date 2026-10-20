@@ -5,7 +5,7 @@
 <h1 align="center">HA Homelab</h1>
 <p align="center"><strong>Özenle düşünülmüş bir ev. Anlaşılır otomasyon.</strong></p>
 <p align="center">
-  <a href="https://ha-homelab.github.io/home-studio/planner/">Home Studio'yu deneyin</a> ·
+  <a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">Home Studio’yu Home Assistant içine kurun</a> ·
   <a href="https://github.com/ha-homelab/home-assistant">Yapılandırmayı keşfedin</a> ·
   <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.tr.md">Topluluk araçları</a>
 </p>
@@ -31,10 +31,7 @@ birbirleriyle otomatik olarak entegre olduğu anlamına gelmez.
 
 ## Yenilikler — Ekim 2026
 
-- **Tarayıcıda bir ev çizin ve keşfedin.** [Home Studio](https://github.com/ha-homelab/home-studio) 2D/3D planlayıcıyı, 206 mobilya ve bahçe tasarımını ve 24 düzenleyici dilini bir araya getirir.
-  `home_floorplan.zip` içeren sürümler, çizim yapmak, HA alanlarını bağlamak, taslak kaydetmek
-  ve 3D görünümü yayımlamak için [Home Assistant içinde bir düzenleyici](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) de sunar.
-  Ayrı tarayıcı düzenleyicisi ile taşınabilir derleyici ve yükleyici kullanılmaya devam edebilir.
+- **Evinizi doğrudan Home Assistant içinde çizin ve yayımlayın.** [Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio), 2D/3D düzenleyicisini, 206 mobilya ve bahçe tasarımını ve 24 düzenleyici dilini HA içine getirir. Odaları çizin, HA alanlarını ve cihazlarını bağlayın; **3D Home** görünümünü güncellemek için **Save draft**, ardından **Publish family view** seçin.
   [Dry run modu](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md), cihaz komutlarını engellerken kurulu planı keşfetmenizi sağlar.
   [İlk oturum kılavuzu](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md), örneklerle başlamayı, taslakları kurtarmayı ve 3D kullanılamadığında çalışmayı korumayı açıklar.
 - **Mevcut donanımı yeniden kullanmanın başka yolları.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse), Echo Dot 2
@@ -53,6 +50,18 @@ birbirleriyle otomatik olarak entegre olduğu anlamına gelmez.
 
 Bu, **19 Ekim 2026** tarihli editoryal bir durum görüntüsüdür. Güncel uyumluluk
 ve durum için her projenin README dosyasını ve sürümlerini inceleyin.
+
+## Home Studio’yu Home Assistant içine kurun
+
+**Home Assistant 2026.10 veya üzerini** ve bir yönetici hesabını kullanın.
+Önce HA’yı yedekleyin. Oluşturulmuş veya özelleştirilmiş bir **home_floorplan** zaten kuruluysa, değiştirmeden önce [geçiş kılavuzunu](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md#existing-generated-homes) okuyun.
+
+1. HACS içinde [`ha-homelab/home-studio`](https://github.com/ha-homelab/home-studio) deposunu **Integration** kategorisinde özel depo olarak ekleyin. **`home_floorplan.zip`** içeren en son kararlı sürümü kurun.
+2. Home Assistant’ı yeniden başlatın, **Settings → Devices & services → Add integration** yolunu açın ve **Home Studio** seçin.
+3. Kenar çubuğundan **Home Studio** açın. Bir oda çizin ve döşeyin, HA alanını ve cihazlarını bağlayın, ardından **Save draft** seçin.
+4. **Publish family view** seçin, ardından **3D Home** açın. Cihaz kontrollerini etkinleştirmeden önce planı ve bağlantıları **Dry run** ile denetleyin.
+
+Yeni yerel kurulum için Python komutları, YAML girdisi veya API belirteci gerekmez. [Yerel kurulum kılavuzu](https://ha-homelab.github.io/home-studio/install.html#native-studio), tam kurulumu, elle ZIP kurulumunu ve mevcut kurulumları açıklar.
 
 ## Projeleri keşfedin
 
@@ -103,7 +112,7 @@ projenin model ve kurtarma gereksinimlerini okuyun.
 
 ### Mekân, algılama ve erişim
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — ayrı tarayıcı düzenleyicisinde veya Home Assistant içinde odaları çizin ve döşeyin; JSON dışa aktarın veya HA görünümünü yayımlayın.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — odaları doğrudan Home Assistant içinde çizin ve döşeyin, düzenlenebilir taslakları kaydedin ve 3D Home görünümünü yayımlayın.
 - **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — deneysel CSI toplama, alıcı aygıt yazılımı, etkinlik hipotezleri ve çıkarım kanıtı araçları; ruview-home-assistant üzerinden yayımlar ve gerçek dünyadaki algılama doğruluğunu kanıtlamaz.
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — açık güncellik ve saat kontrolleriyle gözlemleri
   kaydedin, etiketleyin ve karşılaştırın.
@@ -148,17 +157,20 @@ kalite sıralaması, kapsam yüzdesi veya fiziksel cihaz karşılaştırması de
 
 ## Kullanım örnekleri
 
-<a href="https://ha-homelab.github.io/home-studio/planner/">
+<a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">
   <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="Kurgusal garaj, yaratıcı stüdyo ve avluyu 3D gösteren Home Studio tarayıcı düzenleyicisi" width="440" />
 </a>
-<a href="https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html">
+<a href="https://ha-homelab.github.io/home-studio/planner/guide.html">
   <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="Mobilya, renk paletleri ve yüzey desenleriyle kurgusal bir oda gösteren Home Studio düzenleyicisi" width="440" />
 </a>
 
-**Home Studio:** kurgusal planlar kullanan gerçek düzenleyici ekran görüntüleri —
-bir garaj/stüdyo ve desenlerle döşenmiş bir oda. [Planlayıcıyı açın](https://ha-homelab.github.io/home-studio/planner/) veya
-[resimli çizim kılavuzunu](https://ha-homelab.github.io/home-studio/planner/guide.html) izleyin. Görseller: Home Studio katkıda bulunanları, MIT.
-[Görsel kaynakları ve kökeni](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+**Home Studio:** Ayrı düzenleyicinin mevcut ekran görüntüleri kurgusal planlar gösterir: garajlı bir stüdyo ve desenlerle döşenmiş bir oda. Aynı çizim araçları HA içinde de bulunur.
+[Home Studio’yu Home Assistant içine kurun](https://ha-homelab.github.io/home-studio/install.html#native-studio) · [Resimli çizim kılavuzu](https://ha-homelab.github.io/home-studio/planner/guide.html).
+Home Studio contributors · MIT · [Görsel kaynakları ve kökeni](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+
+### İsteğe bağlı: Home Assistant dışında çizim
+
+[Barındırılan planlayıcı](https://ha-homelab.github.io/home-studio/planner/), HA kurulurken veya sorunları giderilirken yararlıdır. Çevrimdışı çizim için [ayrı düzenleyici kılavuzunda](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) açıklanan indirilmiş yerel kopyayı kullanın. Ayrı düzenleyici HA’ya bağlanmaz ve tarayıcıda kendi taslağını tutar. Planı **Export JSON**, ardından HA içindeki Home Studio’da **Open JSON** ile elle aktarın; hazır olduğunda **Save draft** ve **Publish family view** seçin.
 
 Diğer proje görünümleri için [EchoMuse ses/müzik/BLE mimarisini](https://github.com/ha-homelab/ha-echomuse/blob/main/docs/architecture.md),
 [ZAC93 bağlantı diyagramlarını](https://github.com/ha-homelab/zac93-esp32) ve [RuView sentetik yeniden oynatma gösterimini](https://github.com/ha-homelab/ruview-home-assistant#try-it-without-hardware) inceleyin.

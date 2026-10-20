@@ -5,7 +5,7 @@
 <h1 align="center">HA Homelab</h1>
 <p align="center"><strong>सोच-समझकर बनाया घर। समझ में आने वाला स्वचालन।</strong></p>
 <p align="center">
-  <a href="https://ha-homelab.github.io/home-studio/planner/">Home Studio आज़माएँ</a> ·
+  <a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">Home Assistant में Home Studio स्थापित करें</a> ·
   <a href="https://github.com/ha-homelab/home-assistant">कॉन्फ़िगरेशन देखें</a> ·
   <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.hi.md">समुदाय के उपकरण</a>
 </p>
@@ -31,10 +31,7 @@
 
 ## नया क्या है — अक्टूबर 2026
 
-- **ब्राउज़र में घर बनाएँ और देखें।** [Home Studio](https://github.com/ha-homelab/home-studio) में 2D/3D प्लानर, फ़र्नीचर और बगीचे के 206 डिज़ाइन और संपादक की 24 भाषाएँ हैं।
-  `home_floorplan.zip` वाली रिलीज़ में [Home Assistant के भीतर संपादक](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) भी मिलता है,
-  जिससे नक्शा बना सकते हैं, HA क्षेत्रों को जोड़ सकते हैं, ड्राफ़्ट सहेज सकते हैं और 3D दृश्य प्रकाशित कर सकते हैं।
-  अलग ब्राउज़र संपादक तथा पोर्टेबल कंपाइलर और इंस्टॉलर भी उपलब्ध रहते हैं। इसका
+- **अपना घर सीधे Home Assistant में बनाएँ और प्रकाशित करें।** [Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio) अपना 2D/3D संपादक, 206 फ़र्नीचर और बगीचे के डिज़ाइन तथा 24 संपादक भाषाएँ HA में लाता है। कमरे बनाएँ, HA क्षेत्रों और उपकरणों को जोड़ें, फिर **3D Home** को अपडेट करने के लिए **Save draft** और **Publish family view** चुनें।
   [Dry run मोड](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) डिवाइस कमांड रोककर स्थापित योजना को देखने देता है।
   [पहले सत्र की गाइड](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) बताती है कि उदाहरणों से कैसे शुरू करें, ड्राफ़्ट कैसे वापस पाएँ और 3D उपलब्ध न होने पर काम कैसे सुरक्षित रखें।
 - **मौजूदा हार्डवेयर को फिर इस्तेमाल करने के और तरीके।** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) Echo Dot 2
@@ -53,6 +50,18 @@
 
 यह **19 अक्टूबर 2026** की संपादकीय स्थिति है। वर्तमान संगतता और स्थिति के लिए
 हर परियोजना का README और उसके रिलीज़ देखें।
+
+## Home Assistant में Home Studio स्थापित करें
+
+**Home Assistant 2026.10 या नया संस्करण** और व्यवस्थापक खाता इस्तेमाल करें।
+पहले HA का बैकअप लें। यदि पहले से जनरेट किया गया या कस्टमाइज़ किया हुआ **home_floorplan** स्थापित है, तो उसे बदलने से पहले [माइग्रेशन निर्देश](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md#existing-generated-homes) पढ़ें।
+
+1. HACS में [`ha-homelab/home-studio`](https://github.com/ha-homelab/home-studio) को **Integration** श्रेणी के कस्टम रिपॉज़िटरी के रूप में जोड़ें। **`home_floorplan.zip`** वाला नवीनतम स्थिर संस्करण स्थापित करें।
+2. Home Assistant पुनः शुरू करें, **Settings → Devices & services → Add integration** खोलें और **Home Studio** चुनें।
+3. साइडबार में **Home Studio** खोलें। एक कमरा बनाएँ और सजाएँ, उसका HA क्षेत्र और उपकरण जोड़ें, फिर **Save draft** चुनें।
+4. **Publish family view** चुनें, फिर **3D Home** खोलें। उपकरण नियंत्रण चालू करने से पहले **Dry run** से नक्शा और जुड़ाव जाँचें।
+
+नई नेटिव स्थापना के लिए Python कमांड, YAML प्रविष्टि या API टोकन नहीं चाहिए। [नेटिव स्थापना गाइड](https://ha-homelab.github.io/home-studio/install.html#native-studio) में पूरा सेटअप, मैन्युअल ZIP स्थापना और मौजूदा स्थापनाओं के निर्देश हैं।
 
 ## परियोजनाएँ देखें
 
@@ -103,7 +112,7 @@ EchoLocal और EchoMuse अलग रूपांतरण रास्ते 
 
 ### स्थान, सेंसर अवलोकन और पहुँच
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — अलग ब्राउज़र संपादक या Home Assistant के भीतर कमरे बनाएँ और सजाएँ; JSON निर्यात करें या HA दृश्य प्रकाशित करें।
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — सीधे Home Assistant में कमरे बनाएँ और सजाएँ, संपादन योग्य ड्राफ़्ट सहेजें और 3D Home दृश्य प्रकाशित करें।
 - **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — प्रयोगात्मक CSI संग्रह, रिसीवर फ़र्मवेयर, गतिविधि संबंधी परिकल्पनाएँ और अनुमान के प्रमाण जाँचने के उपकरण; ruview-home-assistant के ज़रिए प्रकाशित करता है और वास्तविक दुनिया में पहचान की सटीकता सिद्ध नहीं करता।
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — स्पष्ट ताज़गी और घड़ी जाँचों के साथ अवलोकन
   रिकॉर्ड करें, लेबल दें और तुलना करें।
@@ -148,16 +157,20 @@ EchoLocal और EchoMuse अलग रूपांतरण रास्ते 
 
 ## उपयोग में देखें
 
-<a href="https://ha-homelab.github.io/home-studio/planner/">
+<a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">
   <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="काल्पनिक गैराज, रचनात्मक स्टूडियो और आँगन को 3D में दिखाता Home Studio ब्राउज़र संपादक" width="440" />
 </a>
-<a href="https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html">
+<a href="https://ha-homelab.github.io/home-studio/planner/guide.html">
   <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="फर्नीचर, रंग पैलेट और सतह पैटर्न वाले काल्पनिक कमरे को दिखाता Home Studio संपादक" width="440" />
 </a>
 
-**Home Studio:** काल्पनिक योजनाओं के साथ असली संपादक स्क्रीनशॉट — गैराज/स्टूडियो
-और पैटर्न से सजा कमरा। [प्लानर खोलें](https://ha-homelab.github.io/home-studio/planner/) या [सचित्र ड्रॉइंग गाइड](https://ha-homelab.github.io/home-studio/planner/guide.html) देखें।
-चित्र: Home Studio योगदानकर्ता, MIT। [चित्रों के स्रोत और उत्पत्ति](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md)।
+**Home Studio:** अलग संपादक के ये मौजूदा स्क्रीनशॉट काल्पनिक नक्शे दिखाते हैं: गैराज/स्टूडियो और पैटर्न वाला सजा कमरा। यही ड्रॉइंग टूल HA के अंदर भी उपलब्ध हैं।
+[Home Assistant में Home Studio स्थापित करें](https://ha-homelab.github.io/home-studio/install.html#native-studio) · [सचित्र ड्रॉइंग गाइड](https://ha-homelab.github.io/home-studio/planner/guide.html).
+Home Studio contributors · MIT · [चित्रों के स्रोत और उत्पत्ति](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+
+### वैकल्पिक: Home Assistant के बाहर ड्रॉइंग
+
+[होस्ट किया गया प्लानर](https://ha-homelab.github.io/home-studio/planner/) HA सेटअप या समस्या निवारण के समय उपयोगी है। ऑफ़लाइन ड्रॉइंग के लिए [अलग संपादक की गाइड](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) के अनुसार डाउनलोड की गई स्थानीय कॉपी इस्तेमाल करें। अलग संपादक HA से नहीं जुड़ता और ब्राउज़र में अपना ड्राफ़्ट रखता है। **Export JSON**, फिर HA के अंदर Home Studio में **Open JSON** से नक्शा मैन्युअल रूप से ले जाएँ; तैयार होने पर **Save draft** और **Publish family view** चुनें।
 
 अन्य परियोजनाओं के लिए [EchoMuse आवाज़/संगीत/BLE संरचना](https://github.com/ha-homelab/ha-echomuse/blob/main/docs/architecture.md),
 [ZAC93 वायरिंग चित्र](https://github.com/ha-homelab/zac93-esp32) और [RuView का कृत्रिम रीप्ले प्रदर्शन](https://github.com/ha-homelab/ruview-home-assistant#try-it-without-hardware) देखें।

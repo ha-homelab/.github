@@ -81,6 +81,12 @@ Copyright 2026 Home Studio contributors. Used under the
 [source MIT license](https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/LICENSE).
 See the source [drawing guide](https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html).
 
+These captures show the separate editor, not the surrounding Home Assistant
+interface. The organization profiles lead new users to
+[install Home Studio inside Home Assistant](https://ha-homelab.github.io/home-studio/install.html#native-studio),
+where the same drawing tools support saving drafts and publishing **3D Home**.
+The pinned image and license links above preserve the original provenance.
+
 The linked DESLOC project contains a historical UI gallery. Its older two-button
 screenshots are not embedded here because the current card uses one adaptive button.
 The linked RuView replay image is a synthetic visualization, not a screenshot

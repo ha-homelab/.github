@@ -7,7 +7,7 @@
 <h1 align="center">HA Homelab</h1>
 <p align="center"><strong>منزل مدروس. أتمتة مفهومة.</strong></p>
 <p align="center">
-  <a href="https://ha-homelab.github.io/home-studio/planner/">جرّب Home Studio</a> ·
+  <a href="https://ha-homelab.github.io/home-studio/install.html#native-studio">تثبيت Home Studio داخل Home Assistant</a> ·
   <a href="https://github.com/ha-homelab/home-assistant">استكشف الإعدادات</a> ·
   <a href="https://github.com/ha-homelab/.github/blob/main/community-tools/README.ar.md">أدوات المجتمع</a>
 </p>
@@ -28,7 +28,8 @@
 
 ## ما هو الجديد — أكتوبر 2026
 
-- **ارسم واستكشف منزلا في المتصفح.** يجمع [Home Studio](https://github.com/ha-homelab/home-studio) بين مخطط 2D/3D و206 تصاميم للأثاث والحدائق و24 لغة للمحرر. تتيح الإصدارات التي تتضمن `home_floorplan.zip` أيضا [محررا داخل Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) للرسم وربط مناطق HA وحفظ المسودات ونشر العرض ثلاثي الأبعاد. يظل محرر المتصفح المستقل وأداتا البناء والتثبيت المحمولتان متاحين. يتيح لك [وضع التجربة دون تنفيذ](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) استكشاف المخطط المثبت أثناء حظر أوامر الجهاز. يشرح [دليل الجلسة الأولى](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) كيفية البدء بالأمثلة، واستعادة المسودات، والحفاظ على العمل عندما لا يتوفر العرض بصيغة 3D.
+- **ارسم منزلك وانشره مباشرة داخل Home Assistant.** يجلب [Home Studio](https://ha-homelab.github.io/home-studio/install.html#native-studio) محرر 2D/3D و206 تصاميم للأثاث والحدائق و24 لغة للمحرر إلى HA. ارسم الغرف واربط مناطق HA وأجهزته، ثم اختر **Save draft** وبعده **Publish family view** لتحديث **3D Home**.
+  [وضع التجربة دون تنفيذ](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) استكشاف المخطط المثبت أثناء حظر أوامر الجهاز. يشرح [دليل الجلسة الأولى](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) كيفية البدء بالأمثلة، واستعادة المسودات، والحفاظ على العمل عندما لا يتوفر العرض بصيغة 3D.
 
 - **المزيد من الطرق لإعادة استخدام الأجهزة الموجودة.** يضيف [EchoMuse](https://github.com/ha-homelab/ha-echomuse) مسار Echo Dot 2 الصوتي والموسيقى ومسار BLE الموثق؛ [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) يوثق جسر Z-Wave؛ تغطي مشاريع RF وZigbee وTuya عائلات الأجهزة الأخرى أدناه. إن جاهزية الأجهزة خاصة بالمشروع: لا تزال عملية الإعداد والتحقق الميداني لـ ZAC93 معلقة.
 
@@ -37,6 +38,18 @@
 - **الأدلة قبل الأتمتة.** تصاحب مشاريع الاستشعار الجديدة وتحديد اتجاه الكاميرا حسب الغرفة والوصول أربعة [أدوات المجتمع](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ar.md) لعمليات ترحيل الكيانات ومصدر بيانات العدادات وسيناريوهات الأتمتة والنتائج الصوتية. يستخدم [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) الآن زر إجراء تكيفي واحد مع الاحتفاظ بتأكيد فتح القفل الصريح.
 
 هذه لقطة تحريرية **19 أكتوبر 2026**. راجع الملف التمهيدي والإصدارات الخاصة بكل مشروع لمعرفة التوافق والحالة الحالية.
+
+## تثبيت Home Studio داخل Home Assistant
+
+استخدم **Home Assistant 2026.10 أو أحدث** وحساب مسؤول.
+أنشئ نسخة احتياطية من HA أولاً. إذا كان **home_floorplan** مُولَّداً أو مخصصاً مثبتاً بالفعل، فاقرأ [إرشادات الترحيل](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md#existing-generated-homes) قبل استبداله.
+
+1. في HACS، أضف [`ha-homelab/home-studio`](https://github.com/ha-homelab/home-studio) كمستودع مخصص ضمن فئة **Integration**. ثبّت أحدث إصدار مستقر يتضمن **`home_floorplan.zip`**.
+2. أعد تشغيل Home Assistant، ثم افتح **Settings → Devices & services → Add integration** واختر **Home Studio**.
+3. افتح **Home Studio** من الشريط الجانبي. ارسم غرفة وأثثها واربط منطقتها وأجهزتها في HA، ثم اختر **Save draft**.
+4. اختر **Publish family view** ثم افتح **3D Home**. تحقق من المخطط والروابط باستخدام **Dry run** قبل تفعيل التحكم بالأجهزة.
+
+التثبيت الأصلي الجديد لا يحتاج إلى أوامر Python أو إدخال YAML أو رمز API. يشرح [دليل التثبيت الأصلي](https://ha-homelab.github.io/home-studio/install.html#native-studio) الإعداد الكامل وتثبيت ZIP يدوياً والتعامل مع التثبيتات الحالية.
 
 ## استكشاف المشاريع
 
@@ -80,7 +93,7 @@ EchoLocal وEchoMuse هما مساران تحويل متميزان. اقرأ م�
 
 ### أدوات التخطيط المكاني والاستشعار والوصول
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — ارسم الغرف وأثثها في محرر المتصفح المستقل أو داخل Home Assistant؛ صدّر JSON أو انشر عرض HA.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — ارسم الغرف وأثثها مباشرة داخل Home Assistant، واحفظ مسودات قابلة للتحرير، وانشر عرض 3D Home.
 - **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — جمع تجريبي لبيانات CSI، وبرامج ثابتة للمستقبل، وفرضيات عن النشاط وأدوات لأدلة الاستدلال؛ ينشر عبر ruview-home-assistant ولا يثبت دقة الكشف في العالم الحقيقي.
 
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — قم بتسجيل الملاحظات وتسميتها ومقارنتها مع عمليات التحقق الصريحة من حداثة البيانات والساعة.
@@ -117,9 +130,15 @@ EchoLocal وEchoMuse هما مساران تحويل متميزان. اقرأ م�
 
 ## شاهده قيد الاستخدام
 
-<a href="https://ha-homelab.github.io/home-studio/planner/"> <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="محرر Home Studio في المتصفح يعرض مرآبا واستوديو إبداعيا وفناء افتراضيا بصيغة 3D" width="440" /> </a> <a href="https://github.com/ha-homelab/home-studio/blob/1da65687bb5471628799873b32789813457c7085/planner/guide.html"> <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="محرر Home Studio يعرض غرفة افتراضية مع أثاث ولوحات ألوان وأنماط للأسطح" width="440" /> </a>
+<a href="https://ha-homelab.github.io/home-studio/install.html#native-studio"> <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/09-garage-studio.jpg" alt="محرر Home Studio في المتصفح يعرض مرآبا واستوديو إبداعيا وفناء افتراضيا بصيغة 3D" width="440" /> </a> <a href="https://ha-homelab.github.io/home-studio/planner/guide.html"> <img src="https://raw.githubusercontent.com/ha-homelab/home-studio/1da65687bb5471628799873b32789813457c7085/planner/guide-assets/11-pattern-studio.jpg" alt="محرر Home Studio يعرض غرفة افتراضية مع أثاث ولوحات ألوان وأنماط للأسطح" width="440" /> </a>
 
-**Home Studio:** لقطات شاشة للمحرر الحقيقي باستخدام مخططات افتراضية — مرآب/استوديو وغرفة مفروشة بأنماط. [افتح المخطط](https://ha-homelab.github.io/home-studio/planner/) أو اتبع [دليل الرسم المصور](https://ha-homelab.github.io/home-studio/planner/guide.html). الصور: مساهمو Home Studio، بترخيص MIT. [مصادر الصور ومصدرها](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+**Home Studio:** تعرض هذه اللقطات الحالية للمحرر المنفصل مخططات افتراضية: مرآباً مع استوديو وغرفة مفروشة بأنماط. تتوفر أدوات الرسم نفسها داخل HA.
+[تثبيت Home Studio داخل Home Assistant](https://ha-homelab.github.io/home-studio/install.html#native-studio) · [دليل الرسم المصور](https://ha-homelab.github.io/home-studio/planner/guide.html).
+Home Studio contributors · MIT · [مصادر الصور وأصلها](https://github.com/ha-homelab/.github/blob/main/assets/profile/README.md).
+
+### اختياري: الرسم خارج Home Assistant
+
+يبقى [المخطط المستضاف](https://ha-homelab.github.io/home-studio/planner/) مفيداً أثناء إعداد HA أو استكشاف مشكلاته. للرسم دون اتصال بالإنترنت، استخدم نسخة محلية محملة كما يوضح [دليل المحرر المنفصل](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md). لا يتصل المحرر المنفصل بـ HA ويحتفظ بمسودته الخاصة في المتصفح. انقل المخطط يدوياً باستخدام **Export JSON** ثم **Open JSON** في Home Studio داخل HA؛ واختر **Save draft** و**Publish family view** عندما يصبح جاهزاً.
 
 للحصول على طرق عرض أخرى للمشروع، استكشف [بنية الصوت والموسيقى وBLE في EchoMuse](https://github.com/ha-homelab/ha-echomuse/blob/main/docs/architecture.md)، و[مخططات الأسلاك ZAC93](https://github.com/ha-homelab/zac93-esp32)، و[عرض إعادة التشغيل الاصطناعي لـ RuView](https://github.com/ha-homelab/ruview-home-assistant#try-it-without-hardware).
 
