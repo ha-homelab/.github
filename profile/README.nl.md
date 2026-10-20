@@ -31,9 +31,10 @@ worden geïnstalleerd of automatisch met elkaar integreren.
 
 ## Nieuw — oktober 2026
 
-- **Teken en verken een huis in de browser.** [Home Studio](https://github.com/ha-homelab/home-studio) combineert een
-  2D/3D-planner, 195 objectontwerpen, 24 editortalen en een lokale compiler voor
-  een installeerbare Home Assistant-viewer. Met de
+- **Teken en verken een huis in de browser.** [Home Studio](https://github.com/ha-homelab/home-studio) combineert een 2D/3D-planner, 206 meubel- en tuinontwerpen en 24 editortalen.
+  Releases met `home_floorplan.zip` bieden ook een [editor binnen Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md)
+  om te tekenen, HA-gebieden te koppelen, concepten op te slaan en de 3D-weergave te publiceren.
+  De aparte browsereditor en de draagbare compiler en installer blijven beschikbaar. Met de
   [Dry run-modus](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) kun je de geïnstalleerde plattegrond verkennen terwijl apparaatcommando's worden geblokkeerd.
   De [gids voor de eerste sessie](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) legt uit hoe je met voorbeelden begint, concepten herstelt en je werk behoudt wanneer 3D niet beschikbaar is.
 - **Meer manieren om bestaande hardware te hergebruiken.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) voegt een
@@ -50,7 +51,7 @@ worden geïnstalleerd of automatisch met elkaar integreren.
   herkomst van metingen, automatiseringsscenario's en spraakresultaten.
   [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) gebruikt nu één adaptieve actieknop en vereist nog steeds expliciete bevestiging van ontgrendeling.
 
-Dit is een redactionele momentopname van **16 oktober 2026**. Raadpleeg de README
+Dit is een redactionele momentopname van **19 oktober 2026**. Raadpleeg de README
 en releases van elk project voor actuele compatibiliteit en status.
 
 ## Verken de projecten
@@ -64,13 +65,17 @@ en releases van elk project voor actuele compatibiliteit en status.
 
 ### Spraak en media
 
+- **[asterisk-telephony](https://github.com/ha-homelab/asterisk-telephony)** — geverifieerde installer voor de Asterisk-integratie van het upstreamproject, SIP-telefoondashboards en Cisco-telefoonbediening, met een apart Assist-audiopad en gedocumenteerde acceptatieresultaten.
+- **[ha-ottplay](https://github.com/ha-homelab/ha-ottplay)** — Home Assistant-entiteiten voor mediaspelers en afstandsbediening van geregistreerde spelers via een bestaande OTTPlay Control Server; de beschikbare bediening hangt van de speler af.
 - **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — Echo Dot 2 met EchoMuse/emOS, Assist, muziek, lokale tools
   voor huisbesturing en een afzonderlijk geregistreerde BLE-proxy. Het gedocumenteerde
   spraakherkenningspad gebruikt een cloudprovider en is niet volledig offline.
+  De pilot met een Russisch activeringswoord en Silero Baya verspreidt geen particuliere modelgewichten.
 - **[ha-echo-dot](https://github.com/ha-homelab/ha-echo-dot)** — de EchoLocal-ombouwroute voor Echo Dot 2, met training van
   activeringswoorden en evaluatietools voor de exacte uitvoeromgeving.
 - **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — ombouw van Echo Show 5 Gen2 naar Android, geverifieerde
   back-ups en configuratie van Home Assistant Companion.
+  Een optionele ONNX-proef met één activeringszin heeft softwarecontroles; volledige akoestische acceptatie moet nog plaatsvinden.
 - **[ha-lg-tv-capture](https://github.com/ha-homelab/ha-lg-tv-capture)** — herbruikbare schermopnametools voor LG webOS en
   Home Assistant-integratie.
 
@@ -79,7 +84,7 @@ hersteleisen van het gekozen project voordat je een apparaat aanpast.
 
 ### Apparaatintegraties, bridges en herstel
 
-- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — modulair PoE-prototype voor Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz en sensormetingen; bevat CAD, firmware en implementatietools; fysieke validatie moet nog plaatsvinden.
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — huidig modulair PoE-prototype MC2-C + FH1 met drie onafhankelijke externe antennes voor Zigbee, Thread en Bluetooth, een lokale Thread Border Router, Z-Wave, 433MHz-RF en sensoren. CAD, firmware en uitrolhulpmiddelen zijn inbegrepen; fysieke validatie moet nog plaatsvinden.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — onofficiële DESLOC-cloudintegratie voor slotstatus, bediening,
   batterij en wifi; [de compatibiliteit verschilt per model](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — afzonderlijke dashboardkaart met visuele editor,
@@ -98,8 +103,8 @@ hersteleisen van het gekozen project voordat je een apparaat aanpast.
 
 ### Ruimte, sensorwaarnemingen en toegang
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — teken en richt kamers in, verken ze in 3D, exporteer je
-  project en compileer lokaal een Home Assistant-viewer.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — teken en richt kamers in met de aparte browsereditor of binnen Home Assistant; exporteer JSON of publiceer de HA-weergave.
+- **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — experimentele CSI-verzameling, ontvangerfirmware, activiteitshypothesen en hulpmiddelen voor inferentiebewijs; publiceert via ruview-home-assistant en bewijst geen detectienauwkeurigheid in de praktijk.
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — registreer, label en vergelijk waarnemingen met
   expliciete actualiteits- en klokcontroles.
 - **[ruview-home-assistant](https://github.com/ha-homelab/ruview-home-assistant)** — RuView-waarnemingen via MQTT discovery,
@@ -109,6 +114,7 @@ hersteleisen van het gekozen project voordat je een apparaat aanpast.
 - **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — geverifieerde Cloudflare Access-sessies voor externe
   dashboards en kortlevende tokens via een beperkte gateway. Het koppelt één
   expliciet ingestelde Home Assistant-beheerder met volledige rechten.
+  Optionele geauthenticeerde toegang tot albumhoezen van mediaspelers staat standaard uit.
 
 Sensorvoorbeelden beschrijven waarnemingen en hun beperkingen. Synthetische replay
 en camerarichting bewijzen geen nauwkeurigheid van aanwezigheidsdetectie in de praktijk.
@@ -124,7 +130,7 @@ en camerarichting bewijzen geen nauwkeurigheid van aanwezigheidsdetectie in de p
 - **[assist-scenario-lab](https://github.com/ha-homelab/assist-scenario-lab)** — offline spraakbewijs dat protocolvoltooiing,
   waargenomen actie en hoorbaar antwoord onderscheidt.
 
-Volg de [geïllustreerde werkwijze en resultaten](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.nl.md) of de [Russische editie](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ru.md).
+Volg de [geïllustreerde werkwijze en resultaten](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.nl.md). Via de taalkeuze van de handleiding zijn alle 24 talen beschikbaar.
 Softwarebewijs en fysieke acceptatie blijven afzonderlijke stappen.
 
 <details>
@@ -159,10 +165,10 @@ Bekijk voor andere projectbeelden de [EchoMuse-architectuur voor spraak, muziek 
 
 ## Momentopname van openbare projecten
 
-![Staafdiagram: apparaten en bridges 8; ruimte, sensoren en toegang 5; spraak en media 4; tests en contracten 4; configuratie en betrouwbaarheid 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.nl.svg)
+![Staafdiagram: apparaten en bridges 8; ruimte, sensoren en toegang 6; spraak en media 6; tests en contracten 4; configuratie en betrouwbaarheid 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.nl.svg)
 
-**23 projecten + deze profielrepository = 24 openbare repositories**, gecontroleerd
-op 16 oktober 2026. Elk project heeft één redactionele categorie; aantallen meten
+**26 projecten + deze profielrepository = 27 openbare repositories**, gecontroleerd
+op 19 oktober 2026. Elk project heeft één redactionele categorie; aantallen meten
 geen volwassenheid, gebruik of prestaties. [Reproduceerbare brongegevens](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).
 Bekijk voor daadwerkelijke softwarecontroleresultaten het afzonderlijke
 [gedateerde testdiagram van communitytools en de gekoppelde CI-runs](https://github.com/ha-homelab/.github/blob/main/community-tools/README.nl.md#validation-evidence--2026-10-16-utc).
@@ -190,6 +196,7 @@ bouwstenen met hun eigen installatie- en ondersteuningsgrenzen.
   een bestaande HLS-proxy naar Alexa-schermen of Google Cast.
 - [OTT-play Control Server](https://github.com/open-ott-play/ottplay-control-server) biedt spelercommando's, terminalbesturing en
   k3s-implementatie. De EPG-gateway is niet afhankelijk van OttPlay.
+- [Cisco Home Telephony](https://github.com/4alvit/cisco-home-telephony) — SIP-provisioning voor Cisco 7945G, Asterisk op k3s, een telefoon-CLI en optionele Home Assistant-workflows voor spraak en bediening.
 
 **Herbruikbare infrastructuur**
 
@@ -200,6 +207,7 @@ bouwstenen met hun eigen installatie- en ondersteuningsgrenzen.
 - [MQTT Observability](https://github.com/4alvit/mqtt-observability-opentelemetry) observeert MQTT- en Mosquitto-metrieken via OpenTelemetry,
   Prometheus en Grafana; het is geen berichtenproxy.
 - [HA Homelab Terraform](https://github.com/4alvit/terraform-github-ha-homelab) beheert de GitHub-instellingen en repositories van deze organisatie.
+- [Venus OS CI Toolkit](https://github.com/victron-venus/venus-os-ci-toolkit) — gedeelde GitHub Actions-workflows en CI-hulpmiddelen voor validatie, releases en beveiligingscontroles; afnemers zetten de versie vast op een beoordeelde commit.
 
 ## Onze werkwijze
 

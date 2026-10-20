@@ -6,10 +6,10 @@
 <text x="40" y="91" font-size="18" fill="#c1d1dd" font-weight="400" text-anchor="end" direction="rtl" unicode-bidi="plaintext">תפקידי הפרויקטים בסביבת HA Homelab</text>
 <path d="M 340 226 H 385 V 333 H 415 M 340 459 H 385 V 333 M 705 333 H 735 V 226 H 780 M 735 333 V 459 H 780" fill="none" stroke="#4a7184" stroke-width="3"/>
 <rect x="40" y="377" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
-<text x="58" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">04</text>
+<text x="58" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">06</text>
 <text x="58" y="444" font-size="15" fill="#ffffff" font-weight="700" text-anchor="end" direction="rtl" unicode-bidi="plaintext">קול ומדיה</text>
 <text x="58" y="478" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">EchoLocal · EchoMuse · Android</text>
-<text x="58" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="end" direction="rtl" unicode-bidi="plaintext">Echo Dot / Show · צילום LG</text>
+<text x="58" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Asterisk · OTTPlay · LG webOS</text>
 <rect x="40" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
 <text x="58" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">08</text>
 <text x="58" y="211" font-size="15" fill="#ffffff" font-weight="700" text-anchor="end" direction="rtl" unicode-bidi="plaintext">התקנים וגשרים</text>
@@ -21,7 +21,7 @@
 <text x="433" y="346" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="end" direction="rtl" unicode-bidi="plaintext">תצורת Home Assistant</text>
 <text x="433" y="371" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="end" direction="rtl" unicode-bidi="plaintext">פריסה ושחזור של k3s</text>
 <rect x="780" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
-<text x="798" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">05</text>
+<text x="798" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">06</text>
 <text x="798" y="211" font-size="15" fill="#ffffff" font-weight="700" text-anchor="end" direction="rtl" unicode-bidi="plaintext">מרחב, חישה וגישה</text>
 <text x="798" y="245" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Home Studio · RuView · ONVIF</text>
 <text x="798" y="270" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="end" direction="rtl" unicode-bidi="plaintext">ראיות חישה · הפעלות Access</text>
@@ -31,5 +31,5 @@
 <text x="798" y="478" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="end" direction="rtl" unicode-bidi="plaintext">תפקידי ישויות · מקור מדידות</text>
 <text x="798" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="end" direction="rtl" unicode-bidi="plaintext">תרחישי אוטומציה · ראיות קול</text>
 <text x="40" y="600" font-size="15" fill="#c1d1dd" font-weight="400" text-anchor="end" direction="rtl" unicode-bidi="plaintext">הקווים מקבצים עבודות קשורות; הם אינם פריסה אוטומטית או נתיב נתונים מחייב.</text>
-<text x="40" y="628" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="end" direction="rtl" unicode-bidi="plaintext">מקור: API המאגרים הציבוריים של GitHub · 16 באוקטובר 2026 (America/Los_Angeles)</text>
+<text x="40" y="628" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="end" direction="rtl" unicode-bidi="plaintext">מקור: API המאגרים הציבוריים של GitHub · 19 באוקטובר 2026 (America/Los_Angeles)</text>
 </g></svg>

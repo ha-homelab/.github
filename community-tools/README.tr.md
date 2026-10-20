@@ -20,7 +20,7 @@ Dört küçük araç, bir Home Assistant topluluk projesinin dört ayrı soruyu 
 
 - [HA Entity Migrations](https://github.com/ha-homelab/ha-entity-migrations) çevrimdışı bir geçiş planı oluşturur. Açık rol/donanım politikaları, yetenekler ve dosya parmak izleri, sıradan bir ad değişikliğinin aydınlatma otomasyonunu sessizce başka amaçla kullanılan bir prize atamasını önler. Hazır plan yalnızca sağlanan, desteklenen yapılandırma kapsamına uygulanır.
 - [HA Meter Contracts](https://github.com/ha-homelab/ha-meter-contracts) fiziksel ölçüm kapsamını, kaynak kökenini, birimleri, örnek güncelliğini ve toplama kurallarını denetler. Bir çoklu priz sayacı yeniden adlandırılarak tek pompa sayacı olamaz. Bir akım trafosunun yinelenen gösterimleri ayrı yükler olarak toplanamaz.
-- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) gerçek Home Assistant otomasyon/betik motorunda kısıtlı bir sentetik senaryo çalıştırır. Sıralı çağrıları, yasak çağrıları ve son sentetik durumları denetler. İlk çalışma ortamı HA 2026.10.0 ve Python 3.14.2–3.14.x sürümlerine sabitlenmiştir; diğer araçlardan ayrı bir ortam kullanın.
+- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) gerçek Home Assistant otomasyon/betik motorunda kısıtlı bir sentetik senaryo çalıştırır. Sıralı çağrıları, yasak çağrıları ve son sentetik durumları denetler. Güncel çalışma ortamı HA 2026.10.1 ve Python 3.14.2–3.14.x sürümlerine sabitlenmiştir; diğer araçlardan ayrı bir ortam kullanın.
 - [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab) yerel sesli kanıtları değerlendirir. Komut doğruluğunu, API tamamlanmasını ve duyulabilir çıktıyı ayırır. Dahil edilen tüm süreler sentetiktir ve sağlanan gözlemler bağımsız olarak doğrulanmaz.
 
 Projelerin kendi kurulum kılavuzları, İngilizce/Rusça belgeleri ve İngilizce/Rusça/Almanca/İspanyolca CLI mesajları vardır. Tüm çıkış kodlarının aynı anlama geldiğini varsaymak yerine sürümlenmiş sözleşmeleri izleyin. Diyagram okları **inceleme devirleridir**, uygulanmış otomatik entegrasyonlar değildir. Merkezi bir daemon veya evrensel dağıtım komutu yoktur.
@@ -42,7 +42,9 @@ Bunlar sentetik veriler kullanan sürüme özgü yazılım denetimleridir; donan
 - **Assist Scenario Lab:** [Linux CI'da 24 test geçti](https://github.com/ha-homelab/assist-scenario-lab/actions/runs/38843304306). Sağlanan kanıtı ve sentetik örnekleri doğrularlar; fiziksel ses karşılaştırması iddia edilmez.
 - **Scenario Tests:** gerçek Home Assistant 2026.10.0 ve CPython 3.14.8 üzerinde [Linux CI'da atlama olmadan 54 test geçti](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/38843681199). Yedi çalışma zamanı durumu vardır; biri rol devri eşlikçi örneğini test eder. Tam takım 21.42 saniyede tamamlandı.
 
-Test edilen çalıştırıcı ortamı Linux'tur. [Belgelenmiş yerel macOS kapanış hatası](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) bir sınırlama olarak sürer; işlem çökmeden önce beklenen JSON sonucunun alınması yine de başarısız çalıştırmadır. Docker'da çalıştırma veya fiziksel cihaz kabulü iddia edilmez.
+Test edilen çalıştırıcı ortamı Linux'tur. [Belgelenmiş yerel macOS kapanış hatası](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) bir sınırlama olarak sürer; işlem çökmeden önce beklenen JSON sonucunun alınması yine de başarısız çalıştırmadır. 16 Ekim kaydı, Docker'da çalıştırma veya fiziksel cihaz kabulü iddiasında bulunmaz.
+
+19 Ekim 2026 güncellemesi: [Linux CI](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/39264346721), paketlenmiş çalışma ortamının Docker'daki temel çalıştırma testini de geçti. Bu, fiziksel cihaz kabulünü kanıtlamaz.
 
 ## Süreç ve resimli sonuçlar
 

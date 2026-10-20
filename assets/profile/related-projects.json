@@ -1,5 +1,5 @@
 {
-  "checked_date": "2026-10-16",
+  "checked_date": "2026-10-19",
   "scope": "Related public projects outside ha-homelab; no ownership transfer or mandatory deployment relationship implied.",
   "projects": [
     {
@@ -36,7 +36,7 @@
       "group": "Energy and Home Assistant",
       "proposed_description": "A Go server with shared Vue UI, Victron telemetry and optional Home Assistant devices and controls.",
       "source_url": "https://github.com/victron-venus/inverter-dashboard-go/blob/main/README.md",
-      "source_blob_sha": "9f265fdefda1e05d3306a286e9e7a9181a1ac190"
+      "source_blob_sha": "f886d225206da03242d7a0d938cb32dadc8978fc"
     },
     {
       "repository": "4alvit/amazon-echo-home-voice",
@@ -63,7 +63,7 @@
       "group": "Voice and media",
       "proposed_description": "Search XMLTV programmes and play through an existing HLS proxy on compatible Alexa screens or Google Cast devices.",
       "source_url": "https://github.com/4alvit/epg-voice-gateway/blob/main/README.md",
-      "source_blob_sha": "a8b97cdf15a868345a07ca499a0d30898f4a14ac"
+      "source_blob_sha": "938f1b8dd32ab18109788b8458492e066b4e9d52"
     },
     {
       "repository": "open-ott-play/ottplay-control-server",
@@ -72,7 +72,16 @@
       "group": "Voice and media",
       "proposed_description": "Self-hosted remote command delivery and terminal control for OTT-play players, with portable packages and k3s deployment.",
       "source_url": "https://github.com/open-ott-play/ottplay-control-server/blob/main/README.md",
-      "source_blob_sha": "c730f7d4ccf97eaffab8d4e400a94ee32ebd53a2"
+      "source_blob_sha": "fcfa09c74f98c7df88af5447c29eeaac0a8feeda"
+    },
+    {
+      "repository": "4alvit/cisco-home-telephony",
+      "url": "https://github.com/4alvit/cisco-home-telephony",
+      "public": true,
+      "group": "Voice and media",
+      "proposed_description": "Cisco 7945G SIP provisioning, Asterisk on k3s, phone CLI and optional Home Assistant voice/control workflows.",
+      "source_url": "https://github.com/4alvit/cisco-home-telephony/blob/main/README.md",
+      "source_blob_sha": "76bb7cc92df56daa121b39aa8fffd807044da353"
     },
     {
       "repository": "4alvit/esphome-ble-sensor-patterns",
@@ -99,7 +108,7 @@
       "group": "Reusable building blocks",
       "proposed_description": "Subscriber-based MQTT traces and Mosquitto metrics with OpenTelemetry, Prometheus and Grafana examples.",
       "source_url": "https://github.com/4alvit/mqtt-observability-opentelemetry/blob/main/README.md",
-      "source_blob_sha": "2ded6701289f5a6d97ac9794c70f918dbc836ffb"
+      "source_blob_sha": "9d68a50af57ccabf1a5a232ca884561ac580a183"
     },
     {
       "repository": "4alvit/terraform-github-ha-homelab",
@@ -108,7 +117,16 @@
       "group": "Project infrastructure",
       "proposed_description": "Public Terraform source managing HA Homelab organization settings and repositories.",
       "source_url": "https://github.com/4alvit/terraform-github-ha-homelab/blob/main/README.md",
-      "source_blob_sha": "8fdbdd30a8fc5bc651888f9b810b40f0d38126a9"
+      "source_blob_sha": "78db874430bf092c6777eb8ec23d3b677f66ec8e"
+    },
+    {
+      "repository": "victron-venus/venus-os-ci-toolkit",
+      "url": "https://github.com/victron-venus/venus-os-ci-toolkit",
+      "public": true,
+      "group": "Project infrastructure",
+      "proposed_description": "Shared GitHub Actions workflows and CI tools for validation, releases and security checks; consumers pin a reviewed commit.",
+      "source_url": "https://github.com/victron-venus/venus-os-ci-toolkit/blob/main/README.md",
+      "source_blob_sha": "5591ce651d0684c6fa36e83ceb3c232f5cf82c37"
     }
   ]
 }

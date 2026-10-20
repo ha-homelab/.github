@@ -28,12 +28,12 @@
 
 ## מה חדש — אוקטובר 2026
 
-- **שרטטו בית וסיירו בו בדפדפן.** [Home Studio](https://github.com/ha-homelab/home-studio) משלב מתכנן 2D/3D, עיצובים של 195 פריטים, 24 שפות לעורך וכלי בנייה מקומי למציג שניתן להתקין ב-Home Assistant. [מצב Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) מאפשר לסייר בתוכנית המותקנת תוך חסימת פקודות להתקנים. [המדריך למפגש הראשון](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) מסביר איך להתחיל מדוגמאות, לשחזר טיוטות ולשמור על העבודה כאשר תצוגת 3D אינה זמינה.
+- **שרטטו בית וסיירו בו בדפדפן.** [Home Studio](https://github.com/ha-homelab/home-studio) משלב מתכנן 2D/3D, ‏206 עיצובים לריהוט ולגינה ו-24 שפות לעורך. גרסאות הכוללות את `home_floorplan.zip` מספקות גם [עורך בתוך Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) לשרטוט, לקישור אזורי HA, לשמירת טיוטות ולפרסום תצוגת 3D. העורך הנפרד בדפדפן וכלי הבנייה וההתקנה הניידים נשארים זמינים. [מצב Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) מאפשר לסייר בתוכנית המותקנת תוך חסימת פקודות להתקנים. [המדריך למפגש הראשון](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) מסביר איך להתחיל מדוגמאות, לשחזר טיוטות ולשמור על העבודה כאשר תצוגת 3D אינה זמינה.
 - **דרכים נוספות להשתמש בחומרה קיימת.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) מוסיף מסלול מתועד לקול, מוזיקה ו-BLE ב-Echo Dot 2; [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) מתעד גשר Z-Wave. פרויקטי RF, Zigbee ו-Tuya שבהמשך מכסים משפחות התקנים נוספות. מוכנות החומרה תלויה בפרויקט: ההקמה והאימות הפיזיים של ZAC93 עדיין ממתינים לביצוע.
 - **תצורה ציבורית ושחזור.** [Home Assistant](https://github.com/ha-homelab/home-assistant) כולל כעת ספריות אוטומציות וסקריפטים לשימוש חוזר וחוזי אינטגרציה; [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) מפרסם כלי פריסה, גיבוי ושחזור. מופע יחיד עם אחסון מקומי אינו מספק מעבר אוטומטי למופע חלופי בעת תקלה.
 - **ראיות לפני אוטומציה.** פרויקטים חדשים לחישה, לכיוון מצלמה לפי חדר ולגישה מלווים ארבעה [כלים לקהילה](https://github.com/ha-homelab/.github/blob/main/community-tools/README.he.md), העוסקים בהסבת ישויות, במקור נתוני מדידה, בתרחישי אוטומציה ובתוצאות קוליות. [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) משתמש כעת בכפתור פעולה מסתגל יחיד, תוך שמירה על אישור מפורש לפתיחת הנעילה.
 
-זוהי תמונת מצב ערוכה ל-**16 באוקטובר 2026**. לתאימות ולמצב העדכניים, עיינו ב-README ובגרסאות של כל פרויקט.
+זוהי תמונת מצב ערוכה ל-**19 באוקטובר 2026**. לתאימות ולמצב העדכניים, עיינו ב-README ובגרסאות של כל פרויקט.
 
 ## הכירו את הפרויקטים
 
@@ -44,16 +44,18 @@
 
 ### קול ומדיה
 
-- **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — Echo Dot 2 עם EchoMuse/emOS, ‏Assist, מוזיקה, כלים מקומיים לבית ופרוקסי BLE הנרשם בנפרד. מסלול זיהוי הדיבור המתועד משתמש בספק ענן; הוא אינו פועל כולו ללא חיבור לאינטרנט.
+- **[asterisk-telephony](https://github.com/ha-homelab/asterisk-telephony)** — מתקין מאומת לאינטגרציית Asterisk מהפרויקט המקורי, לוחות בקרה לטלפוני SIP ובקרות למכשירי Cisco, עם מסלול שמע נפרד של Assist ותוצאות קבלה מתועדות.
+- **[ha-ottplay](https://github.com/ha-homelab/ha-ottplay)** — ישויות נגן מדיה ושלט רחוק ב-Home Assistant עבור נגנים הרשומים דרך OTTPlay Control Server קיים; הבקרות הזמינות תלויות בנגן.
+- **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — Echo Dot 2 עם EchoMuse/emOS, ‏Assist, מוזיקה, כלים מקומיים לבית ופרוקסי BLE הנרשם בנפרד. מסלול זיהוי הדיבור המתועד משתמש בספק ענן; הוא אינו פועל כולו ללא חיבור לאינטרנט. הפיילוט של מילת ההפעלה ברוסית ושל Silero Baya אינו מפיץ משקלי מודלים פרטיים.
 - **[ha-echo-dot](https://github.com/ha-homelab/ha-echo-dot)** — מסלול ההסבה של EchoLocal עבור Echo Dot 2, עם אימון מילת הפעלה וכלי הערכה בסביבת הריצה המדויקת.
-- **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — הסבת Echo Show 5 Gen2 ל-Android, גיבויים מאומתים והגדרת Home Assistant Companion.
+- **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — הסבת Echo Show 5 Gen2 ל-Android, גיבויים מאומתים והגדרת Home Assistant Companion. ניסוי ONNX אופציונלי למילת הפעלה באמצעות ביטוי יחיד כולל בדיקות תוכנה; בדיקת הקבלה האקוסטית מקצה לקצה עדיין ממתינה לביצוע.
 - **[ha-lg-tv-capture](https://github.com/ha-homelab/ha-lg-tv-capture)** — כלי צילום מסך של LG webOS לשימוש חוזר ואינטגרציה עם Home Assistant.
 
 EchoLocal ו-EchoMuse הם מסלולי הסבה נפרדים. לפני שינוי התקן, קראו את דרישות הדגם והשחזור של הפרויקט הנבחר.
 
 ### אינטגרציות להתקנים, גשרים ושחזור
 
-- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — אבטיפוס מודולרי עם הזנת PoE עבור Zigbee, ‏Thread, ‏Bluetooth, ‏Z-Wave, ‏433 MHz וחישה; כולל קובצי CAD, קושחה וכלי פריסה. האימות הפיזי עדיין ממתין לביצוע.
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — אבטיפוס PoE מודולרי נוכחי MC2-C + FH1 עם שלוש אנטנות חיצוניות עצמאיות עבור Zigbee, ‏Thread ו-Bluetooth, נתב Thread Border Router מקומי, ‏Z-Wave, ‏RF בתדר 433 MHz וחישה; מסופקים קובצי CAD, קושחה וכלי פריסה. האימות הפיזי עדיין ממתין לביצוע.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — אינטגרציית ענן לא רשמית ל-DESLOC: מצב מנעול, בקרות, סוללה ו-Wi-Fi; [התאימות משתנה לפי הדגם](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — כרטיס נפרד ללוח הבקרה, עם עורך חזותי, פעולה מסתגלת ופתיחת נעילה המחייבת אישור.
 - **[rf-airbridge](https://github.com/ha-homelab/rf-airbridge)** — שער ESPHome CC1101 לתצפיות RF דרך MQTT, שידור מובנה של ESPHome ואוטומציה ב-Home Assistant.
@@ -64,11 +66,12 @@ EchoLocal ו-EchoMuse הם מסלולי הסבה נפרדים. לפני שינו
 
 ### כלים מרחביים, חישה וגישה
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — שרטוט חדרים, ריהוט, סיור ב-3D, ייצוא הפרויקט ובנייה מקומית של מציג ל-Home Assistant.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — שרטטו ורהטו חדרים בעורך הנפרד בדפדפן או בתוך Home Assistant; ייצאו JSON או פרסמו את תצוגת HA.
+- **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — איסוף ניסיוני של CSI, קושחת מקלט, השערות על פעילות וכלים לראיות הסקה; הפרסום מתבצע דרך ruview-home-assistant ואינו מוכיח דיוק זיהוי בעולם האמיתי.
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — רישום, תיוג והשוואת תצפיות עם בדיקות מפורשות לעדכניות ולשעון.
 - **[ruview-home-assistant](https://github.com/ha-homelab/ruview-home-assistant)** — תצפיות RuView דרך גילוי MQTT, בדיקת עדכניות לכל צומת ודוגמאות לשחזור תצפיות סינתטיות.
 - **[ha-onvif-room-direction](https://github.com/ha-homelab/ha-onvif-room-direction)** — אומדני אזור לפי קריאה בלבד של כיוון מצלמה, מגזרים מוגדרים ובדיקות עדכניות.
-- **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — הפעלות Cloudflare Access מאומתות ללוחות בקרה חיצוניים ואסימונים קצרי תוקף דרך שער מוגבל. השירות ממפה מנהל יחיד של Home Assistant, שהוגדר במפורש ושיש לו הרשאות מלאות.
+- **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — הפעלות Cloudflare Access מאומתות ללוחות בקרה חיצוניים ואסימונים קצרי תוקף דרך שער מוגבל. השירות ממפה מנהל יחיד של Home Assistant, שהוגדר במפורש ושיש לו הרשאות מלאות. תמונות נגן מדיה עם אימות הן אפשרות המושבתת כברירת מחדל.
 
 דוגמאות החישה מתארות תצפיות ומגבלותיהן. שחזור תצפיות סינתטיות וכיוון מצלמה אינם מוכיחים דיוק בזיהוי נוכחות בעולם האמיתי.
 
@@ -79,7 +82,7 @@ EchoLocal ו-EchoMuse הם מסלולי הסבה נפרדים. לפני שינו
 - **[ha-scenario-tests](https://github.com/ha-homelab/ha-scenario-tests)** — תרחישים סינתטיים מוגבלים הרצים במנוע אוטומציה אמיתי ומבודד של Home Assistant.
 - **[assist-scenario-lab](https://github.com/ha-homelab/assist-scenario-lab)** — הערכה לא מקוונת של ראיות קוליות המבחינה בין השלמת הפרוטוקול, פעולה שנצפתה ותגובה שנשמעה.
 
-עקבו אחר [התהליך והתוצאות המאוירים](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.he.md) או [המהדורה הרוסית](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ru.md). ראיות תוכנה ובדיקות קבלה פיזיות נשארות שלבים נפרדים.
+עקבו אחר [התהליך והתוצאות המאוירים](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.he.md). בורר השפות במדריך מציע את כל 24 השפות. ראיות תוכנה ובדיקות קבלה פיזיות נשארות שלבים נפרדים.
 
 <details>
 <summary>תהליך הבדיקה ובדיקות התוכנה שנרשמו</summary>
@@ -107,9 +110,9 @@ EchoLocal ו-EchoMuse הם מסלולי הסבה נפרדים. לפני שינו
 
 ## תמונת מצב של הפרויקטים הציבוריים
 
-![תרשים עמודות אופקי: התקנים וגשרים 8; כלים מרחביים, חישה וגישה 5; קול ומדיה 4; בדיקות וחוזים 4; תצורה ואמינות 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.he.svg)
+![תרשים עמודות אופקי: התקנים וגשרים 8; כלים מרחביים, חישה וגישה 6; קול ומדיה 6; בדיקות וחוזים 4; תצורה ואמינות 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.he.svg)
 
-**23 פרויקטים + מאגר הפרופיל הזה = 24 מאגרים ציבוריים**, נבדקו ב-16 באוקטובר 2026. לכל פרויקט קטגוריה עריכתית אחת; המספרים אינם מודדים בשלות, שימוש או ביצועים. [נתוני מקור ניתנים לשחזור](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). לתוצאות בדיקות תוכנה בפועל, ראו בנפרד את [תרשים הבדיקות המתוארך והקישורים להרצות CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.he.md#validation-evidence--2026-10-16-utc).
+**26 פרויקטים + מאגר הפרופיל הזה = 27 מאגרים ציבוריים**, נבדקו ב-19 באוקטובר 2026. לכל פרויקט קטגוריה עריכתית אחת; המספרים אינם מודדים בשלות, שימוש או ביצועים. [נתוני מקור ניתנים לשחזור](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). לתוצאות בדיקות תוכנה בפועל, ראו בנפרד את [תרשים הבדיקות המתוארך והקישורים להרצות CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.he.md#validation-evidence--2026-10-16-utc).
 
 ## פרויקטים ציבוריים קשורים מחוץ לארגון
 
@@ -126,6 +129,7 @@ EchoLocal ו-EchoMuse הם מסלולי הסבה נפרדים. לפני שינו
 - [Amazon Echo Home Energy](https://github.com/4alvit/amazon-echo-home-voice) הוא skill מותאם של Alexa לקריאה בלבד; [Google Home / Nest reports](https://github.com/4alvit/google-home-voice-stats) שולח וידאו Cast עם דיבור המסונתז מקומית. הם פועלים ללא הסבת חומרה; Home Assistant אופציונלי, וה-skill של Alexa אינו דורש אותו.
 - [EPG Voice Gateway](https://github.com/4alvit/epg-voice-gateway) מוצא תוכניות XMLTV המשודרות כעת ומנתב השמעה דרך פרוקסי HLS קיים למסכי Alexa או ל-Google Cast.
 - [OTT-play Control Server](https://github.com/open-ott-play/ottplay-control-server) מספק פקודות לנגן, שליטה מהמסוף ופריסה על k3s. שער EPG אינו תלוי ב-OttPlay.
+- [Cisco Home Telephony](https://github.com/4alvit/cisco-home-telephony) — הקצאת הגדרות SIP ל-Cisco 7945G, ‏Asterisk על k3s, ממשק שורת פקודה לטלפון ותהליכי קול ושליטה אופציונליים ב-Home Assistant.
 
 **תשתית לשימוש חוזר**
 
@@ -133,6 +137,7 @@ EchoLocal ו-EchoMuse הם מסלולי הסבה נפרדים. לפני שינו
 - [FastAPI MQTT Gateway](https://github.com/4alvit/fastapi-mqtt-gateway) מחבר REST/WebSocket ו-MQTT עם אימות והגבלות על נושאים.
 - [MQTT Observability](https://github.com/4alvit/mqtt-observability-opentelemetry) צופה ב-MQTT ובמדדי Mosquitto דרך OpenTelemetry, ‏Prometheus ו-Grafana; הוא אינו פרוקסי להעברת הודעות.
 - [HA Homelab Terraform](https://github.com/4alvit/terraform-github-ha-homelab) מנהל את הגדרות GitHub והמאגרים של הארגון הזה.
+- [Venus OS CI Toolkit](https://github.com/victron-venus/venus-os-ci-toolkit) — תהליכי GitHub Actions משותפים וכלי CI לאימות, לפרסום גרסאות ולבדיקות אבטחה; הפרויקטים המשתמשים בהם נצמדים ל-commit שנבדק.
 
 ## איך אנחנו עובדים
 

@@ -20,7 +20,7 @@ Vier kleine tools helpen een Home Assistant-communityproject vier verschillende 
 
 - [HA Entity Migrations](https://github.com/ha-homelab/ha-entity-migrations) maakt een offline migratieplan. Expliciet rol-/hardwarebeleid, mogelijkheden en bestandsvingerafdrukken voorkomen dat een gewone hernoeming ongemerkt een lichtautomatisering koppelt aan een stekker die een ander doel heeft gekregen. Een gereed plan geldt alleen voor het aangeleverde, ondersteunde configuratiebereik.
 - [HA Meter Contracts](https://github.com/ha-homelab/ha-meter-contracts) controleert fysieke meetomvang, bronherkomst, eenheden, actualiteit van monsters en optelregels. Een meter van een stekkerdoos wordt geen afzonderlijke pompmeter door hem te hernoemen. Dubbele representaties van één stroomtransformator mogen niet worden opgeteld als afzonderlijke belastingen.
-- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) voert een beperkt synthetisch scenario uit in de echte Home Assistant-automatiserings- en scriptengine. Het controleert geordende aanroepen, verboden aanroepen en synthetische eindtoestanden. De eerste runtime is vastgezet op HA 2026.10.0 en Python 3.14.2–3.14.x; gebruik een omgeving apart van de andere tools.
+- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) voert een beperkt synthetisch scenario uit in de echte Home Assistant-automatiserings- en scriptengine. Het controleert geordende aanroepen, verboden aanroepen en synthetische eindtoestanden. De huidige runtime is vastgezet op HA 2026.10.1 en Python 3.14.2–3.14.x; gebruik een omgeving apart van de andere tools.
 - [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab) beoordeelt lokaal spraakbewijs. Het scheidt juistheid van commando's, API-voltooiing en hoorbare uitvoer. Alle meegeleverde tijden zijn synthetisch en aangeleverde waarnemingen worden niet onafhankelijk geverifieerd.
 
 De projecten hebben eigen installatiehandleidingen, Engelse/Russische documentatie en CLI-meldingen in Engels, Russisch, Duits en Spaans. Volg hun versiegebonden contracten en neem niet aan dat alle exitcodes hetzelfde betekenen. De diagrammen tonen **reviewoverdrachten**, geen geïmplementeerde automatische integraties. Er is geen centrale daemon of universeel implementatiecommando.
@@ -42,7 +42,9 @@ De balken tonen aantallen, geen dekking of kwaliteitsranglijst. De gedateerde br
 - **Assist Scenario Lab:** [24 tests geslaagd in Linux-CI](https://github.com/ha-homelab/assist-scenario-lab/actions/runs/38843304306). Deze valideren aangeleverd bewijs en synthetische voorbeelden; er wordt geen fysieke spraakvergelijking geclaimd.
 - **Scenario Tests:** [54 tests geslaagd zonder overslagen in Linux-CI](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/38843681199) op CPython 3.14.8 met echte Home Assistant 2026.10.0, waaronder zeven runtimegevallen waarvan één het bijbehorende roloverdrachtscenario test. De volledige suite duurde 21.42 seconden.
 
-Linux is de geteste runneromgeving. De [gedocumenteerde fout bij native afsluiten op macOS](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) blijft een beperking; een verwacht JSON-resultaat vóór een procescrash is nog steeds een mislukte run. Er wordt geen Docker-uitvoering of fysieke apparaatacceptatie geclaimd.
+Linux is de geteste runneromgeving. De [gedocumenteerde fout bij native afsluiten op macOS](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) blijft een beperking; een verwacht JSON-resultaat vóór een procescrash is nog steeds een mislukte run. Het verslag van 16 oktober claimt geen Docker-uitvoering of fysieke apparaatacceptatie.
+
+Update van 19 oktober 2026: de [Linux-CI](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/39264346721) heeft ook een Docker-smoketest van de verpakte runtime doorstaan. Dit toont geen fysieke apparaatacceptatie aan.
 
 ## Proces en geïllustreerde resultaten
 

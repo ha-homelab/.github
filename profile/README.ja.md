@@ -20,12 +20,12 @@
 
 ## 新着情報 — 2026年10月
 
-- **ブラウザーで家を描き、探索する。** [Home Studio](https://github.com/ha-homelab/home-studio) は、2D/3D プランナー、195種類のアイテム、24言語のエディター、Home Assistant に導入できるビューアーを生成するローカルコンパイラーを備えています。[Dry run モード](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) では、機器へのコマンドを遮断しながら導入済みの間取りを探索できます。 [初回利用ガイド](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) では、サンプルから始める方法、下書きの復元、3D を使えない場合に作業内容を保持する方法を説明しています。
+- **ブラウザーで家を描き、探索する。** [Home Studio](https://github.com/ha-homelab/home-studio) は、2D/3D プランナー、家具・庭用の206種類のデザイン、エディターの24言語に対応しています。`home_floorplan.zip` を含むリリースでは、描画、HA エリアとの関連付け、下書きの保存、3D ビューの公開ができる [Home Assistant 内のエディター](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) も利用できます。独立したブラウザーエディターとポータブルなコンパイラー／インストーラーも引き続き利用できます。[Dry run モード](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) では、機器へのコマンドを遮断しながら導入済みの間取りを探索できます。 [初回利用ガイド](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) では、サンプルから始める方法、下書きの復元、3D を使えない場合に作業内容を保持する方法を説明しています。
 - **既存機器を再利用する選択肢。** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) は Echo Dot 2 の音声、音楽、BLE の構成を文書化し、[ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) は Z-Wave ブリッジを解説しています。下記の RF、Zigbee、Tuya プロジェクトは他の機器群を扱います。機器の準備状況はプロジェクトごとに異なり、ZAC93 の実機での稼働確認は未実施です。
 - **公開設定と復旧。** [Home Assistant](https://github.com/ha-homelab/home-assistant) に再利用可能な自動化・スクリプトライブラリーと統合の契約仕様が加わりました。[k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) は導入、バックアップ、復旧ツールを公開しています。ローカルストレージを使う単一インスタンスでは、自動フェイルオーバーは実現しません。
 - **自動化の前に根拠を。** 新しいセンシング、カメラ方向、アクセス用のプロジェクトに加え、エンティティ移行、計測値の出所、自動化シナリオ、音声結果を扱う四つの[コミュニティツール](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ja.md)があります。[DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) は、明示的な解錠確認を維持しつつ、状態に応じて変化する一つの操作ボタンを使うようになりました。
 
-これは **2026年10月16日** 時点の編集スナップショットです。最新の互換性と状態は、各プロジェクトの README とリリースを参照してください。
+これは **2026年10月19日** 時点の編集スナップショットです。最新の互換性と状態は、各プロジェクトの README とリリースを参照してください。
 
 ## プロジェクトを探す
 
@@ -37,11 +37,13 @@
 
 ### 音声とメディア
 
-- **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — EchoMuse/emOS を搭載した Echo Dot 2、Assist、音楽、ローカルのホームツール、別途登録する BLE プロキシ。記録された音声認識経路はクラウド事業者を使うため、完全なオフライン構成ではありません。
+- **[asterisk-telephony](https://github.com/ha-homelab/asterisk-telephony)** — 検証済みの上流 Asterisk 統合インストーラー、SIP 電話用ダッシュボード、Cisco 端末の操作機能を提供します。Assist 音声は別経路を使い、受入試験の結果を文書化しています。
+- **[ha-ottplay](https://github.com/ha-homelab/ha-ottplay)** — 既存の OTTPlay Control Server に登録されたプレーヤーを Home Assistant のメディアプレーヤーとリモコンのエンティティとして扱います。利用可能な操作はプレーヤーによって異なります。
+- **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — EchoMuse/emOS を搭載した Echo Dot 2、Assist、音楽、ローカルのホームツール、別途登録する BLE プロキシ。記録された音声認識経路はクラウド事業者を使うため、完全なオフライン構成ではありません。ロシア語ウェイクワードと Silero Baya の試験構成では、非公開モデルの重みを配布しません。
 
 - **[ha-echo-dot](https://github.com/ha-homelab/ha-echo-dot)** — Echo Dot 2 を EchoLocal に変換する手順と、ウェイクワードの学習、本番と同じ実行環境での評価ツール。
 
-- **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — Echo Show 5 Gen2 の Android 化、検証済みバックアップ、Home Assistant Companion の設定。
+- **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — Echo Show 5 Gen2 の Android 化、検証済みバックアップ、Home Assistant Companion の設定。単一フレーズの ONNX ウェイクワードを使う任意の試験構成にはソフトウェア検証がありますが、音響経路全体の受入試験は未実施です。
 
 - **[ha-lg-tv-capture](https://github.com/ha-homelab/ha-lg-tv-capture)** — 再利用可能な LG webOS の画面キャプチャーツールと Home Assistant 統合。
 
@@ -49,7 +51,7 @@ EchoLocal と EchoMuse は異なる変換方式です。機器を変更する前
 
 ### 機器統合、ブリッジ、復旧
 
-- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — Zigbee、Thread、Bluetooth、Z-Wave、433 MHz とセンシング向けのモジュール式 PoE 試作機。CAD、ファームウェア、導入ツールを含みます。実機での検証は未完了です。
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — 現行の MC2-C + FH1 モジュール式 PoE 試作機です。Zigbee、Thread、Bluetooth 用の独立した外部アンテナ3本、ローカル Thread ボーダールーター、Z-Wave、433 MHz RF、センシングを備え、CAD、ファームウェア、導入ツールを提供します。実機検証は未実施です。
 
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — 錠の状態、操作、電池、Wi-Fi を扱う非公式 DESLOC クラウド統合。[モデルごとに互換性が異なります](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md)。
 
@@ -67,7 +69,8 @@ EchoLocal と EchoMuse は異なる変換方式です。機器を変更する前
 
 ### 空間ツール、センシング、アクセス
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — 部屋を描き、家具を置き、3D で探索し、プロジェクトを書き出して Home Assistant ビューアーをローカルでコンパイル。
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — 独立したブラウザーエディターまたは Home Assistant 内で部屋を描いて家具を配置し、JSON をエクスポートしたり HA ビューを公開したりできます。
+- **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — 実験的な CSI 収集、受信機ファームウェア、活動の仮説、推論根拠のツールを提供します。ruview-home-assistant を通じて配信しますが、実環境での検出精度を実証するものではありません。
 
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — データの鮮度と時計を明示的に確認しながら、観測を記録、ラベル付け、比較。
 
@@ -75,7 +78,7 @@ EchoLocal と EchoMuse は異なる変換方式です。機器を変更する前
 
 - **[ha-onvif-room-direction](https://github.com/ha-homelab/ha-onvif-room-direction)** — 読み取り専用のカメラ方向、設定した区画、鮮度確認に基づくエリア推定。
 
-- **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — 外部ダッシュボード用の検証済み Cloudflare Access セッションと、制限付きゲートウェイ経由の短命トークン。明示的に設定した一人の Home Assistant 管理者に、完全な権限で対応付けます。
+- **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — 外部ダッシュボード用の検証済み Cloudflare Access セッションと、制限付きゲートウェイ経由の短命トークン。明示的に設定した一人の Home Assistant 管理者に、完全な権限で対応付けます。認証付きでメディアプレーヤーのアートワークを提供する任意機能は、初期状態では無効です。
 
 センシング例は観測内容とその限界を示します。合成リプレイやカメラの方向から、実環境での在室判定精度が確立されるわけではありません。
 
@@ -89,7 +92,7 @@ EchoLocal と EchoMuse は異なる変換方式です。機器を変更する前
 
 - **[assist-scenario-lab](https://github.com/ha-homelab/assist-scenario-lab)** — プロトコル完了、観測された動作、耳で聞ける応答を区別するオフライン音声証拠。
 
-[図解したワークフローと結果](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ja.md)、または[ロシア語版](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ru.md)を参照してください。ソフトウェアの証拠と実機受け入れ確認は別の工程です。
+[図解したワークフローと結果](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ja.md)を参照してください。ガイドの言語選択から全24言語を利用できます。ソフトウェア上の根拠の確認と実機の受入試験は、別々の段階です。
 
 <details>
 <summary>レビューフローと記録済みのソフトウェア検査</summary>
@@ -113,9 +116,9 @@ EchoLocal と EchoMuse は異なる変換方式です。機器を変更する前
 
 ## 公開プロジェクトのスナップショット
 
-![横棒グラフ：機器とブリッジ8、空間・センシング・アクセス5、音声とメディア4、テストと契約4、設定と信頼性2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.ja.svg)
+![横棒グラフ：機器とブリッジ8、空間・センシング・アクセス6、音声とメディア6、テストと契約4、設定と信頼性2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.ja.svg)
 
-**23プロジェクト + このプロフィール用リポジトリ = 24公開リポジトリ**。2026年10月16日に確認しました。各プロジェクトを一つの編集上の分類に割り当てています。件数は成熟度、利用量、性能を測るものではありません。[再現可能な元データ](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json)。実際のソフトウェア検査結果は、別の[日付付きコミュニティツールのテストグラフと CI 実行リンク](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ja.md#validation-evidence--2026-10-16-utc)を参照してください。
+**26プロジェクト + このプロフィール用リポジトリ = 27公開リポジトリ**。2026年10月19日に確認しました。各プロジェクトを一つの編集上の分類に割り当てています。件数は成熟度、利用量、性能を測るものではありません。[再現可能な元データ](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json)。実際のソフトウェア検査結果は、別の[日付付きコミュニティツールのテストグラフと CI 実行リンク](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ja.md#validation-evidence--2026-10-16-utc)を参照してください。
 
 ## この組織外の関連公開プロジェクト
 
@@ -136,6 +139,7 @@ EchoLocal と EchoMuse は異なる変換方式です。機器を変更する前
 - [EPG Voice Gateway](https://github.com/4alvit/epg-voice-gateway) は放送中の XMLTV 番組を検索し、既存の HLS プロキシ経由で Alexa 画面または Google Cast へ再生を送ります。
 
 - [OTT-play Control Server](https://github.com/open-ott-play/ottplay-control-server) はプレーヤーへのコマンド、端末からの制御、k3s への導入を提供します。EPG ゲートウェイは OttPlay に依存しません。
+- [Cisco Home Telephony](https://github.com/4alvit/cisco-home-telephony) — Cisco 7945G の SIP プロビジョニング、k3s 上の Asterisk、電話用 CLI、任意の Home Assistant 音声・操作ワークフローを提供します。
 
 **再利用可能なインフラ**
 
@@ -146,6 +150,7 @@ EchoLocal と EchoMuse は異なる変換方式です。機器を変更する前
 - [MQTT Observability](https://github.com/4alvit/mqtt-observability-opentelemetry) は OpenTelemetry、Prometheus、Grafana で MQTT と Mosquitto の指標を観測します。メッセージプロキシではありません。
 
 - [HA Homelab Terraform](https://github.com/4alvit/terraform-github-ha-homelab) はこの組織の GitHub 設定とリポジトリを管理します。
+- [Venus OS CI Toolkit](https://github.com/victron-venus/venus-os-ci-toolkit) — 検証、リリース、セキュリティ検査用の共通 GitHub Actions ワークフローと CI ツールを提供します。利用側はレビュー済みのコミットに固定します。
 
 ## 取り組み方
 

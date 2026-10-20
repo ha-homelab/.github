@@ -22,7 +22,7 @@ Bốn công cụ nhỏ giúp dự án cộng đồng Home Assistant trả lời 
 
 - [HA Meter Contracts](https://github.com/ha-homelab/ha-meter-contracts) kiểm tra phạm vi đo vật lý, xuất xứ nguồn, đơn vị, độ mới mẫu và quy tắc cộng. Đổi tên bộ đo của cả dải ổ điện không biến nó thành bộ đo riêng cho bơm. Không được cộng các biểu diễn trùng của một biến dòng thành những tải riêng.
 
-- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) chạy kịch bản tổng hợp giới hạn trong bộ máy tự động hóa/kịch bản Home Assistant thật. Nó kiểm tra thứ tự lời gọi, lời gọi bị cấm và trạng thái tổng hợp cuối. Môi trường chạy đầu tiên được cố định ở HA 2026.10.0 và Python 3.14.2–3.14.x; hãy dùng môi trường riêng với các công cụ khác.
+- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) chạy kịch bản tổng hợp giới hạn trong bộ máy tự động hóa/kịch bản Home Assistant thật. Nó kiểm tra thứ tự lời gọi, lời gọi bị cấm và trạng thái tổng hợp cuối. Môi trường chạy hiện tại được cố định ở HA 2026.10.1 và Python 3.14.2–3.14.x; hãy dùng môi trường riêng với các công cụ khác.
 
 - [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab) đánh giá bằng chứng giọng nói cục bộ. Nó tách tính đúng của lệnh, hoàn tất API và đầu ra nghe được. Mọi số liệu thời gian kèm theo đều là tổng hợp, và quan sát được cung cấp không được xác minh độc lập.
 
@@ -45,7 +45,9 @@ Thanh thể hiện số lượng, không phải độ bao phủ hay thứ hạng
 - **Assist Scenario Lab:** [24 bài vượt qua trên CI Linux](https://github.com/ha-homelab/assist-scenario-lab/actions/runs/38843304306). Chúng xác minh bằng chứng được cấp và ví dụ tổng hợp; không khẳng định so sánh giọng nói từ thiết bị thật.
 - **Scenario Tests:** [54 bài vượt qua, không bỏ qua, trên CI Linux](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/38843681199), chạy CPython 3.14.8 với Home Assistant 2026.10.0 thật, gồm bảy trường hợp runtime, trong đó một bài kiểm tra kịch bản phụ chuyển vai trò. Toàn bộ bộ kiểm thử hoàn tất trong 21.42 giây.
 
-Linux là môi trường chạy đã kiểm thử. [Lỗi dọn dẹp cuối trên macOS gốc được ghi nhận](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) vẫn là giới hạn; JSON đúng trước khi tiến trình sập vẫn là lượt thất bại. Không khẳng định đã chạy Docker hay nghiệm thu thiết bị thật.
+Linux là môi trường chạy đã kiểm thử. [Lỗi dọn dẹp cuối trên macOS gốc được ghi nhận](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) vẫn là giới hạn; JSON đúng trước khi tiến trình sập vẫn là lượt thất bại. Bản ghi ngày 16 tháng 10 không khẳng định đã chạy Docker hay nghiệm thu thiết bị thật.
+
+Cập nhật ngày 19 tháng 10 năm 2026: [CI Linux](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/39264346721) cũng đã vượt qua kiểm tra vận hành cơ bản của môi trường chạy đóng gói trong Docker. Điều này không chứng minh thiết bị thật đã được nghiệm thu.
 
 ## Quy trình và kết quả minh họa
 

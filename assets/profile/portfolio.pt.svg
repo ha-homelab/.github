@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1120" height="625" viewBox="0 0 1120 625" role="img" aria-labelledby="title desc" lang="pt">
-<title id="title">23 projetos públicos, cinco áreas</title><desc id="desc">Uma categoria por projeto. Exclui o perfil .github (24 repositórios públicos no total).</desc>
+<title id="title">26 projetos públicos, cinco áreas</title><desc id="desc">Uma categoria por projeto. Exclui o perfil .github (27 repositórios públicos no total).</desc>
 <rect width="1120" height="625" rx="20" fill="#102634"/>
 <g font-family="Arial, Helvetica, sans-serif">
-<text x="40" y="58" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start">23 projetos públicos, cinco áreas</text>
+<text x="40" y="58" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start">26 projetos públicos, cinco áreas</text>
 <text x="40" y="91" font-size="18" fill="#c1d1dd" font-weight="400" text-anchor="start">Um retrato datado do catálogo, não uma classificação de qualidade ou desempenho</text>
 <text x="40" y="139" font-size="14" fill="#94aebb" font-weight="400" text-anchor="start">Área do projeto</text>
 <line x1="420" y1="160" x2="420" y2="477" stroke="#294653"/>
@@ -27,11 +27,11 @@
 <rect x="420" y="177" width="640" height="36" rx="5" fill="#38d5cc"/>
 <text x="1074" y="202" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">8</text>
 <text x="40" y="263" font-size="17" fill="#edf5f8" font-weight="400" text-anchor="start">Espaços, sensores e acesso</text>
-<rect x="420" y="239" width="400" height="36" rx="5" fill="#38d5cc"/>
-<text x="834" y="264" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">5</text>
+<rect x="420" y="239" width="480" height="36" rx="5" fill="#38d5cc"/>
+<text x="914" y="264" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">6</text>
 <text x="40" y="325" font-size="17" fill="#edf5f8" font-weight="400" text-anchor="start">Voz e mídia</text>
-<rect x="420" y="301" width="320" height="36" rx="5" fill="#38d5cc"/>
-<text x="754" y="326" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">4</text>
+<rect x="420" y="301" width="480" height="36" rx="5" fill="#38d5cc"/>
+<text x="914" y="326" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">6</text>
 <text x="40" y="387" font-size="17" fill="#edf5f8" font-weight="400" text-anchor="start">Testes e contratos</text>
 <rect x="420" y="363" width="320" height="36" rx="5" fill="#38d5cc"/>
 <text x="754" y="388" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">4</text>
@@ -39,6 +39,6 @@
 <rect x="420" y="425" width="160" height="36" rx="5" fill="#38d5cc"/>
 <text x="594" y="450" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">2</text>
 <text x="740" y="537" font-size="17" fill="#c1d1dd" font-weight="400" text-anchor="middle">Projetos públicos (quantidade)</text>
-<text x="40" y="577" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">Fonte: API GitHub de repositórios públicos · 16 de outubro de 2026 (America/Los_Angeles)</text>
-<text x="40" y="602" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">Uma categoria por projeto. Exclui o perfil .github (24 repositórios públicos no total).</text>
+<text x="40" y="577" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">Fonte: API GitHub de repositórios públicos · 19 de outubro de 2026 (America/Los_Angeles)</text>
+<text x="40" y="602" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">Uma categoria por projeto. Exclui o perfil .github (27 repositórios públicos no total).</text>
 </g></svg>

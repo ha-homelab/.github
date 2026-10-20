@@ -20,7 +20,7 @@ Four small tools help a Home Assistant community project answer four different q
 
 - [HA Entity Migrations](https://github.com/ha-homelab/ha-entity-migrations) produces an offline migration plan. Explicit role/hardware policies, capabilities and file fingerprints prevent a routine rename from silently assigning a lighting automation to a repurposed power outlet. A ready plan applies only to the supplied, supported configuration scope.
 - [HA Meter Contracts](https://github.com/ha-homelab/ha-meter-contracts) checks physical measurement scope, source provenance, units, sample freshness and additive rules. A strip meter cannot become an individual pump meter by renaming it. Duplicate representations of one current transformer cannot be added as separate loads.
-- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) executes a restricted synthetic scenario in the real Home Assistant automation/script engine. It checks ordered calls, forbidden calls and final synthetic states. Its first runtime is pinned to HA 2026.10.0 and Python 3.14.2–3.14.x; use a separate environment from the other tools.
+- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) executes a restricted synthetic scenario in the real Home Assistant automation/script engine. It checks ordered calls, forbidden calls and final synthetic states. Its current runtime is pinned to HA 2026.10.1 and Python 3.14.2–3.14.x; use a separate environment from the other tools.
 - [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab) evaluates local voice evidence. It separates command correctness, API completion and audible output. All included timings are synthetic, and supplied observations are not independently verified.
 
 The projects have their own installation guides and English/Russian/German/Spanish CLI messages. Follow their versioned contracts rather than assuming all exit codes have the same meaning. The diagram arrows are **review handoffs**, not implemented automatic integrations. There is no central daemon or universal deploy command.
@@ -40,7 +40,9 @@ The bars show counts, not coverage or a quality ranking. The dated source record
 - **Assist Scenario Lab:** [24 tests passed in Linux CI](https://github.com/ha-homelab/assist-scenario-lab/actions/runs/38843304306). These validate supplied evidence and synthetic examples; no physical voice comparison is claimed.
 - **Scenario Tests:** [54 tests passed with no skips in Linux CI](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/38843681199) on CPython 3.14.8 with actual Home Assistant 2026.10.0, including seven runtime cases, one of which tests the role-transfer companion. The full suite completed in 21.42 seconds.
 
-Linux is the tested runner environment. The [documented native macOS teardown failure](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) remains a limitation; an expected JSON result before a process crash is still a failed run. No Docker execution or physical device acceptance is claimed.
+Linux is the tested runner environment. The [documented native macOS teardown failure](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) remains a limitation; an expected JSON result before a process crash is still a failed run. The 16 October record does not claim Docker execution or physical device acceptance.
+
+Update — 19 October 2026: [Linux CI](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/39264346721) also passed a Docker smoke test of the packaged runtime. This does not establish physical device acceptance.
 
 ## Process and illustrated results
 

@@ -20,12 +20,12 @@ Peta ini mengelompokkan pekerjaan yang berkaitan. Ini tidak berarti semua proyek
 
 ## Yang baru — Oktober 2026
 
-- **Gambar dan jelajahi rumah di peramban.** [Home Studio](https://github.com/ha-homelab/home-studio) menggabungkan perencana 2D/3D, 195 desain objek, 24 bahasa editor, dan kompiler lokal untuk penampil yang dapat dipasang di Home Assistant. [Mode Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) memungkinkan Anda menjelajahi denah terpasang sambil memblokir perintah ke perangkat. [Panduan penggunaan pertama](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) menjelaskan cara memulai dari contoh, memulihkan draf, dan mempertahankan hasil kerja saat 3D tidak tersedia.
+- **Gambar dan jelajahi rumah di peramban.** [Home Studio](https://github.com/ha-homelab/home-studio) menggabungkan perencana 2D/3D, 206 desain furnitur dan taman, serta 24 bahasa editor. Rilis yang menyertakan `home_floorplan.zip` juga menyediakan [editor di dalam Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) untuk menggambar, menghubungkan area HA, menyimpan draf, dan menerbitkan tampilan 3D. Editor peramban terpisah dan kompiler/pemasang portabel tetap tersedia. [Mode Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) memungkinkan Anda menjelajahi denah terpasang sambil memblokir perintah ke perangkat. [Panduan penggunaan pertama](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) menjelaskan cara memulai dari contoh, memulihkan draf, dan mempertahankan hasil kerja saat 3D tidak tersedia.
 - **Lebih banyak cara memakai kembali perangkat.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) mendokumentasikan jalur suara, musik, dan BLE untuk Echo Dot 2; [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) mendokumentasikan jembatan Z-Wave. Proyek RF, Zigbee, dan Tuya di bawah mencakup keluarga perangkat lain. Kesiapan perangkat keras berbeda antarproyek: uji pengoperasian fisik ZAC93 masih menunggu.
 - **Konfigurasi publik dan pemulihan.** [Home Assistant](https://github.com/ha-homelab/home-assistant) kini menyertakan pustaka otomasi/skrip yang dapat digunakan kembali serta kontrak integrasi; [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) menerbitkan alat penerapan, pencadangan, dan pemulihan. Satu instans dengan penyimpanan lokal tidak memberikan failover otomatis.
 - **Bukti sebelum otomasi.** Proyek baru untuk pengamatan, arah kamera, dan akses melengkapi empat [alat komunitas](https://github.com/ha-homelab/.github/blob/main/community-tools/README.id.md) untuk migrasi entitas, asal-usul pengukuran, skenario otomasi, dan hasil suara. [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) kini memakai satu tombol tindakan adaptif sambil tetap mewajibkan konfirmasi pembukaan kunci.
 
-Ini adalah potret editorial per **16 Oktober 2026**. Lihat README dan rilis masing-masing proyek untuk kompatibilitas dan status terkini.
+Ini adalah potret editorial per **19 Oktober 2026**. Lihat README dan rilis masing-masing proyek untuk kompatibilitas dan status terkini.
 
 ## Jelajahi proyek
 
@@ -37,11 +37,13 @@ Ini adalah potret editorial per **16 Oktober 2026**. Lihat README dan rilis masi
 
 ### Suara dan media
 
-- **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — Echo Dot 2 dengan EchoMuse/emOS, Assist, musik, alat rumah lokal, dan proksi BLE yang didaftarkan terpisah. Jalur pengenalan ucapan yang dicatat memakai penyedia cloud; tidak sepenuhnya luring.
+- **[asterisk-telephony](https://github.com/ha-homelab/asterisk-telephony)** — pemasang integrasi Asterisk hulu yang terverifikasi, dasbor telepon SIP, dan kontrol perangkat Cisco, dengan jalur audio Assist terpisah serta hasil uji penerimaan terdokumentasi.
+- **[ha-ottplay](https://github.com/ha-homelab/ha-ottplay)** — entitas pemutar media dan remote Home Assistant untuk pemutar yang terdaftar melalui OTTPlay Control Server yang sudah ada; kontrol yang tersedia bergantung pada pemutar.
+- **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — Echo Dot 2 dengan EchoMuse/emOS, Assist, musik, alat rumah lokal, dan proksi BLE yang didaftarkan terpisah. Jalur pengenalan ucapan yang dicatat memakai penyedia cloud; tidak sepenuhnya luring. Uji coba kata pemicu bahasa Rusia dan Silero Baya tidak mendistribusikan bobot model privat.
 
 - **[ha-echo-dot](https://github.com/ha-homelab/ha-echo-dot)** — jalur konversi EchoLocal untuk Echo Dot 2, dengan pelatihan kata pemicu dan alat evaluasi pada lingkungan eksekusi yang sama persis.
 
-- **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — konversi Echo Show 5 Gen2 ke Android, cadangan terverifikasi, dan pengaturan Home Assistant Companion.
+- **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — konversi Echo Show 5 Gen2 ke Android, cadangan terverifikasi, dan pengaturan Home Assistant Companion. Uji coba opsional kata pemicu ONNX dengan satu frasa memiliki pemeriksaan perangkat lunak; uji penerimaan akustik menyeluruh masih menunggu.
 
 - **[ha-lg-tv-capture](https://github.com/ha-homelab/ha-lg-tv-capture)** — alat tangkapan layar LG webOS yang dapat digunakan kembali dan integrasi Home Assistant.
 
@@ -49,7 +51,7 @@ EchoLocal dan EchoMuse adalah jalur konversi berbeda. Baca persyaratan model dan
 
 ### Integrasi perangkat, jembatan, dan pemulihan
 
-- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — prototipe PoE modular untuk Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz, dan pengindraan; mencakup CAD, firmware, dan alat penerapan; validasi perangkat keras fisik masih tertunda.
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — prototipe PoE modular MC2-C + FH1 saat ini dengan tiga antena eksternal independen untuk Zigbee, Thread, dan Bluetooth, Thread Border Router lokal, Z-Wave, RF 433 MHz, serta pengamatan sensor. CAD, firmware, dan alat penerapan disediakan; validasi fisik masih menunggu.
 
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — integrasi cloud DESLOC tidak resmi untuk status kunci, kontrol, baterai, dan Wi-Fi; [kompatibilitas berbeda menurut model](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 
@@ -67,7 +69,8 @@ EchoLocal dan EchoMuse adalah jalur konversi berbeda. Baca persyaratan model dan
 
 ### Alat ruang, pengamatan, dan akses
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — menggambar ruangan, menata furnitur, menjelajahi 3D, mengekspor proyek, dan mengompilasi penampil Home Assistant secara lokal.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — menggambar dan menata furnitur ruangan melalui editor peramban terpisah atau di dalam Home Assistant; mengekspor JSON atau menerbitkan tampilan HA.
+- **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — pengumpulan CSI eksperimental, firmware penerima, hipotesis aktivitas, dan alat bukti inferensi; menerbitkan melalui ruview-home-assistant dan tidak membuktikan akurasi deteksi di dunia nyata.
 
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — merekam, melabeli, dan membandingkan pengamatan dengan pemeriksaan kebaruan data dan jam yang eksplisit.
 
@@ -75,7 +78,7 @@ EchoLocal dan EchoMuse adalah jalur konversi berbeda. Baca persyaratan model dan
 
 - **[ha-onvif-room-direction](https://github.com/ha-homelab/ha-onvif-room-direction)** — perkiraan area dari arah kamera yang hanya dibaca, sektor terkonfigurasi, dan pemeriksaan kebaruan data.
 
-- **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — sesi Cloudflare Access terverifikasi untuk dasbor eksternal dan token berumur pendek melalui gerbang terbatas. Memetakan satu administrator Home Assistant yang ditetapkan secara eksplisit dengan hak akses penuh.
+- **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — sesi Cloudflare Access terverifikasi untuk dasbor eksternal dan token berumur pendek melalui gerbang terbatas. Memetakan satu administrator Home Assistant yang ditetapkan secara eksplisit dengan hak akses penuh. Fitur opsional gambar pemutar media yang diautentikasi dinonaktifkan secara bawaan.
 
 Contoh pengamatan menjelaskan observasi dan batasnya. Pemutaran ulang sintetis dan arah kamera tidak membuktikan akurasi deteksi keberadaan di dunia nyata.
 
@@ -89,7 +92,7 @@ Contoh pengamatan menjelaskan observasi dan batasnya. Pemutaran ulang sintetis d
 
 - **[assist-scenario-lab](https://github.com/ha-homelab/assist-scenario-lab)** — bukti suara luring yang membedakan penyelesaian protokol, tindakan teramati, dan respons terdengar.
 
-Ikuti [alur kerja dan hasil berilustrasi](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.id.md) atau [edisi Rusia](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ru.md). Bukti perangkat lunak dan uji penerimaan fisik tetap merupakan langkah terpisah.
+Ikuti [alur kerja dan hasil berilustrasi](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.id.md). Pemilih bahasa pada panduan menyediakan seluruh 24 bahasa. Bukti perangkat lunak dan uji penerimaan fisik tetap merupakan tahap yang terpisah.
 
 <details>
 <summary>Alur peninjauan dan pemeriksaan perangkat lunak tercatat</summary>
@@ -113,9 +116,9 @@ Untuk tampilan proyek lain, jelajahi [arsitektur suara/musik/BLE EchoMuse](https
 
 ## Potret proyek publik
 
-![Grafik batang horizontal: perangkat dan jembatan 8; ruang, pengamatan, dan akses 5; suara dan media 4; tes dan kontrak 4; konfigurasi dan keandalan 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.id.svg)
+![Grafik batang horizontal: perangkat dan jembatan 8; ruang, pengamatan, dan akses 6; suara dan media 6; tes dan kontrak 4; konfigurasi dan keandalan 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.id.svg)
 
-**23 proyek + repositori profil ini = 24 repositori publik**, diperiksa pada 16 Oktober 2026. Setiap proyek masuk satu kategori editorial; jumlah tidak mengukur kematangan, pemakaian, atau kinerja. [Data sumber yang dapat direproduksi](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). Untuk hasil pemeriksaan perangkat lunak sebenarnya, lihat [grafik tes alat komunitas bertanggal dan tautan eksekusi CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.id.md#validation-evidence--2026-10-16-utc) yang terpisah.
+**26 proyek + repositori profil ini = 27 repositori publik**, diperiksa pada 19 Oktober 2026. Setiap proyek masuk satu kategori editorial; jumlah tidak mengukur kematangan, pemakaian, atau kinerja. [Data sumber yang dapat direproduksi](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). Untuk hasil pemeriksaan perangkat lunak sebenarnya, lihat [grafik tes alat komunitas bertanggal dan tautan eksekusi CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.id.md#validation-evidence--2026-10-16-utc) yang terpisah.
 
 ## Proyek publik terkait di luar organisasi ini
 
@@ -136,6 +139,7 @@ Proyek yang dipelihara secara terpisah ini melengkapi homelab. Semuanya komponen
 - [EPG Voice Gateway](https://github.com/4alvit/epg-voice-gateway) mencari program XMLTV yang sedang tayang dan merutekan pemutaran melalui proksi HLS yang tersedia ke layar Alexa atau Google Cast.
 
 - [OTT-play Control Server](https://github.com/open-ott-play/ottplay-control-server) menyediakan perintah pemutar, kontrol terminal, dan penerapan k3s. Gerbang EPG tidak bergantung pada OttPlay.
+- [Cisco Home Telephony](https://github.com/4alvit/cisco-home-telephony) — menyediakan provisi SIP Cisco 7945G, Asterisk pada k3s, CLI telepon, dan alur kerja suara/kontrol Home Assistant opsional.
 
 **Infrastruktur yang dapat digunakan kembali**
 
@@ -146,6 +150,7 @@ Proyek yang dipelihara secara terpisah ini melengkapi homelab. Semuanya komponen
 - [MQTT Observability](https://github.com/4alvit/mqtt-observability-opentelemetry) mengamati MQTT dan metrik Mosquitto melalui OpenTelemetry, Prometheus, dan Grafana; bukan proksi pesan.
 
 - [HA Homelab Terraform](https://github.com/4alvit/terraform-github-ha-homelab) mengelola pengaturan GitHub dan repositori organisasi ini.
+- [Venus OS CI Toolkit](https://github.com/victron-venus/venus-os-ci-toolkit) — menyediakan alur kerja GitHub Actions bersama dan alat CI untuk validasi, rilis, dan pemeriksaan keamanan; proyek pengguna mengunci commit yang telah ditinjau.
 
 ## Cara kami bekerja
 

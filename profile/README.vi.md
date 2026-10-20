@@ -20,12 +20,12 @@ Bản đồ nhóm các công việc liên quan. Nó không hàm ý rằng tất 
 
 ## Điểm mới — tháng 10 năm 2026
 
-- **Vẽ và khám phá ngôi nhà trong trình duyệt.** [Home Studio](https://github.com/ha-homelab/home-studio) kết hợp công cụ thiết kế 2D/3D, 195 mẫu đồ vật, 24 ngôn ngữ trình chỉnh sửa và trình biên dịch cục bộ để tạo trình xem có thể cài vào Home Assistant. [Chế độ Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) cho phép khám phá mặt bằng đã cài trong khi chặn lệnh gửi tới thiết bị. [Hướng dẫn sử dụng lần đầu](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) giải thích cách bắt đầu từ ví dụ, khôi phục bản nháp và lưu giữ nội dung đã làm khi 3D không khả dụng.
+- **Vẽ và khám phá ngôi nhà trong trình duyệt.** [Home Studio](https://github.com/ha-homelab/home-studio) kết hợp công cụ thiết kế 2D/3D, 206 mẫu nội thất và sân vườn, cùng 24 ngôn ngữ trình chỉnh sửa. Các bản phát hành chứa `home_floorplan.zip` còn có [trình chỉnh sửa trong Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) để vẽ, liên kết khu vực HA, lưu bản nháp và xuất bản chế độ xem 3D. Trình chỉnh sửa riêng trong trình duyệt và bộ biên dịch/trình cài đặt độc lập vẫn được cung cấp. [Chế độ Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) cho phép khám phá mặt bằng đã cài trong khi chặn lệnh gửi tới thiết bị. [Hướng dẫn sử dụng lần đầu](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) giải thích cách bắt đầu từ ví dụ, khôi phục bản nháp và lưu giữ nội dung đã làm khi 3D không khả dụng.
 - **Thêm cách tái sử dụng phần cứng hiện có.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) có tài liệu cho giọng nói, nhạc và BLE trên Echo Dot 2; [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) mô tả cầu nối Z-Wave. Các dự án RF, Zigbee và Tuya bên dưới bao quát những nhóm thiết bị khác. Mức độ sẵn sàng tùy dự án: việc nghiệm thu vận hành phần cứng ZAC93 vẫn chưa hoàn tất.
 - **Cấu hình công khai và khôi phục.** [Home Assistant](https://github.com/ha-homelab/home-assistant) hiện gồm thư viện tự động hóa/kịch bản tái sử dụng và hợp đồng tích hợp; [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) công khai công cụ triển khai, sao lưu và khôi phục. Một phiên bản chạy với lưu trữ cục bộ không tạo ra chuyển đổi dự phòng tự động.
 - **Bằng chứng trước tự động hóa.** Các dự án mới về quan sát, hướng camera và truy cập bổ sung cho bốn [công cụ cộng đồng](https://github.com/ha-homelab/.github/blob/main/community-tools/README.vi.md) về di chuyển thực thể, nguồn gốc đo lường, kịch bản tự động hóa và kết quả giọng nói. [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) hiện dùng một nút hành động thích ứng nhưng vẫn yêu cầu xác nhận mở khóa rõ ràng.
 
-Đây là bản tổng hợp biên tập tại thời điểm **16 tháng 10 năm 2026**. Xem README và bản phát hành của từng dự án để biết trạng thái và khả năng tương thích hiện tại.
+Đây là bản tổng hợp biên tập tại thời điểm **19 tháng 10 năm 2026**. Xem README và bản phát hành của từng dự án để biết trạng thái và khả năng tương thích hiện tại.
 
 ## Khám phá các dự án
 
@@ -37,11 +37,13 @@ Bản đồ nhóm các công việc liên quan. Nó không hàm ý rằng tất 
 
 ### Giọng nói và đa phương tiện
 
-- **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — Echo Dot 2 với EchoMuse/emOS, Assist, nhạc, công cụ nhà cục bộ và proxy BLE đăng ký riêng. Đường nhận dạng giọng nói được ghi nhận dùng nhà cung cấp đám mây; không hoàn toàn ngoại tuyến.
+- **[asterisk-telephony](https://github.com/ha-homelab/asterisk-telephony)** — bộ cài đã kiểm chứng cho tích hợp Asterisk từ dự án nguồn, bảng điều khiển điện thoại SIP và lệnh điều khiển máy Cisco, với đường âm thanh Assist riêng cùng kết quả nghiệm thu được ghi lại.
+- **[ha-ottplay](https://github.com/ha-homelab/ha-ottplay)** — các thực thể trình phát đa phương tiện và điều khiển từ xa Home Assistant cho trình phát đã đăng ký qua OTTPlay Control Server hiện có; các lệnh khả dụng tùy thuộc trình phát.
+- **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — Echo Dot 2 với EchoMuse/emOS, Assist, nhạc, công cụ nhà cục bộ và proxy BLE đăng ký riêng. Đường nhận dạng giọng nói được ghi nhận dùng nhà cung cấp đám mây; không hoàn toàn ngoại tuyến. Thử nghiệm từ đánh thức tiếng Nga và Silero Baya không phân phối trọng số mô hình riêng tư.
 
 - **[ha-echo-dot](https://github.com/ha-homelab/ha-echo-dot)** — quy trình chuyển đổi EchoLocal cho Echo Dot 2, có công cụ huấn luyện từ đánh thức và đánh giá trên môi trường chạy trùng khớp chính xác.
 
-- **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — chuyển Echo Show 5 Gen2 sang Android, bản sao lưu đã xác minh và thiết lập Home Assistant Companion.
+- **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — chuyển Echo Show 5 Gen2 sang Android, bản sao lưu đã xác minh và thiết lập Home Assistant Companion. Thử nghiệm tùy chọn từ đánh thức ONNX một cụm từ đã có kiểm tra phần mềm; nghiệm thu toàn bộ đường âm thanh vẫn đang chờ.
 
 - **[ha-lg-tv-capture](https://github.com/ha-homelab/ha-lg-tv-capture)** — công cụ chụp màn hình LG webOS tái sử dụng và tích hợp Home Assistant.
 
@@ -49,7 +51,7 @@ EchoLocal và EchoMuse là hai quy trình chuyển đổi khác nhau. Đọc yê
 
 ### Tích hợp thiết bị, cầu nối và khôi phục
 
-- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — nguyên mẫu PoE dạng mô-đun cho Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz và cảm biến; kèm CAD, firmware và công cụ triển khai; chưa hoàn tất xác minh trên phần cứng thực.
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — nguyên mẫu PoE dạng mô-đun MC2-C + FH1 hiện tại với ba ăng-ten ngoài độc lập cho Zigbee, Thread và Bluetooth, bộ định tuyến biên Thread cục bộ, Z-Wave, RF 433 MHz và chức năng cảm biến. Có CAD, firmware và công cụ triển khai; việc kiểm chứng phần cứng thực tế vẫn đang chờ.
 
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — tích hợp đám mây DESLOC không chính thức cho trạng thái khóa, điều khiển, pin và Wi-Fi; [khả năng tương thích khác nhau theo mẫu](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 
@@ -67,7 +69,8 @@ EchoLocal và EchoMuse là hai quy trình chuyển đổi khác nhau. Đọc yê
 
 ### Không gian, quan sát và truy cập
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — vẽ phòng, bố trí nội thất, khám phá 3D, xuất dự án và biên dịch trình xem Home Assistant cục bộ.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — vẽ phòng và bố trí nội thất trong trình chỉnh sửa riêng trên trình duyệt hoặc trong Home Assistant; xuất JSON hoặc xuất bản chế độ xem HA.
+- **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — thu thập CSI thử nghiệm, firmware bộ thu, giả thuyết hoạt động và công cụ ghi nhận bằng chứng suy luận; công bố qua ruview-home-assistant và không chứng minh độ chính xác phát hiện trong thực tế.
 
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — ghi, gắn nhãn và so sánh quan sát với kiểm tra độ mới dữ liệu và đồng hồ rõ ràng.
 
@@ -75,7 +78,7 @@ EchoLocal và EchoMuse là hai quy trình chuyển đổi khác nhau. Đọc yê
 
 - **[ha-onvif-room-direction](https://github.com/ha-homelab/ha-onvif-room-direction)** — ước tính vùng từ hướng camera chỉ đọc, các khu vực đã cấu hình và kiểm tra độ mới.
 
-- **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — phiên Cloudflare Access đã xác minh cho bảng điều khiển bên ngoài và token ngắn hạn qua cổng giới hạn. Ánh xạ một quản trị viên Home Assistant được cấu hình rõ ràng với đầy đủ quyền.
+- **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — phiên Cloudflare Access đã xác minh cho bảng điều khiển bên ngoài và token ngắn hạn qua cổng giới hạn. Ánh xạ một quản trị viên Home Assistant được cấu hình rõ ràng với đầy đủ quyền. Tính năng tùy chọn cung cấp ảnh minh họa trình phát đa phương tiện có xác thực bị tắt theo mặc định.
 
 Ví dụ quan sát mô tả dữ liệu và giới hạn của chúng. Phát lại tổng hợp và hướng camera không chứng minh độ chính xác phát hiện hiện diện ngoài thực tế.
 
@@ -89,7 +92,7 @@ Ví dụ quan sát mô tả dữ liệu và giới hạn của chúng. Phát l�
 
 - **[assist-scenario-lab](https://github.com/ha-homelab/assist-scenario-lab)** — bằng chứng giọng nói ngoại tuyến, phân biệt hoàn tất giao thức, hành động quan sát được và phản hồi nghe được.
 
-Xem [quy trình và kết quả có minh họa](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.vi.md) hoặc [bản tiếng Nga](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ru.md). Bằng chứng phần mềm và nghiệm thu phần cứng vẫn là các bước riêng.
+Làm theo [quy trình và kết quả có minh họa](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.vi.md). Bộ chọn ngôn ngữ của hướng dẫn cung cấp đủ 24 ngôn ngữ. Bằng chứng phần mềm và nghiệm thu phần cứng vẫn là các bước riêng biệt.
 
 <details>
 <summary>Quy trình rà soát và kiểm tra phần mềm đã ghi nhận</summary>
@@ -113,9 +116,9 @@ Với dự án khác, xem [kiến trúc giọng nói/nhạc/BLE EchoMuse](https:
 
 ## Ảnh chụp danh mục công khai
 
-![Biểu đồ thanh ngang: thiết bị và cầu nối 8; không gian, quan sát, truy cập 5; giọng nói và đa phương tiện 4; kiểm thử và hợp đồng 4; cấu hình và độ tin cậy 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.vi.svg)
+![Biểu đồ thanh ngang: thiết bị và cầu nối 8; không gian, quan sát, truy cập 6; giọng nói và đa phương tiện 6; kiểm thử và hợp đồng 4; cấu hình và độ tin cậy 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.vi.svg)
 
-**23 dự án + kho hồ sơ này = 24 kho công khai**, kiểm tra ngày 16 tháng 10 năm 2026. Mỗi dự án thuộc một nhóm biên tập; số lượng không đo mức trưởng thành, mức sử dụng hay hiệu năng. [Dữ liệu nguồn có thể tái lập](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). Kết quả kiểm tra phần mềm thật nằm riêng ở [biểu đồ kiểm thử công cụ cộng đồng có ngày và liên kết lượt CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.vi.md#validation-evidence--2026-10-16-utc).
+**26 dự án + kho hồ sơ này = 27 kho công khai**, kiểm tra ngày 19 tháng 10 năm 2026. Mỗi dự án thuộc một nhóm biên tập; số lượng không đo mức trưởng thành, mức sử dụng hay hiệu năng. [Dữ liệu nguồn có thể tái lập](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). Kết quả kiểm tra phần mềm thật nằm riêng ở [biểu đồ kiểm thử công cụ cộng đồng có ngày và liên kết lượt CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.vi.md#validation-evidence--2026-10-16-utc).
 
 ## Dự án công khai liên quan ngoài tổ chức
 
@@ -136,6 +139,7 @@ Các dự án được duy trì riêng này bổ sung cho homelab. Đây là th�
 - [EPG Voice Gateway](https://github.com/4alvit/epg-voice-gateway) tìm chương trình XMLTV đang phát và chuyển phát qua proxy HLS hiện có tới màn hình Alexa hoặc Google Cast.
 
 - [OTT-play Control Server](https://github.com/open-ott-play/ottplay-control-server) cung cấp lệnh trình phát, điều khiển bằng terminal và triển khai k3s. Cổng EPG không phụ thuộc OttPlay.
+- [Cisco Home Telephony](https://github.com/4alvit/cisco-home-telephony) — cung cấp cấu hình SIP cho Cisco 7945G, Asterisk trên k3s, CLI điện thoại và quy trình giọng nói/điều khiển Home Assistant tùy chọn.
 
 **Hạ tầng tái sử dụng**
 
@@ -146,6 +150,7 @@ Các dự án được duy trì riêng này bổ sung cho homelab. Đây là th�
 - [MQTT Observability](https://github.com/4alvit/mqtt-observability-opentelemetry) quan sát MQTT và chỉ số Mosquitto qua OpenTelemetry, Prometheus và Grafana; không phải proxy thông điệp.
 
 - [HA Homelab Terraform](https://github.com/4alvit/terraform-github-ha-homelab) quản lý cài đặt GitHub và kho của tổ chức này.
+- [Venus OS CI Toolkit](https://github.com/victron-venus/venus-os-ci-toolkit) — cung cấp quy trình GitHub Actions dùng chung và công cụ CI cho kiểm chứng, phát hành và kiểm tra bảo mật; các dự án sử dụng ghim một commit đã được rà soát.
 
 ## Cách chúng tôi làm việc
 

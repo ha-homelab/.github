@@ -20,7 +20,7 @@
 
 - [HA Entity Migrations](https://github.com/ha-homelab/ha-entity-migrations) 生成离线迁移计划。明确的角色/硬件策略、能力要求和文件指纹，可避免一次普通重命名将照明自动化悄然分配给改作他用的电源插座。就绪计划仅适用于提供的、受支持的配置范围。
 - [HA Meter Contracts](https://github.com/ha-homelab/ha-meter-contracts) 检查实物测量范围、数据来源、单位、样本时效和可加性规则。重命名无法把插排总表变成单个水泵的电表。同一个电流互感器的重复表示不能作为独立负载相加。
-- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) 在真实 Home Assistant 自动化/脚本引擎中执行受限的合成场景。它检查调用顺序、禁止调用和最终合成状态。首个运行环境固定为 HA 2026.10.0 和 Python 3.14.2–3.14.x；请与其他工具使用不同的环境。
+- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) 在真实 Home Assistant 自动化/脚本引擎中执行受限的合成场景。它检查调用顺序、禁止调用和最终合成状态。当前运行环境固定为 HA 2026.10.1 和 Python 3.14.2–3.14.x；请与其他工具使用不同的环境。
 - [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab) 评估本地语音证据。它区分命令正确性、API 完成情况和可听见的输出。所有随附的时间数据均为合成数据，传入的观测没有经过独立验证。
 
 各项目有自己的安装指南，以及英语/俄语/德语/西班牙语 CLI 消息。请遵循对应版本的契约，不要假设所有退出码含义相同。图中的箭头是**审查交接**，不是已经实现的自动集成。不存在中央守护进程或通用部署命令。
@@ -41,7 +41,9 @@
 - **Assist Scenario Lab：** [Linux CI 通过 24 个测试](https://github.com/ha-homelab/assist-scenario-lab/actions/runs/38843304306)。这些检查验证传入的证据与合成示例，不构成实物语音设备比较。
 - **Scenario Tests：** 在 CPython 3.14.8 和真实 Home Assistant 2026.10.0 上，[Linux CI 通过 54 个测试，无跳过项](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/38843681199)。其中包括七个运行时用例，一个验证配套的角色迁移示例。完整测试集耗时 21.42 秒。
 
-经测试的运行平台是 Linux。[已记录的原生 macOS 清理阶段故障](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) 仍是限制；进程崩溃前输出了预期 JSON，仍然属于运行失败。此处不声称已在 Docker 中执行或完成实物设备验收。
+经测试的运行平台是 Linux。[已记录的原生 macOS 清理阶段故障](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) 仍是限制；进程崩溃前输出了预期 JSON，仍然属于运行失败。10月16日的记录不声称已在 Docker 中执行或完成实物设备验收。
+
+2026年10月19日更新：[Linux CI](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/39264346721) 也已通过打包运行环境的 Docker 基本运行测试。这不代表已完成实物设备验收。
 
 ## 流程与结果图解
 

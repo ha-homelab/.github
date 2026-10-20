@@ -31,9 +31,10 @@ společně nebo že se automaticky navzájem integrují.
 
 ## Novinky — říjen 2026
 
-- **Nakreslete a prozkoumejte domácnost v prohlížeči.** [Home Studio](https://github.com/ha-homelab/home-studio) spojuje
-  plánovač 2D/3D, 195 návrhů předmětů, 24 jazyků editoru a místní kompilátor pro
-  instalovatelný prohlížeč plánu v Home Assistant. Jeho
+- **Nakreslete a prozkoumejte domácnost v prohlížeči.** [Home Studio](https://github.com/ha-homelab/home-studio) spojuje plánovač 2D/3D, 206 návrhů nábytku a zahradních prvků a 24 jazyků editoru.
+  Vydání obsahující `home_floorplan.zip` nabízejí také [editor uvnitř Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md)
+  pro kreslení, propojení oblastí HA, ukládání konceptů a publikování 3D pohledu.
+  Samostatný editor v prohlížeči i přenositelný kompilátor a instalátor zůstávají dostupné. Jeho
   [režim Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) umožňuje procházet nainstalovaný plán a přitom blokuje příkazy zařízením.
   [Průvodce první relací](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) vysvětluje začátek s příklady, obnovu rozpracovaných návrhů a zachování práce, když 3D není dostupné.
 - **Další způsoby využití stávajícího hardwaru.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) přidává
@@ -50,7 +51,7 @@ společně nebo že se automaticky navzájem integrují.
   původ měření, scénáře automatizace a hlasové výsledky.
   [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) nyní používá jediné adaptivní tlačítko a stále vyžaduje výslovné potvrzení odemknutí.
 
-Jde o redakční snímek k **16. říjnu 2026**. Aktuální kompatibilitu a stav najdete
+Jde o redakční snímek k **19. říjnu 2026**. Aktuální kompatibilitu a stav najdete
 v README a vydáních jednotlivých projektů.
 
 ## Prozkoumejte projekty
@@ -64,13 +65,17 @@ v README a vydáních jednotlivých projektů.
 
 ### Hlas a média
 
+- **[asterisk-telephony](https://github.com/ha-homelab/asterisk-telephony)** — ověřený instalátor integrace Asterisk z upstream projektu, přehledové panely SIP telefonů a ovládání telefonů Cisco se samostatnou zvukovou cestou Assist a zdokumentovanými výsledky přejímky.
+- **[ha-ottplay](https://github.com/ha-homelab/ha-ottplay)** — entity přehrávače médií a dálkového ovládání v Home Assistant pro registrované přehrávače přes existující OTTPlay Control Server; dostupné ovládání závisí na přehrávači.
 - **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — Echo Dot 2 s EchoMuse/emOS, Assist, hudbou, místními
   nástroji pro domácnost a samostatně registrovaným BLE proxy. Zdokumentovaná
   cesta rozpoznávání řeči používá cloudového poskytovatele, není tedy zcela offline.
+  Pilotní provoz s ruským aktivačním slovem a Silero Baya nezveřejňuje soukromé váhy modelu.
 - **[ha-echo-dot](https://github.com/ha-homelab/ha-echo-dot)** — přestavba Echo Dot 2 pomocí EchoLocal, s nástroji pro
   trénování aktivačního slova a vyhodnocení v přesném běhovém prostředí.
 - **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — přestavba Echo Show 5 Gen2 na Android, ověřené zálohy
   a nastavení Home Assistant Companion.
+  Volitelný pokus s ONNX a jedinou aktivační frází má softwarové kontroly; úplná akustická přejímka dosud chybí.
 - **[ha-lg-tv-capture](https://github.com/ha-homelab/ha-lg-tv-capture)** — opakovaně použitelné nástroje snímání obrazovky LG
   webOS a integrace Home Assistant.
 
@@ -79,7 +84,7 @@ požadavky vybraného projektu na model a obnovu.
 
 ### Integrace zařízení, mosty a obnova
 
-- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — modulární prototyp s PoE pro Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz a snímání; obsahuje CAD, firmware a nástroje pro nasazení; fyzické ověření zatím nebylo provedeno.
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — aktuální modulární PoE prototyp MC2-C + FH1 se třemi nezávislými externími anténami pro Zigbee, Thread a Bluetooth, místním Thread Border Routerem, Z-Wave, RF na 433 MHz a senzory. Obsahuje CAD, firmware a nástroje pro nasazení; fyzické ověření dosud chybí.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — neoficiální cloudová integrace DESLOC pro stav zámku,
   ovládání, baterii a Wi-Fi; [kompatibilita se liší podle modelu](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — samostatná karta ovládacího panelu s vizuálním editorem,
@@ -98,8 +103,8 @@ požadavky vybraného projektu na model a obnovu.
 
 ### Prostor, pozorování senzorů a přístup
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — kreslení a vybavování místností, prohlížení ve 3D,
-  export projektu a místní sestavení prohlížeče pro Home Assistant.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — kreslete a zařizujte místnosti v samostatném editoru v prohlížeči nebo uvnitř Home Assistant; exportujte JSON nebo publikujte pohled HA.
+- **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — experimentální sběr CSI, firmware přijímačů, hypotézy o aktivitě a nástroje pro důkazy o inferenci; publikuje přes ruview-home-assistant a neprokazuje přesnost detekce v reálném prostředí.
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — záznam, označování a porovnávání pozorování
   s výslovnou kontrolou aktuálnosti a času.
 - **[ruview-home-assistant](https://github.com/ha-homelab/ruview-home-assistant)** — pozorování RuView přes MQTT discovery,
@@ -109,6 +114,7 @@ požadavky vybraného projektu na model a obnovu.
 - **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — ověřené relace Cloudflare Access pro externí
   panely a krátkodobé tokeny přes omezenou bránu. Mapuje jediného výslovně
   nastaveného správce Home Assistant s plnými oprávněními.
+  Volitelný autentizovaný přístup k obalům médií přehrávače je ve výchozím stavu vypnutý.
 
 Příklady senzorů popisují pozorování a jejich omezení. Syntetické přehrávání a směr
 kamery neprokazují přesnost detekce přítomnosti v reálném světě.
@@ -124,7 +130,7 @@ kamery neprokazují přesnost detekce přítomnosti v reálném světě.
 - **[assist-scenario-lab](https://github.com/ha-homelab/assist-scenario-lab)** — offline hlasové důkazy rozlišující dokončení
   protokolu, pozorovanou akci a slyšitelnou odpověď.
 
-Projděte [ilustrovaný postup a výsledky](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.cs.md) nebo jeho [ruskou verzi](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ru.md).
+Projděte [ilustrovaný postup a výsledky](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.cs.md). Přepínač jazyků příručky nabízí všech 24 jazyků.
 Softwarové důkazy a fyzická přejímka zůstávají samostatnými kroky.
 
 <details>
@@ -159,9 +165,9 @@ Další ukázky nabízí [architektura hlasu, hudby a BLE v EchoMuse](https://gi
 
 ## Přehled veřejných projektů
 
-![Pruhový graf: zařízení a mosty 8; prostor, senzory a přístup 5; hlas a média 4; testy a kontrakty 4; konfigurace a spolehlivost 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.cs.svg)
+![Pruhový graf: zařízení a mosty 8; prostor, senzory a přístup 6; hlas a média 6; testy a kontrakty 4; konfigurace a spolehlivost 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.cs.svg)
 
-**23 projektů + tento profilový repozitář = 24 veřejných repozitářů**, ověřeno dne 16. října 2026. Každý projekt patří do jedné redakční kategorie; počty neměří
+**26 projektů + tento profilový repozitář = 27 veřejných repozitářů**, ověřeno dne 19. října 2026. Každý projekt patří do jedné redakční kategorie; počty neměří
 vyspělost, využití ani výkon. [Reprodukovatelná zdrojová data](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).
 Skutečné výsledky softwarových kontrol najdete v samostatném
 [datovaném grafu komunitních testů a odkazovaných bězích CI](https://github.com/ha-homelab/.github/blob/main/community-tools/README.cs.md#validation-evidence--2026-10-16-utc).
@@ -189,6 +195,7 @@ bloky s vlastními postupy nastavení a hranicemi podpory.
   existující proxy HLS na obrazovky Alexa nebo Google Cast.
 - [OTT-play Control Server](https://github.com/open-ott-play/ottplay-control-server) nabízí příkazy přehrávače, ovládání terminálu
   a nasazení na k3s. Brána EPG nezávisí na OttPlay.
+- [Cisco Home Telephony](https://github.com/4alvit/cisco-home-telephony) — SIP provisioning pro Cisco 7945G, Asterisk na k3s, telefonní CLI a volitelné hlasové a ovládací postupy s Home Assistant.
 
 **Opakovaně použitelná infrastruktura**
 
@@ -199,6 +206,7 @@ bloky s vlastními postupy nastavení a hranicemi podpory.
 - [MQTT Observability](https://github.com/4alvit/mqtt-observability-opentelemetry) sleduje metriky MQTT a Mosquitto přes OpenTelemetry,
   Prometheus a Grafanu; nejde o proxy zpráv.
 - [HA Homelab Terraform](https://github.com/4alvit/terraform-github-ha-homelab) spravuje nastavení GitHubu a repozitáře této organizace.
+- [Venus OS CI Toolkit](https://github.com/victron-venus/venus-os-ci-toolkit) — sdílené workflow GitHub Actions a nástroje CI pro validaci, vydávání a bezpečnostní kontroly; uživatelské projekty připínají zkontrolovaný commit.
 
 ## Jak pracujeme
 
