@@ -10,6 +10,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 תרגום התיעוד אינו מרחיב את תמיכת השפות של ה-CLI או של הדיבור; בדקו אילו שפות נתמכות בכל פרויקט.
 
 ארבעה כלים קטנים עוזרים לפרויקט קהילתי של Home Assistant לענות על ארבע שאלות שונות: **לאן צריך לעבור תפקידו של התקן, מה המדידה מכסה, מה מנוע האוטומציה עושה בפועל, ואילו ראיות תומכות בתוצאה קולית?** הגרסאות הראשונות פועלות על קבצים מקומיים ונתוני בדיקה סינתטיים. הן אינן פורסות תצורה ביתית ואינן מסמיכות התקנים פיזיים.

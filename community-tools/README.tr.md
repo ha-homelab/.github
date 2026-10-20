@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 Bu belge çevirileri CLI veya konuşma dili desteğini genişletmez; her projenin desteklediği dilleri kontrol edin.
 
 Dört küçük araç, bir Home Assistant topluluk projesinin dört ayrı soruyu yanıtlamasına yardımcı olur: **bir cihazın rolü neye dönüşmeli, bir ölçüm neyi kapsar, otomasyon motoru gerçekte ne yapar ve sesli bir sonucu hangi kanıt destekler?** İlk sürümler yerel dosyalar ve sentetik test verileriyle çalışır. Ev yapılandırmasını dağıtmaz veya fiziksel cihazları sertifikalandırmazlar.

@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 Te tłumaczenia dokumentacji nie rozszerzają obsługi języków CLI ani funkcji głosowych; sprawdź języki obsługiwane przez każdy projekt.
 
 Cztery małe narzędzia pomagają projektowi społeczności Home Assistant odpowiedzieć na cztery różne pytania: **czym ma stać się rola urządzenia, co obejmuje pomiar, co faktycznie robi silnik automatyzacji i jakie dowody wspierają wynik głosowy?** Pierwsze wydania pracują na plikach lokalnych i syntetycznych danych testowych. Nie wdrażają konfiguracji domowych i nie certyfikują fizycznych urządzeń.

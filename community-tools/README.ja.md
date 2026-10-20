@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 この文書の翻訳によって CLI や音声の対応言語が増えるわけではありません。各プロジェクトの対応言語を確認してください。
 
 四つの小さなツールが、Home Assistant のコミュニティプロジェクトで異なる四つの問いに答えます。**機器の役割をどう移すか、計測は何を含むか、自動化エンジンは実際に何をするか、音声の結果を裏付ける証拠は何か。** 初期リリースはローカルファイルと合成テストデータを使います。家庭の設定を導入したり、実機を認証したりするものではありません。

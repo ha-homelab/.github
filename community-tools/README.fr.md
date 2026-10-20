@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 Quatre petits outils aident un projet communautaire Home Assistant à répondre à quatre questions différentes : **que doit devenir le rôle d'un appareil, que couvre une mesure, que fait réellement le moteur d'automatisation et quelles preuves étayent un résultat vocal ?** Leurs premières versions utilisent des fichiers locaux et des jeux de données synthétiques. Elles ne déploient aucune configuration domestique et ne certifient aucun appareil physique.
 
 ![Quatre étapes de revue et une limite distincte pour la réception physique](architecture.fr.svg)

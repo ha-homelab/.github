@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 Vier kleine Werkzeuge helfen einem Home-Assistant-Community-Projekt, vier unterschiedliche Fragen zu beantworten: **Welche Rolle soll ein Gerät übernehmen, was umfasst eine Messung, was führt die Automationsengine tatsächlich aus, und welche Nachweise stützen ein Sprachergebnis?** Ihre ersten Releases arbeiten mit lokalen Dateien und synthetischen Testdaten. Sie spielen keine Haushaltskonfiguration ein und zertifizieren keine physischen Geräte.
 
 ![Vier Prüfschritte und die Grenze zur separaten physischen Abnahme](architecture.de.svg)

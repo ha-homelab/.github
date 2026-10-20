@@ -8,6 +8,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 Terjemahan dokumentasi ini tidak menambah dukungan bahasa CLI atau ucapan; periksa bahasa yang didukung setiap proyek.
 
 Empat alat kecil membantu proyek komunitas Home Assistant menjawab empat pertanyaan berbeda: **peran perangkat harus menjadi apa, apa cakupan pengukuran, apa yang sebenarnya dilakukan mesin otomasi, dan bukti apa yang mendukung hasil suara?** Rilis pertamanya bekerja dengan berkas lokal dan data uji sintetis. Alat ini tidak menerapkan konfigurasi rumah atau mensertifikasi perangkat fisik.

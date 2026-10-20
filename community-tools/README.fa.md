@@ -10,6 +10,15 @@
 </p>
 <!-- language-navigation:end -->
 
+<!-- community-beta-releases:start -->
+<p dir="ltr">
+<a href="https://github.com/ha-homelab/ha-entity-migrations/releases/tag/v0.1.1b1">Entity Migrations · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-meter-contracts/releases/tag/v0.1.1b1">Meter Contracts · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/ha-scenario-tests/releases/tag/v0.1.1b1">Scenario Tests · 0.1.1b1</a> ·
+<a href="https://github.com/ha-homelab/assist-scenario-lab/releases/tag/v0.1.1b1">Assist Scenario Lab · 0.1.1b1</a>
+</p>
+<!-- community-beta-releases:end -->
+
 این ترجمه‌های مستندات پشتیبانی CLI یا زبان گفتار را گسترش نمی‌دهند. زبان های پشتیبانی شده هر پروژه را بررسی کنید.
 
 چهار ابزار کوچک به پروژه جامعه Home Assistant کمک می‌کنند تا به چهار سؤال مختلف پاسخ دهد: **نقش دستگاه باید چه شود، اندازه‌گیری چه چیزی را پوشش می‌دهد، موتور اتوماسیون واقعاً چه کار می‌کند، و چه شواهدی از یک نتیجه صوتی پشتیبانی می‌کند؟** اولین نسخه‌های آنها با فایل‌های محلی و داده‌های آزمون مصنوعی کار می‌کنند. این ابزارها پیکربندی خانه را مستقر نمی‌کنند و به دستگاه‌های فیزیکی گواهی تأیید نمی‌دهند.
