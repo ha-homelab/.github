@@ -26,7 +26,7 @@
     "details": [
       [
         "EchoLocal · EchoMuse · Android",
-        "Echo Dot / Show · захват LG"
+        "Asterisk · OTTPlay · LG webOS"
       ],
       [
         "DESLOC · RF · Zigbee · Z-Wave",
@@ -51,6 +51,6 @@
     "axis": "Количество публичных проектов",
     "yaxis": "Направление проектов",
     "source": "Источник: GitHub API публичных репозиториев · {date} (America/Los_Angeles)",
-    "note": "Каждый проект учтён один раз. Без профиля .github (всего {total} публичных репозитория)."
+    "note": "Каждый проект учтён один раз. Без профиля .github (публичных репозиториев всего: {total})."
   }
 }

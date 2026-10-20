@@ -22,7 +22,7 @@
 
 - [HA Meter Contracts](https://github.com/ha-homelab/ha-meter-contracts) は物理的な計測範囲、出所、単位、サンプルの鮮度、加算規則を検査します。電源タップ全体のメーターは、名前を変更しても個別のポンプ用メーターにはなりません。一つの変流器の重複表現を、別々の負荷として加算することもできません。
 
-- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) は、範囲を制限した合成シナリオを本物の Home Assistant 自動化・スクリプトエンジンで実行します。呼び出し順序、禁止された呼び出し、最終的な合成状態を検査します。初期ランタイムは HA 2026.10.0 と Python 3.14.2–3.14.x に固定されています。他のツールとは別の環境を使ってください。
+- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) は、範囲を制限した合成シナリオを本物の Home Assistant 自動化・スクリプトエンジンで実行します。呼び出し順序、禁止された呼び出し、最終的な合成状態を検査します。現在のランタイムは HA 2026.10.1 と Python 3.14.2–3.14.x に固定されています。他のツールとは別の環境を使ってください。
 
 - [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab) はローカルの音声証拠を評価します。コマンドの正しさ、API の完了、聞こえる出力を区別します。同梱の時間値はすべて合成値であり、提供された観測は独立に検証されていません。
 
@@ -45,7 +45,9 @@
 - **Assist Scenario Lab：** [Linux CI で24テストが成功](https://github.com/ha-homelab/assist-scenario-lab/actions/runs/38843304306)。提供された証拠と合成例を検証したもので、実際の音声機器の比較を主張するものではありません。
 - **Scenario Tests：** CPython 3.14.8 と本物の Home Assistant 2026.10.0 を使い、[Linux CI でスキップなしの54テストが成功](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/38843681199)しました。七つのランタイムケースのうち一つは役割移行の補助シナリオをテストします。スイート全体は21.42秒で完了しました。
 
-テスト済みの実行環境は Linux です。[文書化されたネイティブ macOS の終了処理失敗](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md)は未解消の制限です。期待どおりの JSON が出ても、その後プロセスが異常終了すれば失敗です。Docker での実行や実機受け入れ完了は主張していません。
+テスト済みの実行環境は Linux です。[文書化されたネイティブ macOS の終了処理失敗](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md)は未解消の制限です。期待どおりの JSON が出ても、その後プロセスが異常終了すれば失敗です。10月16日の記録は、Docker での実行や実機受け入れ完了を主張していません。
+
+2026年10月19日の更新：[Linux CI](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/39264346721) では、パッケージ化した実行環境の Docker による基本動作テストも成功しました。これは実機の受け入れ完了を証明するものではありません。
 
 ## 処理と図解結果
 

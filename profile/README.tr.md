@@ -31,9 +31,10 @@ birbirleriyle otomatik olarak entegre olduğu anlamına gelmez.
 
 ## Yenilikler — Ekim 2026
 
-- **Tarayıcıda bir ev çizin ve keşfedin.** [Home Studio](https://github.com/ha-homelab/home-studio), 2D/3D planlayıcıyı,
-  195 eşya tasarımını, 24 düzenleyici dilini ve Home Assistant'a kurulabilir
-  bir görüntüleyici için yerel derleyiciyi bir araya getirir.
+- **Tarayıcıda bir ev çizin ve keşfedin.** [Home Studio](https://github.com/ha-homelab/home-studio) 2D/3D planlayıcıyı, 206 mobilya ve bahçe tasarımını ve 24 düzenleyici dilini bir araya getirir.
+  `home_floorplan.zip` içeren sürümler, çizim yapmak, HA alanlarını bağlamak, taslak kaydetmek
+  ve 3D görünümü yayımlamak için [Home Assistant içinde bir düzenleyici](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) de sunar.
+  Ayrı tarayıcı düzenleyicisi ile taşınabilir derleyici ve yükleyici kullanılmaya devam edebilir.
   [Dry run modu](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md), cihaz komutlarını engellerken kurulu planı keşfetmenizi sağlar.
   [İlk oturum kılavuzu](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md), örneklerle başlamayı, taslakları kurtarmayı ve 3D kullanılamadığında çalışmayı korumayı açıklar.
 - **Mevcut donanımı yeniden kullanmanın başka yolları.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse), Echo Dot 2
@@ -50,7 +51,7 @@ birbirleriyle otomatik olarak entegre olduğu anlamına gelmez.
   dört [topluluk aracını](https://github.com/ha-homelab/.github/blob/main/community-tools/README.tr.md) tamamlar. [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) artık tek bir uyarlanabilir
   eylem düğmesi kullanırken kilit açma için açık onay istemeye devam eder.
 
-Bu, **16 Ekim 2026** tarihli editoryal bir durum görüntüsüdür. Güncel uyumluluk
+Bu, **19 Ekim 2026** tarihli editoryal bir durum görüntüsüdür. Güncel uyumluluk
 ve durum için her projenin README dosyasını ve sürümlerini inceleyin.
 
 ## Projeleri keşfedin
@@ -64,13 +65,17 @@ ve durum için her projenin README dosyasını ve sürümlerini inceleyin.
 
 ### Ses ve medya
 
+- **[asterisk-telephony](https://github.com/ha-homelab/asterisk-telephony)** — üst kaynak Asterisk entegrasyonu için doğrulanmış yükleyici, SIP telefon panoları ve Cisco telefon kontrolleri; ayrı Assist ses yolu ve belgelenmiş kabul sonuçları sunar.
+- **[ha-ottplay](https://github.com/ha-homelab/ha-ottplay)** — kayıtlı oynatıcılar için mevcut bir OTTPlay Control Server üzerinden Home Assistant medya oynatıcı ve uzaktan kumanda varlıkları; kullanılabilir kontroller oynatıcıya bağlıdır.
 - **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — EchoMuse/emOS, Assist, müzik, yerel ev araçları ve ayrı
   kaydedilen BLE vekiliyle Echo Dot 2. Belgelenen konuşma tanıma yolu bir bulut
   sağlayıcısı kullanır; tamamen çevrimdışı değildir.
+  Rusça uyandırma sözcüğü ve Silero Baya kullanan pilot, özel model ağırlıklarını dağıtmaz.
 - **[ha-echo-dot](https://github.com/ha-homelab/ha-echo-dot)** — Echo Dot 2 için EchoLocal dönüşüm yolu; uyandırma sözcüğü
   eğitimi ve tam çalışma ortamında değerlendirme araçları içerir.
 - **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — Echo Show 5 Gen2'nin Android'e dönüştürülmesi,
   doğrulanmış yedekler ve Home Assistant Companion kurulumu.
+  Tek uyandırma ifadesi kullanan isteğe bağlı ONNX denemesi yazılım kontrollerinden geçmiştir; uçtan uca akustik kabul henüz tamamlanmamıştır.
 - **[ha-lg-tv-capture](https://github.com/ha-homelab/ha-lg-tv-capture)** — yeniden kullanılabilir LG webOS ekran yakalama
   araçları ve Home Assistant entegrasyonu.
 
@@ -79,7 +84,7 @@ projenin model ve kurtarma gereksinimlerini okuyun.
 
 ### Cihaz entegrasyonları, köprüler ve kurtarma
 
-- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz ve algılama için modüler PoE prototipi; CAD, aygıt yazılımı ve dağıtım araçlarını içerir; fiziksel doğrulama henüz yapılmadı.
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — Zigbee, Thread ve Bluetooth için üç bağımsız harici anten, yerel Thread Border Router, Z-Wave, 433 MHz RF ve algılama sunan güncel MC2-C + FH1 modüler PoE prototipi. CAD, aygıt yazılımı ve dağıtım araçları sağlanır; fiziksel doğrulama beklemektedir.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — kilit durumu, kontroller, pil ve Wi-Fi için resmî olmayan
   DESLOC bulut entegrasyonu; [model uyumluluğu değişir](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — görsel düzenleyici, uyarlanabilir eylem ve onaylı
@@ -98,8 +103,8 @@ projenin model ve kurtarma gereksinimlerini okuyun.
 
 ### Mekân, algılama ve erişim
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — odalar çizin, döşeyin, 3D keşfedin, projeyi dışa aktarın
-  ve yerel olarak Home Assistant görüntüleyicisi derleyin.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — ayrı tarayıcı düzenleyicisinde veya Home Assistant içinde odaları çizin ve döşeyin; JSON dışa aktarın veya HA görünümünü yayımlayın.
+- **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — deneysel CSI toplama, alıcı aygıt yazılımı, etkinlik hipotezleri ve çıkarım kanıtı araçları; ruview-home-assistant üzerinden yayımlar ve gerçek dünyadaki algılama doğruluğunu kanıtlamaz.
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — açık güncellik ve saat kontrolleriyle gözlemleri
   kaydedin, etiketleyin ve karşılaştırın.
 - **[ruview-home-assistant](https://github.com/ha-homelab/ruview-home-assistant)** — MQTT discovery üzerinden RuView gözlemleri,
@@ -109,6 +114,7 @@ projenin model ve kurtarma gereksinimlerini okuyun.
 - **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — haricî panolar için doğrulanmış Cloudflare Access
   oturumları ve kısıtlı bir ağ geçidi üzerinden kısa ömürlü belirteçler.
   Açıkça yapılandırılan tek bir tam yetkili Home Assistant yöneticisini eşler.
+  Kimlik doğrulamalı isteğe bağlı medya oynatıcı kapak görseli erişimi varsayılan olarak kapalıdır.
 
 Algılama örnekleri gözlemleri ve sınırlarını açıklar. Sentetik yeniden oynatma
 ve kamera yönü, gerçek dünyadaki varlık algılama doğruluğunu kanıtlamaz.
@@ -124,7 +130,7 @@ ve kamera yönü, gerçek dünyadaki varlık algılama doğruluğunu kanıtlamaz
 - **[assist-scenario-lab](https://github.com/ha-homelab/assist-scenario-lab)** — protokolün tamamlanmasını, gözlenen eylemi ve
   duyulabilir yanıtı birbirinden ayıran çevrimdışı sesli kanıtlar.
 
-[Resimli iş akışını ve sonuçları](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.tr.md) veya [Rusça sürümünü](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ru.md) inceleyin.
+[Resimli iş akışını ve sonuçları](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.tr.md) inceleyin. Kılavuzun dil seçicisinde 24 dilin tamamı sunulur.
 Yazılım kanıtı ve fiziksel kabul ayrı adımlar olarak kalır.
 
 <details>
@@ -159,9 +165,9 @@ Diğer proje görünümleri için [EchoMuse ses/müzik/BLE mimarisini](https://g
 
 ## Herkese açık proje özeti
 
-![Çubuk grafik: cihazlar ve köprüler 8; mekân, algılama ve erişim 5; ses ve medya 4; testler ve sözleşmeler 4; yapılandırma ve güvenilirlik 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.tr.svg)
+![Çubuk grafik: cihazlar ve köprüler 8; mekân, algılama ve erişim 6; ses ve medya 6; testler ve sözleşmeler 4; yapılandırma ve güvenilirlik 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.tr.svg)
 
-**23 proje + bu profil deposu = 24 herkese açık depo**, 16 Ekim 2026 tarihinde
+**26 proje + bu profil deposu = 27 herkese açık depo**, 19 Ekim 2026 tarihinde
 kontrol edilmiştir. Her projenin bir editoryal kategorisi vardır; sayılar olgunluğu,
 kullanımı veya performansı ölçmez. [Yeniden üretilebilir kaynak verileri](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).
 Gerçek yazılım denetimi sonuçları için ayrı
@@ -190,6 +196,7 @@ olan isteğe bağlı yapı taşlarıdır.
   bir HLS vekili üzerinden Alexa ekranlarına veya Google Cast'e yönlendirir.
 - [OTT-play Control Server](https://github.com/open-ott-play/ottplay-control-server) oynatıcı komutları, terminal kontrolü ve
   k3s dağıtımı sunar. EPG ağ geçidi OttPlay'e bağımlı değildir.
+- [Cisco Home Telephony](https://github.com/4alvit/cisco-home-telephony) — Cisco 7945G SIP hazırlığı, k3s üzerinde Asterisk, telefon CLI'si ve isteğe bağlı Home Assistant ses/kontrol iş akışları.
 
 **Yeniden kullanılabilir altyapı**
 
@@ -200,6 +207,7 @@ olan isteğe bağlı yapı taşlarıdır.
 - [MQTT Observability](https://github.com/4alvit/mqtt-observability-opentelemetry), MQTT ve Mosquitto metriklerini OpenTelemetry,
   Prometheus ve Grafana üzerinden gözlemler; bir mesaj vekili değildir.
 - [HA Homelab Terraform](https://github.com/4alvit/terraform-github-ha-homelab) bu kuruluşun GitHub ayarlarını ve depolarını yönetir.
+- [Venus OS CI Toolkit](https://github.com/victron-venus/venus-os-ci-toolkit) — doğrulama, sürüm yayımlama ve güvenlik kontrolleri için paylaşılan GitHub Actions iş akışları ve CI araçları; kullanan projeler incelenmiş bir commit'i sabitler.
 
 ## Çalışma biçimimiz
 

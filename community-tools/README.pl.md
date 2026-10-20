@@ -20,7 +20,7 @@ Cztery małe narzędzia pomagają projektowi społeczności Home Assistant odpow
 
 - [HA Entity Migrations](https://github.com/ha-homelab/ha-entity-migrations) tworzy plan migracji offline. Jawne zasady ról i sprzętu, możliwości i odciski plików zapobiegają cichej zmianie przypisania automatyzacji światła do gniazdka o zmienionym przeznaczeniu podczas zwykłego przemianowania. Gotowy plan dotyczy tylko dostarczonego, obsługiwanego zakresu konfiguracji.
 - [HA Meter Contracts](https://github.com/ha-homelab/ha-meter-contracts) sprawdza fizyczny zakres pomiaru, pochodzenie źródeł, jednostki, aktualność próbek i zasady sumowania. Zmiana nazwy miernika listwy nie czyni go indywidualnym miernikiem pompy. Duplikatów jednego przekładnika prądowego nie wolno dodawać jako osobnych obciążeń.
-- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) wykonuje ograniczony scenariusz syntetyczny w rzeczywistym silniku automatyzacji i skryptów Home Assistant. Sprawdza kolejność wywołań, zabronione wywołania i końcowe stany syntetyczne. Pierwsze środowisko jest przypięte do HA 2026.10.0 i Python 3.14.2–3.14.x; użyj środowiska oddzielnego od pozostałych narzędzi.
+- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) wykonuje ograniczony scenariusz syntetyczny w rzeczywistym silniku automatyzacji i skryptów Home Assistant. Sprawdza kolejność wywołań, zabronione wywołania i końcowe stany syntetyczne. Obecne środowisko jest przypięte do HA 2026.10.1 i Python 3.14.2–3.14.x; użyj środowiska oddzielnego od pozostałych narzędzi.
 - [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab) ocenia lokalne dowody głosowe. Rozdziela poprawność polecenia, zakończenie API i słyszalne wyjście. Wszystkie dołączone czasy są syntetyczne, a dostarczone obserwacje nie są niezależnie weryfikowane.
 
 Projekty mają własne instrukcje instalacji, dokumentację angielską/rosyjską oraz komunikaty CLI po angielsku, rosyjsku, niemiecku i hiszpańsku. Kieruj się wersjonowanymi kontraktami, nie zakładając jednakowego znaczenia wszystkich kodów wyjścia. Strzałki oznaczają **przekazania do przeglądu**, nie gotowe automatyczne integracje. Nie ma centralnego demona ani uniwersalnego polecenia wdrażania.
@@ -42,7 +42,9 @@ Słupki pokazują liczby, a nie pokrycie czy ranking jakości. Datowane dane źr
 - **Assist Scenario Lab:** [24 testy przeszły w CI Linux](https://github.com/ha-homelab/assist-scenario-lab/actions/runs/38843304306). Walidują dostarczone dowody i przykłady syntetyczne; nie deklaruje się fizycznego porównania głosu.
 - **Scenario Tests:** [54 testy przeszły bez pominięć w CI Linux](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/38843681199) na CPython 3.14.8 z rzeczywistym Home Assistant 2026.10.0, w tym siedem przypadków wykonawczych, z których jeden sprawdza scenariusz transferu roli. Cała suita zakończyła się w 21.42 sekundy.
 
-Linux jest sprawdzonym środowiskiem uruchomieniowym. [Udokumentowany błąd natywnego zamykania w macOS](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) pozostaje ograniczeniem; oczekiwany JSON przed awarią procesu nadal oznacza nieudane uruchomienie. Nie deklaruje się wykonania w Dockerze ani fizycznego odbioru urządzeń.
+Linux jest sprawdzonym środowiskiem uruchomieniowym. [Udokumentowany błąd natywnego zamykania w macOS](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) pozostaje ograniczeniem; oczekiwany JSON przed awarią procesu nadal oznacza nieudane uruchomienie. Zapis z 16 października nie deklaruje wykonania w Dockerze ani fizycznego odbioru urządzeń.
+
+Aktualizacja z 19 października 2026: [CI w systemie Linux](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/39264346721) pomyślnie wykonało również podstawowy test uruchomienia spakowanego środowiska w Dockerze. Nie potwierdza to fizycznego odbioru urządzeń.
 
 ## Proces i ilustrowane wyniki
 

@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1120" height="625" viewBox="0 0 1120 625" role="img" aria-labelledby="title desc" lang="bn">
-<title id="title">23টি প্রকাশ্য প্রকল্প, পাঁচ ক্ষেত্র</title><desc id="desc">প্রতি প্রকল্প এক শ্রেণিতে। প্রোফাইল .github বাদ (মোট 24টি প্রকাশ্য রিপোজিটরি)।</desc>
+<title id="title">26টি প্রকাশ্য প্রকল্প, পাঁচ ক্ষেত্র</title><desc id="desc">প্রতি প্রকল্প এক শ্রেণিতে। প্রোফাইল .github বাদ (মোট 27টি প্রকাশ্য রিপোজিটরি)।</desc>
 <rect width="1120" height="625" rx="20" fill="#102634"/>
 <g font-family="Arial, Helvetica, sans-serif">
-<text x="40" y="58" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start">23টি প্রকাশ্য প্রকল্প, পাঁচ ক্ষেত্র</text>
+<text x="40" y="58" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start">26টি প্রকাশ্য প্রকল্প, পাঁচ ক্ষেত্র</text>
 <text x="40" y="91" font-size="18" fill="#c1d1dd" font-weight="400" text-anchor="start">তারিখসহ তালিকা; গুণমান বা কার্যক্ষমতার ক্রম নয়</text>
 <text x="40" y="139" font-size="14" fill="#94aebb" font-weight="400" text-anchor="start">প্রকল্পের ক্ষেত্র</text>
 <line x1="420" y1="160" x2="420" y2="477" stroke="#294653"/>
@@ -27,11 +27,11 @@
 <rect x="420" y="177" width="640" height="36" rx="5" fill="#38d5cc"/>
 <text x="1074" y="202" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">8</text>
 <text x="40" y="263" font-size="17" fill="#edf5f8" font-weight="400" text-anchor="start">স্থান, পর্যবেক্ষণ, প্রবেশাধিকার</text>
-<rect x="420" y="239" width="400" height="36" rx="5" fill="#38d5cc"/>
-<text x="834" y="264" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">5</text>
+<rect x="420" y="239" width="480" height="36" rx="5" fill="#38d5cc"/>
+<text x="914" y="264" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">6</text>
 <text x="40" y="325" font-size="17" fill="#edf5f8" font-weight="400" text-anchor="start">ভয়েস ও মিডিয়া</text>
-<rect x="420" y="301" width="320" height="36" rx="5" fill="#38d5cc"/>
-<text x="754" y="326" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">4</text>
+<rect x="420" y="301" width="480" height="36" rx="5" fill="#38d5cc"/>
+<text x="914" y="326" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">6</text>
 <text x="40" y="387" font-size="17" fill="#edf5f8" font-weight="400" text-anchor="start">পরীক্ষা ও চুক্তি</text>
 <rect x="420" y="363" width="320" height="36" rx="5" fill="#38d5cc"/>
 <text x="754" y="388" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">4</text>
@@ -39,6 +39,6 @@
 <rect x="420" y="425" width="160" height="36" rx="5" fill="#38d5cc"/>
 <text x="594" y="450" font-size="21" fill="#ffffff" font-weight="700" text-anchor="start">2</text>
 <text x="740" y="537" font-size="17" fill="#c1d1dd" font-weight="400" text-anchor="middle">প্রকাশ্য প্রকল্পের সংখ্যা</text>
-<text x="40" y="577" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">উৎস: GitHub প্রকাশ্য রিপোজিটরি API · 16 অক্টোবর 2026 (America/Los_Angeles)</text>
-<text x="40" y="602" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">প্রতি প্রকল্প এক শ্রেণিতে। প্রোফাইল .github বাদ (মোট 24টি প্রকাশ্য রিপোজিটরি)।</text>
+<text x="40" y="577" font-size="14" fill="#c1d1dd" font-weight="400" text-anchor="start">উৎস: GitHub প্রকাশ্য রিপোজিটরি API · 19 অক্টোবর 2026 (America/Los_Angeles)</text>
+<text x="40" y="602" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">প্রতি প্রকল্প এক শ্রেণিতে। প্রোফাইল .github বাদ (মোট 27টি প্রকাশ্য রিপোজিটরি)।</text>
 </g></svg>

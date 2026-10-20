@@ -28,7 +28,7 @@
 
 ## ما هو الجديد — أكتوبر 2026
 
-- **ارسم واستكشف منزلًا في المتصفح.** يجمع [Home Studio](https://github.com/ha-homelab/home-studio) بين مخطط 2D/3D و195 تصميما للعناصر و24 لغة للمحرر، مع أداة بناء محلية لعارض قابل للتثبيت في Home Assistant. يتيح لك [وضع التجربة دون تنفيذ](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) استكشاف المخطط المثبت أثناء حظر أوامر الجهاز. يشرح [دليل الجلسة الأولى](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) كيفية البدء بالأمثلة، واستعادة المسودات، والحفاظ على العمل عندما لا يتوفر العرض بصيغة 3D.
+- **ارسم واستكشف منزلا في المتصفح.** يجمع [Home Studio](https://github.com/ha-homelab/home-studio) بين مخطط 2D/3D و206 تصاميم للأثاث والحدائق و24 لغة للمحرر. تتيح الإصدارات التي تتضمن `home_floorplan.zip` أيضا [محررا داخل Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md) للرسم وربط مناطق HA وحفظ المسودات ونشر العرض ثلاثي الأبعاد. يظل محرر المتصفح المستقل وأداتا البناء والتثبيت المحمولتان متاحين. يتيح لك [وضع التجربة دون تنفيذ](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) استكشاف المخطط المثبت أثناء حظر أوامر الجهاز. يشرح [دليل الجلسة الأولى](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) كيفية البدء بالأمثلة، واستعادة المسودات، والحفاظ على العمل عندما لا يتوفر العرض بصيغة 3D.
 
 - **المزيد من الطرق لإعادة استخدام الأجهزة الموجودة.** يضيف [EchoMuse](https://github.com/ha-homelab/ha-echomuse) مسار Echo Dot 2 الصوتي والموسيقى ومسار BLE الموثق؛ [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) يوثق جسر Z-Wave؛ تغطي مشاريع RF وZigbee وTuya عائلات الأجهزة الأخرى أدناه. إن جاهزية الأجهزة خاصة بالمشروع: لا تزال عملية الإعداد والتحقق الميداني لـ ZAC93 معلقة.
 
@@ -36,7 +36,7 @@
 
 - **الأدلة قبل الأتمتة.** تصاحب مشاريع الاستشعار الجديدة وتحديد اتجاه الكاميرا حسب الغرفة والوصول أربعة [أدوات المجتمع](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ar.md) لعمليات ترحيل الكيانات ومصدر بيانات العدادات وسيناريوهات الأتمتة والنتائج الصوتية. يستخدم [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) الآن زر إجراء تكيفي واحد مع الاحتفاظ بتأكيد فتح القفل الصريح.
 
-هذه لقطة تحريرية **16 أكتوبر 2026**. راجع الملف التمهيدي والإصدارات الخاصة بكل مشروع لمعرفة التوافق والحالة الحالية.
+هذه لقطة تحريرية **19 أكتوبر 2026**. راجع الملف التمهيدي والإصدارات الخاصة بكل مشروع لمعرفة التوافق والحالة الحالية.
 
 ## استكشاف المشاريع
 
@@ -48,11 +48,13 @@
 
 ### الصوت والوسائط
 
-- **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — Echo Dot 2 مع EchoMuse/emOS وAssist والموسيقى والأدوات المنزلية المحلية ووكيل BLE المسجل بشكل منفصل. يستخدم مسار التعرف على الكلام الموثق مزوّدا سحابيا؛ لذلك لا يعمل بالكامل دون اتصال بالإنترنت.
+- **[asterisk-telephony](https://github.com/ha-homelab/asterisk-telephony)** — أداة تثبيت متحقق منها لتكامل Asterisk من المشروع الأصلي، ولوحات للهواتف العاملة ببروتوكول SIP، وعناصر تحكم بهواتف Cisco، مع مسار صوت Assist مستقل ونتائج قبول موثقة.
+- **[ha-ottplay](https://github.com/ha-homelab/ha-ottplay)** — كيانات مشغل وسائط وتحكم عن بعد في Home Assistant للمشغلات المسجلة عبر OTTPlay Control Server قائم؛ تعتمد عناصر التحكم المتاحة على المشغل.
+- **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — Echo Dot 2 مع EchoMuse/emOS وAssist والموسيقى والأدوات المنزلية المحلية ووكيل BLE المسجل بشكل منفصل. يستخدم مسار التعرف على الكلام الموثق مزوّدا سحابيا؛ لذلك لا يعمل بالكامل دون اتصال بالإنترنت. لا يوزع المشروع التجريبي لكلمة التنبيه الروسية وSilero Baya أوزان النماذج الخاصة.
 
 - **[ha-echo-dot](https://github.com/ha-homelab/ha-echo-dot)** — مسار التحويل EchoLocal لـ Echo Dot 2، مع تدريب كلمة التنبيه وأدوات التقييم في بيئة التشغيل نفسها.
 
-- **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — تحويل Echo Show 5 Gen2 إلى Android، والنسخ الاحتياطي الذي تم التحقق منه، وإعداد Home Assistant Companion.
+- **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — تحويل Echo Show 5 Gen2 إلى Android، والنسخ الاحتياطي الذي تم التحقق منه، وإعداد Home Assistant Companion. يتوفر اختبار اختياري لكلمة تنبيه ONNX بعبارة واحدة مع فحوص برمجية؛ لا يزال القبول الصوتي من البداية إلى النهاية معلقا.
 
 - **[ha-lg-tv-capture](https://github.com/ha-homelab/ha-lg-tv-capture)** — أدوات التقاط الشاشة LG webOS القابلة لإعادة الاستخدام وتكامل Home Assistant.
 
@@ -60,7 +62,7 @@ EchoLocal وEchoMuse هما مساران تحويل متميزان. اقرأ م�
 
 ### تكامل الأجهزة والجسور والاسترداد
 
-- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — نموذج أولي معياري بتغذية PoE مخصص لـ Zigbee وThread وBluetooth وZ-Wave و433 MHz والاستشعار؛ يشمل ملفات CAD والبرامج الثابتة وأدوات النشر. لا يزال التحقق الميداني معلقا.
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — النموذج الأولي المعياري الحالي MC2-C + FH1 بتغذية PoE وثلاثة هوائيات خارجية مستقلة لـ Zigbee وThread وBluetooth، مع Thread Border Router محلي وZ-Wave وRF بتردد 433 MHz والاستشعار؛ تتوفر ملفات CAD والبرامج الثابتة وأدوات النشر. لا يزال التحقق الميداني معلقا.
 
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — التكامل السحابي غير الرسمي لـ DESLOC لحالة القفل وعناصر التحكم والبطارية وWi-Fi؛ [يختلف التوافق حسب الطراز](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 
@@ -78,7 +80,8 @@ EchoLocal وEchoMuse هما مساران تحويل متميزان. اقرأ م�
 
 ### أدوات التخطيط المكاني والاستشعار والوصول
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — رسم الغرف وتأثيثها والاستكشاف بصيغة 3D وتصدير مشروعك وتجميع عارض Home Assistant محليًا.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — ارسم الغرف وأثثها في محرر المتصفح المستقل أو داخل Home Assistant؛ صدّر JSON أو انشر عرض HA.
+- **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — جمع تجريبي لبيانات CSI، وبرامج ثابتة للمستقبل، وفرضيات عن النشاط وأدوات لأدلة الاستدلال؛ ينشر عبر ruview-home-assistant ولا يثبت دقة الكشف في العالم الحقيقي.
 
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — قم بتسجيل الملاحظات وتسميتها ومقارنتها مع عمليات التحقق الصريحة من حداثة البيانات والساعة.
 
@@ -86,7 +89,7 @@ EchoLocal وEchoMuse هما مساران تحويل متميزان. اقرأ م�
 
 - **[ha-onvif-room-direction](https://github.com/ha-homelab/ha-onvif-room-direction)** — تقديرات المنطقة من اتجاه الكاميرا للقراءة فقط، والقطاعات التي تم تكوينها، وفحوصات حداثة البيانات.
 
-- **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — تم التحقق من جلسات Cloudflare Access للوحات المعلومات الخارجية والرموز قصيرة الأجل من خلال بوابة مقيدة. يربط الجلسات بمسؤول واحد في Home Assistant، محدد صراحة وله جميع الصلاحيات.
+- **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — تم التحقق من جلسات Cloudflare Access للوحات المعلومات الخارجية والرموز قصيرة الأجل من خلال بوابة مقيدة. يربط الجلسات بمسؤول واحد في Home Assistant، محدد صراحة وله جميع الصلاحيات. عرض صور مشغلات الوسائط مع المصادقة اختياري ومعطل افتراضيا.
 
 تصف أمثلة الاستشعار الملاحظات وحدودها. إعادة عرض البيانات الاصطناعية واتجاه الكاميرا لا يثبتان دقة اكتشاف الإشغال في الواقع.
 
@@ -100,7 +103,7 @@ EchoLocal وEchoMuse هما مساران تحويل متميزان. اقرأ م�
 
 - **[assist-scenario-lab](https://github.com/ha-homelab/assist-scenario-lab)** — تقييم دون اتصال لأدلة صوتية تميّز بين إكمال البروتوكول والإجراء الملحوظ والاستجابة المسموعة.
 
-اتبع [سير العمل والنتائج المصورة](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ar.md) أو [الطبعة الروسية](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ru.md) الخاص بها. تظل الأدلة البرمجية واختبارات القبول الميدانية خطوتين منفصلتين.
+اتبع [سير العمل والنتائج المصورة](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ar.md). يتيح محدد اللغة في الدليل اللغات الأربع والعشرين. تظل الأدلة البرمجية واختبارات القبول الميدانية خطوتين منفصلتين.
 
 <details> <summary>مراجعة سير العمل وفحوصات البرامج المسجلة</summary>
 
@@ -122,9 +125,9 @@ EchoLocal وEchoMuse هما مساران تحويل متميزان. اقرأ م�
 
 ## لقطة للمشاريع العامة
 
-![مخطط شريطي أفقي: الأجهزة والجسور 8؛ أدوات التخطيط المكاني والاستشعار والوصول 5؛ الصوت والوسائط 4؛ الاختبارات والعقود 4؛ التكوين والموثوقية 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.ar.svg)
+![مخطط شريطي أفقي: الأجهزة والجسور 8؛ أدوات التخطيط المكاني والاستشعار والوصول 6؛ الصوت والوسائط 6؛ الاختبارات والعقود 4؛ التكوين والموثوقية 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.ar.svg)
 
-**23 مشروعا + مستودع هذا الملف التعريفي = 24 مستودعا عاما**، تم التحقق منها في 16 أكتوبر 2026. يحتوي كل مشروع على فئة تحريرية واحدة؛ لا تقيس الأعداد النضج أو الاستخدام أو الأداء. [بيانات المصدر القابلة للتكرار](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). للحصول على نتائج فحص البرامج الفعلية، راجع ملف [مخطط اختبار أداة المجتمع المؤرخ وعمليات تشغيل CI المرتبطة](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ar.md#validation-evidence--2026-10-16-utc) المنفصل.
+**26 مشروعا + مستودع هذا الملف التعريفي = 27 مستودعا عاما**، تم التحقق منها في 19 أكتوبر 2026. يحتوي كل مشروع على فئة تحريرية واحدة؛ لا تقيس الأعداد النضج أو الاستخدام أو الأداء. [بيانات المصدر القابلة للتكرار](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). للحصول على نتائج فحص البرامج الفعلية، راجع ملف [مخطط اختبار أداة المجتمع المؤرخ وعمليات تشغيل CI المرتبطة](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ar.md#validation-evidence--2026-10-16-utc) المنفصل.
 
 ## المشاريع العامة ذات الصلة خارج هذه المنظمة
 
@@ -145,6 +148,7 @@ EchoLocal وEchoMuse هما مساران تحويل متميزان. اقرأ م�
 - يقوم [EPG Voice Gateway](https://github.com/4alvit/epg-voice-gateway) بالبحث عن برامج XMLTV المعروضة حاليا وتوجيه التشغيل من خلال وكيل HLS الموجود إلى شاشات Alexa أو Google Cast.
 
 - يوفر [OTT-play Control Server](https://github.com/open-ott-play/ottplay-control-server) أوامر المشغل والتحكم من الطرفية ونشر k3s. لا تعتمد بوابة EPG على OttPlay.
+- [Cisco Home Telephony](https://github.com/4alvit/cisco-home-telephony) — إعداد SIP لهواتف Cisco 7945G وAsterisk على k3s وواجهة أوامر للهواتف ومسارات اختيارية للصوت والتحكم عبر Home Assistant.
 
 **البنية التحتية القابلة لإعادة الاستخدام**
 
@@ -155,6 +159,7 @@ EchoLocal وEchoMuse هما مساران تحويل متميزان. اقرأ م�
 - يراقب [MQTT Observability](https://github.com/4alvit/mqtt-observability-opentelemetry) مقاييس MQTT وMosquitto من خلال OpenTelemetry وPrometheus وGrafana؛ ولا يعمل كوسيط لتمرير الرسائل.
 
 - يقوم [HA Homelab Terraform](https://github.com/4alvit/terraform-github-ha-homelab) بإدارة إعدادات ومستودعات GitHub لهذه المؤسسة.
+- [Venus OS CI Toolkit](https://github.com/victron-venus/venus-os-ci-toolkit) — مسارات عمل مشتركة لـ GitHub Actions وأدوات CI للتحقق والإصدارات وفحوص الأمان؛ تثبّت المشاريع المستخدمة لها معرّف commit خضع للمراجعة.
 
 ## كيف نعمل
 

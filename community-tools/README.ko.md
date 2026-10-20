@@ -22,7 +22,7 @@
 
 - [HA Meter Contracts](https://github.com/ha-homelab/ha-meter-contracts)는 물리적 측정 범위, 출처, 단위, 샘플 최신성, 합산 규칙을 검사합니다. 멀티탭 계측기의 이름을 바꿔도 개별 펌프 계측기가 되지 않습니다. 하나의 변류기를 중복 표현한 값을 별도 부하처럼 더할 수 없습니다.
 
-- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests)는 실제 Home Assistant 자동화·스크립트 엔진에서 제한된 합성 시나리오를 실행합니다. 순서가 있는 호출, 금지된 호출, 최종 합성 상태를 검사합니다. 최초 실행 환경은 HA 2026.10.0과 Python 3.14.2–3.14.x로 고정되어 있으므로 다른 도구와 분리된 환경을 쓰세요.
+- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests)는 실제 Home Assistant 자동화·스크립트 엔진에서 제한된 합성 시나리오를 실행합니다. 순서가 있는 호출, 금지된 호출, 최종 합성 상태를 검사합니다. 현재 실행 환경은 HA 2026.10.1과 Python 3.14.2–3.14.x로 고정되어 있으므로 다른 도구와 분리된 환경을 쓰세요.
 
 - [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab)은 로컬 음성 근거를 평가합니다. 명령의 정확성, API 완료, 들을 수 있는 출력을 구분합니다. 포함된 모든 시간값은 합성 값이며 제공된 관측은 독립적으로 검증되지 않았습니다.
 
@@ -45,7 +45,9 @@
 - **Assist Scenario Lab:** [Linux CI에서 테스트 24개가 통과](https://github.com/ha-homelab/assist-scenario-lab/actions/runs/38843304306)했습니다. 제공된 근거와 합성 예제를 검증한 것이며 실제 음성 기기 비교를 주장하지 않습니다.
 - **Scenario Tests:** CPython 3.14.8과 실제 Home Assistant 2026.10.0으로 [Linux CI에서 건너뛰기 없이 테스트 54개가 통과](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/38843681199)했습니다. 실행 사례 일곱 개 중 하나가 역할 이전 보조 시나리오를 검사합니다. 전체 테스트는 21.42초에 완료되었습니다.
 
-검증된 실행 환경은 Linux입니다. [문서화된 네이티브 macOS 종료 정리 실패](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md)는 여전히 제한 사항입니다. 프로세스 충돌 전에 기대한 JSON 결과가 나와도 실행은 실패입니다. Docker 실행이나 실물 기기 인수 검증 완료를 주장하지 않습니다.
+검증된 실행 환경은 Linux입니다. [문서화된 네이티브 macOS 종료 정리 실패](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md)는 여전히 제한 사항입니다. 프로세스 충돌 전에 기대한 JSON 결과가 나와도 실행은 실패입니다. 10월 16일 기록은 Docker 실행이나 실물 기기 인수 검증 완료를 주장하지 않습니다.
+
+2026년 10월 19일 업데이트: [Linux CI](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/39264346721)에서 패키징된 실행 환경의 Docker 기본 동작 테스트도 통과했습니다. 이것은 실물 기기의 인수 검증 완료를 증명하지 않습니다.
 
 ## 과정과 그림으로 보는 결과
 

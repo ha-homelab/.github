@@ -22,7 +22,7 @@ Empat alat kecil membantu proyek komunitas Home Assistant menjawab empat pertany
 
 - [HA Meter Contracts](https://github.com/ha-homelab/ha-meter-contracts) memeriksa cakupan fisik pengukuran, asal sumber, satuan, kebaruan sampel, dan aturan penjumlahan. Meter seluruh terminal listrik tidak menjadi meter pompa tersendiri hanya dengan mengganti namanya. Representasi ganda satu transformator arus tidak boleh dijumlahkan sebagai beban terpisah.
 
-- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) menjalankan skenario sintetis terbatas di mesin otomasi/skrip Home Assistant yang sebenarnya. Alat ini memeriksa urutan panggilan, panggilan terlarang, dan keadaan sintetis akhir. Runtime awalnya dipatok ke HA 2026.10.0 dan Python 3.14.2–3.14.x; gunakan lingkungan terpisah dari alat lain.
+- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) menjalankan skenario sintetis terbatas di mesin otomasi/skrip Home Assistant yang sebenarnya. Alat ini memeriksa urutan panggilan, panggilan terlarang, dan keadaan sintetis akhir. Runtime saat ini dipatok ke HA 2026.10.1 dan Python 3.14.2–3.14.x; gunakan lingkungan terpisah dari alat lain.
 
 - [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab) mengevaluasi bukti suara lokal. Alat ini memisahkan ketepatan perintah, penyelesaian API, dan keluaran yang terdengar. Seluruh waktu yang disertakan sintetis, dan pengamatan yang diberikan tidak diverifikasi secara independen.
 
@@ -45,7 +45,9 @@ Batang menunjukkan jumlah, bukan cakupan atau peringkat mutu. Catatan sumber ber
 - **Assist Scenario Lab:** [24 tes lulus di CI Linux](https://github.com/ha-homelab/assist-scenario-lab/actions/runs/38843304306). Ini memvalidasi bukti yang diberikan dan contoh sintetis; tidak mengklaim perbandingan suara fisik.
 - **Scenario Tests:** [54 tes lulus tanpa dilewati di CI Linux](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/38843681199) pada CPython 3.14.8 dengan Home Assistant 2026.10.0 sebenarnya, termasuk tujuh kasus runtime; salah satunya menguji pendamping pemindahan peran. Seluruh rangkaian selesai dalam 21.42 detik.
 
-Linux adalah lingkungan pelaksana yang diuji. [Kegagalan pembersihan akhir di macOS native yang terdokumentasi](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) tetap menjadi batasan; hasil JSON yang benar sebelum proses jatuh tetap merupakan eksekusi gagal. Tidak ada klaim eksekusi Docker atau penerimaan perangkat fisik.
+Linux adalah lingkungan pelaksana yang diuji. [Kegagalan pembersihan akhir di macOS native yang terdokumentasi](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) tetap menjadi batasan; hasil JSON yang benar sebelum proses jatuh tetap merupakan eksekusi gagal. Catatan 16 Oktober tidak mengklaim eksekusi Docker atau penerimaan perangkat fisik.
+
+Pembaruan 19 Oktober 2026: [CI Linux](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/39264346721) juga lulus uji dasar pengoperasian runtime terkemas di Docker. Ini tidak membuktikan penerimaan perangkat fisik.
 
 ## Proses dan hasil berilustrasi
 

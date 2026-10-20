@@ -31,9 +31,10 @@ instalados juntos ou se integrem automaticamente uns aos outros.
 
 ## Novidades — outubro de 2026
 
-- **Desenhe e explore uma casa no navegador.** [Home Studio](https://github.com/ha-homelab/home-studio) combina um planejador
-  2D/3D, 195 modelos de objetos, 24 idiomas do editor e um compilador local para
-  um visualizador instalável no Home Assistant. Seu
+- **Desenhe e explore uma casa no navegador.** [Home Studio](https://github.com/ha-homelab/home-studio) combina um planejador 2D/3D, 206 modelos de móveis e elementos de jardim e 24 idiomas do editor.
+  As versões que contêm `home_floorplan.zip` também oferecem um [editor dentro do Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md)
+  para desenhar, vincular áreas do HA, salvar rascunhos e publicar a visualização 3D.
+  O editor separado no navegador e o compilador e instalador portáteis continuam disponíveis. Seu
   [modo Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) permite explorar a planta instalada bloqueando comandos para dispositivos.
   O [guia da primeira sessão](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) explica como começar com exemplos, recuperar rascunhos e preservar o trabalho quando o 3D não está disponível.
 - **Mais formas de reutilizar o hardware existente.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) acrescenta um
@@ -50,7 +51,7 @@ instalados juntos ou se integrem automaticamente uns aos outros.
   migração de entidades, procedência de medições, cenários de automação e resultados de voz.
   [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) agora usa um botão adaptativo, mantendo a confirmação explícita de destravamento.
 
-Este é um retrato editorial de **16 de outubro de 2026**. Consulte o README e as
+Este é um retrato editorial de **19 de outubro de 2026**. Consulte o README e as
 versões de cada projeto para verificar compatibilidade e estado atuais.
 
 ## Explore os projetos
@@ -64,13 +65,17 @@ versões de cada projeto para verificar compatibilidade e estado atuais.
 
 ### Voz e mídia
 
+- **[asterisk-telephony](https://github.com/ha-homelab/asterisk-telephony)** — instalador verificado da integração Asterisk do projeto upstream, painéis para telefones SIP e controles de aparelhos Cisco, com um caminho de áudio separado para o Assist e resultados de aceitação documentados.
+- **[ha-ottplay](https://github.com/ha-homelab/ha-ottplay)** — entidades de reprodutor de mídia e controle remoto do Home Assistant para players registrados por meio de um OTTPlay Control Server existente; os controles disponíveis dependem do player.
 - **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — Echo Dot 2 com EchoMuse/emOS, Assist, música, ferramentas
   locais para a casa e um proxy BLE cadastrado separadamente. O caminho de
   reconhecimento de voz documentado usa um provedor de nuvem; não é totalmente offline.
+  O piloto com palavra de ativação russa e Silero Baya não distribui os pesos privados do modelo.
 - **[ha-echo-dot](https://github.com/ha-homelab/ha-echo-dot)** — conversão EchoLocal para Echo Dot 2, com ferramentas de
   treinamento da palavra de ativação e avaliação no ambiente exato de execução.
 - **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — conversão do Echo Show 5 Gen2 para Android, backups
   verificados e configuração do Home Assistant Companion.
+  Um teste ONNX opcional com uma única frase de ativação tem verificações de software; a aceitação acústica de ponta a ponta ainda está pendente.
 - **[ha-lg-tv-capture](https://github.com/ha-homelab/ha-lg-tv-capture)** — ferramentas reutilizáveis de captura de tela LG webOS
   e integração com Home Assistant.
 
@@ -79,7 +84,7 @@ modelo e recuperação do projeto escolhido antes de modificar um dispositivo.
 
 ### Integrações, pontes e recuperação de dispositivos
 
-- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — protótipo PoE modular para Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz e sensoriamento; inclui CAD, firmware e ferramentas de implantação; a validação física está pendente.
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — protótipo PoE modular atual MC2-C + FH1 com três antenas externas independentes para Zigbee, Thread e Bluetooth, um Thread Border Router local, Z-Wave, RF de 433 MHz e sensores. Inclui CAD, firmware e ferramentas de implantação; a validação física ainda está pendente.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — integração não oficial com a nuvem DESLOC para estado da
   fechadura, controles, bateria e Wi-Fi; [a compatibilidade varia conforme o modelo](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — cartão de painel separado com editor visual, ação
@@ -98,8 +103,8 @@ modelo e recuperação do projeto escolhido antes de modificar um dispositivo.
 
 ### Espaços, observações de sensores e acesso
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — desenhe cômodos, mobilie-os, explore em 3D, exporte seu
-  projeto e compile localmente um visualizador para Home Assistant.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — desenhe e mobilie cômodos no editor separado do navegador ou dentro do Home Assistant; exporte JSON ou publique a visualização do HA.
+- **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — coleta experimental de CSI, firmware de receptores, hipóteses de atividade e ferramentas de evidências de inferência; publica por meio de ruview-home-assistant e não comprova a precisão de detecção no mundo real.
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — registre, anote e compare observações com
   verificações explícitas de atualidade e relógio.
 - **[ruview-home-assistant](https://github.com/ha-homelab/ruview-home-assistant)** — observações RuView por MQTT discovery,
@@ -109,6 +114,7 @@ modelo e recuperação do projeto escolhido antes de modificar um dispositivo.
 - **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — sessões Cloudflare Access verificadas para painéis
   externos e tokens de curta duração por um gateway restrito. Mapeia um único
   administrador Home Assistant explicitamente configurado, com privilégios completos.
+  O acesso autenticado opcional às capas dos reprodutores de mídia fica desativado por padrão.
 
 Os exemplos de sensores descrevem observações e seus limites. Reprodução sintética
 e direção de câmera não comprovam a precisão da detecção de ocupação no mundo real.
@@ -124,7 +130,7 @@ e direção de câmera não comprovam a precisão da detecção de ocupação no
 - **[assist-scenario-lab](https://github.com/ha-homelab/assist-scenario-lab)** — evidências de voz offline que distinguem conclusão
   do protocolo, ação observada e resposta audível.
 
-Siga o [fluxo ilustrado e seus resultados](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.pt.md) ou a [edição russa](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ru.md).
+Siga o [fluxo ilustrado e seus resultados](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.pt.md). O seletor de idiomas do guia oferece todos os 24 idiomas.
 Evidências de software e aceitação física permanecem etapas separadas.
 
 <details>
@@ -160,10 +166,10 @@ os [diagramas de ligação do ZAC93](https://github.com/ha-homelab/zac93-esp32) 
 
 ## Retrato dos projetos públicos
 
-![Gráfico de barras: dispositivos e pontes 8; espaços, sensores e acesso 5; voz e mídia 4; testes e contratos 4; configuração e confiabilidade 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.pt.svg)
+![Gráfico de barras: dispositivos e pontes 8; espaços, sensores e acesso 6; voz e mídia 6; testes e contratos 4; configuração e confiabilidade 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.pt.svg)
 
-**23 projetos + este repositório de perfil = 24 repositórios públicos**, verificados
-em 16 de outubro de 2026. Cada projeto tem uma categoria editorial; as contagens
+**26 projetos + este repositório de perfil = 27 repositórios públicos**, verificados
+em 19 de outubro de 2026. Cada projeto tem uma categoria editorial; as contagens
 não medem maturidade, uso ou desempenho. [Dados de origem reproduzíveis](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).
 Para resultados reais das verificações de software, veja o
 [gráfico datado de testes das ferramentas da comunidade e as execuções de CI vinculadas](https://github.com/ha-homelab/.github/blob/main/community-tools/README.pt.md#validation-evidence--2026-10-16-utc).
@@ -191,6 +197,7 @@ opcionais, com configuração e limites de suporte próprios.
   por um proxy HLS existente para telas Alexa ou Google Cast.
 - [OTT-play Control Server](https://github.com/open-ott-play/ottplay-control-server) oferece comandos do player, controle por terminal
   e implantação em k3s. O gateway EPG não depende do OttPlay.
+- [Cisco Home Telephony](https://github.com/4alvit/cisco-home-telephony) — provisionamento SIP para Cisco 7945G, Asterisk em k3s, CLI de telefonia e fluxos opcionais de voz e controle com Home Assistant.
 
 **Infraestrutura reutilizável**
 
@@ -201,6 +208,7 @@ opcionais, com configuração e limites de suporte próprios.
 - [MQTT Observability](https://github.com/4alvit/mqtt-observability-opentelemetry) observa métricas MQTT e Mosquitto via OpenTelemetry,
   Prometheus e Grafana; não é um proxy de mensagens.
 - [HA Homelab Terraform](https://github.com/4alvit/terraform-github-ha-homelab) gerencia as configurações GitHub e os repositórios desta organização.
+- [Venus OS CI Toolkit](https://github.com/victron-venus/venus-os-ci-toolkit) — workflows compartilhados do GitHub Actions e ferramentas de CI para validação, releases e verificações de segurança; os consumidores fixam um commit revisado.
 
 ## Como trabalhamos
 

@@ -6,10 +6,10 @@
 <text x="40" y="91" font-size="18" fill="#c1d1dd" font-weight="400" text-anchor="start">HA Homelab पारितंत्र में परियोजनाओं की भूमिका</text>
 <path d="M 340 226 H 385 V 333 H 415 M 340 459 H 385 V 333 M 705 333 H 735 V 226 H 780 M 735 333 V 459 H 780" fill="none" stroke="#4a7184" stroke-width="3"/>
 <rect x="40" y="377" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
-<text x="58" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">04</text>
+<text x="58" y="407" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">06</text>
 <text x="58" y="444" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">आवाज़ और मीडिया</text>
 <text x="58" y="478" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">EchoLocal · EchoMuse · Android</text>
-<text x="58" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Echo Dot / Show · LG कैप्चर</text>
+<text x="58" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Asterisk · OTTPlay · LG webOS</text>
 <rect x="40" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
 <text x="58" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">08</text>
 <text x="58" y="211" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">डिवाइस और ब्रिज</text>
@@ -21,7 +21,7 @@
 <text x="433" y="346" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Home Assistant कॉन्फ़िगरेशन</text>
 <text x="433" y="371" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">k3s परिनियोजन और बहाली</text>
 <rect x="780" y="144" width="300" height="165" rx="14" fill="#173342" stroke="#3b6474"/>
-<text x="798" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">05</text>
+<text x="798" y="174" font-size="17" fill="#38d5cc" font-weight="700" text-anchor="start">06</text>
 <text x="798" y="211" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start">स्थान, सेंसर और पहुँच</text>
 <text x="798" y="245" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">Home Studio · RuView · ONVIF</text>
 <text x="798" y="270" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">सेंसर प्रमाण · Access सत्र</text>
@@ -31,5 +31,5 @@
 <text x="798" y="478" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">एंटिटी भूमिकाएँ · मापन स्रोत</text>
 <text x="798" y="503" font-size="12" fill="#c1d1dd" font-weight="400" text-anchor="start">स्वचालन परिदृश्य · वॉइस प्रमाण</text>
 <text x="40" y="600" font-size="15" fill="#c1d1dd" font-weight="400" text-anchor="start">रेखाएँ संबंधित काम जोड़ती हैं; ये स्वचालित परिनियोजन या अनिवार्य डेटा मार्ग नहीं हैं।</text>
-<text x="40" y="628" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">स्रोत: GitHub सार्वजनिक रिपॉज़िटरी API · 16 अक्टूबर 2026 (America/Los_Angeles)</text>
+<text x="40" y="628" font-size="13" fill="#c1d1dd" font-weight="400" text-anchor="start">स्रोत: GitHub सार्वजनिक रिपॉज़िटरी API · 19 अक्टूबर 2026 (America/Los_Angeles)</text>
 </g></svg>

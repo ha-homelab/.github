@@ -20,12 +20,12 @@
 
 ## 새로운 소식 — 2026년 10월
 
-- **브라우저에서 집을 그리고 살펴보세요.** [Home Studio](https://github.com/ha-homelab/home-studio)는 2D/3D 설계 도구, 195종의 물품 디자인, 편집기 24개 언어와 Home Assistant에 설치할 뷰어를 만드는 로컬 컴파일러를 제공합니다. [Dry run 모드](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md)에서는 기기 명령을 차단한 채 설치된 평면도를 살펴볼 수 있습니다. [첫 사용 가이드](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md)는 예제로 시작하는 방법, 초안 복구, 3D를 사용할 수 없을 때 작업을 보존하는 방법을 설명합니다.
+- **브라우저에서 집을 그리고 살펴보세요.** [Home Studio](https://github.com/ha-homelab/home-studio)는 2D/3D 설계 도구, 가구와 정원용 디자인 206종, 편집기 24개 언어를 제공합니다. `home_floorplan.zip`을 포함한 릴리스에는 그리기, HA 영역 연결, 초안 저장, 3D 보기 게시를 위한 [Home Assistant 내부 편집기](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md)도 있습니다. 별도의 브라우저 편집기와 포터블 컴파일러/설치 도구도 계속 사용할 수 있습니다. [Dry run 모드](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md)에서는 기기 명령을 차단한 채 설치된 평면도를 살펴볼 수 있습니다. [첫 사용 가이드](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md)는 예제로 시작하는 방법, 초안 복구, 3D를 사용할 수 없을 때 작업을 보존하는 방법을 설명합니다.
 - **기존 하드웨어를 재사용하는 더 많은 방법.** [EchoMuse](https://github.com/ha-homelab/ha-echomuse)는 Echo Dot 2의 음성, 음악, BLE 경로를 문서화하고, [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32)는 Z-Wave 브리지를 설명합니다. 아래의 RF, Zigbee, Tuya 프로젝트는 다른 기기군을 다룹니다. 하드웨어 준비 상태는 프로젝트별로 다르며 ZAC93 실물 시운전은 아직 남아 있습니다.
 - **공개 설정과 복구.** [Home Assistant](https://github.com/ha-homelab/home-assistant)는 재사용 가능한 자동화·스크립트 라이브러리와 통합 계약 명세를 포함합니다. [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing)은 배포, 백업, 복구 도구를 공개합니다. 로컬 저장소를 사용하는 단일 인스턴스만으로는 자동 장애 조치가 이루어지지 않습니다.
 - **자동화에 앞서 근거를 확인합니다.** 새 감지, 카메라 방향, 접근 프로젝트와 함께 엔터티 마이그레이션, 계측 출처, 자동화 시나리오, 음성 결과를 다루는 네 가지 [커뮤니티 도구](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ko.md)가 있습니다. [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card)는 명시적인 잠금 해제 확인을 유지하면서 상태에 맞게 바뀌는 하나의 동작 버튼을 사용합니다.
 
-이 내용은 **2026년 10월 16일** 기준 편집 스냅샷입니다. 현재 호환성과 상태는 각 프로젝트의 README와 릴리스를 확인하세요.
+이 내용은 **2026년 10월 19일** 기준 편집 스냅샷입니다. 현재 호환성과 상태는 각 프로젝트의 README와 릴리스를 확인하세요.
 
 ## 프로젝트 둘러보기
 
@@ -37,11 +37,13 @@
 
 ### 음성과 미디어
 
-- **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — EchoMuse/emOS 기반 Echo Dot 2, Assist, 음악, 로컬 홈 도구, 별도로 등록하는 BLE 프록시. 기록된 음성 인식 경로는 클라우드 제공자를 사용하므로 완전한 오프라인 구성이 아닙니다.
+- **[asterisk-telephony](https://github.com/ha-homelab/asterisk-telephony)** — 검증된 업스트림 Asterisk 통합 설치 도구, SIP 전화 대시보드, Cisco 전화기 제어 기능을 제공하며, 별도의 Assist 오디오 경로와 문서화된 인수 시험 결과가 있습니다.
+- **[ha-ottplay](https://github.com/ha-homelab/ha-ottplay)** — 기존 OTTPlay Control Server에 등록된 플레이어를 위한 Home Assistant 미디어 플레이어 및 리모컨 엔터티입니다. 사용 가능한 제어 기능은 플레이어에 따라 다릅니다.
+- **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — EchoMuse/emOS 기반 Echo Dot 2, Assist, 음악, 로컬 홈 도구, 별도로 등록하는 BLE 프록시. 기록된 음성 인식 경로는 클라우드 제공자를 사용하므로 완전한 오프라인 구성이 아닙니다. 러시아어 호출어와 Silero Baya 시험 구성은 비공개 모델 가중치를 배포하지 않습니다.
 
 - **[ha-echo-dot](https://github.com/ha-homelab/ha-echo-dot)** — Echo Dot 2의 EchoLocal 변환 경로와 호출어 학습 및 정확히 일치하는 실행 환경의 평가 도구.
 
-- **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — Echo Show 5 Gen2를 Android로 변환하고 백업을 검증하며 Home Assistant Companion을 설정하는 방법.
+- **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — Echo Show 5 Gen2를 Android로 변환하고 백업을 검증하며 Home Assistant Companion을 설정하는 방법. 단일 문구 ONNX 호출어의 선택적 시험 구성에는 소프트웨어 검사가 있지만, 전체 음향 경로의 인수 시험은 아직 남아 있습니다.
 
 - **[ha-lg-tv-capture](https://github.com/ha-homelab/ha-lg-tv-capture)** — 재사용 가능한 LG webOS 화면 캡처 도구와 Home Assistant 통합.
 
@@ -49,7 +51,7 @@ EchoLocal과 EchoMuse는 서로 다른 변환 경로입니다. 기기를 수정�
 
 ### 기기 통합, 브리지, 복구
 
-- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz, 센싱을 위한 모듈식 PoE 프로토타입. CAD, 펌웨어, 배포 도구를 포함하며 실물 하드웨어 검증은 아직 남아 있습니다.
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — 현재 MC2-C + FH1 모듈형 PoE 시제품으로, Zigbee, Thread, Bluetooth용 독립 외부 안테나 3개, 로컬 Thread 경계 라우터, Z-Wave, 433 MHz RF 및 감지 기능을 갖춥니다. CAD, 펌웨어, 배포 도구가 제공되며 실물 검증은 아직 남아 있습니다.
 
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — 잠금 상태, 제어, 배터리, Wi-Fi를 위한 비공식 DESLOC 클라우드 통합. [모델별 호환성은 다릅니다](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 
@@ -67,7 +69,8 @@ EchoLocal과 EchoMuse는 서로 다른 변환 경로입니다. 기기를 수정�
 
 ### 공간 도구, 감지, 접근
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — 방을 그리고 가구를 배치하며 3D로 살펴보고 프로젝트를 내보내 로컬에서 Home Assistant 뷰어를 컴파일합니다.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — 별도의 브라우저 편집기 또는 Home Assistant 내부에서 방을 그리고 가구를 배치하며, JSON을 내보내거나 HA 보기를 게시합니다.
+- **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — 실험적인 CSI 수집, 수신기 펌웨어, 활동 가설 및 추론 근거 도구를 제공합니다. ruview-home-assistant를 통해 게시하며 실제 환경의 감지 정확도를 입증하지는 않습니다.
 
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — 데이터 최신성과 시계를 명시적으로 확인하며 관측을 기록, 분류, 비교합니다.
 
@@ -75,7 +78,7 @@ EchoLocal과 EchoMuse는 서로 다른 변환 경로입니다. 기기를 수정�
 
 - **[ha-onvif-room-direction](https://github.com/ha-homelab/ha-onvif-room-direction)** — 읽기 전용 카메라 방향, 설정된 구역, 최신성 확인에 따른 영역 추정.
 
-- **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — 외부 대시보드용 검증된 Cloudflare Access 세션과 제한된 게이트웨이를 통한 단기 토큰. 명시적으로 설정한 한 명의 Home Assistant 관리자를 모든 권한으로 연결합니다.
+- **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — 외부 대시보드용 검증된 Cloudflare Access 세션과 제한된 게이트웨이를 통한 단기 토큰. 명시적으로 설정한 한 명의 Home Assistant 관리자를 모든 권한으로 연결합니다. 인증을 거쳐 미디어 플레이어 아트워크를 제공하는 선택적 기능은 기본적으로 꺼져 있습니다.
 
 감지 예제는 관측과 그 한계를 설명합니다. 합성 재생과 카메라 방향만으로 실제 환경의 재실 감지 정확도를 입증할 수 없습니다.
 
@@ -89,7 +92,7 @@ EchoLocal과 EchoMuse는 서로 다른 변환 경로입니다. 기기를 수정�
 
 - **[assist-scenario-lab](https://github.com/ha-homelab/assist-scenario-lab)** — 프로토콜 완료, 관측된 동작, 들을 수 있는 응답을 구분하는 오프라인 음성 근거.
 
-[그림으로 보는 작업 흐름과 결과](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ko.md) 또는 [러시아어판](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ru.md)을 참고하세요. 소프트웨어 근거와 실물 인수 검증은 별도 단계입니다.
+[그림으로 보는 작업 흐름과 결과](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ko.md)를 따라 진행하세요. 가이드의 언어 선택기에서 24개 언어를 모두 고를 수 있습니다. 소프트웨어 근거 확인과 실물 인수 시험은 별도 단계입니다.
 
 <details>
 <summary>검토 흐름과 기록된 소프트웨어 검사</summary>
@@ -113,9 +116,9 @@ EchoLocal과 EchoMuse는 서로 다른 변환 경로입니다. 기기를 수정�
 
 ## 공개 프로젝트 스냅샷
 
-![가로 막대그래프: 기기와 브리지 8, 공간·감지·접근 5, 음성과 미디어 4, 테스트와 계약 4, 설정과 신뢰성 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.ko.svg)
+![가로 막대그래프: 기기와 브리지 8, 공간·감지·접근 6, 음성과 미디어 6, 테스트와 계약 4, 설정과 신뢰성 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.ko.svg)
 
-**23개 프로젝트 + 이 프로필 저장소 = 공개 저장소 24개**이며, 2026년 10월 16일 확인했습니다. 각 프로젝트를 하나의 편집 분류에만 배정합니다. 수치는 성숙도, 사용량, 성능을 측정하지 않습니다. [재현 가능한 원본 데이터](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). 실제 소프트웨어 검사 결과는 별도의 [날짜가 명시된 커뮤니티 도구 테스트 그래프와 CI 실행 링크](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ko.md#validation-evidence--2026-10-16-utc)를 보세요.
+**26개 프로젝트 + 이 프로필 저장소 = 공개 저장소 27개**이며, 2026년 10월 19일 확인했습니다. 각 프로젝트를 하나의 편집 분류에만 배정합니다. 수치는 성숙도, 사용량, 성능을 측정하지 않습니다. [재현 가능한 원본 데이터](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json). 실제 소프트웨어 검사 결과는 별도의 [날짜가 명시된 커뮤니티 도구 테스트 그래프와 CI 실행 링크](https://github.com/ha-homelab/.github/blob/main/community-tools/README.ko.md#validation-evidence--2026-10-16-utc)를 보세요.
 
 ## 이 조직 밖의 관련 공개 프로젝트
 
@@ -136,6 +139,7 @@ EchoLocal과 EchoMuse는 서로 다른 변환 경로입니다. 기기를 수정�
 - [EPG Voice Gateway](https://github.com/4alvit/epg-voice-gateway)는 현재 XMLTV 프로그램을 찾아 기존 HLS 프록시를 통해 Alexa 화면이나 Google Cast로 재생을 보냅니다.
 
 - [OTT-play Control Server](https://github.com/open-ott-play/ottplay-control-server)는 플레이어 명령, 터미널 제어, k3s 배포를 제공합니다. EPG 게이트웨이는 OttPlay에 의존하지 않습니다.
+- [Cisco Home Telephony](https://github.com/4alvit/cisco-home-telephony) — Cisco 7945G SIP 프로비저닝, k3s의 Asterisk, 전화 CLI 및 선택적 Home Assistant 음성·제어 작업 흐름을 제공합니다.
 
 **재사용 가능한 인프라**
 
@@ -146,6 +150,7 @@ EchoLocal과 EchoMuse는 서로 다른 변환 경로입니다. 기기를 수정�
 - [MQTT Observability](https://github.com/4alvit/mqtt-observability-opentelemetry)는 OpenTelemetry, Prometheus, Grafana로 MQTT와 Mosquitto 지표를 관측합니다. 메시지 프록시가 아닙니다.
 
 - [HA Homelab Terraform](https://github.com/4alvit/terraform-github-ha-homelab)은 이 조직의 GitHub 설정과 저장소를 관리합니다.
+- [Venus OS CI Toolkit](https://github.com/victron-venus/venus-os-ci-toolkit) — 검증, 릴리스, 보안 검사를 위한 공통 GitHub Actions 워크플로와 CI 도구를 제공합니다. 사용하는 프로젝트는 검토된 커밋을 고정합니다.
 
 ## 작업 방식
 
