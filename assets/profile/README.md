@@ -1,7 +1,7 @@
 # Profile visuals and sources
 
 The localized organization profiles describe the public project
-catalog checked on **16 October 2026 (America/Los_Angeles)**. All source
+catalog checked on **19 October 2026 (America/Los_Angeles)**. All source
 repositories were verified public through the GitHub API. This is an editorial
 snapshot, not a live status board or a claim that every project is deployed.
 
@@ -10,7 +10,7 @@ snapshot, not a live status board or a claim that every project is deployed.
 - `ecosystem.svg` and its localized variants group the projects by role. Lines express
   related areas of work; they are not mandatory connections, network topology or
   automatic integrations. The numbers are project counts in each group.
-- `portfolio.svg` and its localized variants chart those counts. There are 23 project
+- `portfolio.svg` and its localized variants chart those counts. There are 26 project
   repositories in five editorial categories, plus the `.github` profile repository.
   Every project is counted exactly once. These are not usage, maturity,
   performance, test-coverage or hardware-acceptance scores.

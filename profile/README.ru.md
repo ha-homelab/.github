@@ -31,9 +31,7 @@
 
 ## Новое — октябрь 2026
 
-- **Планировка дома в браузере.** [Home Studio](https://github.com/ha-homelab/home-studio)
-  объединяет редактор 2D/3D, 195 дизайнов предметов, 24 языка интерфейса и локальный
-  компилятор, создающий пакет с просмотрщиком для установки в Home Assistant.
+- **Планировка дома в браузере.** [Home Studio](https://github.com/ha-homelab/home-studio) объединяет редактор 2D/3D, 206 моделей мебели и садовых объектов и 24 языка интерфейса. Релизы с `home_floorplan.zip` также содержат [редактор внутри Home Assistant](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md): можно рисовать план, связывать комнаты с областями HA, сохранять черновики и публиковать вид 3D. Отдельный браузерный редактор и переносимые компилятор и установщик остаются доступны.
   [Режим Dry run](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md)
   позволяет изучать установленный план, блокируя команды устройствам.
   [Руководство по первому запуску](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md)
@@ -54,7 +52,7 @@
   [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) теперь использует одну
   адаптивную кнопку действия, сохраняя явное подтверждение отпирания.
 
-Это редакционный срез на **16 октября 2026 года**. Актуальную совместимость
+Это редакционный срез на **19 октября 2026 года**. Актуальную совместимость
 и состояние ищите в README и релизах соответствующего проекта.
 
 ## Каталог проектов
@@ -68,13 +66,17 @@
 
 ### Голос и медиа
 
+- **[asterisk-telephony](https://github.com/ha-homelab/asterisk-telephony)** — проверяемый установщик сторонней интеграции Asterisk, панели SIP-телефонов и управление аппаратами Cisco; голосовой тракт Assist проверяется отдельно, результаты приёмки документированы.
+- **[ha-ottplay](https://github.com/ha-homelab/ha-ottplay)** — сущности медиаплеера и пульта Home Assistant для зарегистрированных проигрывателей через существующий OTTPlay Control Server; доступные команды зависят от проигрывателя.
 - **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — Echo Dot 2 с EchoMuse/emOS,
   Assist, музыка, локальные инструменты управления домом и отдельно подключаемый BLE-прокси.
   В зафиксированной конфигурации распознавание речи облачное: весь тракт не является офлайн.
+  Пилот с русской ключевой фразой и Silero Baya не распространяет приватные веса моделей.
 - **[ha-echo-dot](https://github.com/ha-homelab/ha-echo-dot)** — путь EchoLocal для Echo Dot 2,
   обучение ключевой фразы и проверка на целевой среде исполнения.
 - **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — установка Android
   на Echo Show 5 Gen2, проверка резервных копий и настройка Home Assistant Companion.
+  Для необязательного эксперимента с одной ключевой фразой ONNX выполнены программные проверки; сквозная акустическая приёмка ещё ожидается.
 - **[ha-lg-tv-capture](https://github.com/ha-homelab/ha-lg-tv-capture)** — захват экрана
   LG webOS и интеграция с Home Assistant.
 
@@ -83,9 +85,7 @@ EchoLocal и EchoMuse — разные пути переделки. Перед �
 
 ### Интеграции устройств, мосты и восстановление
 
-- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — модульный прототип с питанием PoE
-  для Zigbee, Thread, Bluetooth, Z-Wave, радиосвязи 433 МГц и датчиков. Опубликованы CAD-модели,
-  прошивки и инструменты развёртывания; физические испытания ещё не завершены.
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — актуальный модульный прототип MC2-C + FH1 с питанием PoE, тремя независимыми внешними антеннами Zigbee, Thread и Bluetooth, локальным пограничным маршрутизатором Thread, Z-Wave, радиосвязью 433 МГц и датчиками. Доступны CAD-модели, прошивки и инструменты развёртывания; физические испытания ещё не завершены.
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — неофициальная облачная интеграция
   DESLOC: состояние, управление, батарея и Wi-Fi; [возможности зависят от модели](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md).
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — отдельная карточка
@@ -105,8 +105,8 @@ EchoLocal и EchoMuse — разные пути переделки. Перед �
 
 ### Пространство, наблюдения и доступ
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — рисование комнат,
-  расстановка мебели, просмотр 3D, экспорт проекта и локальная сборка просмотрщика для Home Assistant.
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — рисование комнат и расстановка мебели в отдельном браузерном редакторе или внутри Home Assistant; экспорт JSON или публикация вида в HA.
+- **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — экспериментальный сбор CSI, прошивки приёмников, гипотезы активности и инструменты проверки результатов распознавания; публикация идёт через ruview-home-assistant, точность обнаружения в реальном помещении не установлена.
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — запись,
   разметка и сравнение наблюдений с проверкой свежести данных и часов.
 - **[ruview-home-assistant](https://github.com/ha-homelab/ruview-home-assistant)** — наблюдения
@@ -116,6 +116,7 @@ EchoLocal и EchoMuse — разные пути переделки. Перед �
 - **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — проверенные сессии
   Cloudflare Access для внешних панелей, короткоживущие токены и ограниченный шлюз.
   Используется один явно настроенный администратор Home Assistant с полными правами.
+  Необязательная выдача обложек медиаплееров с аутентификацией по умолчанию выключена.
 
 Примеры описывают наблюдения и их ограничения. Синтетическое воспроизведение
 и направление камеры не доказывают точность определения присутствия в реальном доме.
@@ -131,8 +132,7 @@ EchoLocal и EchoMuse — разные пути переделки. Перед �
 - **[assist-scenario-lab](https://github.com/ha-homelab/assist-scenario-lab)** — офлайн-анализ
   голосовых свидетельств: завершение протокола, наблюдаемое действие и слышимый ответ.
 
-Изучите [иллюстрированный процесс и результаты](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ru.md)
-или [английскую версию](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.md).
+Изучите [иллюстрированный процесс и результаты](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ru.md). В переключателе языков руководства доступны все 24 языка.
 Программные проверки и приёмка физического оборудования остаются отдельными этапами.
 
 <details>
@@ -168,10 +168,10 @@ EchoLocal и EchoMuse — разные пути переделки. Перед �
 
 ## Срез публичного каталога
 
-![График: устройства и мосты — 8; пространство, наблюдения и доступ — 5; голос и медиа — 4; тесты и контракты — 4; конфигурация — 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.ru.svg)
+![График: устройства и мосты — 8; пространство, наблюдения и доступ — 6; голос и медиа — 6; тесты и контракты — 4; конфигурация — 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.ru.svg)
 
-**23 проекта + репозиторий профиля = 24 публичных репозитория**, проверено
-16 октября 2026 года. Каждый проект отнесён к одному направлению;
+**26 проектов + репозиторий профиля = 27 публичных репозиториев**, проверено
+19 октября 2026 года. Каждый проект отнесён к одному направлению;
 числа не измеряют зрелость, популярность или производительность.
 [Исходные данные](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json).
 Результаты программных проверок показаны отдельно:
@@ -202,6 +202,7 @@ EchoLocal и EchoMuse — разные пути переделки. Перед �
   и направляет воспроизведение через существующий HLS-прокси на экраны Alexa или Google Cast.
 - [OTT-play Control Server](https://github.com/open-ott-play/ottplay-control-server) — команды
   проигрывателям, управление из терминала и развёртывание на k3s. EPG gateway не зависит от OttPlay.
+- [Cisco Home Telephony](https://github.com/4alvit/cisco-home-telephony) — подготовка Cisco 7945G к SIP, Asterisk на k3s, команды для телефонов и необязательные сценарии голоса и управления через Home Assistant.
 
 **Повторно используемая инфраструктура**
 
@@ -213,6 +214,7 @@ EchoLocal и EchoMuse — разные пути переделки. Перед �
   и метрики Mosquitto через OpenTelemetry, Prometheus и Grafana; это не прокси сообщений.
 - [HA Homelab Terraform](https://github.com/4alvit/terraform-github-ha-homelab) управляет
   настройками и репозиториями нашей GitHub-организации.
+- [Venus OS CI Toolkit](https://github.com/victron-venus/venus-os-ci-toolkit) — общие GitHub Actions и инструменты CI для проверок, релизов и анализа безопасности; использующие их проекты фиксируют проверенный коммит.
 
 ## Как мы работаем
 

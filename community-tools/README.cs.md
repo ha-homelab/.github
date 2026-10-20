@@ -20,7 +20,7 @@ Tyto překlady dokumentace nerozšiřují jazykovou podporu CLI ani hlasových f
 
 - [HA Entity Migrations](https://github.com/ha-homelab/ha-entity-migrations) vytváří offline migrační plán. Výslovná pravidla pro role a hardware, schopnosti a otisky souborů brání tomu, aby běžné přejmenování potichu přiřadilo automatizaci osvětlení zásuvce používané k jinému účelu. Připravený plán platí pouze pro dodaný podporovaný rozsah konfigurace.
 - [HA Meter Contracts](https://github.com/ha-homelab/ha-meter-contracts) kontroluje fyzický rozsah měření, původ zdrojů, jednotky, aktuálnost vzorků a pravidla sčítání. Přejmenování měřidla prodlužovacího přívodu z něj neudělá samostatné měřidlo čerpadla. Duplicitní reprezentace jednoho proudového transformátoru nelze sčítat jako oddělené zátěže.
-- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) spouští omezený syntetický scénář ve skutečném automatizačním a skriptovacím enginu Home Assistant. Kontroluje pořadí volání, zakázaná volání a konečné syntetické stavy. První běhové prostředí je pevně nastaveno na HA 2026.10.0 a Python 3.14.2–3.14.x; použijte prostředí oddělené od ostatních nástrojů.
+- [HA Scenario Tests](https://github.com/ha-homelab/ha-scenario-tests) spouští omezený syntetický scénář ve skutečném automatizačním a skriptovacím enginu Home Assistant. Kontroluje pořadí volání, zakázaná volání a konečné syntetické stavy. Aktuální běhové prostředí je pevně nastaveno na HA 2026.10.1 a Python 3.14.2–3.14.x; použijte prostředí oddělené od ostatních nástrojů.
 - [Assist Scenario Lab](https://github.com/ha-homelab/assist-scenario-lab) vyhodnocuje místní hlasové důkazy. Odděluje správnost příkazu, dokončení API a slyšitelný výstup. Všechny přibalené časy jsou syntetické a dodaná pozorování se nezávisle neověřují.
 
 Projekty mají vlastní instalační příručky, anglickou/ruskou dokumentaci a zprávy CLI v angličtině, ruštině, němčině a španělštině. Dodržujte jejich verzované kontrakty, nepředpokládejte stejný význam všech návratových kódů. Šipky představují **předání při revizi**, nikoli implementované automatické integrace. Neexistuje centrální démon ani univerzální příkaz pro nasazení.
@@ -42,7 +42,9 @@ Pruhy zobrazují počty, ne pokrytí ani žebříček kvality. Datované zdrojov
 - **Assist Scenario Lab:** [24 testů prošlo v linuxovém CI](https://github.com/ha-homelab/assist-scenario-lab/actions/runs/38843304306). Ověřují dodané důkazy a syntetické příklady; netvrdí fyzické porovnání hlasu.
 - **Scenario Tests:** [54 testů prošlo bez přeskočení v linuxovém CI](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/38843681199) na CPython 3.14.8 se skutečným Home Assistant 2026.10.0, včetně sedmi běhových případů, z nichž jeden testuje doprovodný scénář přenosu role. Celá sada doběhla za 21.42 sekundy.
 
-Ověřeným prostředím je Linux. [Zdokumentovaná chyba nativního ukončení na macOS](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) zůstává omezením; očekávaný JSON výsledek před pádem procesu stále znamená neúspěšný běh. Netvrdíme spuštění v Dockeru ani fyzickou přejímku zařízení.
+Ověřeným prostředím je Linux. [Zdokumentovaná chyba nativního ukončení na macOS](https://github.com/ha-homelab/ha-scenario-tests/blob/main/docs/validation.md) zůstává omezením; očekávaný JSON výsledek před pádem procesu stále znamená neúspěšný běh. Záznam ze 16. října nedokládá spuštění v Dockeru ani fyzickou přejímku zařízení.
+
+Aktualizace z 19. října 2026: [Linux CI](https://github.com/ha-homelab/ha-scenario-tests/actions/runs/39264346721) úspěšně provedlo i základní test spuštění zabaleného běhového prostředí v Dockeru. To nedokládá fyzickou přejímku zařízení.
 
 ## Postup a ilustrované výsledky
 

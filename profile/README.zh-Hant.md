@@ -26,13 +26,13 @@
 
 ## 最新進展 — 2026 年 10 月
 
-- **在瀏覽器中繪製和探索房屋。** [Home Studio](https://github.com/ha-homelab/home-studio) 結合了 2D/3D 規劃器、195 種物品設計、24 種編輯器語言，以及用於生成可安裝的 Home Assistant 查看器的本地編譯器。[Dry run 模式](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) 可以在阻止設備命令的同時探索已安裝的平面圖。
+- **在瀏覽器中繪製和探索房屋。** [Home Studio](https://github.com/ha-homelab/home-studio) 結合了 2D/3D 規劃器、206 種傢俱與園藝物品設計，以及 24 種編輯器語言。包含 `home_floorplan.zip` 的版本還提供 [Home Assistant 內建編輯器](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md)，可繪圖、連結 HA 區域、儲存草稿與發佈 3D 檢視。獨立瀏覽器編輯器及可攜式編譯器與安裝工具仍然可用。[Dry run 模式](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) 可以在阻止設備命令的同時探索已安裝的平面圖。
   [首次使用指南](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md)介紹如何從範例開始、復原草稿，以及在 3D 無法使用時儲存工作。
 - **以更多方式複用現有硬體。** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) 提供有文件說明的 Echo Dot 2 語音、音樂和 BLE 方案；[ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) 介紹 Z-Wave 橋接；下方的 RF、Zigbee 和 Tuya 專案覆蓋其他設備系列。硬體就緒程度因專案而異：ZAC93 的實機建置與驗證仍未完成。
 - **公開設定與復原流程。** [Home Assistant](https://github.com/ha-homelab/home-assistant) 現在包含可重複使用的自動化與指令碼庫，以及整合契約；[k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) 提供部署、備份和復原工具。使用本地儲存的單實例並不具備自動故障轉移能力。
 - **先有證據，再做自動化。** 新增的感知、房間方向和存取專案，與用於實體遷移、計量來源、自動化場景和語音結果的四個[社區工具](https://github.com/ha-homelab/.github/blob/main/community-tools/README.zh-Hant.md) 相互補充。[DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) 現採用單個自適應操作按鈕，並保留明確的解鎖確認。
 
-這是截至 **2026 年 10 月 16 日**的編輯快照。最新兼容性與狀態請參閱各專案的 README 和發佈記錄。
+這是截至 **2026 年 10 月 19 日**的編輯快照。最新兼容性與狀態請參閱各專案的 README 和發佈記錄。
 
 ## 探索專案
 
@@ -43,16 +43,20 @@
 
 ### 語音與媒體
 
+- **[asterisk-telephony](https://github.com/ha-homelab/asterisk-telephony)** — 經過校驗的上游 Asterisk 整合安裝工具、SIP 電話儀表板與 Cisco 話機控制，具有獨立的 Assist 音訊路徑及已記錄的驗收結果。
+- **[ha-ottplay](https://github.com/ha-homelab/ha-ottplay)** — 透過既有的 OTTPlay Control Server 為已註冊播放器提供 Home Assistant 媒體播放器與遙控器實體；可用控制取決於播放器。
 - **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — Echo Dot 2 上的 EchoMuse/emOS、Assist、音樂、本地家庭工具和單獨註冊的 BLE 代理。有記錄的語音識別方案使用雲服務提供商，並非完全離線。
+  俄語喚醒詞與 Silero Baya 試點不散佈私有模型權重。
 - **[ha-echo-dot](https://github.com/ha-homelab/ha-echo-dot)** — Echo Dot 2 的 EchoLocal 改裝方案，包含喚醒詞訓練和針對確切執行環境的評估工具。
 - **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — 將 Echo Show 5 Gen2 改為 Android、經過驗證的備份和 Home Assistant Companion 設置。
+  可選的單一短語 ONNX 喚醒詞試驗已進行軟體檢查；端到端聲學驗收仍待完成。
 - **[ha-lg-tv-capture](https://github.com/ha-homelab/ha-lg-tv-capture)** — 可重複使用的 LG webOS 螢幕捕獲工具和 Home Assistant 整合。
 
 EchoLocal 和 EchoMuse 是不同的改裝路線。改動設備前，請閱讀所選專案的型號要求與復原要求。
 
 ### 設備整合、橋接與復原
 
-- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — 模組化 PoE 原型，面向 Zigbee、Thread、Bluetooth、Z-Wave、433 MHz 射頻與感測，提供 CAD 設計、韌體和部署工具；實機驗證尚待完成。
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — 目前的 MC2-C + FH1 模組化 PoE 原型，具有 Zigbee、Thread 和 Bluetooth 三條獨立外接天線路徑、本機 Thread 邊界路由器、Z-Wave、433 MHz 射頻與感測功能。提供 CAD 設計、韌體及部署工具；實機驗證尚待完成。
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — 非官方 DESLOC 雲整合，提供鎖狀態、控制、電池和 Wi-Fi 資訊；[兼容性因型號而異](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md)。
 - **[ha-desloc-card](https://github.com/ha-homelab/ha-desloc-card)** — 獨立的儀表板卡片，帶有可視化編輯器、自適應操作和解鎖確認。
 - **[rf-airbridge](https://github.com/ha-homelab/rf-airbridge)** — ESPHome CC1101 閘道，支援 MQTT RF 觀測、原生 ESPHome 發送和 Home Assistant 自動化。
@@ -63,11 +67,13 @@ EchoLocal 和 EchoMuse 是不同的改裝路線。改動設備前，請閱讀所
 
 ### 空間工具、感知與存取
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — 繪製房間、佈置傢俱、以 3D 探索、匯出專案，並在本地編譯 Home Assistant 查看器。
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — 在獨立瀏覽器編輯器或 Home Assistant 內繪製房間與擺放傢俱；匯出 JSON 或發佈 HA 檢視。
+- **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — 實驗性 CSI 擷取、接收器韌體、活動假設及推論證據工具；透過 ruview-home-assistant 發佈資料，尚不能證明實際環境中的偵測準確率。
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — 記錄、標註和比較觀測，並明確檢查資料時效與時鐘。
 - **[ruview-home-assistant](https://github.com/ha-homelab/ruview-home-assistant)** — 通過 MQTT discovery 提供 RuView 觀測、逐節點時效檢查和合成回放示例。
 - **[ha-onvif-room-direction](https://github.com/ha-homelab/ha-onvif-room-direction)** — 根據唯讀的攝影機方向、設定的扇區和時效檢查，估算所在區域。
 - **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — 為外部儀表板驗證 Cloudflare Access 會話，並經受限閘道提供短期權杖。它映射到一個顯式設定、擁有完整權限的 Home Assistant 管理員。
+  可選的媒體播放器封面存取需要身分驗證，且預設關閉。
 
 感知示例說明觀測及其限制。合成回放和攝影機方向不能證明實際佔用檢測的準確率。
 
@@ -78,7 +84,7 @@ EchoLocal 和 EchoMuse 是不同的改裝路線。改動設備前，請閱讀所
 - **[ha-scenario-tests](https://github.com/ha-homelab/ha-scenario-tests)** — 在隔離的真實 Home Assistant 自動化引擎中執行有明確邊界的合成場景。
 - **[assist-scenario-lab](https://github.com/ha-homelab/assist-scenario-lab)** — 離線語音證據分析，區分協議完成、觀察到的動作和可聽見的回應。
 
-請參閱[流程與結果圖解](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.zh-Hant.md)或[俄語版本](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ru.md)。軟體證據與實物驗收仍是兩個獨立步驟。
+請參閱[流程與結果圖解](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.zh-Hant.md)。指南的語言切換器提供全部 24 種語言。軟體證據與實物驗收仍是兩個獨立步驟。
 
 <details>
 <summary>審查流程與已記錄的軟體檢查</summary>
@@ -106,9 +112,9 @@ EchoLocal 和 EchoMuse 是不同的改裝路線。改動設備前，請閱讀所
 
 ## 公開專案快照
 
-![水平條形圖：設備與橋接 8；空間、感知與存取 5；語音與媒體 4；測試與契約 4；設定與可靠性 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.zh-Hant.svg)
+![水平條形圖：設備與橋接 8；空間、感知與存取 6；語音與媒體 6；測試與契約 4；設定與可靠性 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.zh-Hant.svg)
 
-**23 個專案 + 本簡介儲存庫 = 24 個公開儲存庫**，核查於 2026 年 10 月 16 日。每個專案只歸入一個編輯分類；計數不衡量成熟度、使用量或性能。[可復現的源資料](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json)。實際軟體檢查結果見獨立的[社區工具測試計數快照及 CI 執行連結](https://github.com/ha-homelab/.github/blob/main/community-tools/README.zh-Hant.md#validation-evidence--2026-10-16-utc)。
+**26 個專案 + 本簡介儲存庫 = 27 個公開儲存庫**，核查於 2026 年 10 月 19 日。每個專案只歸入一個編輯分類；計數不衡量成熟度、使用量或性能。[可復現的源資料](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json)。實際軟體檢查結果見獨立的[社區工具測試計數快照及 CI 執行連結](https://github.com/ha-homelab/.github/blob/main/community-tools/README.zh-Hant.md#validation-evidence--2026-10-16-utc)。
 
 ## 本組織之外的相關公開專案
 
@@ -125,6 +131,7 @@ EchoLocal 和 EchoMuse 是不同的改裝路線。改動設備前，請閱讀所
 - [Amazon Echo Home Energy](https://github.com/4alvit/amazon-echo-home-voice) 是唯讀的 Alexa 自定義技能；[Google Home / Nest reports](https://github.com/4alvit/google-home-voice-stats) 發送帶有本地合成語音的 Cast 影片。兩者無需改裝硬體；Home Assistant 是可選項，Alexa 技能不依賴它。
 - [EPG Voice Gateway](https://github.com/4alvit/epg-voice-gateway) 查找當前 XMLTV 節目，並通過現有的 HLS 代理將播放路由到 Alexa 螢幕或 Google Cast。
 - [OTT-play Control Server](https://github.com/open-ott-play/ottplay-control-server) 提供播放器命令、終端控制和 k3s 部署。EPG 閘道不依賴 OttPlay。
+- [Cisco Home Telephony](https://github.com/4alvit/cisco-home-telephony) — Cisco 7945G SIP 設定、k3s 上的 Asterisk、電話命令列工具及可選的 Home Assistant 語音與控制流程。
 
 **可重複使用基礎設施**
 
@@ -132,6 +139,7 @@ EchoLocal 和 EchoMuse 是不同的改裝路線。改動設備前，請閱讀所
 - [FastAPI MQTT Gateway](https://github.com/4alvit/fastapi-mqtt-gateway) 連接 REST/WebSocket 與 MQTT，並提供身份驗證和主題限制。
 - [MQTT Observability](https://github.com/4alvit/mqtt-observability-opentelemetry) 通過 OpenTelemetry、Prometheus 和 Grafana 觀測 MQTT 與 Mosquitto 指標；它不是訊息代理。
 - [HA Homelab Terraform](https://github.com/4alvit/terraform-github-ha-homelab) 管理本組織的 GitHub 設置與儲存庫。
+- [Venus OS CI Toolkit](https://github.com/victron-venus/venus-os-ci-toolkit) — 用於驗證、發佈與安全檢查的共用 GitHub Actions 工作流程與 CI 工具；使用方固定經過審查的提交。
 
 ## 我們的工作方式
 

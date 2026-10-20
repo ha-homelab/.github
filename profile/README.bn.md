@@ -20,12 +20,12 @@
 
 ## নতুন সংযোজন — অক্টোবর 2026
 
-- **ব্রাউজারে বাড়ি আঁকুন ও ঘুরে দেখুন।** [Home Studio](https://github.com/ha-homelab/home-studio)-তে রয়েছে 2D/3D পরিকল্পক, 195 ধরনের বস্তুর নকশা, সম্পাদকের 24টি ভাষা এবং Home Assistant-এ স্থাপনযোগ্য ভিউয়ার তৈরির স্থানীয় কম্পাইলার। [Dry run মোড](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) ডিভাইসের নির্দেশ আটকে রেখে স্থাপিত পরিকল্পনা ঘুরে দেখতে দেয়। [প্রথম ব্যবহারের নির্দেশিকা](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) উদাহরণ দিয়ে শুরু করা, খসড়া পুনরুদ্ধার এবং 3D অনুপলব্ধ থাকলে কাজ সংরক্ষণের পদ্ধতি ব্যাখ্যা করে।
+- **ব্রাউজারে বাড়ি আঁকুন ও ঘুরে দেখুন।** [Home Studio](https://github.com/ha-homelab/home-studio)-তে রয়েছে 2D/3D পরিকল্পক, আসবাব ও বাগানের 206টি নকশা এবং সম্পাদকের 24টি ভাষা। `home_floorplan.zip`-সহ প্রকাশিত সংস্করণে আঁকা, HA এলাকা যুক্ত করা, খসড়া সংরক্ষণ ও 3D ভিউ প্রকাশের জন্য [Home Assistant-এর ভেতরে সম্পাদক](https://github.com/ha-homelab/home-studio/blob/main/docs/home-assistant-editor.md)ও রয়েছে। আলাদা ব্রাউজার সম্পাদক এবং বহনযোগ্য কম্পাইলার/ইনস্টলারও ব্যবহার করা যায়। [Dry run মোড](https://github.com/ha-homelab/home-studio/blob/main/docs/dry-run.md) ডিভাইসের নির্দেশ আটকে রেখে স্থাপিত পরিকল্পনা ঘুরে দেখতে দেয়। [প্রথম ব্যবহারের নির্দেশিকা](https://github.com/ha-homelab/home-studio/blob/main/docs/first-session.md) উদাহরণ দিয়ে শুরু করা, খসড়া পুনরুদ্ধার এবং 3D অনুপলব্ধ থাকলে কাজ সংরক্ষণের পদ্ধতি ব্যাখ্যা করে।
 - **বিদ্যমান হার্ডওয়্যার পুনর্ব্যবহারের আরও পথ।** [EchoMuse](https://github.com/ha-homelab/ha-echomuse) Echo Dot 2-এর ভয়েস, সংগীত ও BLE ব্যবহারের নথিভুক্ত পথ দেয়; [ZAC93 + ESP32](https://github.com/ha-homelab/zac93-esp32) Z-Wave ব্রিজের নির্দেশিকা দেয়। নিচের RF, Zigbee ও Tuya প্রকল্পগুলো অন্য ধরনের ডিভাইস নিয়ে কাজ করে। হার্ডওয়্যারের প্রস্তুতি প্রকল্পভেদে আলাদা; ZAC93-এর বাস্তব হার্ডওয়্যার চালু করে যাচাই এখনো বাকি।
 - **প্রকাশ্য কনফিগারেশন ও পুনরুদ্ধার।** [Home Assistant](https://github.com/ha-homelab/home-assistant)-এ এখন পুনর্ব্যবহারযোগ্য অটোমেশন/স্ক্রিপ্ট লাইব্রেরি এবং ইন্টিগ্রেশনের চুক্তিভিত্তিক নিয়ম আছে; [k3s self-healing](https://github.com/ha-homelab/k3s-self-healing) স্থাপন, ব্যাকআপ ও পুনরুদ্ধারের সরঞ্জাম প্রকাশ করে। স্থানীয় স্টোরেজসহ একটি ইনস্ট্যান্স স্বয়ংক্রিয় বিকল্পে স্থানান্তরের ব্যবস্থা নয়।
 - **স্বয়ংক্রিয়তার আগে প্রমাণ।** পর্যবেক্ষণ, ক্যামেরার দিক ও প্রবেশাধিকারের নতুন প্রকল্পের পাশাপাশি রয়েছে চারটি [কমিউনিটি সরঞ্জাম](https://github.com/ha-homelab/.github/blob/main/community-tools/README.bn.md), যা এনটিটি স্থানান্তর, পরিমাপের উৎস, অটোমেশন দৃশ্যপট ও ভয়েস ফলাফল নিয়ে কাজ করে। [DESLOC Lock Card](https://github.com/ha-homelab/ha-desloc-card) এখন অবস্থাভিত্তিক একটি অ্যাকশন বোতাম ব্যবহার করে, তবে তালা খোলার স্পষ্ট অনুমোদন এখনো বাধ্যতামূলক।
 
-এটি **16 অক্টোবর 2026**-এর সম্পাদকীয় চিত্র। বর্তমান সামঞ্জস্য ও অবস্থা জানতে প্রতিটি প্রকল্পের README ও প্রকাশিত সংস্করণ দেখুন।
+এটি **19 অক্টোবর 2026**-এর সম্পাদকীয় চিত্র। বর্তমান সামঞ্জস্য ও অবস্থা জানতে প্রতিটি প্রকল্পের README ও প্রকাশিত সংস্করণ দেখুন।
 
 ## প্রকল্পগুলো দেখুন
 
@@ -37,11 +37,13 @@
 
 ### ভয়েস ও মিডিয়া
 
-- **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — EchoMuse/emOS-সহ Echo Dot 2, Assist, সংগীত, স্থানীয় গৃহ-সরঞ্জাম এবং আলাদাভাবে নিবন্ধিত BLE প্রক্সি। নথিভুক্ত কথন শনাক্তকরণ পথে ক্লাউড সেবা ব্যবহৃত হয়; এটি সম্পূর্ণ অফলাইন নয়।
+- **[asterisk-telephony](https://github.com/ha-homelab/asterisk-telephony)** — মূল প্রকল্পের Asterisk ইন্টিগ্রেশনের যাচাইকৃত ইনস্টলার, SIP ফোনের ড্যাশবোর্ড ও Cisco হ্যান্ডসেট নিয়ন্ত্রণ; আলাদা Assist অডিও পথ এবং নথিভুক্ত গ্রহণযোগ্যতা পরীক্ষার ফল রয়েছে।
+- **[ha-ottplay](https://github.com/ha-homelab/ha-ottplay)** — বিদ্যমান OTTPlay Control Server-এর মাধ্যমে নিবন্ধিত প্লেয়ারের জন্য Home Assistant মিডিয়া প্লেয়ার ও রিমোট এনটিটি; কোন নিয়ন্ত্রণ পাওয়া যাবে তা প্লেয়ারের ওপর নির্ভর করে।
+- **[ha-echomuse](https://github.com/ha-homelab/ha-echomuse)** — EchoMuse/emOS-সহ Echo Dot 2, Assist, সংগীত, স্থানীয় গৃহ-সরঞ্জাম এবং আলাদাভাবে নিবন্ধিত BLE প্রক্সি। নথিভুক্ত কথন শনাক্তকরণ পথে ক্লাউড সেবা ব্যবহৃত হয়; এটি সম্পূর্ণ অফলাইন নয়। রুশ ওয়েক-ওয়ার্ড ও Silero Baya পরীক্ষামূলক ব্যবস্থা ব্যক্তিগত মডেলের ওজন বিতরণ করে না।
 
 - **[ha-echo-dot](https://github.com/ha-homelab/ha-echo-dot)** — Echo Dot 2-এর EchoLocal রূপান্তরপথ, সক্রিয়করণ শব্দের প্রশিক্ষণ এবং হুবহু একই চলমান পরিবেশে মূল্যায়নের সরঞ্জাম।
 
-- **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — Echo Show 5 Gen2-কে Android-এ রূপান্তর, যাচাইকৃত ব্যাকআপ এবং Home Assistant Companion স্থাপন।
+- **[ha-echo-show-5](https://github.com/ha-homelab/ha-echo-show-5)** — Echo Show 5 Gen2-কে Android-এ রূপান্তর, যাচাইকৃত ব্যাকআপ এবং Home Assistant Companion স্থাপন। একটি বাক্যাংশের ঐচ্ছিক ONNX ওয়েক-ওয়ার্ড পরীক্ষায় সফ্টওয়্যার যাচাই আছে; সম্পূর্ণ শব্দপথের গ্রহণযোগ্যতা পরীক্ষা এখনো বাকি।
 
 - **[ha-lg-tv-capture](https://github.com/ha-homelab/ha-lg-tv-capture)** — পুনর্ব্যবহারযোগ্য LG webOS স্ক্রিন ধারণের সরঞ্জাম এবং Home Assistant ইন্টিগ্রেশন।
 
@@ -49,7 +51,7 @@ EchoLocal ও EchoMuse আলাদা রূপান্তরপথ। ডি�
 
 ### ডিভাইস ইন্টিগ্রেশন, ব্রিজ ও পুনরুদ্ধার
 
-- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — Zigbee, Thread, Bluetooth, Z-Wave, 433 MHz ও পর্যবেক্ষণের জন্য মডুলার PoE প্রোটোটাইপ; CAD, ফার্মওয়্যার ও স্থাপনের সরঞ্জাম অন্তর্ভুক্ত; বাস্তব হার্ডওয়্যারে যাচাই এখনো বাকি।
+- **[ha-radio-hub](https://github.com/ha-homelab/ha-radio-hub)** — বর্তমান MC2-C + FH1 মডিউলার PoE নমুনা, যাতে Zigbee, Thread ও Bluetooth-এর জন্য তিনটি স্বতন্ত্র বাহ্যিক অ্যান্টেনা, স্থানীয় Thread Border Router, Z-Wave, 433 MHz RF এবং সেন্সিং রয়েছে। CAD, ফার্মওয়্যার ও স্থাপনের সরঞ্জাম দেওয়া আছে; বাস্তব হার্ডওয়্যারের যাচাই এখনো বাকি।
 
 - **[ha-desloc](https://github.com/ha-homelab/ha-desloc)** — তালার অবস্থা, নিয়ন্ত্রণ, ব্যাটারি ও Wi-Fi-এর জন্য অনানুষ্ঠানিক DESLOC ক্লাউড ইন্টিগ্রেশন; [মডেলভেদে সামঞ্জস্য আলাদা](https://github.com/ha-homelab/ha-desloc/blob/main/docs/compatibility.md)।
 
@@ -67,7 +69,8 @@ EchoLocal ও EchoMuse আলাদা রূপান্তরপথ। ডি�
 
 ### স্থান পরিকল্পনা, পর্যবেক্ষণ ও প্রবেশাধিকার
 
-- **[home-studio](https://github.com/ha-homelab/home-studio)** — ঘর আঁকা, আসবাব বসানো, 3D-তে দেখা, প্রকল্প রপ্তানি এবং স্থানীয়ভাবে Home Assistant ভিউয়ার কম্পাইল।
+- **[home-studio](https://github.com/ha-homelab/home-studio)** — আলাদা ব্রাউজার সম্পাদক বা Home Assistant-এর ভেতরে ঘর আঁকা ও আসবাব সাজানো; JSON রপ্তানি বা HA ভিউ প্রকাশ করা।
+- **[ruview-home-sensing](https://github.com/ha-homelab/ruview-home-sensing)** — পরীক্ষামূলক CSI সংগ্রহ, রিসিভার ফার্মওয়্যার, কার্যকলাপের অনুমান ও ইনফারেন্সের প্রমাণ যাচাইয়ের সরঞ্জাম; ruview-home-assistant-এর মাধ্যমে প্রকাশ করে, কিন্তু বাস্তবে শনাক্তকরণের নির্ভুলতা প্রমাণ করে না।
 
 - **[sensing-evidence-kit](https://github.com/ha-homelab/sensing-evidence-kit)** — তথ্যের সতেজতা ও ঘড়ি স্পষ্টভাবে পরীক্ষা করে পর্যবেক্ষণ নথিভুক্ত, চিহ্নিত ও তুলনা করা।
 
@@ -75,7 +78,7 @@ EchoLocal ও EchoMuse আলাদা রূপান্তরপথ। ডি�
 
 - **[ha-onvif-room-direction](https://github.com/ha-homelab/ha-onvif-room-direction)** — শুধু পড়ার অনুমতিতে ক্যামেরার দিক, নির্ধারিত খণ্ড ও সতেজতা যাচাই থেকে এলাকার অনুমান।
 
-- **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — বাইরের ড্যাশবোর্ডের জন্য যাচাইকৃত Cloudflare Access সেশন এবং সীমিত গেটওয়ে দিয়ে স্বল্পমেয়াদি টোকেন। স্পষ্টভাবে নির্ধারিত একজন Home Assistant প্রশাসকের সম্পূর্ণ অধিকার এতে যুক্ত থাকে।
+- **[ha-access-session](https://github.com/ha-homelab/ha-access-session)** — বাইরের ড্যাশবোর্ডের জন্য যাচাইকৃত Cloudflare Access সেশন এবং সীমিত গেটওয়ে দিয়ে স্বল্পমেয়াদি টোকেন। স্পষ্টভাবে নির্ধারিত একজন Home Assistant প্রশাসকের সম্পূর্ণ অধিকার এতে যুক্ত থাকে। প্রমাণীকরণসহ মিডিয়া প্লেয়ারের প্রচ্ছদচিত্র দেওয়ার ঐচ্ছিক সুবিধা ডিফল্টভাবে বন্ধ।
 
 পর্যবেক্ষণের উদাহরণে তথ্য ও তার সীমা বর্ণিত হয়। কৃত্রিম পুনরায় চালানো বা ক্যামেরার দিক বাস্তবে উপস্থিতি শনাক্তকরণের নির্ভুলতা প্রমাণ করে না।
 
@@ -89,7 +92,7 @@ EchoLocal ও EchoMuse আলাদা রূপান্তরপথ। ডি�
 
 - **[assist-scenario-lab](https://github.com/ha-homelab/assist-scenario-lab)** — প্রোটোকল শেষ হওয়া, পর্যবেক্ষিত কাজ ও শোনা যায় এমন উত্তর আলাদা করা অফলাইন ভয়েস প্রমাণ।
 
-[সচিত্র কর্মপ্রবাহ ও ফলাফল](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.bn.md) অথবা [রুশ সংস্করণ](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.ru.md) অনুসরণ করুন। সফ্টওয়্যারের প্রমাণ ও বাস্তব হার্ডওয়্যারের গ্রহণযোগ্যতা যাচাই পৃথক ধাপ।
+[সচিত্র কর্মপ্রবাহ ও ফলাফল](https://github.com/ha-homelab/.github/blob/main/community-tools/process-and-results.bn.md) অনুসরণ করুন। নির্দেশিকার ভাষা নির্বাচক থেকে সব 24টি ভাষা বেছে নেওয়া যায়। সফ্টওয়্যারের প্রমাণ ও বাস্তব হার্ডওয়্যারের গ্রহণযোগ্যতা পরীক্ষা আলাদা ধাপ।
 
 <details>
 <summary>পর্যালোচনার প্রবাহ ও নথিভুক্ত সফ্টওয়্যার পরীক্ষা</summary>
@@ -113,9 +116,9 @@ EchoLocal ও EchoMuse আলাদা রূপান্তরপথ। ডি�
 
 ## প্রকাশ্য প্রকল্পের চিত্র
 
-![অনুভূমিক বারচিত্র: ডিভাইস ও ব্রিজ 8; স্থান, পর্যবেক্ষণ ও প্রবেশাধিকার 5; ভয়েস ও মিডিয়া 4; পরীক্ষা ও নিয়ম 4; কনফিগারেশন ও নির্ভরযোগ্যতা 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.bn.svg)
+![অনুভূমিক বারচিত্র: ডিভাইস ও ব্রিজ 8; স্থান, পর্যবেক্ষণ ও প্রবেশাধিকার 6; ভয়েস ও মিডিয়া 6; পরীক্ষা ও নিয়ম 4; কনফিগারেশন ও নির্ভরযোগ্যতা 2](https://raw.githubusercontent.com/ha-homelab/.github/main/assets/profile/portfolio.bn.svg)
 
-**23 প্রকল্প + এই প্রোফাইল রিপোজিটরি = 24 প্রকাশ্য রিপোজিটরি**, 16 অক্টোবর 2026-এ যাচাই করা। প্রতিটি প্রকল্প একটি সম্পাদকীয় শ্রেণিতে আছে; সংখ্যা পরিপক্বতা, ব্যবহার বা কার্যক্ষমতা মাপে না। [পুনরুৎপাদনযোগ্য উৎস তথ্য](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json)। প্রকৃত সফ্টওয়্যার পরীক্ষার ফলের জন্য পৃথক [তারিখসহ কমিউনিটি পরীক্ষার চিত্র ও CI চালনার লিংক](https://github.com/ha-homelab/.github/blob/main/community-tools/README.bn.md#validation-evidence--2026-10-16-utc) দেখুন।
+**26 প্রকল্প + এই প্রোফাইল রিপোজিটরি = 27 প্রকাশ্য রিপোজিটরি**, 19 অক্টোবর 2026-এ যাচাই করা। প্রতিটি প্রকল্প একটি সম্পাদকীয় শ্রেণিতে আছে; সংখ্যা পরিপক্বতা, ব্যবহার বা কার্যক্ষমতা মাপে না। [পুনরুৎপাদনযোগ্য উৎস তথ্য](https://github.com/ha-homelab/.github/blob/main/assets/profile/catalog.json)। প্রকৃত সফ্টওয়্যার পরীক্ষার ফলের জন্য পৃথক [তারিখসহ কমিউনিটি পরীক্ষার চিত্র ও CI চালনার লিংক](https://github.com/ha-homelab/.github/blob/main/community-tools/README.bn.md#validation-evidence--2026-10-16-utc) দেখুন।
 
 ## এই সংস্থার বাইরের সম্পর্কিত প্রকাশ্য প্রকল্প
 
@@ -136,6 +139,7 @@ EchoLocal ও EchoMuse আলাদা রূপান্তরপথ। ডি�
 - [EPG Voice Gateway](https://github.com/4alvit/epg-voice-gateway) বর্তমান XMLTV অনুষ্ঠান খুঁজে বিদ্যমান HLS প্রক্সি দিয়ে Alexa পর্দা বা Google Cast-এ চালায়।
 
 - [OTT-play Control Server](https://github.com/open-ott-play/ottplay-control-server) প্লেয়ার নির্দেশ, টার্মিনাল নিয়ন্ত্রণ এবং k3s স্থাপন দেয়। EPG গেটওয়ে OttPlay-নির্ভর নয়।
+- [Cisco Home Telephony](https://github.com/4alvit/cisco-home-telephony) — Cisco 7945G-এর SIP প্রভিশনিং, k3s-এ Asterisk, ফোন CLI এবং ঐচ্ছিক Home Assistant ভয়েস/নিয়ন্ত্রণের কার্যপ্রবাহ দেয়।
 
 **পুনর্ব্যবহারযোগ্য অবকাঠামো**
 
@@ -146,6 +150,7 @@ EchoLocal ও EchoMuse আলাদা রূপান্তরপথ। ডি�
 - [MQTT Observability](https://github.com/4alvit/mqtt-observability-opentelemetry) OpenTelemetry, Prometheus ও Grafana দিয়ে MQTT এবং Mosquitto মেট্রিক পর্যবেক্ষণ করে; এটি বার্তা প্রক্সি নয়।
 
 - [HA Homelab Terraform](https://github.com/4alvit/terraform-github-ha-homelab) এই সংস্থার GitHub সেটিং ও রিপোজিটরি পরিচালনা করে।
+- [Venus OS CI Toolkit](https://github.com/victron-venus/venus-os-ci-toolkit) — যাচাই, প্রকাশ ও নিরাপত্তা পরীক্ষার জন্য ভাগ করা GitHub Actions কার্যপ্রবাহ এবং CI সরঞ্জাম দেয়; ব্যবহারকারী প্রকল্পগুলো পর্যালোচিত একটি commit নির্দিষ্ট করে রাখে।
 
 ## আমরা যেভাবে কাজ করি
 
